@@ -1,0 +1,22 @@
+{
+    "name": "anteris-dev/autotask-client",
+    "authors": [
+        {
+            "name": "Aidan Casey",
+            "email": "aidan.casey@anteris.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Anteris\\Autotask\\": "./src"
+        }
+    },
+    "license": "MIT",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0",
+        "spatie/data-transfer-object": "^2.2"
+    },
+    "require-dev": {
+        "anteris-dev/autotask-client-generator": "dev-master"
+    }
+}

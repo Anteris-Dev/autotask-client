@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Documentation</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="icon" href="../images/favicon.ico"/>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
+    <script src="../js/search.js"></script>
+    <script defer src="../js/searchIndex.js"></script>
+    </head>
+<body>
+<header class="phpdocumentor-top-header"></header>
+<header class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">Documentation</h1>
+    </section>
+</header>
+<main class="phpdocumentor">
+    <div class="phpdocumentor-section">
+        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+    <section data-search-form class="phpdocumentor-search">
+        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
+        <label class="phpdocumentor-label">
+            <span class="visually-hidden">Search for</span>
+            <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+        </label>
+    </section>
+
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
+            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
+                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/anteris.html"><abbr title="\Anteris">Anteris</abbr></a></h3>
+            <ul class="phpdocumentor-list">
+                                    <li><a href="../namespaces/anteris-autotask.html"><abbr title="\Anteris\Autotask">Autotask</abbr></a></li>
+                            </ul>
+            
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
+        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+</aside>
+
+        <div class="nine phpdocumentor-columns phpdocumentor-content">
+            <ul class="phpdocumentor-breadcrumbs">
+    <li><a href="../index.html">Home</a></li>
+                        <li><a href="../namespaces/anteris.html">Anteris</a></li>
+                    <li><a href="../namespaces/anteris-autotask.html">Autotask</a></li>
+                    <li><a href="../namespaces/anteris-autotask-api.html">API</a></li>
+                    <li><a href="../namespaces/anteris-autotask-api-inventoryitems.html">InventoryItems</a></li>
+            </ul>
+
+    <article class="phpdocumentor-element phpdocumentor-class">
+        <h2 class="phpdocumentor-content__title">
+            InventoryItemEntity
+                            <span class="phpdocumentor-class__extends">
+                    extends <abbr title="\Spatie\DataTransferObject\DataTransferObject">DataTransferObject</abbr>
+                </span>
+                                                        </h2>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php"><a href="../files/autotask-client-src-api-inventoryitems-inventoryitementity.html"><abbr title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php">InventoryItemEntity.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">11</span>
+        </aside>
+
+        <p class="phpdocumentor-class__summary">Represents InventoryItem entities.</p>
+        <section class="phpdocumentor-class__description"></section>
+
+        <h3>Table of Contents</h3>
+        <table class="phpdocumentor-table_of_contents">
+                                        <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-InventoryItems-InventoryItemEntity.html#property_backOrderQuantity">$backOrderQuantity</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">int|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-InventoryItems-InventoryItemEntity.html#property_bin">$bin</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">string|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-InventoryItems-InventoryItemEntity.html#property_id">$id</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">int</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-InventoryItems-InventoryItemEntity.html#property_impersonatorCreatorResourceID">$impersonatorCreatorResourceID</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">int|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-InventoryItems-InventoryItemEntity.html#property_inventoryLocationID">$inventoryLocationID</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">int</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-InventoryItems-InventoryItemEntity.html#property_productID">$productID</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">int</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-InventoryItems-InventoryItemEntity.html#property_quantityMaximum">$quantityMaximum</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">int</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-InventoryItems-InventoryItemEntity.html#property_quantityMinimum">$quantityMinimum</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">int</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-InventoryItems-InventoryItemEntity.html#property_quantityOnHand">$quantityOnHand</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">int</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-InventoryItems-InventoryItemEntity.html#property_quantityOnOrder">$quantityOnOrder</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">int|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-InventoryItems-InventoryItemEntity.html#property_quantityPicked">$quantityPicked</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">int|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-InventoryItems-InventoryItemEntity.html#property_quantityReserved">$quantityReserved</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">int|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-InventoryItems-InventoryItemEntity.html#property_referenceNumber">$referenceNumber</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">string|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-InventoryItems-InventoryItemEntity.html#property_userDefinedFields">$userDefinedFields</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">array</td>
+                </tr>
+                                                                <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-InventoryItems-InventoryItemEntity.html#method___construct">__construct()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-InventoryItems-InventoryItemEntity.html#method_fromResponse">fromResponse()</a></th>
+                    <td class="phpdocumentor-cell">Creates an instance of this class from an Http response.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                                            </table>
+
+        
+                    <section>
+                <h3 class="phpdocumentor-properties__header">Properties</h3>
+                                    <a id="property_backOrderQuantity"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$backOrderQuantity</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php"><a href="../files/autotask-client-src-api-inventoryitems-inventoryitementity.html"><abbr title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php">InventoryItemEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">13</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">int|null</span>
+        <span class="phpdocumentor-signature__name">$backOrderQuantity</span>
+            </code>
+    </article>
+                                    <a id="property_bin"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$bin</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php"><a href="../files/autotask-client-src-api-inventoryitems-inventoryitementity.html"><abbr title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php">InventoryItemEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">14</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">string|null</span>
+        <span class="phpdocumentor-signature__name">$bin</span>
+            </code>
+    </article>
+                                    <a id="property_id"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$id</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php"><a href="../files/autotask-client-src-api-inventoryitems-inventoryitementity.html"><abbr title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php">InventoryItemEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">15</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">int</span>
+        <span class="phpdocumentor-signature__name">$id</span>
+            </code>
+    </article>
+                                    <a id="property_impersonatorCreatorResourceID"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$impersonatorCreatorResourceID</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php"><a href="../files/autotask-client-src-api-inventoryitems-inventoryitementity.html"><abbr title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php">InventoryItemEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">16</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">int|null</span>
+        <span class="phpdocumentor-signature__name">$impersonatorCreatorResourceID</span>
+            </code>
+    </article>
+                                    <a id="property_inventoryLocationID"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$inventoryLocationID</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php"><a href="../files/autotask-client-src-api-inventoryitems-inventoryitementity.html"><abbr title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php">InventoryItemEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">17</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">int</span>
+        <span class="phpdocumentor-signature__name">$inventoryLocationID</span>
+            </code>
+    </article>
+                                    <a id="property_productID"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$productID</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php"><a href="../files/autotask-client-src-api-inventoryitems-inventoryitementity.html"><abbr title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php">InventoryItemEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">18</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">int</span>
+        <span class="phpdocumentor-signature__name">$productID</span>
+            </code>
+    </article>
+                                    <a id="property_quantityMaximum"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$quantityMaximum</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php"><a href="../files/autotask-client-src-api-inventoryitems-inventoryitementity.html"><abbr title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php">InventoryItemEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">19</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">int</span>
+        <span class="phpdocumentor-signature__name">$quantityMaximum</span>
+            </code>
+    </article>
+                                    <a id="property_quantityMinimum"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$quantityMinimum</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php"><a href="../files/autotask-client-src-api-inventoryitems-inventoryitementity.html"><abbr title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php">InventoryItemEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">20</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">int</span>
+        <span class="phpdocumentor-signature__name">$quantityMinimum</span>
+            </code>
+    </article>
+                                    <a id="property_quantityOnHand"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$quantityOnHand</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php"><a href="../files/autotask-client-src-api-inventoryitems-inventoryitementity.html"><abbr title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php">InventoryItemEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">21</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">int</span>
+        <span class="phpdocumentor-signature__name">$quantityOnHand</span>
+            </code>
+    </article>
+                                    <a id="property_quantityOnOrder"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$quantityOnOrder</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php"><a href="../files/autotask-client-src-api-inventoryitems-inventoryitementity.html"><abbr title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php">InventoryItemEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">22</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">int|null</span>
+        <span class="phpdocumentor-signature__name">$quantityOnOrder</span>
+            </code>
+    </article>
+                                    <a id="property_quantityPicked"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$quantityPicked</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php"><a href="../files/autotask-client-src-api-inventoryitems-inventoryitementity.html"><abbr title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php">InventoryItemEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">23</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">int|null</span>
+        <span class="phpdocumentor-signature__name">$quantityPicked</span>
+            </code>
+    </article>
+                                    <a id="property_quantityReserved"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$quantityReserved</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php"><a href="../files/autotask-client-src-api-inventoryitems-inventoryitementity.html"><abbr title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php">InventoryItemEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">24</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">int|null</span>
+        <span class="phpdocumentor-signature__name">$quantityReserved</span>
+            </code>
+    </article>
+                                    <a id="property_referenceNumber"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$referenceNumber</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php"><a href="../files/autotask-client-src-api-inventoryitems-inventoryitementity.html"><abbr title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php">InventoryItemEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">25</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">string|null</span>
+        <span class="phpdocumentor-signature__name">$referenceNumber</span>
+            </code>
+    </article>
+                                    <a id="property_userDefinedFields"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$userDefinedFields</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php"><a href="../files/autotask-client-src-api-inventoryitems-inventoryitementity.html"><abbr title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php">InventoryItemEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">26</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">array</span>
+        <span class="phpdocumentor-signature__name">$userDefinedFields</span>
+         = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
+    </article>
+                                                            </section>
+        
+                    <section>
+                <h3 class="phpdocumentor-methods__header">Methods</h3>
+                                    <a id="method___construct"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">__construct()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php"><a href="../files/autotask-client-src-api-inventoryitems-inventoryitementity.html"><abbr title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php">InventoryItemEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">28</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">__construct</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$array</span> :
+                <span class="phpdocumentor-signature__argument__return-type">array</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$array</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_fromResponse"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                    phpdocumentor-element--static                    "
+>
+    <h4 class="phpdocumentor-method__name">fromResponse()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php"><a href="../files/autotask-client-src-api-inventoryitems-inventoryitementity.html"><abbr title="autotask-client/src/API/InventoryItems/InventoryItemEntity.php">InventoryItemEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">40</span>
+    </aside>
+        <p class="phpdocumentor-summary">Creates an instance of this class from an Http response.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromResponse</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$response</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\GuzzleHttp\Psr7\Response">Response</abbr></span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$response</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\GuzzleHttp\Psr7\Response">Response</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Http response.</p></section></dd>
+                    </dl>
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">author</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>Aidan Casey <a href="mailto:aidan.casey@anteris.com">aidan.casey@anteris.com</a></p></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                                            </section>
+            </article>
+            <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+
+                <h2>Search results</h2>
+                <ul class="phpdocumentor-search-results__entries">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

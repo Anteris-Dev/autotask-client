@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Documentation</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="icon" href="../images/favicon.ico"/>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
+    <script src="../js/search.js"></script>
+    <script defer src="../js/searchIndex.js"></script>
+    </head>
+<body>
+<header class="phpdocumentor-top-header"></header>
+<header class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">Documentation</h1>
+    </section>
+</header>
+<main class="phpdocumentor">
+    <div class="phpdocumentor-section">
+        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+    <section data-search-form class="phpdocumentor-search">
+        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
+        <label class="phpdocumentor-label">
+            <span class="visually-hidden">Search for</span>
+            <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+        </label>
+    </section>
+
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
+            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
+                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/anteris.html"><abbr title="\Anteris">Anteris</abbr></a></h3>
+            <ul class="phpdocumentor-list">
+                                    <li><a href="../namespaces/anteris-autotask.html"><abbr title="\Anteris\Autotask">Autotask</abbr></a></li>
+                            </ul>
+            
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
+        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+</aside>
+
+        <div class="nine phpdocumentor-columns phpdocumentor-content">
+            <ul class="phpdocumentor-breadcrumbs">
+    <li><a href="../index.html">Home</a></li>
+                        <li><a href="../namespaces/anteris.html">Anteris</a></li>
+                    <li><a href="../namespaces/anteris-autotask.html">Autotask</a></li>
+                    <li><a href="../namespaces/anteris-autotask-api.html">API</a></li>
+                    <li><a href="../namespaces/anteris-autotask-api-ticketcharges.html">TicketCharges</a></li>
+            </ul>
+
+    <article class="phpdocumentor-element phpdocumentor-class">
+        <h2 class="phpdocumentor-content__title">
+            TicketChargeEntity
+                            <span class="phpdocumentor-class__extends">
+                    extends <abbr title="\Spatie\DataTransferObject\DataTransferObject">DataTransferObject</abbr>
+                </span>
+                                                        </h2>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">12</span>
+        </aside>
+
+        <p class="phpdocumentor-class__summary">Represents TicketCharge entities.</p>
+        <section class="phpdocumentor-class__description"></section>
+
+        <h3>Table of Contents</h3>
+        <table class="phpdocumentor-table_of_contents">
+                                        <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_billableAmount">$billableAmount</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">float|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_billingCodeID">$billingCodeID</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">int|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_chargeType">$chargeType</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">int</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_contractServiceBundleID">$contractServiceBundleID</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">int|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_contractServiceID">$contractServiceID</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">int|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_createDate">$createDate</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><abbr title="\Carbon\Carbon">Carbon</abbr>|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_creatorResourceID">$creatorResourceID</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">int|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_datePurchased">$datePurchased</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><abbr title="\Carbon\Carbon">Carbon</abbr></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_description">$description</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">string|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_extendedCost">$extendedCost</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">float|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_id">$id</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">int</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_internalCurrencyBillableAmount">$internalCurrencyBillableAmount</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">float|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_internalCurrencyUnitPrice">$internalCurrencyUnitPrice</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">float|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_internalPurchaseOrderNumber">$internalPurchaseOrderNumber</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">string|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_isBillableToCompany">$isBillableToCompany</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">bool|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_isBilled">$isBilled</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">bool|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_name">$name</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_notes">$notes</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">string|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_organizationalLevelAssociationID">$organizationalLevelAssociationID</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">int|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_productID">$productID</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">int|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_purchaseOrderNumber">$purchaseOrderNumber</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">string|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_status">$status</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">int|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_statusLastModifiedBy">$statusLastModifiedBy</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">int|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_statusLastModifiedDate">$statusLastModifiedDate</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><abbr title="\Carbon\Carbon">Carbon</abbr>|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_ticketID">$ticketID</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">int</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_unitCost">$unitCost</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">float|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_unitPrice">$unitPrice</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">float|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_unitQuantity">$unitQuantity</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">float</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_userDefinedFields">$userDefinedFields</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">array</td>
+                </tr>
+                                                                <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#method___construct">__construct()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#method_fromResponse">fromResponse()</a></th>
+                    <td class="phpdocumentor-cell">Creates an instance of this class from an Http response.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                                            </table>
+
+        
+                    <section>
+                <h3 class="phpdocumentor-properties__header">Properties</h3>
+                                    <a id="property_billableAmount"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$billableAmount</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">14</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">float|null</span>
+        <span class="phpdocumentor-signature__name">$billableAmount</span>
+            </code>
+    </article>
+                                    <a id="property_billingCodeID"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$billingCodeID</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">15</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">int|null</span>
+        <span class="phpdocumentor-signature__name">$billingCodeID</span>
+            </code>
+    </article>
+                                    <a id="property_chargeType"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$chargeType</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">16</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">int</span>
+        <span class="phpdocumentor-signature__name">$chargeType</span>
+            </code>
+    </article>
+                                    <a id="property_contractServiceBundleID"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$contractServiceBundleID</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">17</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">int|null</span>
+        <span class="phpdocumentor-signature__name">$contractServiceBundleID</span>
+            </code>
+    </article>
+                                    <a id="property_contractServiceID"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$contractServiceID</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">18</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">int|null</span>
+        <span class="phpdocumentor-signature__name">$contractServiceID</span>
+            </code>
+    </article>
+                                    <a id="property_createDate"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$createDate</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">19</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type"><abbr title="\Carbon\Carbon">Carbon</abbr>|null</span>
+        <span class="phpdocumentor-signature__name">$createDate</span>
+            </code>
+    </article>
+                                    <a id="property_creatorResourceID"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$creatorResourceID</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">20</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">int|null</span>
+        <span class="phpdocumentor-signature__name">$creatorResourceID</span>
+            </code>
+    </article>
+                                    <a id="property_datePurchased"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$datePurchased</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">21</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type"><abbr title="\Carbon\Carbon">Carbon</abbr></span>
+        <span class="phpdocumentor-signature__name">$datePurchased</span>
+            </code>
+    </article>
+                                    <a id="property_description"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$description</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">22</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">string|null</span>
+        <span class="phpdocumentor-signature__name">$description</span>
+            </code>
+    </article>
+                                    <a id="property_extendedCost"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$extendedCost</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">23</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">float|null</span>
+        <span class="phpdocumentor-signature__name">$extendedCost</span>
+            </code>
+    </article>
+                                    <a id="property_id"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$id</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">24</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">int</span>
+        <span class="phpdocumentor-signature__name">$id</span>
+            </code>
+    </article>
+                                    <a id="property_internalCurrencyBillableAmount"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$internalCurrencyBillableAmount</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">25</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">float|null</span>
+        <span class="phpdocumentor-signature__name">$internalCurrencyBillableAmount</span>
+            </code>
+    </article>
+                                    <a id="property_internalCurrencyUnitPrice"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$internalCurrencyUnitPrice</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">26</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">float|null</span>
+        <span class="phpdocumentor-signature__name">$internalCurrencyUnitPrice</span>
+            </code>
+    </article>
+                                    <a id="property_internalPurchaseOrderNumber"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$internalPurchaseOrderNumber</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">27</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">string|null</span>
+        <span class="phpdocumentor-signature__name">$internalPurchaseOrderNumber</span>
+            </code>
+    </article>
+                                    <a id="property_isBillableToCompany"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$isBillableToCompany</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">28</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">bool|null</span>
+        <span class="phpdocumentor-signature__name">$isBillableToCompany</span>
+            </code>
+    </article>
+                                    <a id="property_isBilled"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$isBilled</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">29</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">bool|null</span>
+        <span class="phpdocumentor-signature__name">$isBilled</span>
+            </code>
+    </article>
+                                    <a id="property_name"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$name</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">30</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__name">$name</span>
+            </code>
+    </article>
+                                    <a id="property_notes"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$notes</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">31</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">string|null</span>
+        <span class="phpdocumentor-signature__name">$notes</span>
+            </code>
+    </article>
+                                    <a id="property_organizationalLevelAssociationID"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$organizationalLevelAssociationID</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">32</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">int|null</span>
+        <span class="phpdocumentor-signature__name">$organizationalLevelAssociationID</span>
+            </code>
+    </article>
+                                    <a id="property_productID"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$productID</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">33</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">int|null</span>
+        <span class="phpdocumentor-signature__name">$productID</span>
+            </code>
+    </article>
+                                    <a id="property_purchaseOrderNumber"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$purchaseOrderNumber</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">34</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">string|null</span>
+        <span class="phpdocumentor-signature__name">$purchaseOrderNumber</span>
+            </code>
+    </article>
+                                    <a id="property_status"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$status</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">35</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">int|null</span>
+        <span class="phpdocumentor-signature__name">$status</span>
+            </code>
+    </article>
+                                    <a id="property_statusLastModifiedBy"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$statusLastModifiedBy</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">36</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">int|null</span>
+        <span class="phpdocumentor-signature__name">$statusLastModifiedBy</span>
+            </code>
+    </article>
+                                    <a id="property_statusLastModifiedDate"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$statusLastModifiedDate</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">37</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type"><abbr title="\Carbon\Carbon">Carbon</abbr>|null</span>
+        <span class="phpdocumentor-signature__name">$statusLastModifiedDate</span>
+            </code>
+    </article>
+                                    <a id="property_ticketID"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$ticketID</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">38</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">int</span>
+        <span class="phpdocumentor-signature__name">$ticketID</span>
+            </code>
+    </article>
+                                    <a id="property_unitCost"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$unitCost</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">39</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">float|null</span>
+        <span class="phpdocumentor-signature__name">$unitCost</span>
+            </code>
+    </article>
+                                    <a id="property_unitPrice"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$unitPrice</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">40</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">float|null</span>
+        <span class="phpdocumentor-signature__name">$unitPrice</span>
+            </code>
+    </article>
+                                    <a id="property_unitQuantity"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$unitQuantity</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">41</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">float</span>
+        <span class="phpdocumentor-signature__name">$unitQuantity</span>
+            </code>
+    </article>
+                                    <a id="property_userDefinedFields"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$userDefinedFields</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">42</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">array</span>
+        <span class="phpdocumentor-signature__name">$userDefinedFields</span>
+         = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
+    </article>
+                                                            </section>
+        
+                    <section>
+                <h3 class="phpdocumentor-methods__header">Methods</h3>
+                                    <a id="method___construct"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">__construct()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">44</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">__construct</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$array</span> :
+                <span class="phpdocumentor-signature__argument__return-type">array</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$array</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_fromResponse"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                    phpdocumentor-element--static                    "
+>
+    <h4 class="phpdocumentor-method__name">fromResponse()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php"><a href="../files/autotask-client-src-api-ticketcharges-ticketchargeentity.html"><abbr title="autotask-client/src/API/TicketCharges/TicketChargeEntity.php">TicketChargeEntity.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">59</span>
+    </aside>
+        <p class="phpdocumentor-summary">Creates an instance of this class from an Http response.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromResponse</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$response</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\GuzzleHttp\Psr7\Response">Response</abbr></span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$response</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\GuzzleHttp\Psr7\Response">Response</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Http response.</p></section></dd>
+                    </dl>
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">author</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>Aidan Casey <a href="mailto:aidan.casey@anteris.com">aidan.casey@anteris.com</a></p></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                                            </section>
+            </article>
+            <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+
+                <h2>Search results</h2>
+                <ul class="phpdocumentor-search-results__entries">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
