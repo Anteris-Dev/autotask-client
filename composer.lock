@@ -404,12 +404,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Anteris-Dev/autotask-client-generator.git",
-                "reference": "9060e67242d709ed2fc5fe13dff9a515a5cf1b13"
+                "reference": "b2ba604c894479b7216fad52772fdc7f8b2fec2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Anteris-Dev/autotask-client-generator/zipball/9060e67242d709ed2fc5fe13dff9a515a5cf1b13",
-                "reference": "9060e67242d709ed2fc5fe13dff9a515a5cf1b13",
+                "url": "https://api.github.com/repos/Anteris-Dev/autotask-client-generator/zipball/b2ba604c894479b7216fad52772fdc7f8b2fec2c",
+                "reference": "b2ba604c894479b7216fad52772fdc7f8b2fec2c",
                 "shasum": ""
             },
             "require": {
@@ -438,7 +438,7 @@
                 }
             ],
             "description": "This package is the brains behind the Autotask API client. It generates each service class using the Autotask API as its guide.",
-            "time": "2020-08-17T20:44:03+00:00"
+            "time": "2020-08-17T22:59:31+00:00"
         },
         {
             "name": "doctrine/inflector",

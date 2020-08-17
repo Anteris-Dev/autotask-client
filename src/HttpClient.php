@@ -29,6 +29,12 @@ class HttpClient
         string $baseUri
     )
     {
+        // This line handles the versioning of the base URL (or the lack of it)
+        $baseUri = str_replace('/v1.0', '', $baseUri);
+        $baseUri = rtrim($baseUri, '/');
+        $baseUri = $baseUri . '/v1.0/';
+
+        // Now create the client
         $this->client = new GuzzleClient([
             'base_uri' => $baseUri,
             'headers' => [
