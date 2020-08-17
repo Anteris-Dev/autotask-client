@@ -1,7 +1,13 @@
+# About this Package
+
+This package provides a PHP API client for the Autotask REST API. It is strongly typed and it is a wonderful experience to work with these classes in any intelligent IDE with autocompletion.
+
+## To Install
+
+Run `composer require anteris-dev/autotask-client`
+
 # Table of Contents
 
-* [About this Package](#about-this-package)
-	* [To Install](#to-install)
 * [Getting Started](#getting-started)
 	* [Client Wrapper](#client-wrapper)
 	* [Bypassing the Client Wrapper](#bypassing-the-client-wrapper)
@@ -17,14 +23,6 @@
 			* [paginate()](#paginate)
 			* [update()](#update-resource-)
 * [Resources](#resources)
-
-# About this Package
-
-This package provides a PHP API client for the Autotask REST API. It is strongly typed and it is a wonderful experience to work with these classes in any intelligent IDE with autocompletion.
-
-## To Install
-
-Run `composer require anteris-dev/autotask-client`
 
 # Getting Started
 
