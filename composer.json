@@ -11,9 +11,13 @@
             "Anteris\\Autotask\\": "./src"
         }
     },
+    "config": {
+        "sort-packages": true
+    },
     "license": "MIT",
     "require": {
         "guzzlehttp/guzzle": "^7.0",
+        "nesbot/carbon": "^2.38",
         "spatie/data-transfer-object": "^2.2"
     },
     "require-dev": {
