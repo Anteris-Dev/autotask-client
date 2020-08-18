@@ -48,9 +48,18 @@ class ResourceEntity extends DataTransferObject
     public int $userType;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new Resource entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['hireDate'] = new Carbon($array['hireDate']);
+        if (isset($array['hireDate'])) {
+            $array['hireDate'] = new Carbon($array['hireDate']);
+        }
+
         parent::__construct($array);
     }
 

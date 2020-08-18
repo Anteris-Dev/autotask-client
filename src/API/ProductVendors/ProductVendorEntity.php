@@ -19,6 +19,12 @@ class ProductVendorEntity extends DataTransferObject
     public ?string $vendorPartNumber;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new ProductVendor entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
         parent::__construct($array);

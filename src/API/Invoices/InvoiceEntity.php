@@ -36,16 +36,46 @@ class InvoiceEntity extends DataTransferObject
     public ?Carbon $webServiceDate;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new Invoice entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['createDateTime'] = new Carbon($array['createDateTime']);
-        $array['dueDate'] = new Carbon($array['dueDate']);
-        $array['fromDate'] = new Carbon($array['fromDate']);
-        $array['invoiceDateTime'] = new Carbon($array['invoiceDateTime']);
-        $array['paidDate'] = new Carbon($array['paidDate']);
-        $array['toDate'] = new Carbon($array['toDate']);
-        $array['voidedDate'] = new Carbon($array['voidedDate']);
-        $array['webServiceDate'] = new Carbon($array['webServiceDate']);
+        if (isset($array['createDateTime'])) {
+            $array['createDateTime'] = new Carbon($array['createDateTime']);
+        }
+
+        if (isset($array['dueDate'])) {
+            $array['dueDate'] = new Carbon($array['dueDate']);
+        }
+
+        if (isset($array['fromDate'])) {
+            $array['fromDate'] = new Carbon($array['fromDate']);
+        }
+
+        if (isset($array['invoiceDateTime'])) {
+            $array['invoiceDateTime'] = new Carbon($array['invoiceDateTime']);
+        }
+
+        if (isset($array['paidDate'])) {
+            $array['paidDate'] = new Carbon($array['paidDate']);
+        }
+
+        if (isset($array['toDate'])) {
+            $array['toDate'] = new Carbon($array['toDate']);
+        }
+
+        if (isset($array['voidedDate'])) {
+            $array['voidedDate'] = new Carbon($array['voidedDate']);
+        }
+
+        if (isset($array['webServiceDate'])) {
+            $array['webServiceDate'] = new Carbon($array['webServiceDate']);
+        }
+
         parent::__construct($array);
     }
 

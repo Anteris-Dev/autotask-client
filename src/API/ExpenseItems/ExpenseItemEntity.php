@@ -41,9 +41,18 @@ class ExpenseItemEntity extends DataTransferObject
     public ?int $workType;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new ExpenseItem entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['expenseDate'] = new Carbon($array['expenseDate']);
+        if (isset($array['expenseDate'])) {
+            $array['expenseDate'] = new Carbon($array['expenseDate']);
+        }
+
         parent::__construct($array);
     }
 

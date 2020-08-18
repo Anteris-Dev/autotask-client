@@ -38,10 +38,22 @@ class SalesOrderEntity extends DataTransferObject
     public string $title;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new SalesOrder entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['promisedFulfillmentDate'] = new Carbon($array['promisedFulfillmentDate']);
-        $array['salesOrderDate'] = new Carbon($array['salesOrderDate']);
+        if (isset($array['promisedFulfillmentDate'])) {
+            $array['promisedFulfillmentDate'] = new Carbon($array['promisedFulfillmentDate']);
+        }
+
+        if (isset($array['salesOrderDate'])) {
+            $array['salesOrderDate'] = new Carbon($array['salesOrderDate']);
+        }
+
         parent::__construct($array);
     }
 

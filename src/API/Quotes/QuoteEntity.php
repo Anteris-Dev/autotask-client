@@ -51,14 +51,38 @@ class QuoteEntity extends DataTransferObject
     public ?int $taxRegionID;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new Quote entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['approvalStatusChangedDate'] = new Carbon($array['approvalStatusChangedDate']);
-        $array['createDate'] = new Carbon($array['createDate']);
-        $array['effectiveDate'] = new Carbon($array['effectiveDate']);
-        $array['expirationDate'] = new Carbon($array['expirationDate']);
-        $array['extApprovalResponseDate'] = new Carbon($array['extApprovalResponseDate']);
-        $array['lastActivityDate'] = new Carbon($array['lastActivityDate']);
+        if (isset($array['approvalStatusChangedDate'])) {
+            $array['approvalStatusChangedDate'] = new Carbon($array['approvalStatusChangedDate']);
+        }
+
+        if (isset($array['createDate'])) {
+            $array['createDate'] = new Carbon($array['createDate']);
+        }
+
+        if (isset($array['effectiveDate'])) {
+            $array['effectiveDate'] = new Carbon($array['effectiveDate']);
+        }
+
+        if (isset($array['expirationDate'])) {
+            $array['expirationDate'] = new Carbon($array['expirationDate']);
+        }
+
+        if (isset($array['extApprovalResponseDate'])) {
+            $array['extApprovalResponseDate'] = new Carbon($array['extApprovalResponseDate']);
+        }
+
+        if (isset($array['lastActivityDate'])) {
+            $array['lastActivityDate'] = new Carbon($array['lastActivityDate']);
+        }
+
         parent::__construct($array);
     }
 

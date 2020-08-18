@@ -43,14 +43,38 @@ class TimeEntryEntity extends DataTransferObject
     public ?int $timeEntryType;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new TimeEntry entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['billingApprovalDateTime'] = new Carbon($array['billingApprovalDateTime']);
-        $array['createDateTime'] = new Carbon($array['createDateTime']);
-        $array['dateWorked'] = new Carbon($array['dateWorked']);
-        $array['endDateTime'] = new Carbon($array['endDateTime']);
-        $array['lastModifiedDateTime'] = new Carbon($array['lastModifiedDateTime']);
-        $array['startDateTime'] = new Carbon($array['startDateTime']);
+        if (isset($array['billingApprovalDateTime'])) {
+            $array['billingApprovalDateTime'] = new Carbon($array['billingApprovalDateTime']);
+        }
+
+        if (isset($array['createDateTime'])) {
+            $array['createDateTime'] = new Carbon($array['createDateTime']);
+        }
+
+        if (isset($array['dateWorked'])) {
+            $array['dateWorked'] = new Carbon($array['dateWorked']);
+        }
+
+        if (isset($array['endDateTime'])) {
+            $array['endDateTime'] = new Carbon($array['endDateTime']);
+        }
+
+        if (isset($array['lastModifiedDateTime'])) {
+            $array['lastModifiedDateTime'] = new Carbon($array['lastModifiedDateTime']);
+        }
+
+        if (isset($array['startDateTime'])) {
+            $array['startDateTime'] = new Carbon($array['startDateTime']);
+        }
+
         parent::__construct($array);
     }
 

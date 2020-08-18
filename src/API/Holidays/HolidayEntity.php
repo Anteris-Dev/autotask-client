@@ -17,9 +17,18 @@ class HolidayEntity extends DataTransferObject
     public int $id;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new Holiday entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['holidayDate'] = new Carbon($array['holidayDate']);
+        if (isset($array['holidayDate'])) {
+            $array['holidayDate'] = new Carbon($array['holidayDate']);
+        }
+
         parent::__construct($array);
     }
 

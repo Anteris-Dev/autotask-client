@@ -19,9 +19,18 @@ class TicketHistoryEntity extends DataTransferObject
     public int $ticketID;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new TicketHistory entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['date'] = new Carbon($array['date']);
+        if (isset($array['date'])) {
+            $array['date'] = new Carbon($array['date']);
+        }
+
         parent::__construct($array);
     }
 

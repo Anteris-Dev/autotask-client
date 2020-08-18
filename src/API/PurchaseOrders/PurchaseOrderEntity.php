@@ -43,13 +43,34 @@ class PurchaseOrderEntity extends DataTransferObject
     public ?string $vendorInvoiceNumber;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new PurchaseOrder entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['cancelDateTime'] = new Carbon($array['cancelDateTime']);
-        $array['createDateTime'] = new Carbon($array['createDateTime']);
-        $array['latestEstimatedArrivalDate'] = new Carbon($array['latestEstimatedArrivalDate']);
-        $array['shippingDate'] = new Carbon($array['shippingDate']);
-        $array['submitDateTime'] = new Carbon($array['submitDateTime']);
+        if (isset($array['cancelDateTime'])) {
+            $array['cancelDateTime'] = new Carbon($array['cancelDateTime']);
+        }
+
+        if (isset($array['createDateTime'])) {
+            $array['createDateTime'] = new Carbon($array['createDateTime']);
+        }
+
+        if (isset($array['latestEstimatedArrivalDate'])) {
+            $array['latestEstimatedArrivalDate'] = new Carbon($array['latestEstimatedArrivalDate']);
+        }
+
+        if (isset($array['shippingDate'])) {
+            $array['shippingDate'] = new Carbon($array['shippingDate']);
+        }
+
+        if (isset($array['submitDateTime'])) {
+            $array['submitDateTime'] = new Carbon($array['submitDateTime']);
+        }
+
         parent::__construct($array);
     }
 

@@ -25,9 +25,18 @@ class ProjectAttachmentEntity extends DataTransferObject
     public string $title;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new ProjectAttachment entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['attachDate'] = new Carbon($array['attachDate']);
+        if (isset($array['attachDate'])) {
+            $array['attachDate'] = new Carbon($array['attachDate']);
+        }
+
         parent::__construct($array);
     }
 

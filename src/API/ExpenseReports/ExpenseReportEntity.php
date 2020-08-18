@@ -32,11 +32,26 @@ class ExpenseReportEntity extends DataTransferObject
     public Carbon $weekEnding;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new ExpenseReport entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['approvedDate'] = new Carbon($array['approvedDate']);
-        $array['submitDate'] = new Carbon($array['submitDate']);
-        $array['weekEnding'] = new Carbon($array['weekEnding']);
+        if (isset($array['approvedDate'])) {
+            $array['approvedDate'] = new Carbon($array['approvedDate']);
+        }
+
+        if (isset($array['submitDate'])) {
+            $array['submitDate'] = new Carbon($array['submitDate']);
+        }
+
+        if (isset($array['weekEnding'])) {
+            $array['weekEnding'] = new Carbon($array['weekEnding']);
+        }
+
         parent::__construct($array);
     }
 

@@ -20,9 +20,18 @@ class TicketChangeRequestApprovalEntity extends DataTransferObject
     public int $ticketID;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new TicketChangeRequestApproval entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['approveRejectDateTime'] = new Carbon($array['approveRejectDateTime']);
+        if (isset($array['approveRejectDateTime'])) {
+            $array['approveRejectDateTime'] = new Carbon($array['approveRejectDateTime']);
+        }
+
         parent::__construct($array);
     }
 

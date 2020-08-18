@@ -24,9 +24,18 @@ class CurrencyEntity extends DataTransferObject
     public ?int $updateResourceId;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new Currency entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['lastModifiedDateTime'] = new Carbon($array['lastModifiedDateTime']);
+        if (isset($array['lastModifiedDateTime'])) {
+            $array['lastModifiedDateTime'] = new Carbon($array['lastModifiedDateTime']);
+        }
+
         parent::__construct($array);
     }
 

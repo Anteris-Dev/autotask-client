@@ -27,12 +27,30 @@ class PhaseEntity extends DataTransferObject
     public string $title;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new Phase entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['createDate'] = new Carbon($array['createDate']);
-        $array['dueDate'] = new Carbon($array['dueDate']);
-        $array['lastActivityDateTime'] = new Carbon($array['lastActivityDateTime']);
-        $array['startDate'] = new Carbon($array['startDate']);
+        if (isset($array['createDate'])) {
+            $array['createDate'] = new Carbon($array['createDate']);
+        }
+
+        if (isset($array['dueDate'])) {
+            $array['dueDate'] = new Carbon($array['dueDate']);
+        }
+
+        if (isset($array['lastActivityDateTime'])) {
+            $array['lastActivityDateTime'] = new Carbon($array['lastActivityDateTime']);
+        }
+
+        if (isset($array['startDate'])) {
+            $array['startDate'] = new Carbon($array['startDate']);
+        }
+
         parent::__construct($array);
     }
 

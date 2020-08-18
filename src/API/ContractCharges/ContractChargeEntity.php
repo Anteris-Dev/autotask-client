@@ -41,11 +41,26 @@ class ContractChargeEntity extends DataTransferObject
     public float $unitQuantity;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new ContractCharge entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['createDate'] = new Carbon($array['createDate']);
-        $array['datePurchased'] = new Carbon($array['datePurchased']);
-        $array['statusLastModifiedDate'] = new Carbon($array['statusLastModifiedDate']);
+        if (isset($array['createDate'])) {
+            $array['createDate'] = new Carbon($array['createDate']);
+        }
+
+        if (isset($array['datePurchased'])) {
+            $array['datePurchased'] = new Carbon($array['datePurchased']);
+        }
+
+        if (isset($array['statusLastModifiedDate'])) {
+            $array['statusLastModifiedDate'] = new Carbon($array['statusLastModifiedDate']);
+        }
+
         parent::__construct($array);
     }
 

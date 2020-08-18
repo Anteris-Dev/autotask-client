@@ -28,13 +28,34 @@ class CompanyNoteEntity extends DataTransferObject
     public Carbon $startDateTime;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new CompanyNote entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['completedDateTime'] = new Carbon($array['completedDateTime']);
-        $array['createDateTime'] = new Carbon($array['createDateTime']);
-        $array['endDateTime'] = new Carbon($array['endDateTime']);
-        $array['lastModifiedDate'] = new Carbon($array['lastModifiedDate']);
-        $array['startDateTime'] = new Carbon($array['startDateTime']);
+        if (isset($array['completedDateTime'])) {
+            $array['completedDateTime'] = new Carbon($array['completedDateTime']);
+        }
+
+        if (isset($array['createDateTime'])) {
+            $array['createDateTime'] = new Carbon($array['createDateTime']);
+        }
+
+        if (isset($array['endDateTime'])) {
+            $array['endDateTime'] = new Carbon($array['endDateTime']);
+        }
+
+        if (isset($array['lastModifiedDate'])) {
+            $array['lastModifiedDate'] = new Carbon($array['lastModifiedDate']);
+        }
+
+        if (isset($array['startDateTime'])) {
+            $array['startDateTime'] = new Carbon($array['startDateTime']);
+        }
+
         parent::__construct($array);
     }
 

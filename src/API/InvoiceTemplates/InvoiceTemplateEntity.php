@@ -38,6 +38,12 @@ class InvoiceTemplateEntity extends DataTransferObject
     public int $timeFormat;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new InvoiceTemplate entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
         parent::__construct($array);

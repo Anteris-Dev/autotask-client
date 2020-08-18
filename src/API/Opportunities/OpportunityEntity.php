@@ -73,16 +73,46 @@ class OpportunityEntity extends DataTransferObject
     public ?float $yearlyRevenue;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new Opportunity entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['closedDate'] = new Carbon($array['closedDate']);
-        $array['createDate'] = new Carbon($array['createDate']);
-        $array['lastActivity'] = new Carbon($array['lastActivity']);
-        $array['lostDate'] = new Carbon($array['lostDate']);
-        $array['projectedCloseDate'] = new Carbon($array['projectedCloseDate']);
-        $array['promisedFulfillmentDate'] = new Carbon($array['promisedFulfillmentDate']);
-        $array['startDate'] = new Carbon($array['startDate']);
-        $array['throughDate'] = new Carbon($array['throughDate']);
+        if (isset($array['closedDate'])) {
+            $array['closedDate'] = new Carbon($array['closedDate']);
+        }
+
+        if (isset($array['createDate'])) {
+            $array['createDate'] = new Carbon($array['createDate']);
+        }
+
+        if (isset($array['lastActivity'])) {
+            $array['lastActivity'] = new Carbon($array['lastActivity']);
+        }
+
+        if (isset($array['lostDate'])) {
+            $array['lostDate'] = new Carbon($array['lostDate']);
+        }
+
+        if (isset($array['projectedCloseDate'])) {
+            $array['projectedCloseDate'] = new Carbon($array['projectedCloseDate']);
+        }
+
+        if (isset($array['promisedFulfillmentDate'])) {
+            $array['promisedFulfillmentDate'] = new Carbon($array['promisedFulfillmentDate']);
+        }
+
+        if (isset($array['startDate'])) {
+            $array['startDate'] = new Carbon($array['startDate']);
+        }
+
+        if (isset($array['throughDate'])) {
+            $array['throughDate'] = new Carbon($array['throughDate']);
+        }
+
         parent::__construct($array);
     }
 

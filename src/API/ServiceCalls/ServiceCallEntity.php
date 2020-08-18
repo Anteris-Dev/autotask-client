@@ -29,13 +29,34 @@ class ServiceCallEntity extends DataTransferObject
     public ?int $status;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new ServiceCall entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['canceledDateTime'] = new Carbon($array['canceledDateTime']);
-        $array['createDateTime'] = new Carbon($array['createDateTime']);
-        $array['endDateTime'] = new Carbon($array['endDateTime']);
-        $array['lastModifiedDateTime'] = new Carbon($array['lastModifiedDateTime']);
-        $array['startDateTime'] = new Carbon($array['startDateTime']);
+        if (isset($array['canceledDateTime'])) {
+            $array['canceledDateTime'] = new Carbon($array['canceledDateTime']);
+        }
+
+        if (isset($array['createDateTime'])) {
+            $array['createDateTime'] = new Carbon($array['createDateTime']);
+        }
+
+        if (isset($array['endDateTime'])) {
+            $array['endDateTime'] = new Carbon($array['endDateTime']);
+        }
+
+        if (isset($array['lastModifiedDateTime'])) {
+            $array['lastModifiedDateTime'] = new Carbon($array['lastModifiedDateTime']);
+        }
+
+        if (isset($array['startDateTime'])) {
+            $array['startDateTime'] = new Carbon($array['startDateTime']);
+        }
+
         parent::__construct($array);
     }
 

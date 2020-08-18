@@ -18,9 +18,18 @@ class UserDefinedFieldListItemEntity extends DataTransferObject
     public string $valueForExport;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new UserDefinedFieldListItem entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['createDate'] = new Carbon($array['createDate']);
+        if (isset($array['createDate'])) {
+            $array['createDate'] = new Carbon($array['createDate']);
+        }
+
         parent::__construct($array);
     }
 

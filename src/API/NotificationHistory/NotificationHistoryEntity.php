@@ -33,9 +33,18 @@ class NotificationHistoryEntity extends DataTransferObject
     public ?int $timeEntryID;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new NotificationHistory entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['notificationSentTime'] = new Carbon($array['notificationSentTime']);
+        if (isset($array['notificationSentTime'])) {
+            $array['notificationSentTime'] = new Carbon($array['notificationSentTime']);
+        }
+
         parent::__construct($array);
     }
 

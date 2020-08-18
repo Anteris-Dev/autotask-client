@@ -22,6 +22,12 @@ class ContractServiceBundleEntity extends DataTransferObject
     public ?float $unitPrice;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new ContractServiceBundle entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
         parent::__construct($array);

@@ -23,7 +23,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ActionTypes\\ActionTypeEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ActionType\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ActionTypes-ActionTypeEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ActionTypes\\ActionTypeEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -238,7 +238,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\AdditionalInvoiceFieldValues\\AdditionalInvoiceFieldValueEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020AdditionalInvoiceFieldValue\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-AdditionalInvoiceFieldValues-AdditionalInvoiceFieldValueEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\AdditionalInvoiceFieldValues\\AdditionalInvoiceFieldValueEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -433,7 +433,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Appointments\\AppointmentEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020Appointment\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-Appointments-AppointmentEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Appointments\\AppointmentEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -668,7 +668,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\AttachmentInfo\\AttachmentInfoEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020AttachmentInfo\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-AttachmentInfo-AttachmentInfoEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\AttachmentInfo\\AttachmentInfoEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -876,16 +876,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-AttachmentInfo-AttachmentInfoService.html#method___construct"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\AttachmentInfo\\AttachmentInfoService\u003A\u003Acreate\u0028\u0029",
-            "name": "create",
-            "summary": "Creates\u0020a\u0020new\u0020attachmentinfo.",
-            "url": "../classes/Anteris-Autotask-API-AttachmentInfo-AttachmentInfoService.html#method_create"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\AttachmentInfo\\AttachmentInfoService\u003A\u003AdeleteById\u0028\u0029",
-            "name": "deleteById",
-            "summary": "Deletes\u0020an\u0020entity\u0020by\u0020its\u0020ID.",
-            "url": "../classes/Anteris-Autotask-API-AttachmentInfo-AttachmentInfoService.html#method_deleteById"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\AttachmentInfo\\AttachmentInfoService\u003A\u003AfindById\u0028\u0029",
             "name": "findById",
             "summary": "Finds\u0020the\u0020AttachmentInfo\u0020based\u0020on\u0020its\u0020ID.",
@@ -923,7 +913,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\BillingCodes\\BillingCodeEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020BillingCode\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-BillingCodes-BillingCodeEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\BillingCodes\\BillingCodeEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -1173,7 +1163,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\BillingItemApprovalLevels\\BillingItemApprovalLevelEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020BillingItemApprovalLevel\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-BillingItemApprovalLevels-BillingItemApprovalLevelEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\BillingItemApprovalLevels\\BillingItemApprovalLevelEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -1378,7 +1368,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\BillingItems\\BillingItemEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020BillingItem\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-BillingItems-BillingItemEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\BillingItems\\BillingItemEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -1783,7 +1773,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChangeOrderCharges\\ChangeOrderChargeEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ChangeOrderCharge\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ChangeOrderCharges-ChangeOrderChargeEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChangeOrderCharges\\ChangeOrderChargeEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -2118,7 +2108,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChangeRequestLinks\\ChangeRequestLinkEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ChangeRequestLink\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ChangeRequestLinks-ChangeRequestLinkEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChangeRequestLinks\\ChangeRequestLinkEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -2318,7 +2308,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChecklistLibraries\\ChecklistLibraryEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ChecklistLibrary\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ChecklistLibraries-ChecklistLibraryEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChecklistLibraries\\ChecklistLibraryEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -2533,7 +2523,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChecklistLibraryChecklistItems\\ChecklistLibraryChecklistItemEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ChecklistLibraryChecklistItem\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ChecklistLibraryChecklistItems-ChecklistLibraryChecklistItemEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChecklistLibraryChecklistItems\\ChecklistLibraryChecklistItemEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -2753,7 +2743,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ClassificationIcons\\ClassificationIconEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ClassificationIcon\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ClassificationIcons-ClassificationIconEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ClassificationIcons\\ClassificationIconEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -2958,7 +2948,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ClientPortalUsers\\ClientPortalUserEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ClientPortalUser\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ClientPortalUsers-ClientPortalUserEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ClientPortalUsers\\ClientPortalUserEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -3188,7 +3178,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ComanagedAssociations\\ComanagedAssociationEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ComanagedAssociation\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ComanagedAssociations-ComanagedAssociationEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ComanagedAssociations\\ComanagedAssociationEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -3388,7 +3378,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Companies\\CompanyEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020Company\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-Companies-CompanyEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Companies\\CompanyEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -3858,7 +3848,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyAlerts\\CompanyAlertEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020CompanyAlert\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-CompanyAlerts-CompanyAlertEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyAlerts\\CompanyAlertEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -4063,7 +4053,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyAttachments\\CompanyAttachmentEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020CompanyAttachment\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-CompanyAttachments-CompanyAttachmentEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyAttachments\\CompanyAttachmentEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -4308,7 +4298,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyLocations\\CompanyLocationEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020CompanyLocation\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-CompanyLocations-CompanyLocationEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyLocations\\CompanyLocationEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -4598,7 +4588,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyNotes\\CompanyNoteEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020CompanyNote\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-CompanyNotes-CompanyNoteEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyNotes\\CompanyNoteEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -4858,7 +4848,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanySiteConfigurations\\CompanySiteConfigurationEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020CompanySiteConfiguration\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-CompanySiteConfigurations-CompanySiteConfigurationEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanySiteConfigurations\\CompanySiteConfigurationEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -5053,7 +5043,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyTeams\\CompanyTeamEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020CompanyTeam\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-CompanyTeams-CompanyTeamEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyTeams\\CompanyTeamEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -5258,7 +5248,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyToDos\\CompanyToDoEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020CompanyToDo\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-CompanyToDos-CompanyToDoEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyToDos\\CompanyToDoEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -5528,7 +5518,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookExcludedResources\\CompanyWebhookExcludedResourceEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020CompanyWebhookExcludedResource\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-CompanyWebhookExcludedResources-CompanyWebhookExcludedResourceEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookExcludedResources\\CompanyWebhookExcludedResourceEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -5728,7 +5718,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookFields\\CompanyWebhookFieldEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020CompanyWebhookField\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-CompanyWebhookFields-CompanyWebhookFieldEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookFields\\CompanyWebhookFieldEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -5943,7 +5933,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhooks\\CompanyWebhookEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020CompanyWebhook\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-CompanyWebhooks-CompanyWebhookEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhooks\\CompanyWebhookEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -6203,7 +6193,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookUdfFields\\CompanyWebhookUdfFieldEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020CompanyWebhookUdfField\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-CompanyWebhookUdfFields-CompanyWebhookUdfFieldEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookUdfFields\\CompanyWebhookUdfFieldEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -6418,7 +6408,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemBillingProductAssociations\\ConfigurationItemBillingProductAssociationEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ConfigurationItemBillingProductAssociation\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemBillingProductAssociations-ConfigurationItemBillingProductAssociationEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemBillingProductAssociations\\ConfigurationItemBillingProductAssociationEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -6633,7 +6623,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemCategories\\ConfigurationItemCategoryEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ConfigurationItemCategory\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemCategories-ConfigurationItemCategoryEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemCategories\\ConfigurationItemCategoryEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -6853,7 +6843,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemCategoryUdfAssociations\\ConfigurationItemCategoryUdfAssociationEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ConfigurationItemCategoryUdfAssociation\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemCategoryUdfAssociations-ConfigurationItemCategoryUdfAssociationEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemCategoryUdfAssociations\\ConfigurationItemCategoryUdfAssociationEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -7063,7 +7053,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemExts\\ConfigurationItemExtEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ConfigurationItemExt\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemExts-ConfigurationItemExtEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemExts\\ConfigurationItemExtEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -7588,7 +7578,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemNotes\\ConfigurationItemNoteEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ConfigurationItemNote\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemNotes-ConfigurationItemNoteEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemNotes\\ConfigurationItemNoteEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -7823,7 +7813,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItems\\ConfigurationItemEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ConfigurationItem\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItems-ConfigurationItemEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItems\\ConfigurationItemEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -8468,7 +8458,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemTypes\\ConfigurationItemTypeEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ConfigurationItemType\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemTypes-ConfigurationItemTypeEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemTypes\\ConfigurationItemTypeEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -8673,7 +8663,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactBillingProductAssociations\\ContactBillingProductAssociationEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContactBillingProductAssociation\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContactBillingProductAssociations-ContactBillingProductAssociationEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactBillingProductAssociations\\ContactBillingProductAssociationEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -8888,7 +8878,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactGroupContacts\\ContactGroupContactEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContactGroupContact\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContactGroupContacts-ContactGroupContactEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactGroupContacts\\ContactGroupContactEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -9088,7 +9078,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactGroups\\ContactGroupEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContactGroup\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContactGroups-ContactGroupEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactGroups\\ContactGroupEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -9293,7 +9283,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Contacts\\ContactEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020Contact\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-Contacts-ContactEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Contacts\\ContactEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -9698,7 +9688,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookExcludedResources\\ContactWebhookExcludedResourceEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContactWebhookExcludedResource\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContactWebhookExcludedResources-ContactWebhookExcludedResourceEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookExcludedResources\\ContactWebhookExcludedResourceEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -9898,7 +9888,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookFields\\ContactWebhookFieldEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContactWebhookField\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContactWebhookFields-ContactWebhookFieldEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookFields\\ContactWebhookFieldEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -10113,7 +10103,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhooks\\ContactWebhookEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContactWebhook\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContactWebhooks-ContactWebhookEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhooks\\ContactWebhookEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -10373,7 +10363,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookUdfFields\\ContactWebhookUdfFieldEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContactWebhookUdfField\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContactWebhookUdfFields-ContactWebhookUdfFieldEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookUdfFields\\ContactWebhookUdfFieldEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -10588,7 +10578,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractBillingRules\\ContractBillingRuleEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContractBillingRule\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContractBillingRules-ContractBillingRuleEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractBillingRules\\ContractBillingRuleEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -10858,7 +10848,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractBlockHourFactors\\ContractBlockHourFactorEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContractBlockHourFactor\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContractBlockHourFactors-ContractBlockHourFactorEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractBlockHourFactors\\ContractBlockHourFactorEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -11063,7 +11053,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractBlocks\\ContractBlockEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContractBlock\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContractBlocks-ContractBlockEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractBlocks\\ContractBlockEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -11313,7 +11303,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractCharges\\ContractChargeEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContractCharge\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContractCharges-ContractChargeEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractCharges\\ContractChargeEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -11643,7 +11633,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionBillingCodes\\ContractExclusionBillingCodeEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContractExclusionBillingCode\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionBillingCodes-ContractExclusionBillingCodeEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionBillingCodes\\ContractExclusionBillingCodeEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -11843,7 +11833,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionRoles\\ContractExclusionRoleEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContractExclusionRole\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionRoles-ContractExclusionRoleEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionRoles\\ContractExclusionRoleEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -12043,7 +12033,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSetExcludedRoles\\ContractExclusionSetExcludedRoleEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContractExclusionSetExcludedRole\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionSetExcludedRoles-ContractExclusionSetExcludedRoleEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSetExcludedRoles\\ContractExclusionSetExcludedRoleEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -12243,7 +12233,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSetExcludedWorkTypes\\ContractExclusionSetExcludedWorkTypeEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContractExclusionSetExcludedWorkType\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionSetExcludedWorkTypes-ContractExclusionSetExcludedWorkTypeEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSetExcludedWorkTypes\\ContractExclusionSetExcludedWorkTypeEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -12443,7 +12433,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSets\\ContractExclusionSetEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContractExclusionSet\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionSets-ContractExclusionSetEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSets\\ContractExclusionSetEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -12653,7 +12643,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractMilestones\\ContractMilestoneEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContractMilestone\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContractMilestones-ContractMilestoneEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractMilestones\\ContractMilestoneEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -12903,7 +12893,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractNotes\\ContractNoteEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContractNote\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContractNotes-ContractNoteEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractNotes\\ContractNoteEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -13133,7 +13123,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractRates\\ContractRateEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContractRate\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContractRates-ContractRateEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractRates\\ContractRateEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -13343,7 +13333,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractRetainers\\ContractRetainerEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContractRetainer\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContractRetainers-ContractRetainerEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractRetainers\\ContractRetainerEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -13598,7 +13588,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractRoleCosts\\ContractRoleCostEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContractRoleCost\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContractRoleCosts-ContractRoleCostEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractRoleCosts\\ContractRoleCostEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -13808,7 +13798,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Contracts\\ContractEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020Contract\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-Contracts-ContractEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Contracts\\ContractEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -14163,7 +14153,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceAdjustments\\ContractServiceAdjustmentEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContractServiceAdjustment\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContractServiceAdjustments-ContractServiceAdjustmentEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceAdjustments\\ContractServiceAdjustmentEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -14268,7 +14258,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundleAdjustments\\ContractServiceBundleAdjustmentEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContractServiceBundleAdjustment\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContractServiceBundleAdjustments-ContractServiceBundleAdjustmentEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundleAdjustments\\ContractServiceBundleAdjustmentEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -14368,7 +14358,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundles\\ContractServiceBundleEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContractServiceBundle\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContractServiceBundles-ContractServiceBundleEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundles\\ContractServiceBundleEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -14603,7 +14593,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundleUnits\\ContractServiceBundleUnitEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContractServiceBundleUnit\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContractServiceBundleUnits-ContractServiceBundleUnitEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundleUnits\\ContractServiceBundleUnitEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -14838,7 +14828,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServices\\ContractServiceEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContractService\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContractServices-ContractServiceEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServices\\ContractServiceEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -15073,7 +15063,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceUnits\\ContractServiceUnitEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContractServiceUnit\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContractServiceUnits-ContractServiceUnitEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceUnits\\ContractServiceUnitEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -15313,7 +15303,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractTicketPurchases\\ContractTicketPurchaseEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ContractTicketPurchase\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ContractTicketPurchases-ContractTicketPurchaseEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractTicketPurchases\\ContractTicketPurchaseEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -15563,7 +15553,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Countries\\CountryEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020Country\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-Countries-CountryEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Countries\\CountryEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -15788,7 +15778,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Currencies\\CurrencyEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020Currency\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-Currencies-CurrencyEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Currencies\\CurrencyEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -16023,7 +16013,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Departments\\DepartmentEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020Department\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-Departments-DepartmentEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Departments\\DepartmentEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -16233,7 +16223,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ExpenseItems\\ExpenseItemEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ExpenseItem\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ExpenseItems-ExpenseItemEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ExpenseItems\\ExpenseItemEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -16558,7 +16548,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ExpenseReports\\ExpenseReportEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ExpenseReport\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ExpenseReports-ExpenseReportEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ExpenseReports\\ExpenseReportEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -16838,7 +16828,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Holidays\\HolidayEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020Holiday\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-Holidays-HolidayEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Holidays\\HolidayEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -17048,7 +17038,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\HolidaySets\\HolidaySetEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020HolidaySet\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-HolidaySets-HolidaySetEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\HolidaySets\\HolidaySetEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -17253,7 +17243,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InternalLocations\\InternalLocationEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020InternalLocation\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-InternalLocations-InternalLocationEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InternalLocations\\InternalLocationEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -17488,7 +17478,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InternalLocationWithBusinessHours\\InternalLocationWithBusinessHourEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020InternalLocationWithBusinessHour\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-InternalLocationWithBusinessHours-InternalLocationWithBusinessHourEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InternalLocationWithBusinessHours\\InternalLocationWithBusinessHourEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -17923,7 +17913,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryItems\\InventoryItemEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020InventoryItem\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-InventoryItems-InventoryItemEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryItems\\InventoryItemEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -18173,7 +18163,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryItemSerialNumbers\\InventoryItemSerialNumberEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020InventoryItemSerialNumber\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-InventoryItemSerialNumbers-InventoryItemSerialNumberEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryItemSerialNumbers\\InventoryItemSerialNumberEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -18373,7 +18363,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryLocations\\InventoryLocationEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020InventoryLocation\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-InventoryLocations-InventoryLocationEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryLocations\\InventoryLocationEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -18588,7 +18578,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryTransfers\\InventoryTransferEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020InventoryTransfer\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-InventoryTransfers-InventoryTransferEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryTransfers\\InventoryTransferEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -18818,7 +18808,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Invoices\\InvoiceEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020Invoice\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-Invoices-InvoiceEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Invoices\\InvoiceEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -19113,7 +19103,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InvoiceTemplates\\InvoiceTemplateEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020InvoiceTemplate\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-InvoiceTemplates-InvoiceTemplateEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InvoiceTemplates\\InvoiceTemplateEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -19418,7 +19408,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\NotificationHistory\\NotificationHistoryEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020NotificationHistory\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-NotificationHistory-NotificationHistoryEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\NotificationHistory\\NotificationHistoryEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -19693,7 +19683,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Opportunities\\OpportunityEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020Opportunity\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-Opportunities-OpportunityEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Opportunities\\OpportunityEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -20178,7 +20168,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OpportunityAttachments\\OpportunityAttachmentEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020OpportunityAttachment\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-OpportunityAttachments-OpportunityAttachmentEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OpportunityAttachments\\OpportunityAttachmentEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -20423,7 +20413,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevel1s\\OrganizationalLevel1Entity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020OrganizationalLevel1\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-OrganizationalLevel1s-OrganizationalLevel1Entity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevel1s\\OrganizationalLevel1Entity\u003A\u003AfromResponse\u0028\u0029",
@@ -20628,7 +20618,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevel2s\\OrganizationalLevel2Entity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020OrganizationalLevel2\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-OrganizationalLevel2s-OrganizationalLevel2Entity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevel2s\\OrganizationalLevel2Entity\u003A\u003AfromResponse\u0028\u0029",
@@ -20833,7 +20823,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevelAssociations\\OrganizationalLevelAssociationEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020OrganizationalLevelAssociation\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-OrganizationalLevelAssociations-OrganizationalLevelAssociationEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevelAssociations\\OrganizationalLevelAssociationEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -21038,7 +21028,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalResources\\OrganizationalResourceEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020OrganizationalResource\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-OrganizationalResources-OrganizationalResourceEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalResources\\OrganizationalResourceEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -21228,7 +21218,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PaymentTerms\\PaymentTermEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020PaymentTerm\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-PaymentTerms-PaymentTermEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PaymentTerms\\PaymentTermEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -21438,7 +21428,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Phases\\PhaseEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020Phase\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-Phases-PhaseEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Phases\\PhaseEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -21693,7 +21683,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListMaterialCodes\\PriceListMaterialCodeEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020PriceListMaterialCode\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-PriceListMaterialCodes-PriceListMaterialCodeEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListMaterialCodes\\PriceListMaterialCodeEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -21898,7 +21888,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListProducts\\PriceListProductEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020PriceListProduct\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-PriceListProducts-PriceListProductEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListProducts\\PriceListProductEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -22103,7 +22093,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListProductTiers\\PriceListProductTierEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020PriceListProductTier\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-PriceListProductTiers-PriceListProductTierEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListProductTiers\\PriceListProductTierEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -22308,7 +22298,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListRoles\\PriceListRoleEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020PriceListRole\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-PriceListRoles-PriceListRoleEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListRoles\\PriceListRoleEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -22513,7 +22503,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListServiceBundles\\PriceListServiceBundleEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020PriceListServiceBundle\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-PriceListServiceBundles-PriceListServiceBundleEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListServiceBundles\\PriceListServiceBundleEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -22718,7 +22708,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListServices\\PriceListServiceEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020PriceListService\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-PriceListServices-PriceListServiceEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListServices\\PriceListServiceEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -22923,7 +22913,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListWorkTypeModifiers\\PriceListWorkTypeModifierEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020PriceListWorkTypeModifier\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-PriceListWorkTypeModifiers-PriceListWorkTypeModifierEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListWorkTypeModifiers\\PriceListWorkTypeModifierEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -23133,7 +23123,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProductNotes\\ProductNoteEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ProductNote\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ProductNotes-ProductNoteEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProductNotes\\ProductNoteEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -23363,7 +23353,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Products\\ProductEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020Product\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-Products-ProductEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Products\\ProductEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -23678,7 +23668,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProductTiers\\ProductTierEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ProductTier\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ProductTiers-ProductTierEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProductTiers\\ProductTierEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -23893,7 +23883,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProductVendors\\ProductVendorEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ProductVendor\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ProductVendors-ProductVendorEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProductVendors\\ProductVendorEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -24113,7 +24103,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProjectAttachments\\ProjectAttachmentEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ProjectAttachment\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ProjectAttachments-ProjectAttachmentEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProjectAttachments\\ProjectAttachmentEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -24358,7 +24348,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProjectCharges\\ProjectChargeEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ProjectCharge\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ProjectCharges-ProjectChargeEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProjectCharges\\ProjectChargeEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -24693,7 +24683,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProjectNotes\\ProjectNoteEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ProjectNote\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ProjectNotes-ProjectNoteEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProjectNotes\\ProjectNoteEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -24938,7 +24928,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Projects\\ProjectEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020Project\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-Projects-ProjectEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Projects\\ProjectEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -25333,7 +25323,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseApprovals\\PurchaseApprovalEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020PurchaseApproval\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-PurchaseApprovals-PurchaseApprovalEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseApprovals\\PurchaseApprovalEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -25533,7 +25523,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrderItemReceiving\\PurchaseOrderItemReceivingEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020PurchaseOrderItemReceiving\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-PurchaseOrderItemReceiving-PurchaseOrderItemReceivingEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrderItemReceiving\\PurchaseOrderItemReceivingEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -25753,7 +25743,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrderItems\\PurchaseOrderItemEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020PurchaseOrderItem\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-PurchaseOrderItems-PurchaseOrderItemEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrderItems\\PurchaseOrderItemEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -26008,7 +25998,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrders\\PurchaseOrderEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020PurchaseOrder\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-PurchaseOrders-PurchaseOrderEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrders\\PurchaseOrderEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -26343,7 +26333,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\QuoteItems\\QuoteItemEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020QuoteItem\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-QuoteItems-QuoteItemEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\QuoteItems\\QuoteItemEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -26678,7 +26668,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\QuoteLocations\\QuoteLocationEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020QuoteLocation\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-QuoteLocations-QuoteLocationEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\QuoteLocations\\QuoteLocationEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -26893,7 +26883,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Quotes\\QuoteEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020Quote\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-Quotes-QuoteEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Quotes\\QuoteEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -27268,7 +27258,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\QuoteTemplates\\QuoteTemplateEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020QuoteTemplate\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-QuoteTemplates-QuoteTemplateEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\QuoteTemplates\\QuoteTemplateEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -27543,7 +27533,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoleDepartments\\ResourceRoleDepartmentEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ResourceRoleDepartment\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ResourceRoleDepartments-ResourceRoleDepartmentEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoleDepartments\\ResourceRoleDepartmentEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -27763,7 +27753,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoleQueues\\ResourceRoleQueueEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ResourceRoleQueue\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ResourceRoleQueues-ResourceRoleQueueEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoleQueues\\ResourceRoleQueueEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -27963,7 +27953,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoles\\ResourceRoleEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ResourceRole\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ResourceRoles-ResourceRoleEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoles\\ResourceRoleEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -28168,7 +28158,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Resources\\ResourceEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020Resource\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-Resources-ResourceEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Resources\\ResourceEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -28523,7 +28513,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceServiceDeskRoles\\ResourceServiceDeskRoleEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ResourceServiceDeskRole\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ResourceServiceDeskRoles-ResourceServiceDeskRoleEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceServiceDeskRoles\\ResourceServiceDeskRoleEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -28733,7 +28723,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceSkills\\ResourceSkillEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ResourceSkill\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ResourceSkills-ResourceSkillEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceSkills\\ResourceSkillEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -28938,7 +28928,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Roles\\RoleEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020Role\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-Roles-RoleEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Roles\\RoleEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -29173,7 +29163,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\SalesOrders\\SalesOrderEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020SalesOrder\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-SalesOrders-SalesOrderEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\SalesOrders\\SalesOrderEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -29478,7 +29468,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceBundles\\ServiceBundleEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ServiceBundle\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ServiceBundles-ServiceBundleEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceBundles\\ServiceBundleEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -29748,7 +29738,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceBundleServices\\ServiceBundleServiceEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ServiceBundleService\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ServiceBundleServices-ServiceBundleServiceEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceBundleServices\\ServiceBundleServiceEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -29948,7 +29938,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCalls\\ServiceCallEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ServiceCall\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ServiceCalls-ServiceCallEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCalls\\ServiceCallEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -30218,7 +30208,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTaskResources\\ServiceCallTaskResourceEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ServiceCallTaskResource\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ServiceCallTaskResources-ServiceCallTaskResourceEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTaskResources\\ServiceCallTaskResourceEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -30418,7 +30408,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTasks\\ServiceCallTaskEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ServiceCallTask\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ServiceCallTasks-ServiceCallTaskEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTasks\\ServiceCallTaskEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -30618,7 +30608,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTicketResources\\ServiceCallTicketResourceEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ServiceCallTicketResource\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ServiceCallTicketResources-ServiceCallTicketResourceEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTicketResources\\ServiceCallTicketResourceEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -30818,7 +30808,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTickets\\ServiceCallTicketEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ServiceCallTicket\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ServiceCallTickets-ServiceCallTicketEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTickets\\ServiceCallTicketEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -31018,7 +31008,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceLevelAgreementResults\\ServiceLevelAgreementResultEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ServiceLevelAgreementResult\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ServiceLevelAgreementResults-ServiceLevelAgreementResultEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceLevelAgreementResults\\ServiceLevelAgreementResultEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -31258,7 +31248,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Services\\ServiceEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020Service\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-Services-ServiceEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Services\\ServiceEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -31523,7 +31513,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ShippingTypes\\ShippingTypeEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020ShippingType\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-ShippingTypes-ShippingTypeEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ShippingTypes\\ShippingTypeEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -31723,7 +31713,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Skills\\SkillEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020Skill\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-Skills-SkillEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Skills\\SkillEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -31923,7 +31913,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\SubscriptionPeriods\\SubscriptionPeriodEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020SubscriptionPeriod\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-SubscriptionPeriods-SubscriptionPeriodEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\SubscriptionPeriods\\SubscriptionPeriodEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -32133,7 +32123,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Subscriptions\\SubscriptionEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020Subscription\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-Subscriptions-SubscriptionEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Subscriptions\\SubscriptionEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -32408,7 +32398,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\SurveyResults\\SurveyResultEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020SurveyResult\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-SurveyResults-SurveyResultEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\SurveyResults\\SurveyResultEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -32638,7 +32628,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Surveys\\SurveyEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020Survey\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-Surveys-SurveyEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Surveys\\SurveyEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -32833,7 +32823,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskAttachments\\TaskAttachmentEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020TaskAttachment\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-TaskAttachments-TaskAttachmentEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskAttachments\\TaskAttachmentEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -33078,7 +33068,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskNotes\\TaskNoteEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020TaskNote\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-TaskNotes-TaskNoteEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskNotes\\TaskNoteEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -33318,7 +33308,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskPredecessors\\TaskPredecessorEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020TaskPredecessor\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-TaskPredecessors-TaskPredecessorEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskPredecessors\\TaskPredecessorEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -33528,7 +33518,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Tasks\\TaskEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020Task\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-Tasks-TaskEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Tasks\\TaskEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -33888,7 +33878,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskSecondaryResources\\TaskSecondaryResourceEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020TaskSecondaryResource\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-TaskSecondaryResources-TaskSecondaryResourceEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskSecondaryResources\\TaskSecondaryResourceEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -34093,7 +34083,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaxCategories\\TaxCategoryEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020TaxCategory\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-TaxCategories-TaxCategoryEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaxCategories\\TaxCategoryEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -34298,7 +34288,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Taxes\\TaxEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020Tax\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-Taxes-TaxEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Taxes\\TaxEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -34513,7 +34503,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaxRegions\\TaxRegionEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020TaxRegion\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-TaxRegions-TaxRegionEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaxRegions\\TaxRegionEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -34713,7 +34703,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketAdditionalConfigurationItems\\TicketAdditionalConfigurationItemEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020TicketAdditionalConfigurationItem\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-TicketAdditionalConfigurationItems-TicketAdditionalConfigurationItemEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketAdditionalConfigurationItems\\TicketAdditionalConfigurationItemEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -34913,7 +34903,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketAdditionalContacts\\TicketAdditionalContactEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020TicketAdditionalContact\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-TicketAdditionalContacts-TicketAdditionalContactEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketAdditionalContacts\\TicketAdditionalContactEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -35113,7 +35103,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketAttachments\\TicketAttachmentEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020TicketAttachment\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-TicketAttachments-TicketAttachmentEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketAttachments\\TicketAttachmentEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -35358,7 +35348,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketCategories\\TicketCategoryEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020TicketCategory\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-TicketCategories-TicketCategoryEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketCategories\\TicketCategoryEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -35573,7 +35563,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketCategoryFieldDefaults\\TicketCategoryFieldDefaultEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020TicketCategoryFieldDefault\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-TicketCategoryFieldDefaults-TicketCategoryFieldDefaultEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketCategoryFieldDefaults\\TicketCategoryFieldDefaultEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -35833,7 +35823,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketChangeRequestApprovals\\TicketChangeRequestApprovalEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020TicketChangeRequestApproval\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-TicketChangeRequestApprovals-TicketChangeRequestApprovalEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketChangeRequestApprovals\\TicketChangeRequestApprovalEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -36053,7 +36043,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketCharges\\TicketChargeEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020TicketCharge\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketCharges\\TicketChargeEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -36383,7 +36373,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketChecklistItems\\TicketChecklistItemEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020TicketChecklistItem\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-TicketChecklistItems-TicketChecklistItemEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketChecklistItems\\TicketChecklistItemEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -36618,7 +36608,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketChecklistLibraries\\TicketChecklistLibraryEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020TicketChecklistLibrary\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-TicketChecklistLibraries-TicketChecklistLibraryEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketChecklistLibraries\\TicketChecklistLibraryEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -36688,7 +36678,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketHistory\\TicketHistoryEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020TicketHistory\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-TicketHistory-TicketHistoryEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketHistory\\TicketHistoryEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -36893,7 +36883,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketNotes\\TicketNoteEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020TicketNote\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-TicketNotes-TicketNoteEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketNotes\\TicketNoteEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -37133,7 +37123,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketRmaCredits\\TicketRmaCreditEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020TicketRmaCredit\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-TicketRmaCredits-TicketRmaCreditEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketRmaCredits\\TicketRmaCreditEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -37348,7 +37338,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Tickets\\TicketEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020Ticket\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-Tickets-TicketEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Tickets\\TicketEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -37893,7 +37883,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketSecondaryResources\\TicketSecondaryResourceEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020TicketSecondaryResource\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-TicketSecondaryResources-TicketSecondaryResourceEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketSecondaryResources\\TicketSecondaryResourceEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -38098,7 +38088,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TimeEntries\\TimeEntryEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020TimeEntry\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-TimeEntries-TimeEntryEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TimeEntries\\TimeEntryEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -38438,7 +38428,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\UserDefinedFieldDefinitions\\UserDefinedFieldDefinitionEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020UserDefinedFieldDefinition\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-UserDefinedFieldDefinitions-UserDefinedFieldDefinitionEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\UserDefinedFieldDefinitions\\UserDefinedFieldDefinitionEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -38718,7 +38708,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\UserDefinedFieldListItems\\UserDefinedFieldListItemEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020UserDefinedFieldListItem\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-UserDefinedFieldListItems-UserDefinedFieldListItemEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\UserDefinedFieldListItems\\UserDefinedFieldListItemEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -38928,7 +38918,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\WebhookEventErrorLogs\\WebhookEventErrorLogEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020WebhookEventErrorLog\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-WebhookEventErrorLogs-WebhookEventErrorLogEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\WebhookEventErrorLogs\\WebhookEventErrorLogEntity\u003A\u003AfromResponse\u0028\u0029",
@@ -39143,7 +39133,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\WorkTypeModifiers\\WorkTypeModifierEntity\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020new\u0020WorkTypeModifier\u0020entity.",
             "url": "../classes/Anteris-Autotask-API-WorkTypeModifiers-WorkTypeModifierEntity.html#method___construct"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\WorkTypeModifiers\\WorkTypeModifierEntity\u003A\u003AfromResponse\u0028\u0029",

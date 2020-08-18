@@ -25,11 +25,26 @@ class ContractServiceBundleUnitEntity extends DataTransferObject
     public int $units;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new ContractServiceBundleUnit entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['approveAndPostDate'] = new Carbon($array['approveAndPostDate']);
-        $array['endDate'] = new Carbon($array['endDate']);
-        $array['startDate'] = new Carbon($array['startDate']);
+        if (isset($array['approveAndPostDate'])) {
+            $array['approveAndPostDate'] = new Carbon($array['approveAndPostDate']);
+        }
+
+        if (isset($array['endDate'])) {
+            $array['endDate'] = new Carbon($array['endDate']);
+        }
+
+        if (isset($array['startDate'])) {
+            $array['startDate'] = new Carbon($array['startDate']);
+        }
+
         parent::__construct($array);
     }
 

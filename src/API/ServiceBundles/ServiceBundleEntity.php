@@ -29,10 +29,22 @@ class ServiceBundleEntity extends DataTransferObject
     public ?int $updateResourceID;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new ServiceBundle entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['createDate'] = new Carbon($array['createDate']);
-        $array['lastModifiedDate'] = new Carbon($array['lastModifiedDate']);
+        if (isset($array['createDate'])) {
+            $array['createDate'] = new Carbon($array['createDate']);
+        }
+
+        if (isset($array['lastModifiedDate'])) {
+            $array['lastModifiedDate'] = new Carbon($array['lastModifiedDate']);
+        }
+
         parent::__construct($array);
     }
 

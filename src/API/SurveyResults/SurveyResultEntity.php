@@ -24,10 +24,22 @@ class SurveyResultEntity extends DataTransferObject
     public ?int $ticketID;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new SurveyResult entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['completeDate'] = new Carbon($array['completeDate']);
-        $array['sendDate'] = new Carbon($array['sendDate']);
+        if (isset($array['completeDate'])) {
+            $array['completeDate'] = new Carbon($array['completeDate']);
+        }
+
+        if (isset($array['sendDate'])) {
+            $array['sendDate'] = new Carbon($array['sendDate']);
+        }
+
         parent::__construct($array);
     }
 

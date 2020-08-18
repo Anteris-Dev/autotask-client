@@ -56,13 +56,34 @@ class ContactEntity extends DataTransferObject
     public ?string $zipCode;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new Contact entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['bulkEmailOptOutTime'] = new Carbon($array['bulkEmailOptOutTime']);
-        $array['createDate'] = new Carbon($array['createDate']);
-        $array['lastActivityDate'] = new Carbon($array['lastActivityDate']);
-        $array['lastModifiedDate'] = new Carbon($array['lastModifiedDate']);
-        $array['solicitationOptOutTime'] = new Carbon($array['solicitationOptOutTime']);
+        if (isset($array['bulkEmailOptOutTime'])) {
+            $array['bulkEmailOptOutTime'] = new Carbon($array['bulkEmailOptOutTime']);
+        }
+
+        if (isset($array['createDate'])) {
+            $array['createDate'] = new Carbon($array['createDate']);
+        }
+
+        if (isset($array['lastActivityDate'])) {
+            $array['lastActivityDate'] = new Carbon($array['lastActivityDate']);
+        }
+
+        if (isset($array['lastModifiedDate'])) {
+            $array['lastModifiedDate'] = new Carbon($array['lastModifiedDate']);
+        }
+
+        if (isset($array['solicitationOptOutTime'])) {
+            $array['solicitationOptOutTime'] = new Carbon($array['solicitationOptOutTime']);
+        }
+
         parent::__construct($array);
     }
 

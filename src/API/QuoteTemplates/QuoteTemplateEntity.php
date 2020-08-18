@@ -33,10 +33,22 @@ class QuoteTemplateEntity extends DataTransferObject
     public ?bool $showVerticalGridLines;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new QuoteTemplate entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['createDate'] = new Carbon($array['createDate']);
-        $array['lastActivityDate'] = new Carbon($array['lastActivityDate']);
+        if (isset($array['createDate'])) {
+            $array['createDate'] = new Carbon($array['createDate']);
+        }
+
+        if (isset($array['lastActivityDate'])) {
+            $array['lastActivityDate'] = new Carbon($array['lastActivityDate']);
+        }
+
         parent::__construct($array);
     }
 

@@ -21,9 +21,18 @@ class PurchaseOrderItemReceivingEntity extends DataTransferObject
     public ?string $serialNumber;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new PurchaseOrderItemReceiving entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['receiveDate'] = new Carbon($array['receiveDate']);
+        if (isset($array['receiveDate'])) {
+            $array['receiveDate'] = new Carbon($array['receiveDate']);
+        }
+
         parent::__construct($array);
     }
 

@@ -48,13 +48,34 @@ class TaskEntity extends DataTransferObject
     public string $title;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new Task entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['completedDateTime'] = new Carbon($array['completedDateTime']);
-        $array['createDateTime'] = new Carbon($array['createDateTime']);
-        $array['endDateTime'] = new Carbon($array['endDateTime']);
-        $array['lastActivityDateTime'] = new Carbon($array['lastActivityDateTime']);
-        $array['startDateTime'] = new Carbon($array['startDateTime']);
+        if (isset($array['completedDateTime'])) {
+            $array['completedDateTime'] = new Carbon($array['completedDateTime']);
+        }
+
+        if (isset($array['createDateTime'])) {
+            $array['createDateTime'] = new Carbon($array['createDateTime']);
+        }
+
+        if (isset($array['endDateTime'])) {
+            $array['endDateTime'] = new Carbon($array['endDateTime']);
+        }
+
+        if (isset($array['lastActivityDateTime'])) {
+            $array['lastActivityDateTime'] = new Carbon($array['lastActivityDateTime']);
+        }
+
+        if (isset($array['startDateTime'])) {
+            $array['startDateTime'] = new Carbon($array['startDateTime']);
+        }
+
         parent::__construct($array);
     }
 

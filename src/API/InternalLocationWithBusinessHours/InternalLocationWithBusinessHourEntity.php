@@ -63,40 +63,142 @@ class InternalLocationWithBusinessHourEntity extends DataTransferObject
     public ?Carbon $wednesdayExtendedHoursStartTime;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new InternalLocationWithBusinessHour entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['fridayBusinessHoursEndTime'] = new Carbon($array['fridayBusinessHoursEndTime']);
-        $array['fridayBusinessHoursStartTime'] = new Carbon($array['fridayBusinessHoursStartTime']);
-        $array['fridayExtendedHoursEndTime'] = new Carbon($array['fridayExtendedHoursEndTime']);
-        $array['fridayExtendedHoursStartTime'] = new Carbon($array['fridayExtendedHoursStartTime']);
-        $array['holidayExtendedHoursEndTime'] = new Carbon($array['holidayExtendedHoursEndTime']);
-        $array['holidayExtendedHoursStartTime'] = new Carbon($array['holidayExtendedHoursStartTime']);
-        $array['holidayHoursEndTime'] = new Carbon($array['holidayHoursEndTime']);
-        $array['holidayHoursStartTime'] = new Carbon($array['holidayHoursStartTime']);
-        $array['mondayBusinessHoursEndTime'] = new Carbon($array['mondayBusinessHoursEndTime']);
-        $array['mondayBusinessHoursStartTime'] = new Carbon($array['mondayBusinessHoursStartTime']);
-        $array['mondayExtendedHoursEndTime'] = new Carbon($array['mondayExtendedHoursEndTime']);
-        $array['mondayExtendedHoursStartTime'] = new Carbon($array['mondayExtendedHoursStartTime']);
-        $array['saturdayBusinessHoursEndTime'] = new Carbon($array['saturdayBusinessHoursEndTime']);
-        $array['saturdayBusinessHoursStartTime'] = new Carbon($array['saturdayBusinessHoursStartTime']);
-        $array['saturdayExtendedHoursEndTime'] = new Carbon($array['saturdayExtendedHoursEndTime']);
-        $array['saturdayExtendedHoursStartTime'] = new Carbon($array['saturdayExtendedHoursStartTime']);
-        $array['sundayBusinessHoursEndTime'] = new Carbon($array['sundayBusinessHoursEndTime']);
-        $array['sundayBusinessHoursStartTime'] = new Carbon($array['sundayBusinessHoursStartTime']);
-        $array['sundayExtendedHoursEndTime'] = new Carbon($array['sundayExtendedHoursEndTime']);
-        $array['sundayExtendedHoursStartTime'] = new Carbon($array['sundayExtendedHoursStartTime']);
-        $array['thursdayBusinessHoursEndTime'] = new Carbon($array['thursdayBusinessHoursEndTime']);
-        $array['thursdayBusinessHoursStartTime'] = new Carbon($array['thursdayBusinessHoursStartTime']);
-        $array['thursdayExtendedHoursEndTime'] = new Carbon($array['thursdayExtendedHoursEndTime']);
-        $array['thursdayExtendedHoursStartTime'] = new Carbon($array['thursdayExtendedHoursStartTime']);
-        $array['tuesdayBusinessHoursEndTime'] = new Carbon($array['tuesdayBusinessHoursEndTime']);
-        $array['tuesdayBusinessHoursStartTime'] = new Carbon($array['tuesdayBusinessHoursStartTime']);
-        $array['tuesdayExtendedHoursEndTime'] = new Carbon($array['tuesdayExtendedHoursEndTime']);
-        $array['tuesdayExtendedHoursStartTime'] = new Carbon($array['tuesdayExtendedHoursStartTime']);
-        $array['wednesdayBusinessHoursEndTime'] = new Carbon($array['wednesdayBusinessHoursEndTime']);
-        $array['wednesdayBusinessHoursStartTime'] = new Carbon($array['wednesdayBusinessHoursStartTime']);
-        $array['wednesdayExtendedHoursEndTime'] = new Carbon($array['wednesdayExtendedHoursEndTime']);
-        $array['wednesdayExtendedHoursStartTime'] = new Carbon($array['wednesdayExtendedHoursStartTime']);
+        if (isset($array['fridayBusinessHoursEndTime'])) {
+            $array['fridayBusinessHoursEndTime'] = new Carbon($array['fridayBusinessHoursEndTime']);
+        }
+
+        if (isset($array['fridayBusinessHoursStartTime'])) {
+            $array['fridayBusinessHoursStartTime'] = new Carbon($array['fridayBusinessHoursStartTime']);
+        }
+
+        if (isset($array['fridayExtendedHoursEndTime'])) {
+            $array['fridayExtendedHoursEndTime'] = new Carbon($array['fridayExtendedHoursEndTime']);
+        }
+
+        if (isset($array['fridayExtendedHoursStartTime'])) {
+            $array['fridayExtendedHoursStartTime'] = new Carbon($array['fridayExtendedHoursStartTime']);
+        }
+
+        if (isset($array['holidayExtendedHoursEndTime'])) {
+            $array['holidayExtendedHoursEndTime'] = new Carbon($array['holidayExtendedHoursEndTime']);
+        }
+
+        if (isset($array['holidayExtendedHoursStartTime'])) {
+            $array['holidayExtendedHoursStartTime'] = new Carbon($array['holidayExtendedHoursStartTime']);
+        }
+
+        if (isset($array['holidayHoursEndTime'])) {
+            $array['holidayHoursEndTime'] = new Carbon($array['holidayHoursEndTime']);
+        }
+
+        if (isset($array['holidayHoursStartTime'])) {
+            $array['holidayHoursStartTime'] = new Carbon($array['holidayHoursStartTime']);
+        }
+
+        if (isset($array['mondayBusinessHoursEndTime'])) {
+            $array['mondayBusinessHoursEndTime'] = new Carbon($array['mondayBusinessHoursEndTime']);
+        }
+
+        if (isset($array['mondayBusinessHoursStartTime'])) {
+            $array['mondayBusinessHoursStartTime'] = new Carbon($array['mondayBusinessHoursStartTime']);
+        }
+
+        if (isset($array['mondayExtendedHoursEndTime'])) {
+            $array['mondayExtendedHoursEndTime'] = new Carbon($array['mondayExtendedHoursEndTime']);
+        }
+
+        if (isset($array['mondayExtendedHoursStartTime'])) {
+            $array['mondayExtendedHoursStartTime'] = new Carbon($array['mondayExtendedHoursStartTime']);
+        }
+
+        if (isset($array['saturdayBusinessHoursEndTime'])) {
+            $array['saturdayBusinessHoursEndTime'] = new Carbon($array['saturdayBusinessHoursEndTime']);
+        }
+
+        if (isset($array['saturdayBusinessHoursStartTime'])) {
+            $array['saturdayBusinessHoursStartTime'] = new Carbon($array['saturdayBusinessHoursStartTime']);
+        }
+
+        if (isset($array['saturdayExtendedHoursEndTime'])) {
+            $array['saturdayExtendedHoursEndTime'] = new Carbon($array['saturdayExtendedHoursEndTime']);
+        }
+
+        if (isset($array['saturdayExtendedHoursStartTime'])) {
+            $array['saturdayExtendedHoursStartTime'] = new Carbon($array['saturdayExtendedHoursStartTime']);
+        }
+
+        if (isset($array['sundayBusinessHoursEndTime'])) {
+            $array['sundayBusinessHoursEndTime'] = new Carbon($array['sundayBusinessHoursEndTime']);
+        }
+
+        if (isset($array['sundayBusinessHoursStartTime'])) {
+            $array['sundayBusinessHoursStartTime'] = new Carbon($array['sundayBusinessHoursStartTime']);
+        }
+
+        if (isset($array['sundayExtendedHoursEndTime'])) {
+            $array['sundayExtendedHoursEndTime'] = new Carbon($array['sundayExtendedHoursEndTime']);
+        }
+
+        if (isset($array['sundayExtendedHoursStartTime'])) {
+            $array['sundayExtendedHoursStartTime'] = new Carbon($array['sundayExtendedHoursStartTime']);
+        }
+
+        if (isset($array['thursdayBusinessHoursEndTime'])) {
+            $array['thursdayBusinessHoursEndTime'] = new Carbon($array['thursdayBusinessHoursEndTime']);
+        }
+
+        if (isset($array['thursdayBusinessHoursStartTime'])) {
+            $array['thursdayBusinessHoursStartTime'] = new Carbon($array['thursdayBusinessHoursStartTime']);
+        }
+
+        if (isset($array['thursdayExtendedHoursEndTime'])) {
+            $array['thursdayExtendedHoursEndTime'] = new Carbon($array['thursdayExtendedHoursEndTime']);
+        }
+
+        if (isset($array['thursdayExtendedHoursStartTime'])) {
+            $array['thursdayExtendedHoursStartTime'] = new Carbon($array['thursdayExtendedHoursStartTime']);
+        }
+
+        if (isset($array['tuesdayBusinessHoursEndTime'])) {
+            $array['tuesdayBusinessHoursEndTime'] = new Carbon($array['tuesdayBusinessHoursEndTime']);
+        }
+
+        if (isset($array['tuesdayBusinessHoursStartTime'])) {
+            $array['tuesdayBusinessHoursStartTime'] = new Carbon($array['tuesdayBusinessHoursStartTime']);
+        }
+
+        if (isset($array['tuesdayExtendedHoursEndTime'])) {
+            $array['tuesdayExtendedHoursEndTime'] = new Carbon($array['tuesdayExtendedHoursEndTime']);
+        }
+
+        if (isset($array['tuesdayExtendedHoursStartTime'])) {
+            $array['tuesdayExtendedHoursStartTime'] = new Carbon($array['tuesdayExtendedHoursStartTime']);
+        }
+
+        if (isset($array['wednesdayBusinessHoursEndTime'])) {
+            $array['wednesdayBusinessHoursEndTime'] = new Carbon($array['wednesdayBusinessHoursEndTime']);
+        }
+
+        if (isset($array['wednesdayBusinessHoursStartTime'])) {
+            $array['wednesdayBusinessHoursStartTime'] = new Carbon($array['wednesdayBusinessHoursStartTime']);
+        }
+
+        if (isset($array['wednesdayExtendedHoursEndTime'])) {
+            $array['wednesdayExtendedHoursEndTime'] = new Carbon($array['wednesdayExtendedHoursEndTime']);
+        }
+
+        if (isset($array['wednesdayExtendedHoursStartTime'])) {
+            $array['wednesdayExtendedHoursStartTime'] = new Carbon($array['wednesdayExtendedHoursStartTime']);
+        }
+
         parent::__construct($array);
     }
 

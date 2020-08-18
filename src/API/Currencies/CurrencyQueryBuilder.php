@@ -63,7 +63,7 @@ class CurrencyQueryBuilder
      */
     public function getFilters(): array
     {
-        return $this->filters;
+        return $this->filter;
     }
 
     /**

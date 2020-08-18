@@ -17,6 +17,12 @@ class PriceListServiceBundleEntity extends DataTransferObject
     public bool $usesInternalCurrencyPrice;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new PriceListServiceBundle entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
         parent::__construct($array);

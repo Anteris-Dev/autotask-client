@@ -85,21 +85,66 @@ class TicketEntity extends DataTransferObject
     public string $title;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new Ticket entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['completedDate'] = new Carbon($array['completedDate']);
-        $array['createDate'] = new Carbon($array['createDate']);
-        $array['dueDateTime'] = new Carbon($array['dueDateTime']);
-        $array['firstResponseDateTime'] = new Carbon($array['firstResponseDateTime']);
-        $array['firstResponseDueDateTime'] = new Carbon($array['firstResponseDueDateTime']);
-        $array['lastActivityDate'] = new Carbon($array['lastActivityDate']);
-        $array['lastCustomerNotificationDateTime'] = new Carbon($array['lastCustomerNotificationDateTime']);
-        $array['lastCustomerVisibleActivityDateTime'] = new Carbon($array['lastCustomerVisibleActivityDateTime']);
-        $array['lastTrackedModificationDateTime'] = new Carbon($array['lastTrackedModificationDateTime']);
-        $array['resolutionPlanDateTime'] = new Carbon($array['resolutionPlanDateTime']);
-        $array['resolutionPlanDueDateTime'] = new Carbon($array['resolutionPlanDueDateTime']);
-        $array['resolvedDateTime'] = new Carbon($array['resolvedDateTime']);
-        $array['resolvedDueDateTime'] = new Carbon($array['resolvedDueDateTime']);
+        if (isset($array['completedDate'])) {
+            $array['completedDate'] = new Carbon($array['completedDate']);
+        }
+
+        if (isset($array['createDate'])) {
+            $array['createDate'] = new Carbon($array['createDate']);
+        }
+
+        if (isset($array['dueDateTime'])) {
+            $array['dueDateTime'] = new Carbon($array['dueDateTime']);
+        }
+
+        if (isset($array['firstResponseDateTime'])) {
+            $array['firstResponseDateTime'] = new Carbon($array['firstResponseDateTime']);
+        }
+
+        if (isset($array['firstResponseDueDateTime'])) {
+            $array['firstResponseDueDateTime'] = new Carbon($array['firstResponseDueDateTime']);
+        }
+
+        if (isset($array['lastActivityDate'])) {
+            $array['lastActivityDate'] = new Carbon($array['lastActivityDate']);
+        }
+
+        if (isset($array['lastCustomerNotificationDateTime'])) {
+            $array['lastCustomerNotificationDateTime'] = new Carbon($array['lastCustomerNotificationDateTime']);
+        }
+
+        if (isset($array['lastCustomerVisibleActivityDateTime'])) {
+            $array['lastCustomerVisibleActivityDateTime'] = new Carbon($array['lastCustomerVisibleActivityDateTime']);
+        }
+
+        if (isset($array['lastTrackedModificationDateTime'])) {
+            $array['lastTrackedModificationDateTime'] = new Carbon($array['lastTrackedModificationDateTime']);
+        }
+
+        if (isset($array['resolutionPlanDateTime'])) {
+            $array['resolutionPlanDateTime'] = new Carbon($array['resolutionPlanDateTime']);
+        }
+
+        if (isset($array['resolutionPlanDueDateTime'])) {
+            $array['resolutionPlanDueDateTime'] = new Carbon($array['resolutionPlanDueDateTime']);
+        }
+
+        if (isset($array['resolvedDateTime'])) {
+            $array['resolvedDateTime'] = new Carbon($array['resolvedDateTime']);
+        }
+
+        if (isset($array['resolvedDueDateTime'])) {
+            $array['resolvedDueDateTime'] = new Carbon($array['resolvedDueDateTime']);
+        }
+
         parent::__construct($array);
     }
 

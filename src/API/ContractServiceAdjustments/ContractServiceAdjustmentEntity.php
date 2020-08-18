@@ -23,9 +23,18 @@ class ContractServiceAdjustmentEntity extends DataTransferObject
     public ?int $unitChange;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new ContractServiceAdjustment entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['effectiveDate'] = new Carbon($array['effectiveDate']);
+        if (isset($array['effectiveDate'])) {
+            $array['effectiveDate'] = new Carbon($array['effectiveDate']);
+        }
+
         parent::__construct($array);
     }
 

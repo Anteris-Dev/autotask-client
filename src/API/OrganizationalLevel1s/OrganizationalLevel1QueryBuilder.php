@@ -63,7 +63,7 @@ class OrganizationalLevel1QueryBuilder
      */
     public function getFilters(): array
     {
-        return $this->filters;
+        return $this->filter;
     }
 
     /**

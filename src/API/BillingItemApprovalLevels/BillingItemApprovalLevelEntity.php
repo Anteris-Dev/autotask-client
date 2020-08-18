@@ -18,9 +18,18 @@ class BillingItemApprovalLevelEntity extends DataTransferObject
     public int $timeEntryID;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new BillingItemApprovalLevel entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['approvalDateTime'] = new Carbon($array['approvalDateTime']);
+        if (isset($array['approvalDateTime'])) {
+            $array['approvalDateTime'] = new Carbon($array['approvalDateTime']);
+        }
+
         parent::__construct($array);
     }
 

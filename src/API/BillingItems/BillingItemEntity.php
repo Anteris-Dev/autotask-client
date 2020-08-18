@@ -58,12 +58,30 @@ class BillingItemEntity extends DataTransferObject
     public ?Carbon $webServiceDate;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new BillingItem entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['itemDate'] = new Carbon($array['itemDate']);
-        $array['postedDate'] = new Carbon($array['postedDate']);
-        $array['postedOnTime'] = new Carbon($array['postedOnTime']);
-        $array['webServiceDate'] = new Carbon($array['webServiceDate']);
+        if (isset($array['itemDate'])) {
+            $array['itemDate'] = new Carbon($array['itemDate']);
+        }
+
+        if (isset($array['postedDate'])) {
+            $array['postedDate'] = new Carbon($array['postedDate']);
+        }
+
+        if (isset($array['postedOnTime'])) {
+            $array['postedOnTime'] = new Carbon($array['postedOnTime']);
+        }
+
+        if (isset($array['webServiceDate'])) {
+            $array['webServiceDate'] = new Carbon($array['webServiceDate']);
+        }
+
         parent::__construct($array);
     }
 

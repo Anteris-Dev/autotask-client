@@ -23,10 +23,22 @@ class ConfigurationItemNoteEntity extends DataTransferObject
     public string $title;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new ConfigurationItemNote entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['createDateTime'] = new Carbon($array['createDateTime']);
-        $array['lastActivityDate'] = new Carbon($array['lastActivityDate']);
+        if (isset($array['createDateTime'])) {
+            $array['createDateTime'] = new Carbon($array['createDateTime']);
+        }
+
+        if (isset($array['lastActivityDate'])) {
+            $array['lastActivityDate'] = new Carbon($array['lastActivityDate']);
+        }
+
         parent::__construct($array);
     }
 

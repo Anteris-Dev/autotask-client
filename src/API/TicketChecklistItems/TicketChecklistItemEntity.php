@@ -22,9 +22,18 @@ class TicketChecklistItemEntity extends DataTransferObject
     public int $ticketID;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new TicketChecklistItem entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['completedDateTime'] = new Carbon($array['completedDateTime']);
+        if (isset($array['completedDateTime'])) {
+            $array['completedDateTime'] = new Carbon($array['completedDateTime']);
+        }
+
         parent::__construct($array);
     }
 

@@ -15,6 +15,12 @@ class ContactWebhookExcludedResourceEntity extends DataTransferObject
     public int $webhookID;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new ContactWebhookExcludedResource entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
         parent::__construct($array);

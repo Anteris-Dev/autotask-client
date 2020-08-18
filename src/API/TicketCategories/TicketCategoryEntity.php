@@ -19,6 +19,12 @@ class TicketCategoryEntity extends DataTransferObject
     public ?string $nickname;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new TicketCategory entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
         parent::__construct($array);

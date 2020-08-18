@@ -29,10 +29,22 @@ class ContractBillingRuleEntity extends DataTransferObject
     public Carbon $startDate;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new ContractBillingRule entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['endDate'] = new Carbon($array['endDate']);
-        $array['startDate'] = new Carbon($array['startDate']);
+        if (isset($array['endDate'])) {
+            $array['endDate'] = new Carbon($array['endDate']);
+        }
+
+        if (isset($array['startDate'])) {
+            $array['startDate'] = new Carbon($array['startDate']);
+        }
+
         parent::__construct($array);
     }
 

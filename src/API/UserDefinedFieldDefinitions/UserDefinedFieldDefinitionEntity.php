@@ -32,9 +32,18 @@ class UserDefinedFieldDefinitionEntity extends DataTransferObject
     public int $udfType;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new UserDefinedFieldDefinition entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['createDate'] = new Carbon($array['createDate']);
+        if (isset($array['createDate'])) {
+            $array['createDate'] = new Carbon($array['createDate']);
+        }
+
         parent::__construct($array);
     }
 

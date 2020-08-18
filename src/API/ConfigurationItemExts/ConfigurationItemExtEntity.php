@@ -106,13 +106,34 @@ class ConfigurationItemExtEntity extends DataTransferObject
     public ?Carbon $warrantyExpirationDate;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new ConfigurationItemExt entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['createDate'] = new Carbon($array['createDate']);
-        $array['dattoLastCheckInDateTime'] = new Carbon($array['dattoLastCheckInDateTime']);
-        $array['installDate'] = new Carbon($array['installDate']);
-        $array['lastModifiedTime'] = new Carbon($array['lastModifiedTime']);
-        $array['warrantyExpirationDate'] = new Carbon($array['warrantyExpirationDate']);
+        if (isset($array['createDate'])) {
+            $array['createDate'] = new Carbon($array['createDate']);
+        }
+
+        if (isset($array['dattoLastCheckInDateTime'])) {
+            $array['dattoLastCheckInDateTime'] = new Carbon($array['dattoLastCheckInDateTime']);
+        }
+
+        if (isset($array['installDate'])) {
+            $array['installDate'] = new Carbon($array['installDate']);
+        }
+
+        if (isset($array['lastModifiedTime'])) {
+            $array['lastModifiedTime'] = new Carbon($array['lastModifiedTime']);
+        }
+
+        if (isset($array['warrantyExpirationDate'])) {
+            $array['warrantyExpirationDate'] = new Carbon($array['warrantyExpirationDate']);
+        }
+
         parent::__construct($array);
     }
 

@@ -16,6 +16,12 @@ class OrganizationalLevelAssociationEntity extends DataTransferObject
     public int $organizationalLevel2ID;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new OrganizationalLevelAssociation entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
         parent::__construct($array);

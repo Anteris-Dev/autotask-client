@@ -26,10 +26,22 @@ class ContractMilestoneEntity extends DataTransferObject
     public string $title;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new ContractMilestone entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['createDate'] = new Carbon($array['createDate']);
-        $array['dateDue'] = new Carbon($array['dateDue']);
+        if (isset($array['createDate'])) {
+            $array['createDate'] = new Carbon($array['createDate']);
+        }
+
+        if (isset($array['dateDue'])) {
+            $array['dateDue'] = new Carbon($array['dateDue']);
+        }
+
         parent::__construct($array);
     }
 

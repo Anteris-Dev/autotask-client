@@ -16,9 +16,9 @@
     },
     "license": "MIT",
     "require": {
-        "guzzlehttp/guzzle": "^7.0",
-        "nesbot/carbon": "^2.38",
-        "spatie/data-transfer-object": "^2.2"
+        "guzzlehttp/guzzle": "7.*",
+        "nesbot/carbon": "2.*",
+        "spatie/data-transfer-object": "2.*"
     },
     "require-dev": {
         "anteris-dev/autotask-client-generator": "dev-master"

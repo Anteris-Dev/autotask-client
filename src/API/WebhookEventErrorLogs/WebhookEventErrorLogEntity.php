@@ -20,9 +20,18 @@ class WebhookEventErrorLogEntity extends DataTransferObject
     public ?int $sequenceNumber;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new WebhookEventErrorLog entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['createDateTime'] = new Carbon($array['createDateTime']);
+        if (isset($array['createDateTime'])) {
+            $array['createDateTime'] = new Carbon($array['createDateTime']);
+        }
+
         parent::__construct($array);
     }
 

@@ -17,6 +17,12 @@ class ActionTypeEntity extends DataTransferObject
     public int $view;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new ActionType entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
         parent::__construct($array);

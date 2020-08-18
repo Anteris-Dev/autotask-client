@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "21ededf049b376198b673d820e0662b8",
+    "content-hash": "d7d0436bf620569b7b413147c68e7477",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -751,12 +751,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Anteris-Dev/autotask-client-generator.git",
-                "reference": "b2ba604c894479b7216fad52772fdc7f8b2fec2c"
+                "reference": "672cb04c1781ac2f5aa788fd338cc0e408208957"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Anteris-Dev/autotask-client-generator/zipball/b2ba604c894479b7216fad52772fdc7f8b2fec2c",
-                "reference": "b2ba604c894479b7216fad52772fdc7f8b2fec2c",
+                "url": "https://api.github.com/repos/Anteris-Dev/autotask-client-generator/zipball/672cb04c1781ac2f5aa788fd338cc0e408208957",
+                "reference": "672cb04c1781ac2f5aa788fd338cc0e408208957",
                 "shasum": ""
             },
             "require": {
@@ -785,7 +785,7 @@
                 }
             ],
             "description": "This package is the brains behind the Autotask API client. It generates each service class using the Autotask API as its guide.",
-            "time": "2020-08-17T22:59:31+00:00"
+            "time": "2020-08-18T16:37:26+00:00"
         },
         {
             "name": "doctrine/inflector",

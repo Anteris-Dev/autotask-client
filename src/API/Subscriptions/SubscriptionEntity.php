@@ -30,10 +30,22 @@ class SubscriptionEntity extends DataTransferObject
     public ?int $vendorID;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new Subscription entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['effectiveDate'] = new Carbon($array['effectiveDate']);
-        $array['expirationDate'] = new Carbon($array['expirationDate']);
+        if (isset($array['effectiveDate'])) {
+            $array['effectiveDate'] = new Carbon($array['effectiveDate']);
+        }
+
+        if (isset($array['expirationDate'])) {
+            $array['expirationDate'] = new Carbon($array['expirationDate']);
+        }
+
         parent::__construct($array);
     }
 

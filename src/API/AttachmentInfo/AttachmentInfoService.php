@@ -18,29 +18,7 @@ class AttachmentInfoService
         $this->client = $client;
     }
 
-    /**
-     * Creates a new attachmentinfo.
-     *
-     * @param  AttachmentInfoEntity  $resource  The attachmentinfo entity to be written.
-     *
-     * @author Aidan Casey <aidan.casey@anteris.com>
-     */
-    public function create(AttachmentInfoEntity $resource)
-    {
-        $this->client->post("AttachmentInfo", $resource->toArray());
-    }
 
-    /**
-     * Deletes an entity by its ID.
-     *
-     * @param  int  $id  ID of the AttachmentInfo to be deleted.
-     *
-     * @author Aidan Casey <aidan.casey@anteris.com>
-     */
-    public function deleteById(int $id): void
-    {
-        $this->client->delete("AttachmentInfo/$id");
-    }
 
     /**
      * Finds the AttachmentInfo based on its ID.

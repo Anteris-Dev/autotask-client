@@ -22,12 +22,30 @@ class AppointmentEntity extends DataTransferObject
     public ?Carbon $updateDateTime;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new Appointment entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['createDateTime'] = new Carbon($array['createDateTime']);
-        $array['endDateTime'] = new Carbon($array['endDateTime']);
-        $array['startDateTime'] = new Carbon($array['startDateTime']);
-        $array['updateDateTime'] = new Carbon($array['updateDateTime']);
+        if (isset($array['createDateTime'])) {
+            $array['createDateTime'] = new Carbon($array['createDateTime']);
+        }
+
+        if (isset($array['endDateTime'])) {
+            $array['endDateTime'] = new Carbon($array['endDateTime']);
+        }
+
+        if (isset($array['startDateTime'])) {
+            $array['startDateTime'] = new Carbon($array['startDateTime']);
+        }
+
+        if (isset($array['updateDateTime'])) {
+            $array['updateDateTime'] = new Carbon($array['updateDateTime']);
+        }
+
         parent::__construct($array);
     }
 

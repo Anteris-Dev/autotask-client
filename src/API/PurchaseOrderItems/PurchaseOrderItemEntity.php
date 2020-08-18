@@ -27,9 +27,18 @@ class PurchaseOrderItemEntity extends DataTransferObject
     public float $unitCost;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new PurchaseOrderItem entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['estimatedArrivalDate'] = new Carbon($array['estimatedArrivalDate']);
+        if (isset($array['estimatedArrivalDate'])) {
+            $array['estimatedArrivalDate'] = new Carbon($array['estimatedArrivalDate']);
+        }
+
         parent::__construct($array);
     }
 

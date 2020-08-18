@@ -23,9 +23,18 @@ class InventoryTransferEntity extends DataTransferObject
     public ?string $updateNote;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new InventoryTransfer entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
-        $array['transferDate'] = new Carbon($array['transferDate']);
+        if (isset($array['transferDate'])) {
+            $array['transferDate'] = new Carbon($array['transferDate']);
+        }
+
         parent::__construct($array);
     }
 

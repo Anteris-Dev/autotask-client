@@ -15,6 +15,12 @@ class ChangeRequestLinkEntity extends DataTransferObject
     public int $problemOrIncidentTicketID;
     public array $userDefinedFields = [];
 
+    /**
+     * Creates a new ChangeRequestLink entity.
+     * If this entity has dates, they will be cast as Carbon objects.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(array $array)
     {
         parent::__construct($array);
