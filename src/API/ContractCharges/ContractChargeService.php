@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ContractCharges;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ContractCharges.
@@ -13,6 +14,13 @@ class ContractChargeService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class ContractChargeService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ContractChargeEntity $resource)
+    public function create(ContractChargeEntity $resource): Response
     {
-        $this->client->post("ContractCharges", $resource->toArray());
+        $contractID = $resource->contractID;
+        return $this->client->post("Contracts/$contractID/Charges", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $contractID  ID of the ContractCharge parent resource.
      * @param  int  $id  ID of the ContractCharge to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $contractID,int $id): void
     {
-        $this->client->delete("ContractCharges/$id");
+        $this->client->delete("Contracts/$contractID/Charges/$id");
     }
 
     /**
@@ -75,8 +85,9 @@ class ContractChargeService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ContractChargeEntity $resource): void
+    public function update(ContractChargeEntity $resource): Response
     {
-        $this->client->put("ContractCharges/$resource->id", $resource->toArray());
+        $contractID = $resource->contractID;
+        return $this->client->put("Contracts/$contractID/Charges", $resource->toArray());
     }
 }

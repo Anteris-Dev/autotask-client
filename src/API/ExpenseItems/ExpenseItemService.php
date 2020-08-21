@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ExpenseItems;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ExpenseItems.
@@ -13,6 +14,13 @@ class ExpenseItemService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,11 @@ class ExpenseItemService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ExpenseItemEntity $resource)
+    public function create(ExpenseItemEntity $resource): Response
     {
-        $this->client->post("ExpenseItems", $resource->toArray());
+        $expenseReportID = $resource->expenseReportID;
+        return $this->client->post("Expenses/$expenseReportID/Items", $resource->toArray());
     }
-
 
     /**
      * Finds the ExpenseItem based on its ID.
@@ -64,8 +72,9 @@ class ExpenseItemService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ExpenseItemEntity $resource): void
+    public function update(ExpenseItemEntity $resource): Response
     {
-        $this->client->put("ExpenseItems/$resource->id", $resource->toArray());
+        $expenseReportID = $resource->expenseReportID;
+        return $this->client->put("Expenses/$expenseReportID/Items", $resource->toArray());
     }
 }

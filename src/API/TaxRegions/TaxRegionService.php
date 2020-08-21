@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\TaxRegions;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask TaxRegions.
@@ -13,6 +14,13 @@ class TaxRegionService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,10 @@ class TaxRegionService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(TaxRegionEntity $resource)
+    public function create(TaxRegionEntity $resource): Response
     {
-        $this->client->post("TaxRegions", $resource->toArray());
+        return $this->client->post("TaxRegions", $resource->toArray());
     }
-
 
     /**
      * Finds the TaxRegion based on its ID.
@@ -64,8 +71,8 @@ class TaxRegionService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(TaxRegionEntity $resource): void
+    public function update(TaxRegionEntity $resource): Response
     {
-        $this->client->put("TaxRegions/$resource->id", $resource->toArray());
+        return $this->client->put("TaxRegions", $resource->toArray());
     }
 }

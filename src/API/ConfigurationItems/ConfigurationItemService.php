@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ConfigurationItems;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ConfigurationItems.
@@ -13,6 +14,13 @@ class ConfigurationItemService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,10 @@ class ConfigurationItemService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ConfigurationItemEntity $resource)
+    public function create(ConfigurationItemEntity $resource): Response
     {
-        $this->client->post("ConfigurationItems", $resource->toArray());
+        return $this->client->post("ConfigurationItems", $resource->toArray());
     }
-
 
     /**
      * Finds the ConfigurationItem based on its ID.
@@ -64,8 +71,8 @@ class ConfigurationItemService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ConfigurationItemEntity $resource): void
+    public function update(ConfigurationItemEntity $resource): Response
     {
-        $this->client->put("ConfigurationItems/$resource->id", $resource->toArray());
+        return $this->client->put("ConfigurationItems", $resource->toArray());
     }
 }

@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\TicketAdditionalConfigurationItems;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask TicketAdditionalConfigurationItems.
@@ -13,6 +14,13 @@ class TicketAdditionalConfigurationItemService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class TicketAdditionalConfigurationItemService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(TicketAdditionalConfigurationItemEntity $resource)
+    public function create(TicketAdditionalConfigurationItemEntity $resource): Response
     {
-        $this->client->post("TicketAdditionalConfigurationItems", $resource->toArray());
+        $ticketID = $resource->ticketID;
+        return $this->client->post("Tickets/$ticketID/AdditionalConfigurationItems", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $ticketID  ID of the TicketAdditionalConfigurationItem parent resource.
      * @param  int  $id  ID of the TicketAdditionalConfigurationItem to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $ticketID,int $id): void
     {
-        $this->client->delete("TicketAdditionalConfigurationItems/$id");
+        $this->client->delete("Tickets/$ticketID/AdditionalConfigurationItems/$id");
     }
 
     /**

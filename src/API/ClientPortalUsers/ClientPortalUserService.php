@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ClientPortalUsers;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ClientPortalUsers.
@@ -13,6 +14,13 @@ class ClientPortalUserService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,10 @@ class ClientPortalUserService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ClientPortalUserEntity $resource)
+    public function create(ClientPortalUserEntity $resource): Response
     {
-        $this->client->post("ClientPortalUsers", $resource->toArray());
+        return $this->client->post("ClientPortalUsers", $resource->toArray());
     }
-
 
     /**
      * Finds the ClientPortalUser based on its ID.
@@ -64,8 +71,8 @@ class ClientPortalUserService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ClientPortalUserEntity $resource): void
+    public function update(ClientPortalUserEntity $resource): Response
     {
-        $this->client->put("ClientPortalUsers/$resource->id", $resource->toArray());
+        return $this->client->put("ClientPortalUsers", $resource->toArray());
     }
 }

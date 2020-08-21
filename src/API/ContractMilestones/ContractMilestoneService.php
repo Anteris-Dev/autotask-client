@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ContractMilestones;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ContractMilestones.
@@ -13,6 +14,13 @@ class ContractMilestoneService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,11 @@ class ContractMilestoneService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ContractMilestoneEntity $resource)
+    public function create(ContractMilestoneEntity $resource): Response
     {
-        $this->client->post("ContractMilestones", $resource->toArray());
+        $contractID = $resource->contractID;
+        return $this->client->post("Contracts/$contractID/Milestones", $resource->toArray());
     }
-
 
     /**
      * Finds the ContractMilestone based on its ID.
@@ -64,8 +72,9 @@ class ContractMilestoneService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ContractMilestoneEntity $resource): void
+    public function update(ContractMilestoneEntity $resource): Response
     {
-        $this->client->put("ContractMilestones/$resource->id", $resource->toArray());
+        $contractID = $resource->contractID;
+        return $this->client->put("Contracts/$contractID/Milestones", $resource->toArray());
     }
 }

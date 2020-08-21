@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\InventoryTransfers;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask InventoryTransfers.
@@ -13,6 +14,13 @@ class InventoryTransferService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,10 @@ class InventoryTransferService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(InventoryTransferEntity $resource)
+    public function create(InventoryTransferEntity $resource): Response
     {
-        $this->client->post("InventoryTransfers", $resource->toArray());
+        return $this->client->post("InventoryTransfers", $resource->toArray());
     }
-
 
     /**
      * Finds the InventoryTransfer based on its ID.

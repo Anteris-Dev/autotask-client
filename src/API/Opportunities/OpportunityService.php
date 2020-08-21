@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\Opportunities;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask Opportunities.
@@ -13,6 +14,13 @@ class OpportunityService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,10 @@ class OpportunityService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(OpportunityEntity $resource)
+    public function create(OpportunityEntity $resource): Response
     {
-        $this->client->post("Opportunities", $resource->toArray());
+        return $this->client->post("Opportunities", $resource->toArray());
     }
-
 
     /**
      * Finds the Opportunity based on its ID.
@@ -64,8 +71,8 @@ class OpportunityService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(OpportunityEntity $resource): void
+    public function update(OpportunityEntity $resource): Response
     {
-        $this->client->put("Opportunities/$resource->id", $resource->toArray());
+        return $this->client->put("Opportunities", $resource->toArray());
     }
 }

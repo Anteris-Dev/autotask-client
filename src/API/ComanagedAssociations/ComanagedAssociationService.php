@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ComanagedAssociations;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ComanagedAssociations.
@@ -13,6 +14,13 @@ class ComanagedAssociationService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,9 +33,9 @@ class ComanagedAssociationService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ComanagedAssociationEntity $resource)
+    public function create(ComanagedAssociationEntity $resource): Response
     {
-        $this->client->post("ComanagedAssociations", $resource->toArray());
+        return $this->client->post("ComanagedAssociations", $resource->toArray());
     }
 
     /**

@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ContractServiceAdjustments;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ContractServiceAdjustments.
@@ -13,6 +14,13 @@ class ContractServiceAdjustmentService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,10 @@ class ContractServiceAdjustmentService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ContractServiceAdjustmentEntity $resource)
+    public function create(ContractServiceAdjustmentEntity $resource): Response
     {
-        $this->client->post("ContractServiceAdjustments", $resource->toArray());
+        $contractID = $resource->contractID;
+        return $this->client->post("Contracts/$contractID/ServiceAdjustments", $resource->toArray());
     }
-
-
 
 }

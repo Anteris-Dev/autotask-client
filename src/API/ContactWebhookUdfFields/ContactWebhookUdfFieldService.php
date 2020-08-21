@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ContactWebhookUdfFields;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ContactWebhookUdfFields.
@@ -13,6 +14,13 @@ class ContactWebhookUdfFieldService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class ContactWebhookUdfFieldService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ContactWebhookUdfFieldEntity $resource)
+    public function create(ContactWebhookUdfFieldEntity $resource): Response
     {
-        $this->client->post("ContactWebhookUdfFields", $resource->toArray());
+        $webhookID = $resource->webhookID;
+        return $this->client->post("ContactWebhooks/$webhookID/UdfFields", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $webhookID  ID of the ContactWebhookUdfField parent resource.
      * @param  int  $id  ID of the ContactWebhookUdfField to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $webhookID,int $id): void
     {
-        $this->client->delete("ContactWebhookUdfFields/$id");
+        $this->client->delete("ContactWebhooks/$webhookID/UdfFields/$id");
     }
 
     /**
@@ -75,8 +85,9 @@ class ContactWebhookUdfFieldService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ContactWebhookUdfFieldEntity $resource): void
+    public function update(ContactWebhookUdfFieldEntity $resource): Response
     {
-        $this->client->put("ContactWebhookUdfFields/$resource->id", $resource->toArray());
+        $webhookID = $resource->webhookID;
+        return $this->client->put("ContactWebhooks/$webhookID/UdfFields", $resource->toArray());
     }
 }

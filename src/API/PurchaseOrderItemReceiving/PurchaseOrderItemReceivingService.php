@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\PurchaseOrderItemReceiving;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask PurchaseOrderItemReceiving.
@@ -13,6 +14,13 @@ class PurchaseOrderItemReceivingService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,11 @@ class PurchaseOrderItemReceivingService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(PurchaseOrderItemReceivingEntity $resource)
+    public function create(PurchaseOrderItemReceivingEntity $resource): Response
     {
-        $this->client->post("PurchaseOrderItemReceiving", $resource->toArray());
+        $purchaseOrderItemID = $resource->purchaseOrderItemID;
+        return $this->client->post("PurchaseOrderItems/$purchaseOrderItemID/Receiving", $resource->toArray());
     }
-
 
     /**
      * Finds the PurchaseOrderItemReceiving based on its ID.

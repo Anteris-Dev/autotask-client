@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\PriceListServiceBundles;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask PriceListServiceBundles.
@@ -13,12 +14,17 @@ class PriceListServiceBundleService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
     }
-
-
 
     /**
      * Finds the PriceListServiceBundle based on its ID.
@@ -53,8 +59,8 @@ class PriceListServiceBundleService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(PriceListServiceBundleEntity $resource): void
+    public function update(PriceListServiceBundleEntity $resource): Response
     {
-        $this->client->put("PriceListServiceBundles/$resource->id", $resource->toArray());
+        return $this->client->put("PriceListServiceBundles", $resource->toArray());
     }
 }

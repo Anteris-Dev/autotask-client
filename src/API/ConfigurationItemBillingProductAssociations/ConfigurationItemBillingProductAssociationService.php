@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ConfigurationItemBillingProductAssociations;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ConfigurationItemBillingProductAssociations.
@@ -13,6 +14,13 @@ class ConfigurationItemBillingProductAssociationService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class ConfigurationItemBillingProductAssociationService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ConfigurationItemBillingProductAssociationEntity $resource)
+    public function create(ConfigurationItemBillingProductAssociationEntity $resource): Response
     {
-        $this->client->post("ConfigurationItemBillingProductAssociations", $resource->toArray());
+        $configurationItemID = $resource->configurationItemID;
+        return $this->client->post("ConfigurationItems/$configurationItemID/BillingProductAssociations", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $configurationItemID  ID of the ConfigurationItemBillingProductAssociation parent resource.
      * @param  int  $id  ID of the ConfigurationItemBillingProductAssociation to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $configurationItemID,int $id): void
     {
-        $this->client->delete("ConfigurationItemBillingProductAssociations/$id");
+        $this->client->delete("ConfigurationItems/$configurationItemID/BillingProductAssociations/$id");
     }
 
     /**
@@ -75,8 +85,9 @@ class ConfigurationItemBillingProductAssociationService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ConfigurationItemBillingProductAssociationEntity $resource): void
+    public function update(ConfigurationItemBillingProductAssociationEntity $resource): Response
     {
-        $this->client->put("ConfigurationItemBillingProductAssociations/$resource->id", $resource->toArray());
+        $configurationItemID = $resource->configurationItemID;
+        return $this->client->put("ConfigurationItems/$configurationItemID/BillingProductAssociations", $resource->toArray());
     }
 }

@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\UserDefinedFieldDefinitions;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask UserDefinedFieldDefinitions.
@@ -13,6 +14,13 @@ class UserDefinedFieldDefinitionService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,10 @@ class UserDefinedFieldDefinitionService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(UserDefinedFieldDefinitionEntity $resource)
+    public function create(UserDefinedFieldDefinitionEntity $resource): Response
     {
-        $this->client->post("UserDefinedFieldDefinitions", $resource->toArray());
+        return $this->client->post("UserDefinedFieldDefinitions", $resource->toArray());
     }
-
 
     /**
      * Finds the UserDefinedFieldDefinition based on its ID.
@@ -64,8 +71,8 @@ class UserDefinedFieldDefinitionService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(UserDefinedFieldDefinitionEntity $resource): void
+    public function update(UserDefinedFieldDefinitionEntity $resource): Response
     {
-        $this->client->put("UserDefinedFieldDefinitions/$resource->id", $resource->toArray());
+        return $this->client->put("UserDefinedFieldDefinitions", $resource->toArray());
     }
 }

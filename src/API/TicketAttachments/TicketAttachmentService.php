@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\TicketAttachments;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask TicketAttachments.
@@ -13,6 +14,13 @@ class TicketAttachmentService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class TicketAttachmentService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(TicketAttachmentEntity $resource)
+    public function create(TicketAttachmentEntity $resource): Response
     {
-        $this->client->post("TicketAttachments", $resource->toArray());
+        $parentID = $resource->parentID;
+        return $this->client->post("Tickets/$parentID/Attachments", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $parentID  ID of the TicketAttachment parent resource.
      * @param  int  $id  ID of the TicketAttachment to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $parentID,int $id): void
     {
-        $this->client->delete("TicketAttachments/$id");
+        $this->client->delete("Tickets/$parentID/Attachments/$id");
     }
 
     /**

@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ContractExclusionSets;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ContractExclusionSets.
@@ -13,6 +14,13 @@ class ContractExclusionSetService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,9 +33,9 @@ class ContractExclusionSetService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ContractExclusionSetEntity $resource)
+    public function create(ContractExclusionSetEntity $resource): Response
     {
-        $this->client->post("ContractExclusionSets", $resource->toArray());
+        return $this->client->post("ContractExclusionSets", $resource->toArray());
     }
 
     /**
@@ -75,8 +83,8 @@ class ContractExclusionSetService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ContractExclusionSetEntity $resource): void
+    public function update(ContractExclusionSetEntity $resource): Response
     {
-        $this->client->put("ContractExclusionSets/$resource->id", $resource->toArray());
+        return $this->client->put("ContractExclusionSets", $resource->toArray());
     }
 }

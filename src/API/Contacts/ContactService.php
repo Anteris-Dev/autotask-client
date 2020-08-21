@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\Contacts;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask Contacts.
@@ -13,6 +14,13 @@ class ContactService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class ContactService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ContactEntity $resource)
+    public function create(ContactEntity $resource): Response
     {
-        $this->client->post("Contacts", $resource->toArray());
+        $companyID = $resource->companyID;
+        return $this->client->post("Companies/$companyID/Contacts", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $companyID  ID of the Contact parent resource.
      * @param  int  $id  ID of the Contact to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $companyID,int $id): void
     {
-        $this->client->delete("Contacts/$id");
+        $this->client->delete("Companies/$companyID/Contacts/$id");
     }
 
     /**
@@ -75,8 +85,9 @@ class ContactService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ContactEntity $resource): void
+    public function update(ContactEntity $resource): Response
     {
-        $this->client->put("Contacts/$resource->id", $resource->toArray());
+        $companyID = $resource->companyID;
+        return $this->client->put("Companies/$companyID/Contacts", $resource->toArray());
     }
 }

@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\TicketChangeRequestApprovals;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask TicketChangeRequestApprovals.
@@ -13,6 +14,13 @@ class TicketChangeRequestApprovalService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class TicketChangeRequestApprovalService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(TicketChangeRequestApprovalEntity $resource)
+    public function create(TicketChangeRequestApprovalEntity $resource): Response
     {
-        $this->client->post("TicketChangeRequestApprovals", $resource->toArray());
+        $ticketID = $resource->ticketID;
+        return $this->client->post("Tickets/$ticketID/ChangeRequestApprovals", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $ticketID  ID of the TicketChangeRequestApproval parent resource.
      * @param  int  $id  ID of the TicketChangeRequestApproval to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $ticketID,int $id): void
     {
-        $this->client->delete("TicketChangeRequestApprovals/$id");
+        $this->client->delete("Tickets/$ticketID/ChangeRequestApprovals/$id");
     }
 
     /**

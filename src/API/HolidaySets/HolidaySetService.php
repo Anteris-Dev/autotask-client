@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\HolidaySets;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask HolidaySets.
@@ -13,6 +14,13 @@ class HolidaySetService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,9 +33,9 @@ class HolidaySetService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(HolidaySetEntity $resource)
+    public function create(HolidaySetEntity $resource): Response
     {
-        $this->client->post("HolidaySets", $resource->toArray());
+        return $this->client->post("HolidaySets", $resource->toArray());
     }
 
     /**
@@ -75,8 +83,8 @@ class HolidaySetService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(HolidaySetEntity $resource): void
+    public function update(HolidaySetEntity $resource): Response
     {
-        $this->client->put("HolidaySets/$resource->id", $resource->toArray());
+        return $this->client->put("HolidaySets", $resource->toArray());
     }
 }

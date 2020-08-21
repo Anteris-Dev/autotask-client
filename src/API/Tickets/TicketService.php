@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\Tickets;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask Tickets.
@@ -13,6 +14,13 @@ class TicketService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,10 @@ class TicketService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(TicketEntity $resource)
+    public function create(TicketEntity $resource): Response
     {
-        $this->client->post("Tickets", $resource->toArray());
+        return $this->client->post("Tickets", $resource->toArray());
     }
-
 
     /**
      * Finds the Ticket based on its ID.
@@ -64,8 +71,8 @@ class TicketService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(TicketEntity $resource): void
+    public function update(TicketEntity $resource): Response
     {
-        $this->client->put("Tickets/$resource->id", $resource->toArray());
+        return $this->client->put("Tickets", $resource->toArray());
     }
 }

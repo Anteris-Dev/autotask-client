@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ContractBillingRules;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ContractBillingRules.
@@ -13,6 +14,13 @@ class ContractBillingRuleService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class ContractBillingRuleService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ContractBillingRuleEntity $resource)
+    public function create(ContractBillingRuleEntity $resource): Response
     {
-        $this->client->post("ContractBillingRules", $resource->toArray());
+        $contractID = $resource->contractID;
+        return $this->client->post("Contracts/$contractID/BillingRules", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $contractID  ID of the ContractBillingRule parent resource.
      * @param  int  $id  ID of the ContractBillingRule to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $contractID,int $id): void
     {
-        $this->client->delete("ContractBillingRules/$id");
+        $this->client->delete("Contracts/$contractID/BillingRules/$id");
     }
 
     /**
@@ -75,8 +85,9 @@ class ContractBillingRuleService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ContractBillingRuleEntity $resource): void
+    public function update(ContractBillingRuleEntity $resource): Response
     {
-        $this->client->put("ContractBillingRules/$resource->id", $resource->toArray());
+        $contractID = $resource->contractID;
+        return $this->client->put("Contracts/$contractID/BillingRules", $resource->toArray());
     }
 }

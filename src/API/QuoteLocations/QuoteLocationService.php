@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\QuoteLocations;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask QuoteLocations.
@@ -13,6 +14,13 @@ class QuoteLocationService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,10 @@ class QuoteLocationService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(QuoteLocationEntity $resource)
+    public function create(QuoteLocationEntity $resource): Response
     {
-        $this->client->post("QuoteLocations", $resource->toArray());
+        return $this->client->post("QuoteLocations", $resource->toArray());
     }
-
 
     /**
      * Finds the QuoteLocation based on its ID.
@@ -64,8 +71,8 @@ class QuoteLocationService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(QuoteLocationEntity $resource): void
+    public function update(QuoteLocationEntity $resource): Response
     {
-        $this->client->put("QuoteLocations/$resource->id", $resource->toArray());
+        return $this->client->put("QuoteLocations", $resource->toArray());
     }
 }

@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ContractExclusionBillingCodes;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ContractExclusionBillingCodes.
@@ -13,6 +14,13 @@ class ContractExclusionBillingCodeService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class ContractExclusionBillingCodeService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ContractExclusionBillingCodeEntity $resource)
+    public function create(ContractExclusionBillingCodeEntity $resource): Response
     {
-        $this->client->post("ContractExclusionBillingCodes", $resource->toArray());
+        $contractID = $resource->contractID;
+        return $this->client->post("Contracts/$contractID/ExclusionBillingCodes", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $contractID  ID of the ContractExclusionBillingCode parent resource.
      * @param  int  $id  ID of the ContractExclusionBillingCode to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $contractID,int $id): void
     {
-        $this->client->delete("ContractExclusionBillingCodes/$id");
+        $this->client->delete("Contracts/$contractID/ExclusionBillingCodes/$id");
     }
 
     /**

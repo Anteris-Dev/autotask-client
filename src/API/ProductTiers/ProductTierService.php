@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ProductTiers;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ProductTiers.
@@ -13,6 +14,13 @@ class ProductTierService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class ProductTierService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ProductTierEntity $resource)
+    public function create(ProductTierEntity $resource): Response
     {
-        $this->client->post("ProductTiers", $resource->toArray());
+        $productID = $resource->productID;
+        return $this->client->post("Products/$productID/Tiers", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $productID  ID of the ProductTier parent resource.
      * @param  int  $id  ID of the ProductTier to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $productID,int $id): void
     {
-        $this->client->delete("ProductTiers/$id");
+        $this->client->delete("Products/$productID/Tiers/$id");
     }
 
     /**
@@ -75,8 +85,9 @@ class ProductTierService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ProductTierEntity $resource): void
+    public function update(ProductTierEntity $resource): Response
     {
-        $this->client->put("ProductTiers/$resource->id", $resource->toArray());
+        $productID = $resource->productID;
+        return $this->client->put("Products/$productID/Tiers", $resource->toArray());
     }
 }

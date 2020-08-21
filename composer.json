@@ -11,6 +11,11 @@
             "Anteris\\Autotask\\": "./src"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
     "config": {
         "sort-packages": true
     },
@@ -21,6 +26,7 @@
         "spatie/data-transfer-object": "2.*"
     },
     "require-dev": {
-        "anteris-dev/autotask-client-generator": "dev-master"
+        "anteris-dev/autotask-client-generator": "dev-master",
+        "phpunit/phpunit": "^9.3"
     }
 }

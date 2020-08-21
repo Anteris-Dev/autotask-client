@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ServiceLevelAgreementResults;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ServiceLevelAgreementResults.
@@ -13,12 +14,17 @@ class ServiceLevelAgreementResultService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
     }
-
-
 
     /**
      * Finds the ServiceLevelAgreementResult based on its ID.

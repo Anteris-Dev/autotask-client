@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\InventoryItemSerialNumbers;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask InventoryItemSerialNumbers.
@@ -13,6 +14,13 @@ class InventoryItemSerialNumberService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,11 @@ class InventoryItemSerialNumberService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(InventoryItemSerialNumberEntity $resource)
+    public function create(InventoryItemSerialNumberEntity $resource): Response
     {
-        $this->client->post("InventoryItemSerialNumbers", $resource->toArray());
+        $inventoryItemID = $resource->inventoryItemID;
+        return $this->client->post("InventoryItems/$inventoryItemID/SerialNumbers", $resource->toArray());
     }
-
 
     /**
      * Finds the InventoryItemSerialNumber based on its ID.
@@ -64,8 +72,9 @@ class InventoryItemSerialNumberService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(InventoryItemSerialNumberEntity $resource): void
+    public function update(InventoryItemSerialNumberEntity $resource): Response
     {
-        $this->client->put("InventoryItemSerialNumbers/$resource->id", $resource->toArray());
+        $inventoryItemID = $resource->inventoryItemID;
+        return $this->client->put("InventoryItems/$inventoryItemID/SerialNumbers", $resource->toArray());
     }
 }

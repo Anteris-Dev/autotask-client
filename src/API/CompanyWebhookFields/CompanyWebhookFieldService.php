@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\CompanyWebhookFields;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask CompanyWebhookFields.
@@ -13,6 +14,13 @@ class CompanyWebhookFieldService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class CompanyWebhookFieldService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(CompanyWebhookFieldEntity $resource)
+    public function create(CompanyWebhookFieldEntity $resource): Response
     {
-        $this->client->post("CompanyWebhookFields", $resource->toArray());
+        $webhookID = $resource->webhookID;
+        return $this->client->post("CompanyWebhooks/$webhookID/Fields", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $webhookID  ID of the CompanyWebhookField parent resource.
      * @param  int  $id  ID of the CompanyWebhookField to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $webhookID,int $id): void
     {
-        $this->client->delete("CompanyWebhookFields/$id");
+        $this->client->delete("CompanyWebhooks/$webhookID/Fields/$id");
     }
 
     /**
@@ -75,8 +85,9 @@ class CompanyWebhookFieldService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(CompanyWebhookFieldEntity $resource): void
+    public function update(CompanyWebhookFieldEntity $resource): Response
     {
-        $this->client->put("CompanyWebhookFields/$resource->id", $resource->toArray());
+        $webhookID = $resource->webhookID;
+        return $this->client->put("CompanyWebhooks/$webhookID/Fields", $resource->toArray());
     }
 }

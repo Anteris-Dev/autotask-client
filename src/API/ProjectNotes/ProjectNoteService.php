@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ProjectNotes;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ProjectNotes.
@@ -13,6 +14,13 @@ class ProjectNoteService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,11 @@ class ProjectNoteService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ProjectNoteEntity $resource)
+    public function create(ProjectNoteEntity $resource): Response
     {
-        $this->client->post("ProjectNotes", $resource->toArray());
+        $projectID = $resource->projectID;
+        return $this->client->post("Projects/$projectID/Notes", $resource->toArray());
     }
-
 
     /**
      * Finds the ProjectNote based on its ID.
@@ -64,8 +72,9 @@ class ProjectNoteService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ProjectNoteEntity $resource): void
+    public function update(ProjectNoteEntity $resource): Response
     {
-        $this->client->put("ProjectNotes/$resource->id", $resource->toArray());
+        $projectID = $resource->projectID;
+        return $this->client->put("Projects/$projectID/Notes", $resource->toArray());
     }
 }

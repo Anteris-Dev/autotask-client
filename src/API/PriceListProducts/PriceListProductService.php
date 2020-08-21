@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\PriceListProducts;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask PriceListProducts.
@@ -13,12 +14,17 @@ class PriceListProductService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
     }
-
-
 
     /**
      * Finds the PriceListProduct based on its ID.
@@ -53,8 +59,8 @@ class PriceListProductService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(PriceListProductEntity $resource): void
+    public function update(PriceListProductEntity $resource): Response
     {
-        $this->client->put("PriceListProducts/$resource->id", $resource->toArray());
+        return $this->client->put("PriceListProducts", $resource->toArray());
     }
 }

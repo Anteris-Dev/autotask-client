@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ContractExclusionRoles;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ContractExclusionRoles.
@@ -13,6 +14,13 @@ class ContractExclusionRoleService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class ContractExclusionRoleService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ContractExclusionRoleEntity $resource)
+    public function create(ContractExclusionRoleEntity $resource): Response
     {
-        $this->client->post("ContractExclusionRoles", $resource->toArray());
+        $contractID = $resource->contractID;
+        return $this->client->post("Contracts/$contractID/ExclusionRoles", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $contractID  ID of the ContractExclusionRole parent resource.
      * @param  int  $id  ID of the ContractExclusionRole to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $contractID,int $id): void
     {
-        $this->client->delete("ContractExclusionRoles/$id");
+        $this->client->delete("Contracts/$contractID/ExclusionRoles/$id");
     }
 
     /**

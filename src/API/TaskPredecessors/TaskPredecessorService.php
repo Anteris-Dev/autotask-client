@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\TaskPredecessors;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask TaskPredecessors.
@@ -13,6 +14,13 @@ class TaskPredecessorService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class TaskPredecessorService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(TaskPredecessorEntity $resource)
+    public function create(TaskPredecessorEntity $resource): Response
     {
-        $this->client->post("TaskPredecessors", $resource->toArray());
+        $taskID = $resource->taskID;
+        return $this->client->post("Tasks/$taskID/Predecessors", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $taskID  ID of the TaskPredecessor parent resource.
      * @param  int  $id  ID of the TaskPredecessor to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $taskID,int $id): void
     {
-        $this->client->delete("TaskPredecessors/$id");
+        $this->client->delete("Tasks/$taskID/Predecessors/$id");
     }
 
     /**
@@ -75,8 +85,9 @@ class TaskPredecessorService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(TaskPredecessorEntity $resource): void
+    public function update(TaskPredecessorEntity $resource): Response
     {
-        $this->client->put("TaskPredecessors/$resource->id", $resource->toArray());
+        $taskID = $resource->taskID;
+        return $this->client->put("Tasks/$taskID/Predecessors", $resource->toArray());
     }
 }

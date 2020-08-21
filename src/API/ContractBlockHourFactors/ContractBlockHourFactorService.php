@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ContractBlockHourFactors;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ContractBlockHourFactors.
@@ -13,6 +14,13 @@ class ContractBlockHourFactorService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,11 @@ class ContractBlockHourFactorService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ContractBlockHourFactorEntity $resource)
+    public function create(ContractBlockHourFactorEntity $resource): Response
     {
-        $this->client->post("ContractBlockHourFactors", $resource->toArray());
+        $contractID = $resource->contractID;
+        return $this->client->post("Contracts/$contractID/BlockHourFactors", $resource->toArray());
     }
-
 
     /**
      * Finds the ContractBlockHourFactor based on its ID.
@@ -64,8 +72,9 @@ class ContractBlockHourFactorService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ContractBlockHourFactorEntity $resource): void
+    public function update(ContractBlockHourFactorEntity $resource): Response
     {
-        $this->client->put("ContractBlockHourFactors/$resource->id", $resource->toArray());
+        $contractID = $resource->contractID;
+        return $this->client->put("Contracts/$contractID/BlockHourFactors", $resource->toArray());
     }
 }

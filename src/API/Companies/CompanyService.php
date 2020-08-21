@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\Companies;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask Companies.
@@ -13,6 +14,13 @@ class CompanyService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,10 @@ class CompanyService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(CompanyEntity $resource)
+    public function create(CompanyEntity $resource): Response
     {
-        $this->client->post("Companies", $resource->toArray());
+        return $this->client->post("Companies", $resource->toArray());
     }
-
 
     /**
      * Finds the Company based on its ID.
@@ -64,8 +71,8 @@ class CompanyService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(CompanyEntity $resource): void
+    public function update(CompanyEntity $resource): Response
     {
-        $this->client->put("Companies/$resource->id", $resource->toArray());
+        return $this->client->put("Companies", $resource->toArray());
     }
 }

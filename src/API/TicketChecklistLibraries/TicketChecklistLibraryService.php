@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\TicketChecklistLibraries;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask TicketChecklistLibraries.
@@ -13,6 +14,13 @@ class TicketChecklistLibraryService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,10 @@ class TicketChecklistLibraryService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(TicketChecklistLibraryEntity $resource)
+    public function create(TicketChecklistLibraryEntity $resource): Response
     {
-        $this->client->post("TicketChecklistLibraries", $resource->toArray());
+        $ticketID = $resource->ticketID;
+        return $this->client->post("Tickets/$ticketID/ChecklistLibraries", $resource->toArray());
     }
-
-
 
 }

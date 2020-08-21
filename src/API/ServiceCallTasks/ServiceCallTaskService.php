@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ServiceCallTasks;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ServiceCallTasks.
@@ -13,6 +14,13 @@ class ServiceCallTaskService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class ServiceCallTaskService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ServiceCallTaskEntity $resource)
+    public function create(ServiceCallTaskEntity $resource): Response
     {
-        $this->client->post("ServiceCallTasks", $resource->toArray());
+        $serviceCallID = $resource->serviceCallID;
+        return $this->client->post("ServiceCalls/$serviceCallID/Tasks", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $serviceCallID  ID of the ServiceCallTask parent resource.
      * @param  int  $id  ID of the ServiceCallTask to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $serviceCallID,int $id): void
     {
-        $this->client->delete("ServiceCallTasks/$id");
+        $this->client->delete("ServiceCalls/$serviceCallID/Tasks/$id");
     }
 
     /**

@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\CompanyAlerts;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask CompanyAlerts.
@@ -13,6 +14,13 @@ class CompanyAlertService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,11 @@ class CompanyAlertService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(CompanyAlertEntity $resource)
+    public function create(CompanyAlertEntity $resource): Response
     {
-        $this->client->post("CompanyAlerts", $resource->toArray());
+        $companyID = $resource->companyID;
+        return $this->client->post("Companies/$companyID/Alerts", $resource->toArray());
     }
-
 
     /**
      * Finds the CompanyAlert based on its ID.
@@ -64,8 +72,9 @@ class CompanyAlertService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(CompanyAlertEntity $resource): void
+    public function update(CompanyAlertEntity $resource): Response
     {
-        $this->client->put("CompanyAlerts/$resource->id", $resource->toArray());
+        $companyID = $resource->companyID;
+        return $this->client->put("Companies/$companyID/Alerts", $resource->toArray());
     }
 }

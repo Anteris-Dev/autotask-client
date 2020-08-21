@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ContractRoleCosts;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ContractRoleCosts.
@@ -13,6 +14,13 @@ class ContractRoleCostService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,11 @@ class ContractRoleCostService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ContractRoleCostEntity $resource)
+    public function create(ContractRoleCostEntity $resource): Response
     {
-        $this->client->post("ContractRoleCosts", $resource->toArray());
+        $contractID = $resource->contractID;
+        return $this->client->post("Contracts/$contractID/RoleCosts", $resource->toArray());
     }
-
 
     /**
      * Finds the ContractRoleCost based on its ID.
@@ -64,8 +72,9 @@ class ContractRoleCostService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ContractRoleCostEntity $resource): void
+    public function update(ContractRoleCostEntity $resource): Response
     {
-        $this->client->put("ContractRoleCosts/$resource->id", $resource->toArray());
+        $contractID = $resource->contractID;
+        return $this->client->put("Contracts/$contractID/RoleCosts", $resource->toArray());
     }
 }

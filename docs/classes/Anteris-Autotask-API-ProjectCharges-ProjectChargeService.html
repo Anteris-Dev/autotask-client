@@ -64,7 +64,7 @@
         <aside class="phpdocumentor-element-found-in">
             <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/ProjectCharges/ProjectChargeService.php"><a href="../files/autotask-client-src-api-projectcharges-projectchargeservice.html"><abbr title="autotask-client/src/API/ProjectCharges/ProjectChargeService.php">ProjectChargeService.php</abbr></a></abbr>
             :
-            <span class="phpdocumentor-element-found-in__line">11</span>
+            <span class="phpdocumentor-element-found-in__line">12</span>
         </aside>
 
         <p class="phpdocumentor-class__summary">Handles all interaction with Autotask ProjectCharges.</p>
@@ -79,13 +79,13 @@
                 </tr>
                                                                 <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-ProjectCharges-ProjectChargeService.html#method___construct">__construct()</a></th>
-                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">Instantiates the class.</td>
                     <td class="phpdocumentor-cell">mixed</td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-ProjectCharges-ProjectChargeService.html#method_create">create()</a></th>
                     <td class="phpdocumentor-cell">Creates a new projectcharge.</td>
-                    <td class="phpdocumentor-cell">mixed</td>
+                    <td class="phpdocumentor-cell"><abbr title="\GuzzleHttp\Psr7\Response">Response</abbr></td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-ProjectCharges-ProjectChargeService.html#method_deleteById">deleteById()</a></th>
@@ -105,7 +105,7 @@
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-ProjectCharges-ProjectChargeService.html#method_update">update()</a></th>
                     <td class="phpdocumentor-cell">Updates the projectcharge.</td>
-                    <td class="phpdocumentor-cell">void</td>
+                    <td class="phpdocumentor-cell"><abbr title="\GuzzleHttp\Psr7\Response">Response</abbr></td>
                 </tr>
                                             </table>
 
@@ -123,7 +123,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/ProjectCharges/ProjectChargeService.php"><a href="../files/autotask-client-src-api-projectcharges-projectchargeservice.html"><abbr title="autotask-client/src/API/ProjectCharges/ProjectChargeService.php">ProjectChargeService.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">14</span>
+        <span class="phpdocumentor-element-found-in__line">15</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">protected</span>
@@ -146,8 +146,9 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/ProjectCharges/ProjectChargeService.php"><a href="../files/autotask-client-src-api-projectcharges-projectchargeservice.html"><abbr title="autotask-client/src/API/ProjectCharges/ProjectChargeService.php">ProjectChargeService.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">16</span>
+        <span class="phpdocumentor-element-found-in__line">24</span>
     </aside>
+        <p class="phpdocumentor-summary">Instantiates the class.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
                                 <span class="phpdocumentor-signature__name">__construct</span>(
@@ -166,10 +167,17 @@
                     <span class="phpdocumentor-signature__argument__name">$client</span>
                     : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/Anteris-Autotask-HttpClient.html"><abbr title="\Anteris\Autotask\HttpClient">HttpClient</abbr></a></span>
                                     </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The http client that will be used to interact with the API.</p></section></dd>
                     </dl>
     
-        
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">author</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>Aidan Casey <a href="mailto:aidan.casey@anteris.com">aidan.casey@anteris.com</a></p></section></dd>
+                                    </dl>
+    
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -185,7 +193,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/ProjectCharges/ProjectChargeService.php"><a href="../files/autotask-client-src-api-projectcharges-projectchargeservice.html"><abbr title="autotask-client/src/API/ProjectCharges/ProjectChargeService.php">ProjectChargeService.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">28</span>
+        <span class="phpdocumentor-element-found-in__line">36</span>
     </aside>
         <p class="phpdocumentor-summary">Creates a new projectcharge.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -196,7 +204,7 @@
                 <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/Anteris-Autotask-API-ProjectCharges-ProjectChargeEntity.html"><abbr title="\Anteris\Autotask\API\ProjectCharges\ProjectChargeEntity">ProjectChargeEntity</abbr></a></span>
                             </span>
                 )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
+        : <span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Psr7\Response">Response</abbr></span>
     </code>
 
     
@@ -218,7 +226,7 @@
                                     </dl>
     
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Psr7\Response">Response</abbr></span>
             
 </article>
                                     <a id="method_deleteById"></a>
@@ -232,14 +240,18 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/ProjectCharges/ProjectChargeService.php"><a href="../files/autotask-client-src-api-projectcharges-projectchargeservice.html"><abbr title="autotask-client/src/API/ProjectCharges/ProjectChargeService.php">ProjectChargeService.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">40</span>
+        <span class="phpdocumentor-element-found-in__line">50</span>
     </aside>
         <p class="phpdocumentor-summary">Deletes an entity by its ID.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
                                 <span class="phpdocumentor-signature__name">deleteById</span>(
                     <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$id</span> :
+                            <span class="phpdocumentor-signature__argument__name">$projectID</span> :
+                <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$id</span> :
                 <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </span>
                 )
@@ -249,6 +261,11 @@
     
             <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
         <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$projectID</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>ID of the ProjectCharge parent resource.</p></section></dd>
                             <dt class="phpdocumentor-argument-list__entry">
                     <span class="phpdocumentor-signature__argument__name">$id</span>
                     : <span class="phpdocumentor-signature__argument__return-type">int</span>
@@ -277,7 +294,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/ProjectCharges/ProjectChargeService.php"><a href="../files/autotask-client-src-api-projectcharges-projectchargeservice.html"><abbr title="autotask-client/src/API/ProjectCharges/ProjectChargeService.php">ProjectChargeService.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">52</span>
+        <span class="phpdocumentor-element-found-in__line">62</span>
     </aside>
         <p class="phpdocumentor-summary">Finds the ProjectCharge based on its ID.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -324,7 +341,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/ProjectCharges/ProjectChargeService.php"><a href="../files/autotask-client-src-api-projectcharges-projectchargeservice.html"><abbr title="autotask-client/src/API/ProjectCharges/ProjectChargeService.php">ProjectChargeService.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">66</span>
+        <span class="phpdocumentor-element-found-in__line">76</span>
     </aside>
         <p class="phpdocumentor-summary">Returns an instance of the query builder for this entity.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -363,7 +380,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/ProjectCharges/ProjectChargeService.php"><a href="../files/autotask-client-src-api-projectcharges-projectchargeservice.html"><abbr title="autotask-client/src/API/ProjectCharges/ProjectChargeService.php">ProjectChargeService.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">78</span>
+        <span class="phpdocumentor-element-found-in__line">88</span>
     </aside>
         <p class="phpdocumentor-summary">Updates the projectcharge.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -374,7 +391,7 @@
                 <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/Anteris-Autotask-API-ProjectCharges-ProjectChargeEntity.html"><abbr title="\Anteris\Autotask\API\ProjectCharges\ProjectChargeEntity">ProjectChargeEntity</abbr></a></span>
                             </span>
                 )
-        : <span class="phpdocumentor-signature__response_type">void</span>
+        : <span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Psr7\Response">Response</abbr></span>
     </code>
 
     
@@ -395,7 +412,9 @@
                     <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>Aidan Casey <a href="mailto:aidan.casey@anteris.com">aidan.casey@anteris.com</a></p></section></dd>
                                     </dl>
     
-    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Psr7\Response">Response</abbr></span>
+            
 </article>
                                                             </section>
             </article>

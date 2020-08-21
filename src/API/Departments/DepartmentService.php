@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\Departments;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask Departments.
@@ -13,6 +14,13 @@ class DepartmentService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,10 @@ class DepartmentService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(DepartmentEntity $resource)
+    public function create(DepartmentEntity $resource): Response
     {
-        $this->client->post("Departments", $resource->toArray());
+        return $this->client->post("Departments", $resource->toArray());
     }
-
 
     /**
      * Finds the Department based on its ID.
@@ -64,8 +71,8 @@ class DepartmentService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(DepartmentEntity $resource): void
+    public function update(DepartmentEntity $resource): Response
     {
-        $this->client->put("Departments/$resource->id", $resource->toArray());
+        return $this->client->put("Departments", $resource->toArray());
     }
 }

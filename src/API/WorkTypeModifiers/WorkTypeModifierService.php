@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\WorkTypeModifiers;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask WorkTypeModifiers.
@@ -13,12 +14,17 @@ class WorkTypeModifierService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
     }
-
-
 
     /**
      * Finds the WorkTypeModifier based on its ID.
@@ -53,8 +59,8 @@ class WorkTypeModifierService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(WorkTypeModifierEntity $resource): void
+    public function update(WorkTypeModifierEntity $resource): Response
     {
-        $this->client->put("WorkTypeModifiers/$resource->id", $resource->toArray());
+        return $this->client->put("WorkTypeModifiers", $resource->toArray());
     }
 }

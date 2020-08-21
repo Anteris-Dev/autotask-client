@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ResourceSkills;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ResourceSkills.
@@ -13,12 +14,17 @@ class ResourceSkillService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
     }
-
-
 
     /**
      * Finds the ResourceSkill based on its ID.
@@ -53,8 +59,9 @@ class ResourceSkillService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ResourceSkillEntity $resource): void
+    public function update(ResourceSkillEntity $resource): Response
     {
-        $this->client->put("ResourceSkills/$resource->id", $resource->toArray());
+        $resourceID = $resource->resourceID;
+        return $this->client->put("Resources/$resourceID/Skills", $resource->toArray());
     }
 }

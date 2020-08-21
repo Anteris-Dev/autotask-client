@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ConfigurationItemCategoryUdfAssociations;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ConfigurationItemCategoryUdfAssociations.
@@ -13,6 +14,13 @@ class ConfigurationItemCategoryUdfAssociationService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class ConfigurationItemCategoryUdfAssociationService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ConfigurationItemCategoryUdfAssociationEntity $resource)
+    public function create(ConfigurationItemCategoryUdfAssociationEntity $resource): Response
     {
-        $this->client->post("ConfigurationItemCategoryUdfAssociations", $resource->toArray());
+        $configurationItemCategoryID = $resource->configurationItemCategoryID;
+        return $this->client->post("ConfigurationItemCategories/$configurationItemCategoryID/UdfAssociations", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $configurationItemCategoryID  ID of the ConfigurationItemCategoryUdfAssociation parent resource.
      * @param  int  $id  ID of the ConfigurationItemCategoryUdfAssociation to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $configurationItemCategoryID,int $id): void
     {
-        $this->client->delete("ConfigurationItemCategoryUdfAssociations/$id");
+        $this->client->delete("ConfigurationItemCategories/$configurationItemCategoryID/UdfAssociations/$id");
     }
 
     /**
@@ -75,8 +85,9 @@ class ConfigurationItemCategoryUdfAssociationService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ConfigurationItemCategoryUdfAssociationEntity $resource): void
+    public function update(ConfigurationItemCategoryUdfAssociationEntity $resource): Response
     {
-        $this->client->put("ConfigurationItemCategoryUdfAssociations/$resource->id", $resource->toArray());
+        $configurationItemCategoryID = $resource->configurationItemCategoryID;
+        return $this->client->put("ConfigurationItemCategories/$configurationItemCategoryID/UdfAssociations", $resource->toArray());
     }
 }

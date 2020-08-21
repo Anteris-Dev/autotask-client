@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\TaskNotes;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask TaskNotes.
@@ -13,6 +14,13 @@ class TaskNoteService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,11 @@ class TaskNoteService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(TaskNoteEntity $resource)
+    public function create(TaskNoteEntity $resource): Response
     {
-        $this->client->post("TaskNotes", $resource->toArray());
+        $taskID = $resource->taskID;
+        return $this->client->post("Tasks/$taskID/Notes", $resource->toArray());
     }
-
 
     /**
      * Finds the TaskNote based on its ID.
@@ -64,8 +72,9 @@ class TaskNoteService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(TaskNoteEntity $resource): void
+    public function update(TaskNoteEntity $resource): Response
     {
-        $this->client->put("TaskNotes/$resource->id", $resource->toArray());
+        $taskID = $resource->taskID;
+        return $this->client->put("Tasks/$taskID/Notes", $resource->toArray());
     }
 }

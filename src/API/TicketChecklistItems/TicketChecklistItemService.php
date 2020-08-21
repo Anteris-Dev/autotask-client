@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\TicketChecklistItems;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask TicketChecklistItems.
@@ -13,6 +14,13 @@ class TicketChecklistItemService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class TicketChecklistItemService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(TicketChecklistItemEntity $resource)
+    public function create(TicketChecklistItemEntity $resource): Response
     {
-        $this->client->post("TicketChecklistItems", $resource->toArray());
+        $ticketID = $resource->ticketID;
+        return $this->client->post("Tickets/$ticketID/ChecklistItems", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $ticketID  ID of the TicketChecklistItem parent resource.
      * @param  int  $id  ID of the TicketChecklistItem to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $ticketID,int $id): void
     {
-        $this->client->delete("TicketChecklistItems/$id");
+        $this->client->delete("Tickets/$ticketID/ChecklistItems/$id");
     }
 
     /**
@@ -75,8 +85,9 @@ class TicketChecklistItemService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(TicketChecklistItemEntity $resource): void
+    public function update(TicketChecklistItemEntity $resource): Response
     {
-        $this->client->put("TicketChecklistItems/$resource->id", $resource->toArray());
+        $ticketID = $resource->ticketID;
+        return $this->client->put("Tickets/$ticketID/ChecklistItems", $resource->toArray());
     }
 }

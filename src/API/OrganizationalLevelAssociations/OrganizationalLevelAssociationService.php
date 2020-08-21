@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\OrganizationalLevelAssociations;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask OrganizationalLevelAssociations.
@@ -13,6 +14,13 @@ class OrganizationalLevelAssociationService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,10 @@ class OrganizationalLevelAssociationService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(OrganizationalLevelAssociationEntity $resource)
+    public function create(OrganizationalLevelAssociationEntity $resource): Response
     {
-        $this->client->post("OrganizationalLevelAssociations", $resource->toArray());
+        return $this->client->post("OrganizationalLevelAssociations", $resource->toArray());
     }
-
 
     /**
      * Finds the OrganizationalLevelAssociation based on its ID.
@@ -64,8 +71,8 @@ class OrganizationalLevelAssociationService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(OrganizationalLevelAssociationEntity $resource): void
+    public function update(OrganizationalLevelAssociationEntity $resource): Response
     {
-        $this->client->put("OrganizationalLevelAssociations/$resource->id", $resource->toArray());
+        return $this->client->put("OrganizationalLevelAssociations", $resource->toArray());
     }
 }

@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\CompanyLocations;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask CompanyLocations.
@@ -13,6 +14,13 @@ class CompanyLocationService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class CompanyLocationService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(CompanyLocationEntity $resource)
+    public function create(CompanyLocationEntity $resource): Response
     {
-        $this->client->post("CompanyLocations", $resource->toArray());
+        $companyID = $resource->companyID;
+        return $this->client->post("Companies/$companyID/Locations", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $companyID  ID of the CompanyLocation parent resource.
      * @param  int  $id  ID of the CompanyLocation to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $companyID,int $id): void
     {
-        $this->client->delete("CompanyLocations/$id");
+        $this->client->delete("Companies/$companyID/Locations/$id");
     }
 
     /**
@@ -75,8 +85,9 @@ class CompanyLocationService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(CompanyLocationEntity $resource): void
+    public function update(CompanyLocationEntity $resource): Response
     {
-        $this->client->put("CompanyLocations/$resource->id", $resource->toArray());
+        $companyID = $resource->companyID;
+        return $this->client->put("Companies/$companyID/Locations", $resource->toArray());
     }
 }

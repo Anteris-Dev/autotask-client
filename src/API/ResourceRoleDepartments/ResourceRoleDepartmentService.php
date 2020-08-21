@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ResourceRoleDepartments;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ResourceRoleDepartments.
@@ -13,6 +14,13 @@ class ResourceRoleDepartmentService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,11 @@ class ResourceRoleDepartmentService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ResourceRoleDepartmentEntity $resource)
+    public function create(ResourceRoleDepartmentEntity $resource): Response
     {
-        $this->client->post("ResourceRoleDepartments", $resource->toArray());
+        $resourceID = $resource->resourceID;
+        return $this->client->post("Resources/$resourceID/RoleDepartments", $resource->toArray());
     }
-
 
     /**
      * Finds the ResourceRoleDepartment based on its ID.
@@ -64,8 +72,9 @@ class ResourceRoleDepartmentService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ResourceRoleDepartmentEntity $resource): void
+    public function update(ResourceRoleDepartmentEntity $resource): Response
     {
-        $this->client->put("ResourceRoleDepartments/$resource->id", $resource->toArray());
+        $resourceID = $resource->resourceID;
+        return $this->client->put("Resources/$resourceID/RoleDepartments", $resource->toArray());
     }
 }

@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\PriceListWorkTypeModifiers;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask PriceListWorkTypeModifiers.
@@ -13,12 +14,17 @@ class PriceListWorkTypeModifierService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
     }
-
-
 
     /**
      * Finds the PriceListWorkTypeModifier based on its ID.
@@ -53,8 +59,8 @@ class PriceListWorkTypeModifierService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(PriceListWorkTypeModifierEntity $resource): void
+    public function update(PriceListWorkTypeModifierEntity $resource): Response
     {
-        $this->client->put("PriceListWorkTypeModifiers/$resource->id", $resource->toArray());
+        return $this->client->put("PriceListWorkTypeModifiers", $resource->toArray());
     }
 }

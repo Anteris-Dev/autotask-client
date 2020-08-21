@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ServiceBundles;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ServiceBundles.
@@ -13,6 +14,13 @@ class ServiceBundleService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,9 +33,9 @@ class ServiceBundleService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ServiceBundleEntity $resource)
+    public function create(ServiceBundleEntity $resource): Response
     {
-        $this->client->post("ServiceBundles", $resource->toArray());
+        return $this->client->post("ServiceBundles", $resource->toArray());
     }
 
     /**
@@ -75,8 +83,8 @@ class ServiceBundleService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ServiceBundleEntity $resource): void
+    public function update(ServiceBundleEntity $resource): Response
     {
-        $this->client->put("ServiceBundles/$resource->id", $resource->toArray());
+        return $this->client->put("ServiceBundles", $resource->toArray());
     }
 }

@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\TaskAttachments;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask TaskAttachments.
@@ -13,6 +14,13 @@ class TaskAttachmentService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class TaskAttachmentService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(TaskAttachmentEntity $resource)
+    public function create(TaskAttachmentEntity $resource): Response
     {
-        $this->client->post("TaskAttachments", $resource->toArray());
+        $parentID = $resource->parentID;
+        return $this->client->post("Tasks/$parentID/Attachments", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $parentID  ID of the TaskAttachment parent resource.
      * @param  int  $id  ID of the TaskAttachment to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $parentID,int $id): void
     {
-        $this->client->delete("TaskAttachments/$id");
+        $this->client->delete("Tasks/$parentID/Attachments/$id");
     }
 
     /**

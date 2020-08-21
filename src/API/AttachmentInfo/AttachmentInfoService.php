@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\AttachmentInfo;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask AttachmentInfo.
@@ -13,12 +14,41 @@ class AttachmentInfoService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
     }
 
+    /**
+     * Creates a new attachmentinfo.
+     *
+     * @param  AttachmentInfoEntity  $resource  The attachmentinfo entity to be written.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
+    public function create(AttachmentInfoEntity $resource): Response
+    {
+        return $this->client->post("AttachmentInfo", $resource->toArray());
+    }
 
+    /**
+     * Deletes an entity by its ID.
+     *
+     * @param  int  $id  ID of the AttachmentInfo to be deleted.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
+    public function deleteById(int $id): void
+    {
+        $this->client->delete("AttachmentInfo/$id");
+    }
 
     /**
      * Finds the AttachmentInfo based on its ID.

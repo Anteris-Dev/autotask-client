@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\TimeEntries;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask TimeEntries.
@@ -13,6 +14,13 @@ class TimeEntryService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,9 +33,9 @@ class TimeEntryService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(TimeEntryEntity $resource)
+    public function create(TimeEntryEntity $resource): Response
     {
-        $this->client->post("TimeEntries", $resource->toArray());
+        return $this->client->post("TimeEntries", $resource->toArray());
     }
 
     /**
@@ -75,8 +83,8 @@ class TimeEntryService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(TimeEntryEntity $resource): void
+    public function update(TimeEntryEntity $resource): Response
     {
-        $this->client->put("TimeEntries/$resource->id", $resource->toArray());
+        return $this->client->put("TimeEntries", $resource->toArray());
     }
 }

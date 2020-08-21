@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ContactBillingProductAssociations;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ContactBillingProductAssociations.
@@ -13,6 +14,13 @@ class ContactBillingProductAssociationService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class ContactBillingProductAssociationService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ContactBillingProductAssociationEntity $resource)
+    public function create(ContactBillingProductAssociationEntity $resource): Response
     {
-        $this->client->post("ContactBillingProductAssociations", $resource->toArray());
+        $contactID = $resource->contactID;
+        return $this->client->post("Contacts/$contactID/BillingProductAssociations", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $contactID  ID of the ContactBillingProductAssociation parent resource.
      * @param  int  $id  ID of the ContactBillingProductAssociation to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $contactID,int $id): void
     {
-        $this->client->delete("ContactBillingProductAssociations/$id");
+        $this->client->delete("Contacts/$contactID/BillingProductAssociations/$id");
     }
 
     /**
@@ -75,8 +85,9 @@ class ContactBillingProductAssociationService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ContactBillingProductAssociationEntity $resource): void
+    public function update(ContactBillingProductAssociationEntity $resource): Response
     {
-        $this->client->put("ContactBillingProductAssociations/$resource->id", $resource->toArray());
+        $contactID = $resource->contactID;
+        return $this->client->put("Contacts/$contactID/BillingProductAssociations", $resource->toArray());
     }
 }

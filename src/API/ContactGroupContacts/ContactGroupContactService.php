@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ContactGroupContacts;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ContactGroupContacts.
@@ -13,6 +14,13 @@ class ContactGroupContactService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class ContactGroupContactService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ContactGroupContactEntity $resource)
+    public function create(ContactGroupContactEntity $resource): Response
     {
-        $this->client->post("ContactGroupContacts", $resource->toArray());
+        $contactGroupID = $resource->contactGroupID;
+        return $this->client->post("ContactGroups/$contactGroupID/Contacts", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $contactGroupID  ID of the ContactGroupContact parent resource.
      * @param  int  $id  ID of the ContactGroupContact to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $contactGroupID,int $id): void
     {
-        $this->client->delete("ContactGroupContacts/$id");
+        $this->client->delete("ContactGroups/$contactGroupID/Contacts/$id");
     }
 
     /**

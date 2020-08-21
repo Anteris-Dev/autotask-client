@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ActionTypes;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ActionTypes.
@@ -13,6 +14,13 @@ class ActionTypeService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,9 +33,9 @@ class ActionTypeService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ActionTypeEntity $resource)
+    public function create(ActionTypeEntity $resource): Response
     {
-        $this->client->post("ActionTypes", $resource->toArray());
+        return $this->client->post("ActionTypes", $resource->toArray());
     }
 
     /**
@@ -75,8 +83,8 @@ class ActionTypeService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ActionTypeEntity $resource): void
+    public function update(ActionTypeEntity $resource): Response
     {
-        $this->client->put("ActionTypes/$resource->id", $resource->toArray());
+        return $this->client->put("ActionTypes", $resource->toArray());
     }
 }

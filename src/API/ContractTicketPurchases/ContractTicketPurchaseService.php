@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ContractTicketPurchases;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ContractTicketPurchases.
@@ -13,6 +14,13 @@ class ContractTicketPurchaseService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,11 @@ class ContractTicketPurchaseService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ContractTicketPurchaseEntity $resource)
+    public function create(ContractTicketPurchaseEntity $resource): Response
     {
-        $this->client->post("ContractTicketPurchases", $resource->toArray());
+        $contractID = $resource->contractID;
+        return $this->client->post("Contracts/$contractID/TicketPurchases", $resource->toArray());
     }
-
 
     /**
      * Finds the ContractTicketPurchase based on its ID.
@@ -64,8 +72,9 @@ class ContractTicketPurchaseService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ContractTicketPurchaseEntity $resource): void
+    public function update(ContractTicketPurchaseEntity $resource): Response
     {
-        $this->client->put("ContractTicketPurchases/$resource->id", $resource->toArray());
+        $contractID = $resource->contractID;
+        return $this->client->put("Contracts/$contractID/TicketPurchases", $resource->toArray());
     }
 }

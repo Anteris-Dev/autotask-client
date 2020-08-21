@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\SalesOrders;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask SalesOrders.
@@ -13,12 +14,17 @@ class SalesOrderService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
     }
-
-
 
     /**
      * Finds the SalesOrder based on its ID.
@@ -53,8 +59,8 @@ class SalesOrderService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(SalesOrderEntity $resource): void
+    public function update(SalesOrderEntity $resource): Response
     {
-        $this->client->put("SalesOrders/$resource->id", $resource->toArray());
+        return $this->client->put("SalesOrders", $resource->toArray());
     }
 }

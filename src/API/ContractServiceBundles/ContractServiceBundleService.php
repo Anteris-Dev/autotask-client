@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ContractServiceBundles;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ContractServiceBundles.
@@ -13,6 +14,13 @@ class ContractServiceBundleService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,11 @@ class ContractServiceBundleService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ContractServiceBundleEntity $resource)
+    public function create(ContractServiceBundleEntity $resource): Response
     {
-        $this->client->post("ContractServiceBundles", $resource->toArray());
+        $contractID = $resource->contractID;
+        return $this->client->post("Contracts/$contractID/ServiceBundles", $resource->toArray());
     }
-
 
     /**
      * Finds the ContractServiceBundle based on its ID.
@@ -64,8 +72,9 @@ class ContractServiceBundleService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ContractServiceBundleEntity $resource): void
+    public function update(ContractServiceBundleEntity $resource): Response
     {
-        $this->client->put("ContractServiceBundles/$resource->id", $resource->toArray());
+        $contractID = $resource->contractID;
+        return $this->client->put("Contracts/$contractID/ServiceBundles", $resource->toArray());
     }
 }

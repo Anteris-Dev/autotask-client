@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\TicketRmaCredits;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask TicketRmaCredits.
@@ -13,6 +14,13 @@ class TicketRmaCreditService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class TicketRmaCreditService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(TicketRmaCreditEntity $resource)
+    public function create(TicketRmaCreditEntity $resource): Response
     {
-        $this->client->post("TicketRmaCredits", $resource->toArray());
+        $ticketID = $resource->ticketID;
+        return $this->client->post("Tickets/$ticketID/RmaCredits", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $ticketID  ID of the TicketRmaCredit parent resource.
      * @param  int  $id  ID of the TicketRmaCredit to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $ticketID,int $id): void
     {
-        $this->client->delete("TicketRmaCredits/$id");
+        $this->client->delete("Tickets/$ticketID/RmaCredits/$id");
     }
 
     /**
@@ -75,8 +85,9 @@ class TicketRmaCreditService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(TicketRmaCreditEntity $resource): void
+    public function update(TicketRmaCreditEntity $resource): Response
     {
-        $this->client->put("TicketRmaCredits/$resource->id", $resource->toArray());
+        $ticketID = $resource->ticketID;
+        return $this->client->put("Tickets/$ticketID/RmaCredits", $resource->toArray());
     }
 }

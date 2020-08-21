@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ContractRetainers;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ContractRetainers.
@@ -13,6 +14,13 @@ class ContractRetainerService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,11 @@ class ContractRetainerService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ContractRetainerEntity $resource)
+    public function create(ContractRetainerEntity $resource): Response
     {
-        $this->client->post("ContractRetainers", $resource->toArray());
+        $contractID = $resource->contractID;
+        return $this->client->post("Contracts/$contractID/Retainers", $resource->toArray());
     }
-
 
     /**
      * Finds the ContractRetainer based on its ID.
@@ -64,8 +72,9 @@ class ContractRetainerService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ContractRetainerEntity $resource): void
+    public function update(ContractRetainerEntity $resource): Response
     {
-        $this->client->put("ContractRetainers/$resource->id", $resource->toArray());
+        $contractID = $resource->contractID;
+        return $this->client->put("Contracts/$contractID/Retainers", $resource->toArray());
     }
 }

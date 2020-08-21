@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\CompanyWebhooks;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask CompanyWebhooks.
@@ -13,6 +14,13 @@ class CompanyWebhookService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,9 +33,9 @@ class CompanyWebhookService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(CompanyWebhookEntity $resource)
+    public function create(CompanyWebhookEntity $resource): Response
     {
-        $this->client->post("CompanyWebhooks", $resource->toArray());
+        return $this->client->post("CompanyWebhooks", $resource->toArray());
     }
 
     /**
@@ -75,8 +83,8 @@ class CompanyWebhookService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(CompanyWebhookEntity $resource): void
+    public function update(CompanyWebhookEntity $resource): Response
     {
-        $this->client->put("CompanyWebhooks/$resource->id", $resource->toArray());
+        return $this->client->put("CompanyWebhooks", $resource->toArray());
     }
 }

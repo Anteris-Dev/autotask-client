@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ResourceRoleQueues;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ResourceRoleQueues.
@@ -13,6 +14,13 @@ class ResourceRoleQueueService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,11 @@ class ResourceRoleQueueService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ResourceRoleQueueEntity $resource)
+    public function create(ResourceRoleQueueEntity $resource): Response
     {
-        $this->client->post("ResourceRoleQueues", $resource->toArray());
+        $resourceID = $resource->resourceID;
+        return $this->client->post("Resources/$resourceID/RoleQueues", $resource->toArray());
     }
-
 
     /**
      * Finds the ResourceRoleQueue based on its ID.
@@ -64,8 +72,9 @@ class ResourceRoleQueueService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ResourceRoleQueueEntity $resource): void
+    public function update(ResourceRoleQueueEntity $resource): Response
     {
-        $this->client->put("ResourceRoleQueues/$resource->id", $resource->toArray());
+        $resourceID = $resource->resourceID;
+        return $this->client->put("Resources/$resourceID/RoleQueues", $resource->toArray());
     }
 }

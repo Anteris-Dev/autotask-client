@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\CompanyWebhookExcludedResources;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask CompanyWebhookExcludedResources.
@@ -13,6 +14,13 @@ class CompanyWebhookExcludedResourceService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class CompanyWebhookExcludedResourceService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(CompanyWebhookExcludedResourceEntity $resource)
+    public function create(CompanyWebhookExcludedResourceEntity $resource): Response
     {
-        $this->client->post("CompanyWebhookExcludedResources", $resource->toArray());
+        $resourceID = $resource->resourceID;
+        return $this->client->post("CompanyWebhooks/$resourceID/ExcludedResources", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $resourceID  ID of the CompanyWebhookExcludedResource parent resource.
      * @param  int  $id  ID of the CompanyWebhookExcludedResource to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $resourceID,int $id): void
     {
-        $this->client->delete("CompanyWebhookExcludedResources/$id");
+        $this->client->delete("CompanyWebhooks/$resourceID/ExcludedResources/$id");
     }
 
     /**

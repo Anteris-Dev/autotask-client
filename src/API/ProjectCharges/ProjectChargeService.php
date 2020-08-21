@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ProjectCharges;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ProjectCharges.
@@ -13,6 +14,13 @@ class ProjectChargeService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class ProjectChargeService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ProjectChargeEntity $resource)
+    public function create(ProjectChargeEntity $resource): Response
     {
-        $this->client->post("ProjectCharges", $resource->toArray());
+        $projectID = $resource->projectID;
+        return $this->client->post("Projects/$projectID/Charges", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $projectID  ID of the ProjectCharge parent resource.
      * @param  int  $id  ID of the ProjectCharge to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $projectID,int $id): void
     {
-        $this->client->delete("ProjectCharges/$id");
+        $this->client->delete("Projects/$projectID/Charges/$id");
     }
 
     /**
@@ -75,8 +85,9 @@ class ProjectChargeService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ProjectChargeEntity $resource): void
+    public function update(ProjectChargeEntity $resource): Response
     {
-        $this->client->put("ProjectCharges/$resource->id", $resource->toArray());
+        $projectID = $resource->projectID;
+        return $this->client->put("Projects/$projectID/Charges", $resource->toArray());
     }
 }

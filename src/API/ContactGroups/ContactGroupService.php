@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ContactGroups;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ContactGroups.
@@ -13,6 +14,13 @@ class ContactGroupService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,9 +33,9 @@ class ContactGroupService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ContactGroupEntity $resource)
+    public function create(ContactGroupEntity $resource): Response
     {
-        $this->client->post("ContactGroups", $resource->toArray());
+        return $this->client->post("ContactGroups", $resource->toArray());
     }
 
     /**
@@ -75,8 +83,8 @@ class ContactGroupService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ContactGroupEntity $resource): void
+    public function update(ContactGroupEntity $resource): Response
     {
-        $this->client->put("ContactGroups/$resource->id", $resource->toArray());
+        return $this->client->put("ContactGroups", $resource->toArray());
     }
 }

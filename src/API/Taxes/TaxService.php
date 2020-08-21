@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\Taxes;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask Taxes.
@@ -13,6 +14,13 @@ class TaxService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,10 @@ class TaxService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(TaxEntity $resource)
+    public function create(TaxEntity $resource): Response
     {
-        $this->client->post("Taxes", $resource->toArray());
+        return $this->client->post("Taxes", $resource->toArray());
     }
-
 
     /**
      * Finds the Tax based on its ID.
@@ -64,8 +71,8 @@ class TaxService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(TaxEntity $resource): void
+    public function update(TaxEntity $resource): Response
     {
-        $this->client->put("Taxes/$resource->id", $resource->toArray());
+        return $this->client->put("Taxes", $resource->toArray());
     }
 }

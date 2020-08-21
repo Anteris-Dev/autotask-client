@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ProductNotes;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ProductNotes.
@@ -13,6 +14,13 @@ class ProductNoteService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,11 @@ class ProductNoteService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ProductNoteEntity $resource)
+    public function create(ProductNoteEntity $resource): Response
     {
-        $this->client->post("ProductNotes", $resource->toArray());
+        $productID = $resource->productID;
+        return $this->client->post("Products/$productID/Notes", $resource->toArray());
     }
-
 
     /**
      * Finds the ProductNote based on its ID.
@@ -64,8 +72,9 @@ class ProductNoteService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ProductNoteEntity $resource): void
+    public function update(ProductNoteEntity $resource): Response
     {
-        $this->client->put("ProductNotes/$resource->id", $resource->toArray());
+        $productID = $resource->productID;
+        return $this->client->put("Products/$productID/Notes", $resource->toArray());
     }
 }

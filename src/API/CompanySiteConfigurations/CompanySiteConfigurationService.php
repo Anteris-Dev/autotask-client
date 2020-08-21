@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\CompanySiteConfigurations;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask CompanySiteConfigurations.
@@ -13,12 +14,17 @@ class CompanySiteConfigurationService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
     }
-
-
 
     /**
      * Finds the CompanySiteConfiguration based on its ID.
@@ -53,8 +59,9 @@ class CompanySiteConfigurationService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(CompanySiteConfigurationEntity $resource): void
+    public function update(CompanySiteConfigurationEntity $resource): Response
     {
-        $this->client->put("CompanySiteConfigurations/$resource->id", $resource->toArray());
+        $companyID = $resource->companyID;
+        return $this->client->put("Companies/$companyID/SiteConfigurations", $resource->toArray());
     }
 }

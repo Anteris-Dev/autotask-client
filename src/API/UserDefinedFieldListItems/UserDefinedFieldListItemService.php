@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\UserDefinedFieldListItems;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask UserDefinedFieldListItems.
@@ -13,6 +14,13 @@ class UserDefinedFieldListItemService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,11 @@ class UserDefinedFieldListItemService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(UserDefinedFieldListItemEntity $resource)
+    public function create(UserDefinedFieldListItemEntity $resource): Response
     {
-        $this->client->post("UserDefinedFieldListItems", $resource->toArray());
+        $udfFieldID = $resource->udfFieldID;
+        return $this->client->post("UserDefinedFields/$udfFieldID/ListItems", $resource->toArray());
     }
-
 
     /**
      * Finds the UserDefinedFieldListItem based on its ID.
@@ -64,8 +72,9 @@ class UserDefinedFieldListItemService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(UserDefinedFieldListItemEntity $resource): void
+    public function update(UserDefinedFieldListItemEntity $resource): Response
     {
-        $this->client->put("UserDefinedFieldListItems/$resource->id", $resource->toArray());
+        $udfFieldID = $resource->udfFieldID;
+        return $this->client->put("UserDefinedFields/$udfFieldID/ListItems", $resource->toArray());
     }
 }

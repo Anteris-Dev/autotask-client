@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\CompanyToDos;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask CompanyToDos.
@@ -13,6 +14,13 @@ class CompanyToDoService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class CompanyToDoService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(CompanyToDoEntity $resource)
+    public function create(CompanyToDoEntity $resource): Response
     {
-        $this->client->post("CompanyToDos", $resource->toArray());
+        $companyID = $resource->companyID;
+        return $this->client->post("Companies/$companyID/ToDos", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $companyID  ID of the CompanyToDo parent resource.
      * @param  int  $id  ID of the CompanyToDo to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $companyID,int $id): void
     {
-        $this->client->delete("CompanyToDos/$id");
+        $this->client->delete("Companies/$companyID/ToDos/$id");
     }
 
     /**
@@ -75,8 +85,9 @@ class CompanyToDoService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(CompanyToDoEntity $resource): void
+    public function update(CompanyToDoEntity $resource): Response
     {
-        $this->client->put("CompanyToDos/$resource->id", $resource->toArray());
+        $companyID = $resource->companyID;
+        return $this->client->put("Companies/$companyID/ToDos", $resource->toArray());
     }
 }

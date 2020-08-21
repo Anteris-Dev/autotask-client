@@ -64,7 +64,7 @@
         <aside class="phpdocumentor-element-found-in">
             <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/ServiceBundleServices/ServiceBundleServiceService.php"><a href="../files/autotask-client-src-api-servicebundleservices-servicebundleserviceservice.html"><abbr title="autotask-client/src/API/ServiceBundleServices/ServiceBundleServiceService.php">ServiceBundleServiceService.php</abbr></a></abbr>
             :
-            <span class="phpdocumentor-element-found-in__line">11</span>
+            <span class="phpdocumentor-element-found-in__line">12</span>
         </aside>
 
         <p class="phpdocumentor-class__summary">Handles all interaction with Autotask ServiceBundleServices.</p>
@@ -79,13 +79,13 @@
                 </tr>
                                                                 <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-ServiceBundleServices-ServiceBundleServiceService.html#method___construct">__construct()</a></th>
-                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">Instantiates the class.</td>
                     <td class="phpdocumentor-cell">mixed</td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-ServiceBundleServices-ServiceBundleServiceService.html#method_create">create()</a></th>
                     <td class="phpdocumentor-cell">Creates a new servicebundleservice.</td>
-                    <td class="phpdocumentor-cell">mixed</td>
+                    <td class="phpdocumentor-cell"><abbr title="\GuzzleHttp\Psr7\Response">Response</abbr></td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/Anteris-Autotask-API-ServiceBundleServices-ServiceBundleServiceService.html#method_deleteById">deleteById()</a></th>
@@ -118,7 +118,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/ServiceBundleServices/ServiceBundleServiceService.php"><a href="../files/autotask-client-src-api-servicebundleservices-servicebundleserviceservice.html"><abbr title="autotask-client/src/API/ServiceBundleServices/ServiceBundleServiceService.php">ServiceBundleServiceService.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">14</span>
+        <span class="phpdocumentor-element-found-in__line">15</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">protected</span>
@@ -141,8 +141,9 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/ServiceBundleServices/ServiceBundleServiceService.php"><a href="../files/autotask-client-src-api-servicebundleservices-servicebundleserviceservice.html"><abbr title="autotask-client/src/API/ServiceBundleServices/ServiceBundleServiceService.php">ServiceBundleServiceService.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">16</span>
+        <span class="phpdocumentor-element-found-in__line">24</span>
     </aside>
+        <p class="phpdocumentor-summary">Instantiates the class.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
                                 <span class="phpdocumentor-signature__name">__construct</span>(
@@ -161,10 +162,17 @@
                     <span class="phpdocumentor-signature__argument__name">$client</span>
                     : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/Anteris-Autotask-HttpClient.html"><abbr title="\Anteris\Autotask\HttpClient">HttpClient</abbr></a></span>
                                     </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The http client that will be used to interact with the API.</p></section></dd>
                     </dl>
     
-        
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">author</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>Aidan Casey <a href="mailto:aidan.casey@anteris.com">aidan.casey@anteris.com</a></p></section></dd>
+                                    </dl>
+    
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -180,7 +188,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/ServiceBundleServices/ServiceBundleServiceService.php"><a href="../files/autotask-client-src-api-servicebundleservices-servicebundleserviceservice.html"><abbr title="autotask-client/src/API/ServiceBundleServices/ServiceBundleServiceService.php">ServiceBundleServiceService.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">28</span>
+        <span class="phpdocumentor-element-found-in__line">36</span>
     </aside>
         <p class="phpdocumentor-summary">Creates a new servicebundleservice.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -191,7 +199,7 @@
                 <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/Anteris-Autotask-API-ServiceBundleServices-ServiceBundleServiceEntity.html"><abbr title="\Anteris\Autotask\API\ServiceBundleServices\ServiceBundleServiceEntity">ServiceBundleServiceEntity</abbr></a></span>
                             </span>
                 )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
+        : <span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Psr7\Response">Response</abbr></span>
     </code>
 
     
@@ -213,7 +221,7 @@
                                     </dl>
     
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Psr7\Response">Response</abbr></span>
             
 </article>
                                     <a id="method_deleteById"></a>
@@ -227,14 +235,18 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/ServiceBundleServices/ServiceBundleServiceService.php"><a href="../files/autotask-client-src-api-servicebundleservices-servicebundleserviceservice.html"><abbr title="autotask-client/src/API/ServiceBundleServices/ServiceBundleServiceService.php">ServiceBundleServiceService.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">40</span>
+        <span class="phpdocumentor-element-found-in__line">50</span>
     </aside>
         <p class="phpdocumentor-summary">Deletes an entity by its ID.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
                                 <span class="phpdocumentor-signature__name">deleteById</span>(
                     <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$id</span> :
+                            <span class="phpdocumentor-signature__argument__name">$serviceBundleID</span> :
+                <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$id</span> :
                 <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </span>
                 )
@@ -244,6 +256,11 @@
     
             <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
         <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$serviceBundleID</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>ID of the ServiceBundleService parent resource.</p></section></dd>
                             <dt class="phpdocumentor-argument-list__entry">
                     <span class="phpdocumentor-signature__argument__name">$id</span>
                     : <span class="phpdocumentor-signature__argument__return-type">int</span>
@@ -272,7 +289,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/ServiceBundleServices/ServiceBundleServiceService.php"><a href="../files/autotask-client-src-api-servicebundleservices-servicebundleserviceservice.html"><abbr title="autotask-client/src/API/ServiceBundleServices/ServiceBundleServiceService.php">ServiceBundleServiceService.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">52</span>
+        <span class="phpdocumentor-element-found-in__line">62</span>
     </aside>
         <p class="phpdocumentor-summary">Finds the ServiceBundleService based on its ID.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -319,7 +336,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="autotask-client/src/API/ServiceBundleServices/ServiceBundleServiceService.php"><a href="../files/autotask-client-src-api-servicebundleservices-servicebundleserviceservice.html"><abbr title="autotask-client/src/API/ServiceBundleServices/ServiceBundleServiceService.php">ServiceBundleServiceService.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">66</span>
+        <span class="phpdocumentor-element-found-in__line">76</span>
     </aside>
         <p class="phpdocumentor-summary">Returns an instance of the query builder for this entity.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">

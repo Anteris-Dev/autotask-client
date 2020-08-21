@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\InternalLocationWithBusinessHours;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask InternalLocationWithBusinessHours.
@@ -13,6 +14,13 @@ class InternalLocationWithBusinessHourService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,10 @@ class InternalLocationWithBusinessHourService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(InternalLocationWithBusinessHourEntity $resource)
+    public function create(InternalLocationWithBusinessHourEntity $resource): Response
     {
-        $this->client->post("InternalLocationWithBusinessHours", $resource->toArray());
+        return $this->client->post("InternalLocationWithBusinessHours", $resource->toArray());
     }
-
 
     /**
      * Finds the InternalLocationWithBusinessHour based on its ID.
@@ -64,8 +71,8 @@ class InternalLocationWithBusinessHourService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(InternalLocationWithBusinessHourEntity $resource): void
+    public function update(InternalLocationWithBusinessHourEntity $resource): Response
     {
-        $this->client->put("InternalLocationWithBusinessHours/$resource->id", $resource->toArray());
+        return $this->client->put("InternalLocationWithBusinessHours", $resource->toArray());
     }
 }

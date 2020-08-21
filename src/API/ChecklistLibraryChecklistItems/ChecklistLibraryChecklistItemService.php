@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ChecklistLibraryChecklistItems;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ChecklistLibraryChecklistItems.
@@ -13,6 +14,13 @@ class ChecklistLibraryChecklistItemService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class ChecklistLibraryChecklistItemService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ChecklistLibraryChecklistItemEntity $resource)
+    public function create(ChecklistLibraryChecklistItemEntity $resource): Response
     {
-        $this->client->post("ChecklistLibraryChecklistItems", $resource->toArray());
+        $checklistLibraryID = $resource->checklistLibraryID;
+        return $this->client->post("ChecklistLibraries/$checklistLibraryID/ChecklistItems", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $checklistLibraryID  ID of the ChecklistLibraryChecklistItem parent resource.
      * @param  int  $id  ID of the ChecklistLibraryChecklistItem to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $checklistLibraryID,int $id): void
     {
-        $this->client->delete("ChecklistLibraryChecklistItems/$id");
+        $this->client->delete("ChecklistLibraries/$checklistLibraryID/ChecklistItems/$id");
     }
 
     /**
@@ -75,8 +85,9 @@ class ChecklistLibraryChecklistItemService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ChecklistLibraryChecklistItemEntity $resource): void
+    public function update(ChecklistLibraryChecklistItemEntity $resource): Response
     {
-        $this->client->put("ChecklistLibraryChecklistItems/$resource->id", $resource->toArray());
+        $checklistLibraryID = $resource->checklistLibraryID;
+        return $this->client->put("ChecklistLibraries/$checklistLibraryID/ChecklistItems", $resource->toArray());
     }
 }

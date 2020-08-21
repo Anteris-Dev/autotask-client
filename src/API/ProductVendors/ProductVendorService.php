@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ProductVendors;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ProductVendors.
@@ -13,6 +14,13 @@ class ProductVendorService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,11 @@ class ProductVendorService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ProductVendorEntity $resource)
+    public function create(ProductVendorEntity $resource): Response
     {
-        $this->client->post("ProductVendors", $resource->toArray());
+        $productID = $resource->productID;
+        return $this->client->post("Products/$productID/Vendors", $resource->toArray());
     }
-
 
     /**
      * Finds the ProductVendor based on its ID.
@@ -64,8 +72,9 @@ class ProductVendorService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ProductVendorEntity $resource): void
+    public function update(ProductVendorEntity $resource): Response
     {
-        $this->client->put("ProductVendors/$resource->id", $resource->toArray());
+        $productID = $resource->productID;
+        return $this->client->put("Products/$productID/Vendors", $resource->toArray());
     }
 }

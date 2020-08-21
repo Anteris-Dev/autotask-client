@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\PaymentTerms;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask PaymentTerms.
@@ -13,6 +14,13 @@ class PaymentTermService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,10 @@ class PaymentTermService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(PaymentTermEntity $resource)
+    public function create(PaymentTermEntity $resource): Response
     {
-        $this->client->post("PaymentTerms", $resource->toArray());
+        return $this->client->post("PaymentTerms", $resource->toArray());
     }
-
 
     /**
      * Finds the PaymentTerm based on its ID.
@@ -64,8 +71,8 @@ class PaymentTermService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(PaymentTermEntity $resource): void
+    public function update(PaymentTermEntity $resource): Response
     {
-        $this->client->put("PaymentTerms/$resource->id", $resource->toArray());
+        return $this->client->put("PaymentTerms", $resource->toArray());
     }
 }

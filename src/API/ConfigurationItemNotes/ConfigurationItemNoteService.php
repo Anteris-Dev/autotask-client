@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ConfigurationItemNotes;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ConfigurationItemNotes.
@@ -13,6 +14,13 @@ class ConfigurationItemNoteService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,11 @@ class ConfigurationItemNoteService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ConfigurationItemNoteEntity $resource)
+    public function create(ConfigurationItemNoteEntity $resource): Response
     {
-        $this->client->post("ConfigurationItemNotes", $resource->toArray());
+        $configurationItemID = $resource->configurationItemID;
+        return $this->client->post("ConfigurationItems/$configurationItemID/Notes", $resource->toArray());
     }
-
 
     /**
      * Finds the ConfigurationItemNote based on its ID.
@@ -64,8 +72,9 @@ class ConfigurationItemNoteService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ConfigurationItemNoteEntity $resource): void
+    public function update(ConfigurationItemNoteEntity $resource): Response
     {
-        $this->client->put("ConfigurationItemNotes/$resource->id", $resource->toArray());
+        $configurationItemID = $resource->configurationItemID;
+        return $this->client->put("ConfigurationItems/$configurationItemID/Notes", $resource->toArray());
     }
 }

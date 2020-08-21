@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\InventoryLocations;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask InventoryLocations.
@@ -13,6 +14,13 @@ class InventoryLocationService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,10 @@ class InventoryLocationService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(InventoryLocationEntity $resource)
+    public function create(InventoryLocationEntity $resource): Response
     {
-        $this->client->post("InventoryLocations", $resource->toArray());
+        return $this->client->post("InventoryLocations", $resource->toArray());
     }
-
 
     /**
      * Finds the InventoryLocation based on its ID.
@@ -64,8 +71,8 @@ class InventoryLocationService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(InventoryLocationEntity $resource): void
+    public function update(InventoryLocationEntity $resource): Response
     {
-        $this->client->put("InventoryLocations/$resource->id", $resource->toArray());
+        return $this->client->put("InventoryLocations", $resource->toArray());
     }
 }

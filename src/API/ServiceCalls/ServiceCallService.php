@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\ServiceCalls;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask ServiceCalls.
@@ -13,6 +14,13 @@ class ServiceCallService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,9 +33,9 @@ class ServiceCallService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(ServiceCallEntity $resource)
+    public function create(ServiceCallEntity $resource): Response
     {
-        $this->client->post("ServiceCalls", $resource->toArray());
+        return $this->client->post("ServiceCalls", $resource->toArray());
     }
 
     /**
@@ -75,8 +83,8 @@ class ServiceCallService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(ServiceCallEntity $resource): void
+    public function update(ServiceCallEntity $resource): Response
     {
-        $this->client->put("ServiceCalls/$resource->id", $resource->toArray());
+        return $this->client->put("ServiceCalls", $resource->toArray());
     }
 }

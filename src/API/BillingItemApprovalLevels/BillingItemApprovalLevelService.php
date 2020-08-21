@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\BillingItemApprovalLevels;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask BillingItemApprovalLevels.
@@ -13,6 +14,13 @@ class BillingItemApprovalLevelService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,10 @@ class BillingItemApprovalLevelService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(BillingItemApprovalLevelEntity $resource)
+    public function create(BillingItemApprovalLevelEntity $resource): Response
     {
-        $this->client->post("BillingItemApprovalLevels", $resource->toArray());
+        return $this->client->post("BillingItemApprovalLevels", $resource->toArray());
     }
-
 
     /**
      * Finds the BillingItemApprovalLevel based on its ID.

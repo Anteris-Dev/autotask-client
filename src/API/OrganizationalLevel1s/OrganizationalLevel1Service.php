@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\OrganizationalLevel1s;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask OrganizationalLevel1s.
@@ -13,6 +14,13 @@ class OrganizationalLevel1Service
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,10 @@ class OrganizationalLevel1Service
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(OrganizationalLevel1Entity $resource)
+    public function create(OrganizationalLevel1Entity $resource): Response
     {
-        $this->client->post("OrganizationalLevel1s", $resource->toArray());
+        return $this->client->post("OrganizationalLevel1s", $resource->toArray());
     }
-
 
     /**
      * Finds the OrganizationalLevel1 based on its ID.
@@ -64,8 +71,8 @@ class OrganizationalLevel1Service
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(OrganizationalLevel1Entity $resource): void
+    public function update(OrganizationalLevel1Entity $resource): Response
     {
-        $this->client->put("OrganizationalLevel1s/$resource->id", $resource->toArray());
+        return $this->client->put("OrganizationalLevel1s", $resource->toArray());
     }
 }

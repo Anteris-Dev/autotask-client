@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\Phases;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask Phases.
@@ -13,6 +14,13 @@ class PhaseService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,11 +33,11 @@ class PhaseService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(PhaseEntity $resource)
+    public function create(PhaseEntity $resource): Response
     {
-        $this->client->post("Phases", $resource->toArray());
+        $projectID = $resource->projectID;
+        return $this->client->post("Projects/$projectID/Phases", $resource->toArray());
     }
-
 
     /**
      * Finds the Phase based on its ID.
@@ -64,8 +72,9 @@ class PhaseService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(PhaseEntity $resource): void
+    public function update(PhaseEntity $resource): Response
     {
-        $this->client->put("Phases/$resource->id", $resource->toArray());
+        $projectID = $resource->projectID;
+        return $this->client->put("Projects/$projectID/Phases", $resource->toArray());
     }
 }

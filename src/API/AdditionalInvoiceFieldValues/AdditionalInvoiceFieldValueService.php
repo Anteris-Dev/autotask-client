@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\AdditionalInvoiceFieldValues;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask AdditionalInvoiceFieldValues.
@@ -13,12 +14,17 @@ class AdditionalInvoiceFieldValueService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
     }
-
-
 
     /**
      * Finds the AdditionalInvoiceFieldValue based on its ID.

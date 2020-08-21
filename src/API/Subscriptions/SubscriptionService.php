@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\Subscriptions;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask Subscriptions.
@@ -13,6 +14,13 @@ class SubscriptionService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,9 +33,9 @@ class SubscriptionService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(SubscriptionEntity $resource)
+    public function create(SubscriptionEntity $resource): Response
     {
-        $this->client->post("Subscriptions", $resource->toArray());
+        return $this->client->post("Subscriptions", $resource->toArray());
     }
 
     /**
@@ -75,8 +83,8 @@ class SubscriptionService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(SubscriptionEntity $resource): void
+    public function update(SubscriptionEntity $resource): Response
     {
-        $this->client->put("Subscriptions/$resource->id", $resource->toArray());
+        return $this->client->put("Subscriptions", $resource->toArray());
     }
 }

@@ -3,6 +3,7 @@
 namespace Anteris\Autotask\API\Holidays;
 
 use Anteris\Autotask\HttpClient;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Handles all interaction with Autotask Holidays.
@@ -13,6 +14,13 @@ class HolidayService
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
 
+    /**
+     * Instantiates the class.
+     *
+     * @param  HttpClient  $client  The http client that will be used to interact with the API.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
     public function __construct(HttpClient $client)
     {
         $this->client = $client;
@@ -25,21 +33,23 @@ class HolidayService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function create(HolidayEntity $resource)
+    public function create(HolidayEntity $resource): Response
     {
-        $this->client->post("Holidays", $resource->toArray());
+        $holidaySetID = $resource->holidaySetID;
+        return $this->client->post("HolidaySets/$holidaySetID/Holidays", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $holidaySetID  ID of the Holiday parent resource.
      * @param  int  $id  ID of the Holiday to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $holidaySetID,int $id): void
     {
-        $this->client->delete("Holidays/$id");
+        $this->client->delete("HolidaySets/$holidaySetID/Holidays/$id");
     }
 
     /**
@@ -75,8 +85,9 @@ class HolidayService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function update(HolidayEntity $resource): void
+    public function update(HolidayEntity $resource): Response
     {
-        $this->client->put("Holidays/$resource->id", $resource->toArray());
+        $holidaySetID = $resource->holidaySetID;
+        return $this->client->put("HolidaySets/$holidaySetID/Holidays", $resource->toArray());
     }
 }
