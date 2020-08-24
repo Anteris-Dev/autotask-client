@@ -267,3 +267,4 @@ $client->contacts()->update( $contact );
 # Resources
 
 * [Autotask API Docs](https://ww14.autotask.net/help/DeveloperHelp/Content/AdminSetup/2ExtensionsIntegrations/APIs/REST/General_Topics/Intro_REST_API.htm)
+* [Autotask Soap API Client](https://github.com/opendns/autotask-php)
