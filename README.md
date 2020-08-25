@@ -76,7 +76,7 @@ Endpoints that allow creation of new items have a `create()` method. This takes 
 ```php
 <?php
 
-$contact = new Anteris\Autotask\Contacts\ContactEntity([
+$contact = new Anteris\Autotask\API\Contacts\ContactEntity([
     'id' => 0, // Autotask requires that new entities have an ID of 0
     'companyID' => 123,
     'firstName' => 'New',
