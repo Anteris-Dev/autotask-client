@@ -20,7 +20,6 @@ class RoleEntity extends DataTransferObject
     public string $name;
     public ?int $quoteItemDefaultTaxCategoryId;
     public ?int $roleType;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new Role entity.

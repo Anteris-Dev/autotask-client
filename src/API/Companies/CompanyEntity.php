@@ -68,7 +68,9 @@ class CompanyEntity extends DataTransferObject
     public ?int $taxRegionID;
     public ?int $territoryID;
     public ?string $webAddress;
-    public array $userDefinedFields = [];
+
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[] */
+    public array $userDefinedFields;
 
     /**
      * Creates a new Company entity.

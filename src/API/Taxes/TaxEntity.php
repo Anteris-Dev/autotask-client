@@ -16,7 +16,6 @@ class TaxEntity extends DataTransferObject
     public string $taxName;
     public float $taxRate;
     public int $taxRegionID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new Tax entity.

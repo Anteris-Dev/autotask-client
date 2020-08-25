@@ -15,7 +15,6 @@ class PriceListMaterialCodeEntity extends DataTransferObject
     public int $id;
     public ?float $unitPrice;
     public bool $usesInternalCurrencyPrice;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new PriceListMaterialCode entity.

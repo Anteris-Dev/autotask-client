@@ -13,7 +13,6 @@ class ContactGroupContactEntity extends DataTransferObject
     public int $contactGroupId;
     public int $contactId;
     public int $id;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ContactGroupContact entity.

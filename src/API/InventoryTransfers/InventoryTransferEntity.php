@@ -21,7 +21,6 @@ class InventoryTransferEntity extends DataTransferObject
     public ?int $transferByResourceID;
     public ?Carbon $transferDate;
     public ?string $updateNote;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new InventoryTransfer entity.

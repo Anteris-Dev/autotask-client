@@ -34,7 +34,6 @@ class InvoiceEntity extends DataTransferObject
     public ?int $voidedByResourceID;
     public ?Carbon $voidedDate;
     public ?Carbon $webServiceDate;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new Invoice entity.

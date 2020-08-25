@@ -15,7 +15,6 @@ class TicketRmaCreditEntity extends DataTransferObject
     public int $id;
     public ?float $internalCurrencyCreditAmount;
     public int $ticketID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new TicketRmaCredit entity.

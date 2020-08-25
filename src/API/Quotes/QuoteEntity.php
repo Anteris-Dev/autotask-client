@@ -49,7 +49,6 @@ class QuoteEntity extends DataTransferObject
     public ?bool $showTaxCategory;
     public int $soldToLocationID;
     public ?int $taxRegionID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new Quote entity.

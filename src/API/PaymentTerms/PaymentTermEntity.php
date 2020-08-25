@@ -15,7 +15,6 @@ class PaymentTermEntity extends DataTransferObject
     public ?bool $isActive;
     public string $name;
     public ?int $paymentDueInDays;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new PaymentTerm entity.

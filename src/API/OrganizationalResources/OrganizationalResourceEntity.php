@@ -13,7 +13,6 @@ class OrganizationalResourceEntity extends DataTransferObject
     public int $id;
     public int $organizationalLevelAssociationID;
     public int $resourceID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new OrganizationalResource entity.

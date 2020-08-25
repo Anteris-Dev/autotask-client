@@ -15,7 +15,6 @@ class CompanyWebhookUdfFieldEntity extends DataTransferObject
     public bool $isSubscribedField;
     public int $udfFieldID;
     public int $webhookID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new CompanyWebhookUdfField entity.

@@ -36,7 +36,6 @@ class ProductEntity extends DataTransferObject
     public ?float $unitCost;
     public ?float $unitPrice;
     public ?string $vendorProductNumber;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new Product entity.

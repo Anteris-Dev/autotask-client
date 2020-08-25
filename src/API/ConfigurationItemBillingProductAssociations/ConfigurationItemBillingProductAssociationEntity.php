@@ -16,7 +16,6 @@ class ConfigurationItemBillingProductAssociationEntity extends DataTransferObjec
     public Carbon $effectiveDate;
     public ?Carbon $expirationDate;
     public int $id;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ConfigurationItemBillingProductAssociation entity.

@@ -40,7 +40,6 @@ class ProjectChargeEntity extends DataTransferObject
     public ?float $unitCost;
     public ?float $unitPrice;
     public float $unitQuantity;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ProjectCharge entity.

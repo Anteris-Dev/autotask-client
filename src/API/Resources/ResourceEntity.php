@@ -46,7 +46,6 @@ class ResourceEntity extends DataTransferObject
     public ?string $travelAvailabilityPct;
     public string $userName;
     public int $userType;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new Resource entity.

@@ -36,7 +36,6 @@ class InvoiceTemplateEntity extends DataTransferObject
     public bool $showVerticalGridLines;
     public int $sortBy;
     public int $timeFormat;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new InvoiceTemplate entity.

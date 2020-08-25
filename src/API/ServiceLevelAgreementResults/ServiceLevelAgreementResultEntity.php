@@ -23,7 +23,6 @@ class ServiceLevelAgreementResultEntity extends DataTransferObject
     public ?int $resolutionResourceID;
     public ?string $serviceLevelAgreementName;
     public ?int $ticketID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ServiceLevelAgreementResult entity.

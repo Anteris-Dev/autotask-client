@@ -14,7 +14,6 @@ class OrganizationalLevel2Entity extends DataTransferObject
     public int $id;
     public ?bool $isActive;
     public string $name;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new OrganizationalLevel2 entity.

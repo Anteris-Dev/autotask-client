@@ -14,7 +14,6 @@ class OrganizationalLevelAssociationEntity extends DataTransferObject
     public ?bool $isActive;
     public int $organizationalLevel1ID;
     public int $organizationalLevel2ID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new OrganizationalLevelAssociation entity.

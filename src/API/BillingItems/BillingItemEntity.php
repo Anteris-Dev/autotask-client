@@ -56,7 +56,6 @@ class BillingItemEntity extends DataTransferObject
     public ?float $totalAmount;
     public ?int $vendorID;
     public ?Carbon $webServiceDate;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new BillingItem entity.

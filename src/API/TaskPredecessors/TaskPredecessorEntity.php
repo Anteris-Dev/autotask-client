@@ -14,7 +14,6 @@ class TaskPredecessorEntity extends DataTransferObject
     public ?int $lagDays;
     public int $predecessorTaskID;
     public int $successorTaskID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new TaskPredecessor entity.

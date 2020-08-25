@@ -15,7 +15,6 @@ class ContractRateEntity extends DataTransferObject
     public int $id;
     public ?float $internalCurrencyContractHourlyRate;
     public int $roleID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ContractRate entity.

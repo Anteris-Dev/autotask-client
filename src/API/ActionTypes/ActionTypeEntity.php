@@ -15,7 +15,6 @@ class ActionTypeEntity extends DataTransferObject
     public ?bool $isSystemActionType;
     public string $name;
     public int $view;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ActionType entity.

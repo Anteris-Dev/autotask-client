@@ -13,7 +13,6 @@ class ServiceCallTaskResourceEntity extends DataTransferObject
     public int $id;
     public int $resourceID;
     public int $serviceCallTaskID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ServiceCallTaskResource entity.

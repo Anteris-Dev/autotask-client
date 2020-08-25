@@ -16,7 +16,6 @@ class ContactBillingProductAssociationEntity extends DataTransferObject
     public Carbon $effectiveDate;
     public ?Carbon $expirationDate;
     public int $id;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ContactBillingProductAssociation entity.

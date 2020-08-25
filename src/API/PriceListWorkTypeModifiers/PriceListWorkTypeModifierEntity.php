@@ -16,7 +16,6 @@ class PriceListWorkTypeModifierEntity extends DataTransferObject
     public ?float $modifierValue;
     public bool $usesInternalCurrencyPrice;
     public int $workTypeModifierID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new PriceListWorkTypeModifier entity.

@@ -31,7 +31,6 @@ class QuoteTemplateEntity extends DataTransferObject
     public ?bool $showGridHeader;
     public ?bool $showTaxCategory;
     public ?bool $showVerticalGridLines;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new QuoteTemplate entity.

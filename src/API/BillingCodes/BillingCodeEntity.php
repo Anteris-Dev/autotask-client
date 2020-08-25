@@ -25,7 +25,6 @@ class BillingCodeEntity extends DataTransferObject
     public float $unitCost;
     public float $unitPrice;
     public ?int $useType;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new BillingCode entity.

@@ -20,6 +20,14 @@ class ContractExclusionSetExcludedRoleCollection extends DataTransferObjectColle
     }
 
     /**
+     * Sets the proper return type for IDE completion.
+     */
+    public function offsetGet($offset): ContractExclusionSetExcludedRoleEntity
+    {
+        return parent::offsetGet($offset);
+    }
+
+    /**
      * Creates an instance of this class from an Http response.
      *
      * @param  Response  $response  Http response.

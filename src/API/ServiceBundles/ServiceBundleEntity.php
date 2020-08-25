@@ -27,7 +27,6 @@ class ServiceBundleEntity extends DataTransferObject
     public ?float $unitDiscount;
     public ?float $unitPrice;
     public ?int $updateResourceID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ServiceBundle entity.

@@ -13,7 +13,9 @@ class CompanySiteConfigurationEntity extends DataTransferObject
     public int $companyID;
     public int $id;
     public ?string $locationName;
-    public array $userDefinedFields = [];
+
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[] */
+    public array $userDefinedFields;
 
     /**
      * Creates a new CompanySiteConfiguration entity.

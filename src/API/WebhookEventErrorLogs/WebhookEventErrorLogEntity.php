@@ -18,7 +18,6 @@ class WebhookEventErrorLogEntity extends DataTransferObject
     public int $id;
     public ?string $payload;
     public ?int $sequenceNumber;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new WebhookEventErrorLog entity.

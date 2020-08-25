@@ -53,7 +53,6 @@ class ProjectEntity extends DataTransferObject
     public int $status;
     public ?Carbon $statusDateTime;
     public ?string $statusDetail;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new Project entity.

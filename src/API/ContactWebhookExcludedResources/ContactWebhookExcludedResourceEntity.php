@@ -13,7 +13,6 @@ class ContactWebhookExcludedResourceEntity extends DataTransferObject
     public int $id;
     public int $resourceID;
     public int $webhookID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ContactWebhookExcludedResource entity.

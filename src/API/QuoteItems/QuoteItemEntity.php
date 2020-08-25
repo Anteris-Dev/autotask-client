@@ -39,7 +39,6 @@ class QuoteItemEntity extends DataTransferObject
     public ?float $unitCost;
     public float $unitDiscount;
     public ?float $unitPrice;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new QuoteItem entity.

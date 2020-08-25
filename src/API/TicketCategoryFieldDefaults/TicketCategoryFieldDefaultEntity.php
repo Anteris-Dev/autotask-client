@@ -27,7 +27,6 @@ class TicketCategoryFieldDefaultEntity extends DataTransferObject
     public ?int $ticketTypeID;
     public ?string $title;
     public ?int $workTypeID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new TicketCategoryFieldDefault entity.

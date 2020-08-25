@@ -13,7 +13,6 @@ class ContractExclusionBillingCodeEntity extends DataTransferObject
     public int $billingCodeID;
     public int $contractID;
     public int $id;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ContractExclusionBillingCode entity.

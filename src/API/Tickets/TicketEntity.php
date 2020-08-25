@@ -83,7 +83,6 @@ class TicketEntity extends DataTransferObject
     public ?string $ticketNumber;
     public ?int $ticketType;
     public string $title;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new Ticket entity.

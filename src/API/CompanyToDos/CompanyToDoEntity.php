@@ -27,7 +27,6 @@ class CompanyToDoEntity extends DataTransferObject
     public ?int $opportunityID;
     public Carbon $startDateTime;
     public ?int $ticketID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new CompanyToDo entity.

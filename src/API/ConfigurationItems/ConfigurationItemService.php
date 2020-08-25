@@ -3,6 +3,9 @@
 namespace Anteris\Autotask\API\ConfigurationItems;
 
 use Anteris\Autotask\HttpClient;
+use Anteris\Autotask\Support\EntityFields\EntityFieldCollection;
+use Anteris\Autotask\Support\EntityInformation\EntityInformationEntity;
+use Anteris\Autotask\Support\EntityUserDefinedFields\EntityUserDefinedFieldCollection;
 use GuzzleHttp\Psr7\Response;
 
 /**
@@ -49,6 +52,48 @@ class ConfigurationItemService
     {
         return ConfigurationItemEntity::fromResponse(
             $this->client->get("ConfigurationItems/$id")
+        );
+    }
+
+    /**
+     * Returns information about what fields an entity has.
+     *
+     * @see EntityFieldCollection
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
+    public function getEntityFields(): EntityFieldCollection
+    {
+        return EntityFieldCollection::fromResponse(
+            $this->client->get("ConfigurationItems/entityInformation/fields")
+        );
+    }
+
+    /**
+     * Returns information about what actions can be made against an entity.
+     *
+     * @see EntityInformationEntity
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
+    public function getEntityInformation(): EntityInformationEntity
+    {
+        return EntityInformationEntity::fromResponse(
+            $this->client->get("ConfigurationItems/entityInformation")
+        );
+    }
+
+    /**
+     * Returns information about what user defined fields an entity has.
+     *
+     * @see EntityUserDefinedFieldCollection
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
+    public function getEntityUserDefinedFields(): EntityUserDefinedFieldCollection
+    {
+        return EntityUserDefinedFieldCollection::fromResponse(
+            $this->client->get("ConfigurationItems/entityInformation/userDefinedFields")
         );
     }
 

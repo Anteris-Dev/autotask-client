@@ -45,7 +45,6 @@ class ContractEntity extends DataTransferObject
     public Carbon $startDate;
     public int $status;
     public int $timeReportingRequiresStartAndStopTimes;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new Contract entity.

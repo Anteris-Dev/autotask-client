@@ -30,7 +30,6 @@ class ExpenseReportEntity extends DataTransferObject
     public ?Carbon $submitDate;
     public int $submitterID;
     public Carbon $weekEnding;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ExpenseReport entity.

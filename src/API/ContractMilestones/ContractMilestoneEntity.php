@@ -24,7 +24,6 @@ class ContractMilestoneEntity extends DataTransferObject
     public ?int $organizationalLevelAssociationID;
     public int $status;
     public string $title;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ContractMilestone entity.

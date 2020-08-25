@@ -19,7 +19,6 @@ class PurchaseOrderItemReceivingEntity extends DataTransferObject
     public ?Carbon $receiveDate;
     public ?int $receivedByResourceID;
     public ?string $serialNumber;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new PurchaseOrderItemReceiving entity.

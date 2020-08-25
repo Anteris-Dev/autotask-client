@@ -71,7 +71,6 @@ class OpportunityEntity extends DataTransferObject
     public ?string $winReasonDetail;
     public ?float $yearlyCost;
     public ?float $yearlyRevenue;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new Opportunity entity.

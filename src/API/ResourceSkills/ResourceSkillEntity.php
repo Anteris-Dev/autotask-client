@@ -15,7 +15,6 @@ class ResourceSkillEntity extends DataTransferObject
     public ?string $skillDescription;
     public int $skillID;
     public int $skillLevel;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ResourceSkill entity.

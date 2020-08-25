@@ -13,7 +13,6 @@ class TicketAdditionalConfigurationItemEntity extends DataTransferObject
     public int $configurationItemID;
     public int $id;
     public int $ticketID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new TicketAdditionalConfigurationItem entity.

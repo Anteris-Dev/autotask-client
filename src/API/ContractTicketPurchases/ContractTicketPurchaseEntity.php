@@ -24,7 +24,6 @@ class ContractTicketPurchaseEntity extends DataTransferObject
     public ?int $status;
     public float $ticketsPurchased;
     public ?float $ticketsUsed;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ContractTicketPurchase entity.

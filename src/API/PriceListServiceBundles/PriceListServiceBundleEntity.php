@@ -15,7 +15,6 @@ class PriceListServiceBundleEntity extends DataTransferObject
     public int $serviceBundleID;
     public ?float $unitPrice;
     public bool $usesInternalCurrencyPrice;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new PriceListServiceBundle entity.

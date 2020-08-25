@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9418d12391f98900f4731b127d3756cb",
+    "content-hash": "2ac55a7e1c4234ff40c2f85d4e8bb250",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -211,16 +211,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.38.0",
+            "version": "2.39.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "d8f6a6a91d1eb9304527b040500f61923e97674b"
+                "reference": "0a41ea7f7fedacf307b7a339800e10356a042918"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/d8f6a6a91d1eb9304527b040500f61923e97674b",
-                "reference": "d8f6a6a91d1eb9304527b040500f61923e97674b",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/0a41ea7f7fedacf307b7a339800e10356a042918",
+                "reference": "0a41ea7f7fedacf307b7a339800e10356a042918",
                 "shasum": ""
             },
             "require": {
@@ -286,7 +286,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2020-08-04T19:12:46+00:00"
+            "time": "2020-08-24T12:35:58+00:00"
         },
         {
             "name": "psr/http-client",
@@ -750,16 +750,16 @@
     "packages-dev": [
         {
             "name": "anteris-dev/autotask-client-generator",
-            "version": "dev-master",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Anteris-Dev/autotask-client-generator.git",
-                "reference": "3e9cb6cbeb6b46e3f40a2c1c851a52f22be3fa3b"
+                "reference": "2dbb7526a58bca974e0b868d21aedb3bea58899e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Anteris-Dev/autotask-client-generator/zipball/3e9cb6cbeb6b46e3f40a2c1c851a52f22be3fa3b",
-                "reference": "3e9cb6cbeb6b46e3f40a2c1c851a52f22be3fa3b",
+                "url": "https://api.github.com/repos/Anteris-Dev/autotask-client-generator/zipball/2dbb7526a58bca974e0b868d21aedb3bea58899e",
+                "reference": "2dbb7526a58bca974e0b868d21aedb3bea58899e",
                 "shasum": ""
             },
             "require": {
@@ -777,8 +777,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Anteris\\Autotask\\Generator\\": "./src",
-                    "Anteris\\Autotask\\": "./toost"
+                    "Anteris\\Autotask\\Generator\\": "./src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -789,7 +788,7 @@
                 }
             ],
             "description": "This package is the brains behind the Autotask API client. It generates each service class using the Autotask API as its guide.",
-            "time": "2020-08-21T16:07:05+00:00"
+            "time": "2020-08-25T18:38:24+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -926,16 +925,16 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v7.25.0",
+            "version": "v7.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "37a76782aef1bb83680143c4283b1bf3db751e96"
+                "reference": "56cd618b9801cdae35c389c71bb692fcb075ef64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/37a76782aef1bb83680143c4283b1bf3db751e96",
-                "reference": "37a76782aef1bb83680143c4283b1bf3db751e96",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/56cd618b9801cdae35c389c71bb692fcb075ef64",
+                "reference": "56cd618b9801cdae35c389c71bb692fcb075ef64",
                 "shasum": ""
             },
             "require": {
@@ -966,20 +965,20 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "https://laravel.com",
-            "time": "2020-07-19T12:38:38+00:00"
+            "time": "2020-08-17T15:18:25+00:00"
         },
         {
             "name": "illuminate/support",
-            "version": "v7.25.0",
+            "version": "v7.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "9b0c0af8d2dd1a729f6337d0ed5c81a241ea43ab"
+                "reference": "893a17178ec34f749d6cfa92feec9843db55e39d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/9b0c0af8d2dd1a729f6337d0ed5c81a241ea43ab",
-                "reference": "9b0c0af8d2dd1a729f6337d0ed5c81a241ea43ab",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/893a17178ec34f749d6cfa92feec9843db55e39d",
+                "reference": "893a17178ec34f749d6cfa92feec9843db55e39d",
                 "shasum": ""
             },
             "require": {
@@ -1028,7 +1027,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2020-08-10T13:58:23+00:00"
+            "time": "2020-08-20T13:40:03+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -3441,9 +3440,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "anteris-dev/autotask-client-generator": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

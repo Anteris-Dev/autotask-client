@@ -23,7 +23,6 @@ class InventoryItemEntity extends DataTransferObject
     public ?int $quantityPicked;
     public ?int $quantityReserved;
     public ?string $referenceNumber;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new InventoryItem entity.

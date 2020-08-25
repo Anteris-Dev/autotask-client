@@ -26,7 +26,6 @@ class CompanyNoteEntity extends DataTransferObject
     public ?string $note;
     public ?int $opportunityID;
     public Carbon $startDateTime;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new CompanyNote entity.

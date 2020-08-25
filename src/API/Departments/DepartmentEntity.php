@@ -15,7 +15,6 @@ class DepartmentEntity extends DataTransferObject
     public string $name;
     public ?string $number;
     public int $primaryLocationID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new Department entity.

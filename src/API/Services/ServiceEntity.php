@@ -27,7 +27,6 @@ class ServiceEntity extends DataTransferObject
     public float $unitPrice;
     public ?int $updateResourceID;
     public ?int $vendorCompanyID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new Service entity.

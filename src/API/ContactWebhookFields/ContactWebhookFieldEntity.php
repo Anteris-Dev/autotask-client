@@ -15,7 +15,6 @@ class ContactWebhookFieldEntity extends DataTransferObject
     public bool $isDisplayAlwaysField;
     public bool $isSubscribedField;
     public int $webhookID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ContactWebhookField entity.

@@ -31,7 +31,6 @@ class NotificationHistoryEntity extends DataTransferObject
     public ?string $templateName;
     public ?int $ticketID;
     public ?int $timeEntryID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new NotificationHistory entity.

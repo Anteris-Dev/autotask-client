@@ -46,7 +46,6 @@ class TaskEntity extends DataTransferObject
     public ?string $taskNumber;
     public int $taskType;
     public string $title;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new Task entity.

@@ -18,7 +18,6 @@ class SubscriptionPeriodEntity extends DataTransferObject
     public ?Carbon $postedDate;
     public ?string $purchaseOrderNumber;
     public int $subscriptionID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new SubscriptionPeriod entity.

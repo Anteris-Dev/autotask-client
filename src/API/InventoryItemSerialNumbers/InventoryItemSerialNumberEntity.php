@@ -13,7 +13,6 @@ class InventoryItemSerialNumberEntity extends DataTransferObject
     public int $id;
     public int $inventoryItemID;
     public string $serialNumber;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new InventoryItemSerialNumber entity.

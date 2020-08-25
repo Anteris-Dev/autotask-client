@@ -22,7 +22,6 @@ class TaskNoteEntity extends DataTransferObject
     public int $publish;
     public int $taskID;
     public string $title;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new TaskNote entity.

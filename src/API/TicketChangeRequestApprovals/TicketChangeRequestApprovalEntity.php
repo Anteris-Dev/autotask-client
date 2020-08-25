@@ -18,7 +18,6 @@ class TicketChangeRequestApprovalEntity extends DataTransferObject
     public ?bool $isApproved;
     public ?int $resourceID;
     public int $ticketID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new TicketChangeRequestApproval entity.

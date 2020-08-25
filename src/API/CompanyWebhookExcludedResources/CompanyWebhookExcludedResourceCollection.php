@@ -20,6 +20,14 @@ class CompanyWebhookExcludedResourceCollection extends DataTransferObjectCollect
     }
 
     /**
+     * Sets the proper return type for IDE completion.
+     */
+    public function offsetGet($offset): CompanyWebhookExcludedResourceEntity
+    {
+        return parent::offsetGet($offset);
+    }
+
+    /**
      * Creates an instance of this class from an Http response.
      *
      * @param  Response  $response  Http response.

@@ -20,7 +20,6 @@ class ContractServiceBundleAdjustmentEntity extends DataTransferObject
     public ?int $quoteItemID;
     public ?int $serviceBundleID;
     public ?int $unitChange;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ContractServiceBundleAdjustment entity.

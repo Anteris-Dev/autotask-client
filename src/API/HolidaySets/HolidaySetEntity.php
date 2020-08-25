@@ -13,7 +13,6 @@ class HolidaySetEntity extends DataTransferObject
     public ?string $holidaySetDescription;
     public string $holidaySetName;
     public int $id;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new HolidaySet entity.
