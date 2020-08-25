@@ -21,7 +21,6 @@ class ContractServiceAdjustmentEntity extends DataTransferObject
     public ?int $quoteItemID;
     public ?int $serviceID;
     public ?int $unitChange;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ContractServiceAdjustment entity.

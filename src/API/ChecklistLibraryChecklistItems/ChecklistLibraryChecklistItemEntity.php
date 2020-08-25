@@ -16,7 +16,6 @@ class ChecklistLibraryChecklistItemEntity extends DataTransferObject
     public string $itemName;
     public ?int $knowledgebaseArticleID;
     public ?int $position;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ChecklistLibraryChecklistItem entity.

@@ -25,7 +25,6 @@ class ContractRetainerEntity extends DataTransferObject
     public ?string $paymentNumber;
     public Carbon $startDate;
     public int $status;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ContractRetainer entity.

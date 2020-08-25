@@ -16,7 +16,6 @@ class ResourceRoleEntity extends DataTransferObject
     public ?int $queueID;
     public int $resourceID;
     public int $roleID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ResourceRole entity.

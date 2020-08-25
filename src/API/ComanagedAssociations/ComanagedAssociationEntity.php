@@ -13,7 +13,6 @@ class ComanagedAssociationEntity extends DataTransferObject
     public int $companyID;
     public int $id;
     public int $resourceID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ComanagedAssociation entity.

@@ -13,7 +13,6 @@ class ServiceCallTicketEntity extends DataTransferObject
     public int $id;
     public int $serviceCallID;
     public int $ticketID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ServiceCallTicket entity.

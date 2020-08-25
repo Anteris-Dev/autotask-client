@@ -20,7 +20,6 @@ class ContractServiceEntity extends DataTransferObject
     public int $serviceID;
     public ?float $unitCost;
     public ?float $unitPrice;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ContractService entity.

@@ -16,7 +16,6 @@ class InventoryLocationEntity extends DataTransferObject
     public ?bool $isDefault;
     public string $locationName;
     public ?int $resourceID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new InventoryLocation entity.

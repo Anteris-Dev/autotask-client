@@ -13,7 +13,6 @@ class ServiceCallTicketResourceEntity extends DataTransferObject
     public int $id;
     public int $resourceID;
     public int $serviceCallTicketID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ServiceCallTicketResource entity.

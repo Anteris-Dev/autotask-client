@@ -25,7 +25,6 @@ class PhaseEntity extends DataTransferObject
     public int $projectID;
     public ?Carbon $startDate;
     public string $title;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new Phase entity.

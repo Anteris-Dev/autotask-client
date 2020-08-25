@@ -54,7 +54,9 @@ class ContactEntity extends DataTransferObject
     public ?string $title;
     public ?string $twitterUrl;
     public ?string $zipCode;
-    public array $userDefinedFields = [];
+
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[] */
+    public array $userDefinedFields;
 
     /**
      * Creates a new Contact entity.

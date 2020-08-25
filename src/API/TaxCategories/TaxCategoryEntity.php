@@ -14,7 +14,6 @@ class TaxCategoryEntity extends DataTransferObject
     public int $id;
     public ?bool $isActive;
     public string $name;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new TaxCategory entity.

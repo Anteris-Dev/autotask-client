@@ -14,7 +14,6 @@ class TicketSecondaryResourceEntity extends DataTransferObject
     public int $resourceID;
     public int $roleID;
     public int $ticketID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new TicketSecondaryResource entity.

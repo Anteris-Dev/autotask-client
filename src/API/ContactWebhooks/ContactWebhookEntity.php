@@ -24,7 +24,6 @@ class ContactWebhookEntity extends DataTransferObject
     public bool $sendThresholdExceededNotification;
     public ?string $webhookGUID;
     public string $webhookUrl;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ContactWebhook entity.

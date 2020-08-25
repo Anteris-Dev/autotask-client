@@ -17,7 +17,6 @@ class TicketCategoryEntity extends DataTransferObject
     public ?bool $isGlobalDefault;
     public string $name;
     public ?string $nickname;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new TicketCategory entity.

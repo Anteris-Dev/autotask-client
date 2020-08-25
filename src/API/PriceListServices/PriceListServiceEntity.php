@@ -15,7 +15,6 @@ class PriceListServiceEntity extends DataTransferObject
     public int $serviceID;
     public ?float $unitPrice;
     public bool $usesInternalCurrencyPrice;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new PriceListService entity.

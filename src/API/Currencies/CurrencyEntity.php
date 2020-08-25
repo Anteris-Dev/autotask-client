@@ -22,7 +22,6 @@ class CurrencyEntity extends DataTransferObject
     public ?Carbon $lastModifiedDateTime;
     public string $name;
     public ?int $updateResourceId;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new Currency entity.

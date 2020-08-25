@@ -20,7 +20,6 @@ class AppointmentEntity extends DataTransferObject
     public Carbon $startDateTime;
     public string $title;
     public ?Carbon $updateDateTime;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new Appointment entity.

@@ -41,7 +41,6 @@ class TimeEntryEntity extends DataTransferObject
     public ?int $taskID;
     public ?int $ticketID;
     public ?int $timeEntryType;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new TimeEntry entity.

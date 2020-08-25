@@ -17,7 +17,6 @@ class ProductVendorEntity extends DataTransferObject
     public ?float $vendorCost;
     public int $vendorID;
     public ?string $vendorPartNumber;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ProductVendor entity.

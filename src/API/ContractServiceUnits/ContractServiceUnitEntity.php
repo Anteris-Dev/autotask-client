@@ -24,7 +24,6 @@ class ContractServiceUnitEntity extends DataTransferObject
     public Carbon $startDate;
     public int $units;
     public ?int $vendorCompanyID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ContractServiceUnit entity.

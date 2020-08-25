@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - This changelog.
+- Support for retrieving entity metadata via `getEntityInformation()`, `getEntityFields()`, and `getEntityUserDefinedFields()`.
+- Support for retrieving the query count via the `count()` method on the QueryBuilder.
+
+### Changed
+- User Defined Fields are now represented as Data Transfer Objects, though they still are organized as an array on each entity that supports them.
+
+### Fixed
+- User Defined Fields are not present on entities that do not support them.
+- Guzzle Response object is not imported on service classes that do not require it.
 
 ## [v0.1.4] - 2020-08-21
 ### Fixed

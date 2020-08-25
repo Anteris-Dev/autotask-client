@@ -103,7 +103,9 @@ class ConfigurationItemEntity extends DataTransferObject
     public ?int $sourceChargeType;
     public ?int $vendorID;
     public ?Carbon $warrantyExpirationDate;
-    public array $userDefinedFields = [];
+
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[] */
+    public array $userDefinedFields;
 
     /**
      * Creates a new ConfigurationItem entity.

@@ -15,6 +15,9 @@ Run `composer require anteris-dev/autotask-client`
 		* [create( $resource )](#create-resource-)
 		* [deleteById( int $id )](#deletebyid-int-id-)
 		* [findById( int $id )](#findbyid-int-id-)
+        * [getEntityFields()](#getentityfields-)
+        * [getEntityInformation()](#getentityinformation-)
+        * [getEntityUserDefinedFields()](#getentityuserdefinedfields-)
 		* [query()](#query)
 			* [where()](#where)
 			* [orWhere()](#orwhere)
@@ -116,6 +119,18 @@ echo $contact->firstName;
 
 ```
 
+## getEntityFields()
+
+All endpoints can have basic metadata queried. This method returns a specification of what fields the resource has and what their data types are. For more information we recommend taking a look at the [Autotask documentation](https://ww14.autotask.net/help/DeveloperHelp/Content/AdminSetup/2ExtensionsIntegrations/APIs/REST/API_Calls/REST_Resource_Child_Access_URLs.htm).
+
+## getEntityInformation()
+
+All endpoints can have basic metadata queried. This method returns a specification of what actions the resource has available (create, update, delete, etc.). For more information we recommend taking a look at the [Autotask documentation](https://ww14.autotask.net/help/DeveloperHelp/Content/AdminSetup/2ExtensionsIntegrations/APIs/REST/API_Calls/REST_Resource_Child_Access_URLs.htm).
+
+## getEntityUserDefinedFields()
+
+All endpoints can have basic metadata queried. If the resource supports User Defined Fields, this method returns a specification of what user defined fields the resource has and their data types. For more information we recommend taking a look at the [Autotask documentation](https://ww14.autotask.net/help/DeveloperHelp/Content/AdminSetup/2ExtensionsIntegrations/APIs/REST/API_Calls/REST_Resource_Child_Access_URLs.htm).
+
 ## query()
 
 Endpoints that can be queried have a `query()` method. This returns a query builder that has several options. These and examples of its use may be found below.
@@ -178,6 +193,22 @@ This method limits the number of records that Autotask returns. The integer pass
 <?php
 
 $client->contacts()->query()->records(20);
+
+```
+
+### count()
+
+Once you have defined all your filters, you may run this method to see how many records making the request would return. This may be helpful for planning out pagination, etc. Example below.
+
+```php
+<?php
+
+// This returns an integer specifying how many records will be returned
+$result = $client->contacts()->query()->where('firstName', 'contains', 'Foo')->count();
+
+if ($result > 0) {
+    echo 'Records exist!';
+}
 
 ```
 

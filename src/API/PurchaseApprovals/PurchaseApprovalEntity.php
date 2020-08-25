@@ -14,7 +14,6 @@ class PurchaseApprovalEntity extends DataTransferObject
     public int $id;
     public bool $isApproved;
     public ?string $rejectNote;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new PurchaseApproval entity.

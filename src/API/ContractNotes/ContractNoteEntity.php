@@ -20,7 +20,6 @@ class ContractNoteEntity extends DataTransferObject
     public ?int $impersonatorUpdaterResourceID;
     public ?Carbon $lastActivityDate;
     public string $title;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ContractNote entity.

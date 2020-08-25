@@ -35,6 +35,25 @@ class InventoryLocationQueryBuilder
     }
 
     /**
+     * Runs the query but returns an integer specifying the number of records
+     * that would be returned if executed.
+     */
+     public function count(): int
+     {
+         $response = $this->client->get("InventoryLocations/query/count", [
+             'search' => json_encode( $this->toArray() )
+         ]);
+
+         $responseArray = json_decode($response->getBody(), true);
+
+         if (! isset($responseArray['queryCount'])) {
+             throw new Exception('Missing queryCount key in response!');
+         }
+
+         return $responseArray['queryCount'];
+    }
+
+    /**
      * Runs the query.
      */
     public function get(): InventoryLocationCollection

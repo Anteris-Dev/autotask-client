@@ -22,7 +22,6 @@ class InternalLocationEntity extends DataTransferObject
     public ?string $postalCode;
     public ?string $state;
     public ?string $timeZone;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new InternalLocation entity.

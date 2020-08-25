@@ -13,7 +13,6 @@ class TicketChecklistLibraryEntity extends DataTransferObject
     public int $checklistLibraryID;
     public ?int $id;
     public int $ticketID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new TicketChecklistLibrary entity.

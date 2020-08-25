@@ -15,7 +15,6 @@ class PriceListRoleEntity extends DataTransferObject
     public int $id;
     public int $roleID;
     public bool $usesInternalCurrencyPrice;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new PriceListRole entity.

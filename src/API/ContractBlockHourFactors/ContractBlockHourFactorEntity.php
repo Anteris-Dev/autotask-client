@@ -14,7 +14,6 @@ class ContractBlockHourFactorEntity extends DataTransferObject
     public int $contractID;
     public int $id;
     public int $roleID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ContractBlockHourFactor entity.

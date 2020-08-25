@@ -17,7 +17,6 @@ class ConfigurationItemCategoryEntity extends DataTransferObject
     public ?bool $isGlobalDefault;
     public string $name;
     public ?string $nickname;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ConfigurationItemCategory entity.

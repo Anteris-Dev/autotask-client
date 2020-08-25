@@ -15,7 +15,6 @@ class ContractRoleCostEntity extends DataTransferObject
     public float $rate;
     public int $resourceID;
     public int $roleID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ContractRoleCost entity.

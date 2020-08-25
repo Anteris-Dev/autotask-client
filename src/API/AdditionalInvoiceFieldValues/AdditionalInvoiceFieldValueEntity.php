@@ -14,7 +14,6 @@ class AdditionalInvoiceFieldValueEntity extends DataTransferObject
     public string $fieldValue;
     public int $id;
     public int $invoiceBatchID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new AdditionalInvoiceFieldValue entity.

@@ -14,7 +14,6 @@ class ConfigurationItemCategoryUdfAssociationEntity extends DataTransferObject
     public int $id;
     public bool $isRequired;
     public int $userDefinedFieldDefinitionID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ConfigurationItemCategoryUdfAssociation entity.

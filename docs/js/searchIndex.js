@@ -11,6 +11,11 @@ Search.appendIndex(
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ActionTypes-ActionTypeCollection.html#method_current"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ActionTypes\\ActionTypeCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ActionTypes-ActionTypeCollection.html#method_offsetGet"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ActionTypes\\ActionTypeCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
             "summary": "Creates\u0020an\u0020instance\u0020of\u0020this\u0020class\u0020from\u0020an\u0020Http\u0020response.",
@@ -55,11 +60,6 @@ Search.appendIndex(
             "name": "view",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ActionTypes-ActionTypeEntity.html#property_view"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ActionTypes\\ActionTypeEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ActionTypes-ActionTypeEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ActionTypes\\ActionTypePaginator",
             "name": "ActionTypePaginator",
@@ -115,6 +115,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ActionTypes-ActionTypeQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ActionTypes\\ActionTypeQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ActionTypes-ActionTypeQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ActionTypes\\ActionTypeQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -201,6 +206,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ActionType\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ActionTypes-ActionTypeService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ActionTypes\\ActionTypeService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ActionTypes-ActionTypeService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ActionTypes\\ActionTypeService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ActionTypes-ActionTypeService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ActionTypes\\ActionTypeService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -225,6 +240,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-AdditionalInvoiceFieldValues-AdditionalInvoiceFieldValueCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\AdditionalInvoiceFieldValues\\AdditionalInvoiceFieldValueCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-AdditionalInvoiceFieldValues-AdditionalInvoiceFieldValueCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\AdditionalInvoiceFieldValues\\AdditionalInvoiceFieldValueCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -265,11 +285,6 @@ Search.appendIndex(
             "name": "invoiceBatchID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-AdditionalInvoiceFieldValues-AdditionalInvoiceFieldValueEntity.html#property_invoiceBatchID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\AdditionalInvoiceFieldValues\\AdditionalInvoiceFieldValueEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-AdditionalInvoiceFieldValues-AdditionalInvoiceFieldValueEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\AdditionalInvoiceFieldValues\\AdditionalInvoiceFieldValuePaginator",
             "name": "AdditionalInvoiceFieldValuePaginator",
@@ -325,6 +340,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-AdditionalInvoiceFieldValues-AdditionalInvoiceFieldValueQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\AdditionalInvoiceFieldValues\\AdditionalInvoiceFieldValueQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-AdditionalInvoiceFieldValues-AdditionalInvoiceFieldValueQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\AdditionalInvoiceFieldValues\\AdditionalInvoiceFieldValueQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -401,6 +421,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020AdditionalInvoiceFieldValue\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-AdditionalInvoiceFieldValues-AdditionalInvoiceFieldValueService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\AdditionalInvoiceFieldValues\\AdditionalInvoiceFieldValueService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-AdditionalInvoiceFieldValues-AdditionalInvoiceFieldValueService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\AdditionalInvoiceFieldValues\\AdditionalInvoiceFieldValueService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-AdditionalInvoiceFieldValues-AdditionalInvoiceFieldValueService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\AdditionalInvoiceFieldValues\\AdditionalInvoiceFieldValueService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -420,6 +450,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-Appointments-AppointmentCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Appointments\\AppointmentCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-Appointments-AppointmentCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Appointments\\AppointmentCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -486,11 +521,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-Appointments-AppointmentEntity.html#property_updateDateTime"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\Appointments\\AppointmentEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-Appointments-AppointmentEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Appointments\\AppointmentPaginator",
             "name": "AppointmentPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -545,6 +575,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-Appointments-AppointmentQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Appointments\\AppointmentQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-Appointments-AppointmentQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Appointments\\AppointmentQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -631,6 +666,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020Appointment\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-Appointments-AppointmentService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Appointments\\AppointmentService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Appointments-AppointmentService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Appointments\\AppointmentService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-Appointments-AppointmentService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Appointments\\AppointmentService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -655,6 +700,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-AttachmentInfo-AttachmentInfoCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\AttachmentInfo\\AttachmentInfoCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-AttachmentInfo-AttachmentInfoCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\AttachmentInfo\\AttachmentInfoCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -746,11 +796,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-AttachmentInfo-AttachmentInfoEntity.html#property_title"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\AttachmentInfo\\AttachmentInfoEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-AttachmentInfo-AttachmentInfoEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\AttachmentInfo\\AttachmentInfoPaginator",
             "name": "AttachmentInfoPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -805,6 +850,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-AttachmentInfo-AttachmentInfoQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\AttachmentInfo\\AttachmentInfoQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-AttachmentInfo-AttachmentInfoQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\AttachmentInfo\\AttachmentInfoQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -891,6 +941,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020AttachmentInfo\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-AttachmentInfo-AttachmentInfoService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\AttachmentInfo\\AttachmentInfoService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-AttachmentInfo-AttachmentInfoService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\AttachmentInfo\\AttachmentInfoService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-AttachmentInfo-AttachmentInfoService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\AttachmentInfo\\AttachmentInfoService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -910,6 +970,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-BillingCodes-BillingCodeCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\BillingCodes\\BillingCodeCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-BillingCodes-BillingCodeCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\BillingCodes\\BillingCodeCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -1006,11 +1071,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-BillingCodes-BillingCodeEntity.html#property_useType"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\BillingCodes\\BillingCodeEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-BillingCodes-BillingCodeEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\BillingCodes\\BillingCodePaginator",
             "name": "BillingCodePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -1065,6 +1125,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-BillingCodes-BillingCodeQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\BillingCodes\\BillingCodeQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-BillingCodes-BillingCodeQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\BillingCodes\\BillingCodeQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -1141,6 +1206,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020BillingCode\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-BillingCodes-BillingCodeService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\BillingCodes\\BillingCodeService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-BillingCodes-BillingCodeService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\BillingCodes\\BillingCodeService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-BillingCodes-BillingCodeService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\BillingCodes\\BillingCodeService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -1160,6 +1235,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-BillingItemApprovalLevels-BillingItemApprovalLevelCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\BillingItemApprovalLevels\\BillingItemApprovalLevelCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-BillingItemApprovalLevels-BillingItemApprovalLevelCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\BillingItemApprovalLevels\\BillingItemApprovalLevelCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -1205,11 +1285,6 @@ Search.appendIndex(
             "name": "timeEntryID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-BillingItemApprovalLevels-BillingItemApprovalLevelEntity.html#property_timeEntryID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\BillingItemApprovalLevels\\BillingItemApprovalLevelEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-BillingItemApprovalLevels-BillingItemApprovalLevelEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\BillingItemApprovalLevels\\BillingItemApprovalLevelPaginator",
             "name": "BillingItemApprovalLevelPaginator",
@@ -1265,6 +1340,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-BillingItemApprovalLevels-BillingItemApprovalLevelQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\BillingItemApprovalLevels\\BillingItemApprovalLevelQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-BillingItemApprovalLevels-BillingItemApprovalLevelQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\BillingItemApprovalLevels\\BillingItemApprovalLevelQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -1346,6 +1426,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020BillingItemApprovalLevel\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-BillingItemApprovalLevels-BillingItemApprovalLevelService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\BillingItemApprovalLevels\\BillingItemApprovalLevelService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-BillingItemApprovalLevels-BillingItemApprovalLevelService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\BillingItemApprovalLevels\\BillingItemApprovalLevelService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-BillingItemApprovalLevels-BillingItemApprovalLevelService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\BillingItemApprovalLevels\\BillingItemApprovalLevelService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -1365,6 +1455,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-BillingItems-BillingItemCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\BillingItems\\BillingItemCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-BillingItems-BillingItemCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\BillingItems\\BillingItemCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -1611,11 +1706,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-BillingItems-BillingItemEntity.html#property_webServiceDate"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\BillingItems\\BillingItemEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-BillingItems-BillingItemEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\BillingItems\\BillingItemPaginator",
             "name": "BillingItemPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -1670,6 +1760,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-BillingItems-BillingItemQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\BillingItems\\BillingItemQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-BillingItems-BillingItemQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\BillingItems\\BillingItemQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -1746,6 +1841,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020BillingItem\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-BillingItems-BillingItemService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\BillingItems\\BillingItemService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-BillingItems-BillingItemService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\BillingItems\\BillingItemService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-BillingItems-BillingItemService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\BillingItems\\BillingItemService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -1770,6 +1875,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ChangeOrderCharges-ChangeOrderChargeCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ChangeOrderCharges\\ChangeOrderChargeCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ChangeOrderCharges-ChangeOrderChargeCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChangeOrderCharges\\ChangeOrderChargeCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -1936,11 +2046,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ChangeOrderCharges-ChangeOrderChargeEntity.html#property_unitQuantity"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ChangeOrderCharges\\ChangeOrderChargeEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ChangeOrderCharges-ChangeOrderChargeEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChangeOrderCharges\\ChangeOrderChargePaginator",
             "name": "ChangeOrderChargePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -1995,6 +2100,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ChangeOrderCharges-ChangeOrderChargeQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ChangeOrderCharges\\ChangeOrderChargeQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ChangeOrderCharges-ChangeOrderChargeQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChangeOrderCharges\\ChangeOrderChargeQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -2081,6 +2191,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ChangeOrderCharge\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ChangeOrderCharges-ChangeOrderChargeService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ChangeOrderCharges\\ChangeOrderChargeService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ChangeOrderCharges-ChangeOrderChargeService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ChangeOrderCharges\\ChangeOrderChargeService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ChangeOrderCharges-ChangeOrderChargeService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChangeOrderCharges\\ChangeOrderChargeService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -2105,6 +2225,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ChangeRequestLinks-ChangeRequestLinkCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ChangeRequestLinks\\ChangeRequestLinkCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ChangeRequestLinks-ChangeRequestLinkCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChangeRequestLinks\\ChangeRequestLinkCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -2140,11 +2265,6 @@ Search.appendIndex(
             "name": "problemOrIncidentTicketID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ChangeRequestLinks-ChangeRequestLinkEntity.html#property_problemOrIncidentTicketID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ChangeRequestLinks\\ChangeRequestLinkEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ChangeRequestLinks-ChangeRequestLinkEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChangeRequestLinks\\ChangeRequestLinkPaginator",
             "name": "ChangeRequestLinkPaginator",
@@ -2200,6 +2320,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ChangeRequestLinks-ChangeRequestLinkQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ChangeRequestLinks\\ChangeRequestLinkQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ChangeRequestLinks-ChangeRequestLinkQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChangeRequestLinks\\ChangeRequestLinkQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -2286,6 +2411,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ChangeRequestLink\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ChangeRequestLinks-ChangeRequestLinkService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ChangeRequestLinks\\ChangeRequestLinkService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ChangeRequestLinks-ChangeRequestLinkService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ChangeRequestLinks\\ChangeRequestLinkService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ChangeRequestLinks-ChangeRequestLinkService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChangeRequestLinks\\ChangeRequestLinkService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -2305,6 +2440,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ChecklistLibraries-ChecklistLibraryCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ChecklistLibraries\\ChecklistLibraryCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ChecklistLibraries-ChecklistLibraryCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChecklistLibraries\\ChecklistLibraryCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -2350,11 +2490,6 @@ Search.appendIndex(
             "name": "name",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ChecklistLibraries-ChecklistLibraryEntity.html#property_name"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ChecklistLibraries\\ChecklistLibraryEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ChecklistLibraries-ChecklistLibraryEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChecklistLibraries\\ChecklistLibraryPaginator",
             "name": "ChecklistLibraryPaginator",
@@ -2410,6 +2545,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ChecklistLibraries-ChecklistLibraryQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ChecklistLibraries\\ChecklistLibraryQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ChecklistLibraries-ChecklistLibraryQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChecklistLibraries\\ChecklistLibraryQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -2496,6 +2636,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ChecklistLibrary\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ChecklistLibraries-ChecklistLibraryService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ChecklistLibraries\\ChecklistLibraryService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ChecklistLibraries-ChecklistLibraryService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ChecklistLibraries\\ChecklistLibraryService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ChecklistLibraries-ChecklistLibraryService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChecklistLibraries\\ChecklistLibraryService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -2520,6 +2670,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ChecklistLibraryChecklistItems-ChecklistLibraryChecklistItemCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ChecklistLibraryChecklistItems\\ChecklistLibraryChecklistItemCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ChecklistLibraryChecklistItems-ChecklistLibraryChecklistItemCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChecklistLibraryChecklistItems\\ChecklistLibraryChecklistItemCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -2570,11 +2725,6 @@ Search.appendIndex(
             "name": "position",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ChecklistLibraryChecklistItems-ChecklistLibraryChecklistItemEntity.html#property_position"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ChecklistLibraryChecklistItems\\ChecklistLibraryChecklistItemEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ChecklistLibraryChecklistItems-ChecklistLibraryChecklistItemEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChecklistLibraryChecklistItems\\ChecklistLibraryChecklistItemPaginator",
             "name": "ChecklistLibraryChecklistItemPaginator",
@@ -2630,6 +2780,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ChecklistLibraryChecklistItems-ChecklistLibraryChecklistItemQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ChecklistLibraryChecklistItems\\ChecklistLibraryChecklistItemQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ChecklistLibraryChecklistItems-ChecklistLibraryChecklistItemQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChecklistLibraryChecklistItems\\ChecklistLibraryChecklistItemQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -2716,6 +2871,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ChecklistLibraryChecklistItem\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ChecklistLibraryChecklistItems-ChecklistLibraryChecklistItemService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ChecklistLibraryChecklistItems\\ChecklistLibraryChecklistItemService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ChecklistLibraryChecklistItems-ChecklistLibraryChecklistItemService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ChecklistLibraryChecklistItems\\ChecklistLibraryChecklistItemService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ChecklistLibraryChecklistItems-ChecklistLibraryChecklistItemService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ChecklistLibraryChecklistItems\\ChecklistLibraryChecklistItemService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -2740,6 +2905,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ClassificationIcons-ClassificationIconCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ClassificationIcons\\ClassificationIconCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ClassificationIcons-ClassificationIconCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ClassificationIcons\\ClassificationIconCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -2790,11 +2960,6 @@ Search.appendIndex(
             "name": "relativeUrl",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ClassificationIcons-ClassificationIconEntity.html#property_relativeUrl"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ClassificationIcons\\ClassificationIconEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ClassificationIcons-ClassificationIconEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ClassificationIcons\\ClassificationIconPaginator",
             "name": "ClassificationIconPaginator",
@@ -2850,6 +3015,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ClassificationIcons-ClassificationIconQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ClassificationIcons\\ClassificationIconQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ClassificationIcons-ClassificationIconQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ClassificationIcons\\ClassificationIconQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -2926,6 +3096,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ClassificationIcon\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ClassificationIcons-ClassificationIconService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ClassificationIcons\\ClassificationIconService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ClassificationIcons-ClassificationIconService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ClassificationIcons\\ClassificationIconService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ClassificationIcons-ClassificationIconService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ClassificationIcons\\ClassificationIconService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -2945,6 +3125,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ClientPortalUsers-ClientPortalUserCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ClientPortalUsers\\ClientPortalUserCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ClientPortalUsers-ClientPortalUserCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ClientPortalUsers\\ClientPortalUserCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -3011,11 +3196,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ClientPortalUsers-ClientPortalUserEntity.html#property_userName"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ClientPortalUsers\\ClientPortalUserEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ClientPortalUsers-ClientPortalUserEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ClientPortalUsers\\ClientPortalUserPaginator",
             "name": "ClientPortalUserPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -3070,6 +3250,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ClientPortalUsers-ClientPortalUserQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ClientPortalUsers\\ClientPortalUserQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ClientPortalUsers-ClientPortalUserQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ClientPortalUsers\\ClientPortalUserQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -3151,6 +3336,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ClientPortalUser\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ClientPortalUsers-ClientPortalUserService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ClientPortalUsers\\ClientPortalUserService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ClientPortalUsers-ClientPortalUserService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ClientPortalUsers\\ClientPortalUserService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ClientPortalUsers-ClientPortalUserService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ClientPortalUsers\\ClientPortalUserService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -3175,6 +3370,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ComanagedAssociations-ComanagedAssociationCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ComanagedAssociations\\ComanagedAssociationCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ComanagedAssociations-ComanagedAssociationCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ComanagedAssociations\\ComanagedAssociationCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -3210,11 +3410,6 @@ Search.appendIndex(
             "name": "resourceID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ComanagedAssociations-ComanagedAssociationEntity.html#property_resourceID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ComanagedAssociations\\ComanagedAssociationEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ComanagedAssociations-ComanagedAssociationEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ComanagedAssociations\\ComanagedAssociationPaginator",
             "name": "ComanagedAssociationPaginator",
@@ -3270,6 +3465,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ComanagedAssociations-ComanagedAssociationQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ComanagedAssociations\\ComanagedAssociationQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ComanagedAssociations-ComanagedAssociationQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ComanagedAssociations\\ComanagedAssociationQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -3356,6 +3556,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ComanagedAssociation\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ComanagedAssociations-ComanagedAssociationService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ComanagedAssociations\\ComanagedAssociationService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ComanagedAssociations-ComanagedAssociationService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ComanagedAssociations\\ComanagedAssociationService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ComanagedAssociations-ComanagedAssociationService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ComanagedAssociations\\ComanagedAssociationService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -3375,6 +3585,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-Companies-CompanyCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Companies\\CompanyCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-Companies-CompanyCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Companies\\CompanyCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -3741,6 +3956,11 @@ Search.appendIndex(
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-Companies-CompanyQueryBuilder.html#method___construct"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Companies\\CompanyQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-Companies-CompanyQueryBuilder.html#method_count"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Companies\\CompanyQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
             "summary": "Runs\u0020the\u0020query.",
@@ -3821,6 +4041,21 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020Company\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-Companies-CompanyService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Companies\\CompanyService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Companies-CompanyService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Companies\\CompanyService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-Companies-CompanyService.html#method_getEntityInformation"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Companies\\CompanyService\u003A\u003AgetEntityUserDefinedFields\u0028\u0029",
+            "name": "getEntityUserDefinedFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020user\u0020defined\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Companies-CompanyService.html#method_getEntityUserDefinedFields"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Companies\\CompanyService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -3845,6 +4080,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-CompanyAlerts-CompanyAlertCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyAlerts\\CompanyAlertCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-CompanyAlerts-CompanyAlertCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyAlerts\\CompanyAlertCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -3885,11 +4125,6 @@ Search.appendIndex(
             "name": "id",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-CompanyAlerts-CompanyAlertEntity.html#property_id"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\CompanyAlerts\\CompanyAlertEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-CompanyAlerts-CompanyAlertEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyAlerts\\CompanyAlertPaginator",
             "name": "CompanyAlertPaginator",
@@ -3945,6 +4180,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-CompanyAlerts-CompanyAlertQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyAlerts\\CompanyAlertQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-CompanyAlerts-CompanyAlertQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyAlerts\\CompanyAlertQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -4026,6 +4266,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020CompanyAlert\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-CompanyAlerts-CompanyAlertService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyAlerts\\CompanyAlertService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-CompanyAlerts-CompanyAlertService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyAlerts\\CompanyAlertService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-CompanyAlerts-CompanyAlertService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyAlerts\\CompanyAlertService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -4050,6 +4300,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-CompanyAttachments-CompanyAttachmentCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyAttachments\\CompanyAttachmentCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-CompanyAttachments-CompanyAttachmentCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyAttachments\\CompanyAttachmentCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -4131,11 +4386,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-CompanyAttachments-CompanyAttachmentEntity.html#property_title"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\CompanyAttachments\\CompanyAttachmentEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-CompanyAttachments-CompanyAttachmentEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyAttachments\\CompanyAttachmentPaginator",
             "name": "CompanyAttachmentPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -4190,6 +4440,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-CompanyAttachments-CompanyAttachmentQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyAttachments\\CompanyAttachmentQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-CompanyAttachments-CompanyAttachmentQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyAttachments\\CompanyAttachmentQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -4276,6 +4531,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020CompanyAttachment\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-CompanyAttachments-CompanyAttachmentService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyAttachments\\CompanyAttachmentService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-CompanyAttachments-CompanyAttachmentService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyAttachments\\CompanyAttachmentService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-CompanyAttachments-CompanyAttachmentService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyAttachments\\CompanyAttachmentService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -4295,6 +4560,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-CompanyLocations-CompanyLocationCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyLocations\\CompanyLocationCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-CompanyLocations-CompanyLocationCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyLocations\\CompanyLocationCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -4416,11 +4686,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-CompanyLocations-CompanyLocationEntity.html#property_taxRegionID"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\CompanyLocations\\CompanyLocationEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-CompanyLocations-CompanyLocationEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyLocations\\CompanyLocationPaginator",
             "name": "CompanyLocationPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -4475,6 +4740,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-CompanyLocations-CompanyLocationQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyLocations\\CompanyLocationQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-CompanyLocations-CompanyLocationQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyLocations\\CompanyLocationQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -4561,6 +4831,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020CompanyLocation\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-CompanyLocations-CompanyLocationService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyLocations\\CompanyLocationService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-CompanyLocations-CompanyLocationService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyLocations\\CompanyLocationService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-CompanyLocations-CompanyLocationService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyLocations\\CompanyLocationService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -4585,6 +4865,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-CompanyNotes-CompanyNoteCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyNotes\\CompanyNoteCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-CompanyNotes-CompanyNoteCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyNotes\\CompanyNoteCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -4681,11 +4966,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-CompanyNotes-CompanyNoteEntity.html#property_startDateTime"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\CompanyNotes\\CompanyNoteEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-CompanyNotes-CompanyNoteEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyNotes\\CompanyNotePaginator",
             "name": "CompanyNotePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -4740,6 +5020,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-CompanyNotes-CompanyNoteQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyNotes\\CompanyNoteQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-CompanyNotes-CompanyNoteQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyNotes\\CompanyNoteQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -4821,6 +5106,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020CompanyNote\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-CompanyNotes-CompanyNoteService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyNotes\\CompanyNoteService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-CompanyNotes-CompanyNoteService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyNotes\\CompanyNoteService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-CompanyNotes-CompanyNoteService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyNotes\\CompanyNoteService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -4845,6 +5140,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-CompanySiteConfigurations-CompanySiteConfigurationCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanySiteConfigurations\\CompanySiteConfigurationCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-CompanySiteConfigurations-CompanySiteConfigurationCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanySiteConfigurations\\CompanySiteConfigurationCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -4941,6 +5241,11 @@ Search.appendIndex(
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-CompanySiteConfigurations-CompanySiteConfigurationQueryBuilder.html#method___construct"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanySiteConfigurations\\CompanySiteConfigurationQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-CompanySiteConfigurations-CompanySiteConfigurationQueryBuilder.html#method_count"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanySiteConfigurations\\CompanySiteConfigurationQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
             "summary": "Runs\u0020the\u0020query.",
@@ -5016,6 +5321,21 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020CompanySiteConfiguration\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-CompanySiteConfigurations-CompanySiteConfigurationService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanySiteConfigurations\\CompanySiteConfigurationService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-CompanySiteConfigurations-CompanySiteConfigurationService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanySiteConfigurations\\CompanySiteConfigurationService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-CompanySiteConfigurations-CompanySiteConfigurationService.html#method_getEntityInformation"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanySiteConfigurations\\CompanySiteConfigurationService\u003A\u003AgetEntityUserDefinedFields\u0028\u0029",
+            "name": "getEntityUserDefinedFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020user\u0020defined\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-CompanySiteConfigurations-CompanySiteConfigurationService.html#method_getEntityUserDefinedFields"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanySiteConfigurations\\CompanySiteConfigurationService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -5040,6 +5360,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-CompanyTeams-CompanyTeamCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyTeams\\CompanyTeamCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-CompanyTeams-CompanyTeamCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyTeams\\CompanyTeamCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -5080,11 +5405,6 @@ Search.appendIndex(
             "name": "resourceID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-CompanyTeams-CompanyTeamEntity.html#property_resourceID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\CompanyTeams\\CompanyTeamEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-CompanyTeams-CompanyTeamEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyTeams\\CompanyTeamPaginator",
             "name": "CompanyTeamPaginator",
@@ -5140,6 +5460,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-CompanyTeams-CompanyTeamQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyTeams\\CompanyTeamQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-CompanyTeams-CompanyTeamQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyTeams\\CompanyTeamQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -5226,6 +5551,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020CompanyTeam\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-CompanyTeams-CompanyTeamService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyTeams\\CompanyTeamService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-CompanyTeams-CompanyTeamService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyTeams\\CompanyTeamService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-CompanyTeams-CompanyTeamService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyTeams\\CompanyTeamService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -5245,6 +5580,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-CompanyToDos-CompanyToDoCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyToDos\\CompanyToDoCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-CompanyToDos-CompanyToDoCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyToDos\\CompanyToDoCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -5346,11 +5686,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-CompanyToDos-CompanyToDoEntity.html#property_ticketID"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\CompanyToDos\\CompanyToDoEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-CompanyToDos-CompanyToDoEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyToDos\\CompanyToDoPaginator",
             "name": "CompanyToDoPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -5405,6 +5740,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-CompanyToDos-CompanyToDoQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyToDos\\CompanyToDoQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-CompanyToDos-CompanyToDoQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyToDos\\CompanyToDoQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -5491,6 +5831,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020CompanyToDo\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-CompanyToDos-CompanyToDoService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyToDos\\CompanyToDoService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-CompanyToDos-CompanyToDoService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyToDos\\CompanyToDoService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-CompanyToDos-CompanyToDoService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyToDos\\CompanyToDoService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -5515,6 +5865,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-CompanyWebhookExcludedResources-CompanyWebhookExcludedResourceCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookExcludedResources\\CompanyWebhookExcludedResourceCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-CompanyWebhookExcludedResources-CompanyWebhookExcludedResourceCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookExcludedResources\\CompanyWebhookExcludedResourceCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -5550,11 +5905,6 @@ Search.appendIndex(
             "name": "webhookID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-CompanyWebhookExcludedResources-CompanyWebhookExcludedResourceEntity.html#property_webhookID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookExcludedResources\\CompanyWebhookExcludedResourceEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-CompanyWebhookExcludedResources-CompanyWebhookExcludedResourceEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookExcludedResources\\CompanyWebhookExcludedResourcePaginator",
             "name": "CompanyWebhookExcludedResourcePaginator",
@@ -5610,6 +5960,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-CompanyWebhookExcludedResources-CompanyWebhookExcludedResourceQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookExcludedResources\\CompanyWebhookExcludedResourceQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-CompanyWebhookExcludedResources-CompanyWebhookExcludedResourceQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookExcludedResources\\CompanyWebhookExcludedResourceQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -5696,6 +6051,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020CompanyWebhookExcludedResource\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-CompanyWebhookExcludedResources-CompanyWebhookExcludedResourceService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookExcludedResources\\CompanyWebhookExcludedResourceService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-CompanyWebhookExcludedResources-CompanyWebhookExcludedResourceService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookExcludedResources\\CompanyWebhookExcludedResourceService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-CompanyWebhookExcludedResources-CompanyWebhookExcludedResourceService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookExcludedResources\\CompanyWebhookExcludedResourceService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -5715,6 +6080,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-CompanyWebhookFields-CompanyWebhookFieldCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookFields\\CompanyWebhookFieldCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-CompanyWebhookFields-CompanyWebhookFieldCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookFields\\CompanyWebhookFieldCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -5760,11 +6130,6 @@ Search.appendIndex(
             "name": "webhookID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-CompanyWebhookFields-CompanyWebhookFieldEntity.html#property_webhookID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookFields\\CompanyWebhookFieldEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-CompanyWebhookFields-CompanyWebhookFieldEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookFields\\CompanyWebhookFieldPaginator",
             "name": "CompanyWebhookFieldPaginator",
@@ -5820,6 +6185,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-CompanyWebhookFields-CompanyWebhookFieldQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookFields\\CompanyWebhookFieldQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-CompanyWebhookFields-CompanyWebhookFieldQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookFields\\CompanyWebhookFieldQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -5906,6 +6276,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020CompanyWebhookField\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-CompanyWebhookFields-CompanyWebhookFieldService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookFields\\CompanyWebhookFieldService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-CompanyWebhookFields-CompanyWebhookFieldService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookFields\\CompanyWebhookFieldService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-CompanyWebhookFields-CompanyWebhookFieldService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookFields\\CompanyWebhookFieldService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -5930,6 +6310,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-CompanyWebhooks-CompanyWebhookCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhooks\\CompanyWebhookCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-CompanyWebhooks-CompanyWebhookCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhooks\\CompanyWebhookCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -6021,11 +6406,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-CompanyWebhooks-CompanyWebhookEntity.html#property_webhookUrl"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhooks\\CompanyWebhookEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-CompanyWebhooks-CompanyWebhookEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhooks\\CompanyWebhookPaginator",
             "name": "CompanyWebhookPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -6080,6 +6460,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-CompanyWebhooks-CompanyWebhookQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhooks\\CompanyWebhookQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-CompanyWebhooks-CompanyWebhookQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhooks\\CompanyWebhookQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -6166,6 +6551,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020CompanyWebhook\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-CompanyWebhooks-CompanyWebhookService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhooks\\CompanyWebhookService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-CompanyWebhooks-CompanyWebhookService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhooks\\CompanyWebhookService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-CompanyWebhooks-CompanyWebhookService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhooks\\CompanyWebhookService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -6190,6 +6585,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-CompanyWebhookUdfFields-CompanyWebhookUdfFieldCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookUdfFields\\CompanyWebhookUdfFieldCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-CompanyWebhookUdfFields-CompanyWebhookUdfFieldCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookUdfFields\\CompanyWebhookUdfFieldCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -6235,11 +6635,6 @@ Search.appendIndex(
             "name": "webhookID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-CompanyWebhookUdfFields-CompanyWebhookUdfFieldEntity.html#property_webhookID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookUdfFields\\CompanyWebhookUdfFieldEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-CompanyWebhookUdfFields-CompanyWebhookUdfFieldEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookUdfFields\\CompanyWebhookUdfFieldPaginator",
             "name": "CompanyWebhookUdfFieldPaginator",
@@ -6295,6 +6690,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-CompanyWebhookUdfFields-CompanyWebhookUdfFieldQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookUdfFields\\CompanyWebhookUdfFieldQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-CompanyWebhookUdfFields-CompanyWebhookUdfFieldQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookUdfFields\\CompanyWebhookUdfFieldQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -6381,6 +6781,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020CompanyWebhookUdfField\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-CompanyWebhookUdfFields-CompanyWebhookUdfFieldService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookUdfFields\\CompanyWebhookUdfFieldService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-CompanyWebhookUdfFields-CompanyWebhookUdfFieldService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookUdfFields\\CompanyWebhookUdfFieldService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-CompanyWebhookUdfFields-CompanyWebhookUdfFieldService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\CompanyWebhookUdfFields\\CompanyWebhookUdfFieldService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -6405,6 +6815,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemBillingProductAssociations-ConfigurationItemBillingProductAssociationCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemBillingProductAssociations\\ConfigurationItemBillingProductAssociationCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemBillingProductAssociations-ConfigurationItemBillingProductAssociationCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemBillingProductAssociations\\ConfigurationItemBillingProductAssociationCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -6450,11 +6865,6 @@ Search.appendIndex(
             "name": "id",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemBillingProductAssociations-ConfigurationItemBillingProductAssociationEntity.html#property_id"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemBillingProductAssociations\\ConfigurationItemBillingProductAssociationEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ConfigurationItemBillingProductAssociations-ConfigurationItemBillingProductAssociationEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemBillingProductAssociations\\ConfigurationItemBillingProductAssociationPaginator",
             "name": "ConfigurationItemBillingProductAssociationPaginator",
@@ -6510,6 +6920,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemBillingProductAssociations-ConfigurationItemBillingProductAssociationQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemBillingProductAssociations\\ConfigurationItemBillingProductAssociationQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemBillingProductAssociations-ConfigurationItemBillingProductAssociationQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemBillingProductAssociations\\ConfigurationItemBillingProductAssociationQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -6596,6 +7011,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ConfigurationItemBillingProductAssociation\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemBillingProductAssociations-ConfigurationItemBillingProductAssociationService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemBillingProductAssociations\\ConfigurationItemBillingProductAssociationService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemBillingProductAssociations-ConfigurationItemBillingProductAssociationService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemBillingProductAssociations\\ConfigurationItemBillingProductAssociationService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemBillingProductAssociations-ConfigurationItemBillingProductAssociationService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemBillingProductAssociations\\ConfigurationItemBillingProductAssociationService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -6620,6 +7045,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemCategories-ConfigurationItemCategoryCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemCategories\\ConfigurationItemCategoryCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemCategories-ConfigurationItemCategoryCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemCategories\\ConfigurationItemCategoryCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -6676,11 +7106,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemCategories-ConfigurationItemCategoryEntity.html#property_nickname"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemCategories\\ConfigurationItemCategoryEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ConfigurationItemCategories-ConfigurationItemCategoryEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemCategories\\ConfigurationItemCategoryPaginator",
             "name": "ConfigurationItemCategoryPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -6735,6 +7160,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemCategories-ConfigurationItemCategoryQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemCategories\\ConfigurationItemCategoryQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemCategories-ConfigurationItemCategoryQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemCategories\\ConfigurationItemCategoryQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -6816,6 +7246,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ConfigurationItemCategory\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemCategories-ConfigurationItemCategoryService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemCategories\\ConfigurationItemCategoryService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemCategories-ConfigurationItemCategoryService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemCategories\\ConfigurationItemCategoryService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemCategories-ConfigurationItemCategoryService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemCategories\\ConfigurationItemCategoryService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -6840,6 +7280,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemCategoryUdfAssociations-ConfigurationItemCategoryUdfAssociationCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemCategoryUdfAssociations\\ConfigurationItemCategoryUdfAssociationCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemCategoryUdfAssociations-ConfigurationItemCategoryUdfAssociationCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemCategoryUdfAssociations\\ConfigurationItemCategoryUdfAssociationCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -6880,11 +7325,6 @@ Search.appendIndex(
             "name": "userDefinedFieldDefinitionID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemCategoryUdfAssociations-ConfigurationItemCategoryUdfAssociationEntity.html#property_userDefinedFieldDefinitionID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemCategoryUdfAssociations\\ConfigurationItemCategoryUdfAssociationEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ConfigurationItemCategoryUdfAssociations-ConfigurationItemCategoryUdfAssociationEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemCategoryUdfAssociations\\ConfigurationItemCategoryUdfAssociationPaginator",
             "name": "ConfigurationItemCategoryUdfAssociationPaginator",
@@ -6940,6 +7380,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemCategoryUdfAssociations-ConfigurationItemCategoryUdfAssociationQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemCategoryUdfAssociations\\ConfigurationItemCategoryUdfAssociationQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemCategoryUdfAssociations-ConfigurationItemCategoryUdfAssociationQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemCategoryUdfAssociations\\ConfigurationItemCategoryUdfAssociationQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -7026,6 +7471,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ConfigurationItemCategoryUdfAssociation\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemCategoryUdfAssociations-ConfigurationItemCategoryUdfAssociationService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemCategoryUdfAssociations\\ConfigurationItemCategoryUdfAssociationService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemCategoryUdfAssociations-ConfigurationItemCategoryUdfAssociationService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemCategoryUdfAssociations\\ConfigurationItemCategoryUdfAssociationService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemCategoryUdfAssociations-ConfigurationItemCategoryUdfAssociationService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemCategoryUdfAssociations\\ConfigurationItemCategoryUdfAssociationService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -7050,6 +7505,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemExts-ConfigurationItemExtCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemExts\\ConfigurationItemExtCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemExts-ConfigurationItemExtCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemExts\\ConfigurationItemExtCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -7556,6 +8016,21 @@ Search.appendIndex(
             "summary": "Creates\u0020a\u0020new\u0020configurationitemext.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemExts-ConfigurationItemExtService.html#method_create"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemExts\\ConfigurationItemExtService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemExts-ConfigurationItemExtService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemExts\\ConfigurationItemExtService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemExts-ConfigurationItemExtService.html#method_getEntityInformation"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemExts\\ConfigurationItemExtService\u003A\u003AgetEntityUserDefinedFields\u0028\u0029",
+            "name": "getEntityUserDefinedFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020user\u0020defined\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemExts-ConfigurationItemExtService.html#method_getEntityUserDefinedFields"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemExts\\ConfigurationItemExtService\u003A\u003Aupdate\u0028\u0029",
             "name": "update",
             "summary": "Updates\u0020the\u0020configurationitemext.",
@@ -7575,6 +8050,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemNotes-ConfigurationItemNoteCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemNotes\\ConfigurationItemNoteCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemNotes-ConfigurationItemNoteCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemNotes\\ConfigurationItemNoteCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -7646,11 +8126,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemNotes-ConfigurationItemNoteEntity.html#property_title"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemNotes\\ConfigurationItemNoteEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ConfigurationItemNotes-ConfigurationItemNoteEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemNotes\\ConfigurationItemNotePaginator",
             "name": "ConfigurationItemNotePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -7705,6 +8180,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemNotes-ConfigurationItemNoteQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemNotes\\ConfigurationItemNoteQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemNotes-ConfigurationItemNoteQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemNotes\\ConfigurationItemNoteQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -7786,6 +8266,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ConfigurationItemNote\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemNotes-ConfigurationItemNoteService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemNotes\\ConfigurationItemNoteService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemNotes-ConfigurationItemNoteService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemNotes\\ConfigurationItemNoteService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemNotes-ConfigurationItemNoteService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemNotes\\ConfigurationItemNoteService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -7810,6 +8300,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItems-ConfigurationItemCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItems\\ConfigurationItemCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItems-ConfigurationItemCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItems\\ConfigurationItemCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -8351,6 +8846,11 @@ Search.appendIndex(
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItems-ConfigurationItemQueryBuilder.html#method___construct"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItems\\ConfigurationItemQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItems-ConfigurationItemQueryBuilder.html#method_count"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItems\\ConfigurationItemQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
             "summary": "Runs\u0020the\u0020query.",
@@ -8431,6 +8931,21 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ConfigurationItem\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItems-ConfigurationItemService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItems\\ConfigurationItemService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItems-ConfigurationItemService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItems\\ConfigurationItemService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItems-ConfigurationItemService.html#method_getEntityInformation"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItems\\ConfigurationItemService\u003A\u003AgetEntityUserDefinedFields\u0028\u0029",
+            "name": "getEntityUserDefinedFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020user\u0020defined\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItems-ConfigurationItemService.html#method_getEntityUserDefinedFields"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItems\\ConfigurationItemService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -8455,6 +8970,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemTypes-ConfigurationItemTypeCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemTypes\\ConfigurationItemTypeCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemTypes-ConfigurationItemTypeCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemTypes\\ConfigurationItemTypeCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -8490,11 +9010,6 @@ Search.appendIndex(
             "name": "name",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemTypes-ConfigurationItemTypeEntity.html#property_name"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemTypes\\ConfigurationItemTypeEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ConfigurationItemTypes-ConfigurationItemTypeEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemTypes\\ConfigurationItemTypePaginator",
             "name": "ConfigurationItemTypePaginator",
@@ -8550,6 +9065,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemTypes-ConfigurationItemTypeQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemTypes\\ConfigurationItemTypeQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemTypes-ConfigurationItemTypeQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemTypes\\ConfigurationItemTypeQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -8636,6 +9156,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ConfigurationItemType\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ConfigurationItemTypes-ConfigurationItemTypeService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemTypes\\ConfigurationItemTypeService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemTypes-ConfigurationItemTypeService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemTypes\\ConfigurationItemTypeService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ConfigurationItemTypes-ConfigurationItemTypeService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ConfigurationItemTypes\\ConfigurationItemTypeService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -8660,6 +9190,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContactBillingProductAssociations-ContactBillingProductAssociationCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactBillingProductAssociations\\ContactBillingProductAssociationCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContactBillingProductAssociations-ContactBillingProductAssociationCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactBillingProductAssociations\\ContactBillingProductAssociationCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -8705,11 +9240,6 @@ Search.appendIndex(
             "name": "id",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContactBillingProductAssociations-ContactBillingProductAssociationEntity.html#property_id"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContactBillingProductAssociations\\ContactBillingProductAssociationEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContactBillingProductAssociations-ContactBillingProductAssociationEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactBillingProductAssociations\\ContactBillingProductAssociationPaginator",
             "name": "ContactBillingProductAssociationPaginator",
@@ -8765,6 +9295,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContactBillingProductAssociations-ContactBillingProductAssociationQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactBillingProductAssociations\\ContactBillingProductAssociationQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContactBillingProductAssociations-ContactBillingProductAssociationQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactBillingProductAssociations\\ContactBillingProductAssociationQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -8851,6 +9386,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContactBillingProductAssociation\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContactBillingProductAssociations-ContactBillingProductAssociationService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactBillingProductAssociations\\ContactBillingProductAssociationService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContactBillingProductAssociations-ContactBillingProductAssociationService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactBillingProductAssociations\\ContactBillingProductAssociationService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContactBillingProductAssociations-ContactBillingProductAssociationService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactBillingProductAssociations\\ContactBillingProductAssociationService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -8875,6 +9420,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContactGroupContacts-ContactGroupContactCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactGroupContacts\\ContactGroupContactCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContactGroupContacts-ContactGroupContactCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactGroupContacts\\ContactGroupContactCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -8910,11 +9460,6 @@ Search.appendIndex(
             "name": "id",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContactGroupContacts-ContactGroupContactEntity.html#property_id"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContactGroupContacts\\ContactGroupContactEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContactGroupContacts-ContactGroupContactEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactGroupContacts\\ContactGroupContactPaginator",
             "name": "ContactGroupContactPaginator",
@@ -8970,6 +9515,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContactGroupContacts-ContactGroupContactQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactGroupContacts\\ContactGroupContactQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContactGroupContacts-ContactGroupContactQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactGroupContacts\\ContactGroupContactQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -9056,6 +9606,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContactGroupContact\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContactGroupContacts-ContactGroupContactService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactGroupContacts\\ContactGroupContactService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContactGroupContacts-ContactGroupContactService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactGroupContacts\\ContactGroupContactService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContactGroupContacts-ContactGroupContactService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactGroupContacts\\ContactGroupContactService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -9075,6 +9635,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContactGroups-ContactGroupCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactGroups\\ContactGroupCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContactGroups-ContactGroupCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactGroups\\ContactGroupCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -9110,11 +9675,6 @@ Search.appendIndex(
             "name": "name",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContactGroups-ContactGroupEntity.html#property_name"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContactGroups\\ContactGroupEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContactGroups-ContactGroupEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactGroups\\ContactGroupPaginator",
             "name": "ContactGroupPaginator",
@@ -9170,6 +9730,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContactGroups-ContactGroupQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactGroups\\ContactGroupQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContactGroups-ContactGroupQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactGroups\\ContactGroupQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -9256,6 +9821,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContactGroup\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContactGroups-ContactGroupService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactGroups\\ContactGroupService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContactGroups-ContactGroupService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactGroups\\ContactGroupService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContactGroups-ContactGroupService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactGroups\\ContactGroupService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -9280,6 +9855,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-Contacts-ContactCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Contacts\\ContactCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-Contacts-ContactCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Contacts\\ContactCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -9576,6 +10156,11 @@ Search.appendIndex(
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-Contacts-ContactQueryBuilder.html#method___construct"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Contacts\\ContactQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-Contacts-ContactQueryBuilder.html#method_count"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Contacts\\ContactQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
             "summary": "Runs\u0020the\u0020query.",
@@ -9661,6 +10246,21 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020Contact\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-Contacts-ContactService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Contacts\\ContactService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Contacts-ContactService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Contacts\\ContactService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-Contacts-ContactService.html#method_getEntityInformation"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Contacts\\ContactService\u003A\u003AgetEntityUserDefinedFields\u0028\u0029",
+            "name": "getEntityUserDefinedFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020user\u0020defined\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Contacts-ContactService.html#method_getEntityUserDefinedFields"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Contacts\\ContactService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -9685,6 +10285,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContactWebhookExcludedResources-ContactWebhookExcludedResourceCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookExcludedResources\\ContactWebhookExcludedResourceCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContactWebhookExcludedResources-ContactWebhookExcludedResourceCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookExcludedResources\\ContactWebhookExcludedResourceCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -9720,11 +10325,6 @@ Search.appendIndex(
             "name": "webhookID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContactWebhookExcludedResources-ContactWebhookExcludedResourceEntity.html#property_webhookID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookExcludedResources\\ContactWebhookExcludedResourceEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContactWebhookExcludedResources-ContactWebhookExcludedResourceEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookExcludedResources\\ContactWebhookExcludedResourcePaginator",
             "name": "ContactWebhookExcludedResourcePaginator",
@@ -9780,6 +10380,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContactWebhookExcludedResources-ContactWebhookExcludedResourceQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookExcludedResources\\ContactWebhookExcludedResourceQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContactWebhookExcludedResources-ContactWebhookExcludedResourceQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookExcludedResources\\ContactWebhookExcludedResourceQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -9866,6 +10471,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContactWebhookExcludedResource\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContactWebhookExcludedResources-ContactWebhookExcludedResourceService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookExcludedResources\\ContactWebhookExcludedResourceService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContactWebhookExcludedResources-ContactWebhookExcludedResourceService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookExcludedResources\\ContactWebhookExcludedResourceService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContactWebhookExcludedResources-ContactWebhookExcludedResourceService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookExcludedResources\\ContactWebhookExcludedResourceService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -9885,6 +10500,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContactWebhookFields-ContactWebhookFieldCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookFields\\ContactWebhookFieldCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContactWebhookFields-ContactWebhookFieldCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookFields\\ContactWebhookFieldCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -9930,11 +10550,6 @@ Search.appendIndex(
             "name": "webhookID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContactWebhookFields-ContactWebhookFieldEntity.html#property_webhookID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookFields\\ContactWebhookFieldEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContactWebhookFields-ContactWebhookFieldEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookFields\\ContactWebhookFieldPaginator",
             "name": "ContactWebhookFieldPaginator",
@@ -9990,6 +10605,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContactWebhookFields-ContactWebhookFieldQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookFields\\ContactWebhookFieldQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContactWebhookFields-ContactWebhookFieldQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookFields\\ContactWebhookFieldQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -10076,6 +10696,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContactWebhookField\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContactWebhookFields-ContactWebhookFieldService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookFields\\ContactWebhookFieldService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContactWebhookFields-ContactWebhookFieldService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookFields\\ContactWebhookFieldService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContactWebhookFields-ContactWebhookFieldService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookFields\\ContactWebhookFieldService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -10100,6 +10730,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContactWebhooks-ContactWebhookCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhooks\\ContactWebhookCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContactWebhooks-ContactWebhookCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhooks\\ContactWebhookCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -10191,11 +10826,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContactWebhooks-ContactWebhookEntity.html#property_webhookUrl"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhooks\\ContactWebhookEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContactWebhooks-ContactWebhookEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhooks\\ContactWebhookPaginator",
             "name": "ContactWebhookPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -10250,6 +10880,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContactWebhooks-ContactWebhookQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhooks\\ContactWebhookQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContactWebhooks-ContactWebhookQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhooks\\ContactWebhookQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -10336,6 +10971,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContactWebhook\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContactWebhooks-ContactWebhookService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhooks\\ContactWebhookService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContactWebhooks-ContactWebhookService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhooks\\ContactWebhookService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContactWebhooks-ContactWebhookService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhooks\\ContactWebhookService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -10360,6 +11005,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContactWebhookUdfFields-ContactWebhookUdfFieldCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookUdfFields\\ContactWebhookUdfFieldCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContactWebhookUdfFields-ContactWebhookUdfFieldCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookUdfFields\\ContactWebhookUdfFieldCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -10405,11 +11055,6 @@ Search.appendIndex(
             "name": "webhookID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContactWebhookUdfFields-ContactWebhookUdfFieldEntity.html#property_webhookID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookUdfFields\\ContactWebhookUdfFieldEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContactWebhookUdfFields-ContactWebhookUdfFieldEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookUdfFields\\ContactWebhookUdfFieldPaginator",
             "name": "ContactWebhookUdfFieldPaginator",
@@ -10465,6 +11110,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContactWebhookUdfFields-ContactWebhookUdfFieldQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookUdfFields\\ContactWebhookUdfFieldQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContactWebhookUdfFields-ContactWebhookUdfFieldQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookUdfFields\\ContactWebhookUdfFieldQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -10551,6 +11201,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContactWebhookUdfField\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContactWebhookUdfFields-ContactWebhookUdfFieldService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookUdfFields\\ContactWebhookUdfFieldService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContactWebhookUdfFields-ContactWebhookUdfFieldService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookUdfFields\\ContactWebhookUdfFieldService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContactWebhookUdfFields-ContactWebhookUdfFieldService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContactWebhookUdfFields\\ContactWebhookUdfFieldService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -10575,6 +11235,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContractBillingRules-ContractBillingRuleCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractBillingRules\\ContractBillingRuleCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContractBillingRules-ContractBillingRuleCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractBillingRules\\ContractBillingRuleCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -10676,11 +11341,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContractBillingRules-ContractBillingRuleEntity.html#property_startDate"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContractBillingRules\\ContractBillingRuleEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContractBillingRules-ContractBillingRuleEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractBillingRules\\ContractBillingRulePaginator",
             "name": "ContractBillingRulePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -10735,6 +11395,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContractBillingRules-ContractBillingRuleQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractBillingRules\\ContractBillingRuleQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContractBillingRules-ContractBillingRuleQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractBillingRules\\ContractBillingRuleQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -10821,6 +11486,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContractBillingRule\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContractBillingRules-ContractBillingRuleService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractBillingRules\\ContractBillingRuleService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContractBillingRules-ContractBillingRuleService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractBillingRules\\ContractBillingRuleService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContractBillingRules-ContractBillingRuleService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractBillingRules\\ContractBillingRuleService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -10845,6 +11520,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContractBlockHourFactors-ContractBlockHourFactorCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractBlockHourFactors\\ContractBlockHourFactorCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContractBlockHourFactors-ContractBlockHourFactorCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractBlockHourFactors\\ContractBlockHourFactorCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -10885,11 +11565,6 @@ Search.appendIndex(
             "name": "roleID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContractBlockHourFactors-ContractBlockHourFactorEntity.html#property_roleID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContractBlockHourFactors\\ContractBlockHourFactorEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContractBlockHourFactors-ContractBlockHourFactorEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractBlockHourFactors\\ContractBlockHourFactorPaginator",
             "name": "ContractBlockHourFactorPaginator",
@@ -10945,6 +11620,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContractBlockHourFactors-ContractBlockHourFactorQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractBlockHourFactors\\ContractBlockHourFactorQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContractBlockHourFactors-ContractBlockHourFactorQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractBlockHourFactors\\ContractBlockHourFactorQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -11026,6 +11706,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContractBlockHourFactor\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContractBlockHourFactors-ContractBlockHourFactorService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractBlockHourFactors\\ContractBlockHourFactorService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContractBlockHourFactors-ContractBlockHourFactorService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractBlockHourFactors\\ContractBlockHourFactorService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContractBlockHourFactors-ContractBlockHourFactorService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractBlockHourFactors\\ContractBlockHourFactorService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -11050,6 +11740,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContractBlocks-ContractBlockCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractBlocks\\ContractBlockCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContractBlocks-ContractBlockCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractBlocks\\ContractBlockCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -11136,11 +11831,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContractBlocks-ContractBlockEntity.html#property_status"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContractBlocks\\ContractBlockEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContractBlocks-ContractBlockEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractBlocks\\ContractBlockPaginator",
             "name": "ContractBlockPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -11195,6 +11885,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContractBlocks-ContractBlockQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractBlocks\\ContractBlockQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContractBlocks-ContractBlockQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractBlocks\\ContractBlockQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -11276,6 +11971,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContractBlock\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContractBlocks-ContractBlockService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractBlocks\\ContractBlockService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContractBlocks-ContractBlockService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractBlocks\\ContractBlockService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContractBlocks-ContractBlockService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractBlocks\\ContractBlockService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -11300,6 +12005,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContractCharges-ContractChargeCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractCharges\\ContractChargeCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContractCharges-ContractChargeCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractCharges\\ContractChargeCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -11461,11 +12171,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContractCharges-ContractChargeEntity.html#property_unitQuantity"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContractCharges\\ContractChargeEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContractCharges-ContractChargeEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractCharges\\ContractChargePaginator",
             "name": "ContractChargePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -11520,6 +12225,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContractCharges-ContractChargeQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractCharges\\ContractChargeQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContractCharges-ContractChargeQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractCharges\\ContractChargeQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -11606,6 +12316,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContractCharge\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContractCharges-ContractChargeService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractCharges\\ContractChargeService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContractCharges-ContractChargeService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractCharges\\ContractChargeService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContractCharges-ContractChargeService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractCharges\\ContractChargeService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -11630,6 +12350,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionBillingCodes-ContractExclusionBillingCodeCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionBillingCodes\\ContractExclusionBillingCodeCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContractExclusionBillingCodes-ContractExclusionBillingCodeCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionBillingCodes\\ContractExclusionBillingCodeCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -11665,11 +12390,6 @@ Search.appendIndex(
             "name": "id",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionBillingCodes-ContractExclusionBillingCodeEntity.html#property_id"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionBillingCodes\\ContractExclusionBillingCodeEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContractExclusionBillingCodes-ContractExclusionBillingCodeEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionBillingCodes\\ContractExclusionBillingCodePaginator",
             "name": "ContractExclusionBillingCodePaginator",
@@ -11725,6 +12445,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionBillingCodes-ContractExclusionBillingCodeQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionBillingCodes\\ContractExclusionBillingCodeQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContractExclusionBillingCodes-ContractExclusionBillingCodeQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionBillingCodes\\ContractExclusionBillingCodeQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -11811,6 +12536,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContractExclusionBillingCode\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionBillingCodes-ContractExclusionBillingCodeService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionBillingCodes\\ContractExclusionBillingCodeService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContractExclusionBillingCodes-ContractExclusionBillingCodeService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionBillingCodes\\ContractExclusionBillingCodeService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContractExclusionBillingCodes-ContractExclusionBillingCodeService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionBillingCodes\\ContractExclusionBillingCodeService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -11830,6 +12565,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionRoles-ContractExclusionRoleCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionRoles\\ContractExclusionRoleCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContractExclusionRoles-ContractExclusionRoleCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionRoles\\ContractExclusionRoleCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -11865,11 +12605,6 @@ Search.appendIndex(
             "name": "roleID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionRoles-ContractExclusionRoleEntity.html#property_roleID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionRoles\\ContractExclusionRoleEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContractExclusionRoles-ContractExclusionRoleEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionRoles\\ContractExclusionRolePaginator",
             "name": "ContractExclusionRolePaginator",
@@ -11925,6 +12660,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionRoles-ContractExclusionRoleQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionRoles\\ContractExclusionRoleQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContractExclusionRoles-ContractExclusionRoleQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionRoles\\ContractExclusionRoleQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -12011,6 +12751,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContractExclusionRole\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionRoles-ContractExclusionRoleService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionRoles\\ContractExclusionRoleService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContractExclusionRoles-ContractExclusionRoleService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionRoles\\ContractExclusionRoleService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContractExclusionRoles-ContractExclusionRoleService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionRoles\\ContractExclusionRoleService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -12030,6 +12780,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionSetExcludedRoles-ContractExclusionSetExcludedRoleCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSetExcludedRoles\\ContractExclusionSetExcludedRoleCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContractExclusionSetExcludedRoles-ContractExclusionSetExcludedRoleCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSetExcludedRoles\\ContractExclusionSetExcludedRoleCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -12065,11 +12820,6 @@ Search.appendIndex(
             "name": "id",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionSetExcludedRoles-ContractExclusionSetExcludedRoleEntity.html#property_id"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSetExcludedRoles\\ContractExclusionSetExcludedRoleEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContractExclusionSetExcludedRoles-ContractExclusionSetExcludedRoleEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSetExcludedRoles\\ContractExclusionSetExcludedRolePaginator",
             "name": "ContractExclusionSetExcludedRolePaginator",
@@ -12125,6 +12875,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionSetExcludedRoles-ContractExclusionSetExcludedRoleQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSetExcludedRoles\\ContractExclusionSetExcludedRoleQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContractExclusionSetExcludedRoles-ContractExclusionSetExcludedRoleQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSetExcludedRoles\\ContractExclusionSetExcludedRoleQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -12211,6 +12966,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContractExclusionSetExcludedRole\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionSetExcludedRoles-ContractExclusionSetExcludedRoleService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSetExcludedRoles\\ContractExclusionSetExcludedRoleService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContractExclusionSetExcludedRoles-ContractExclusionSetExcludedRoleService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSetExcludedRoles\\ContractExclusionSetExcludedRoleService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContractExclusionSetExcludedRoles-ContractExclusionSetExcludedRoleService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSetExcludedRoles\\ContractExclusionSetExcludedRoleService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -12230,6 +12995,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionSetExcludedWorkTypes-ContractExclusionSetExcludedWorkTypeCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSetExcludedWorkTypes\\ContractExclusionSetExcludedWorkTypeCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContractExclusionSetExcludedWorkTypes-ContractExclusionSetExcludedWorkTypeCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSetExcludedWorkTypes\\ContractExclusionSetExcludedWorkTypeCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -12265,11 +13035,6 @@ Search.appendIndex(
             "name": "id",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionSetExcludedWorkTypes-ContractExclusionSetExcludedWorkTypeEntity.html#property_id"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSetExcludedWorkTypes\\ContractExclusionSetExcludedWorkTypeEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContractExclusionSetExcludedWorkTypes-ContractExclusionSetExcludedWorkTypeEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSetExcludedWorkTypes\\ContractExclusionSetExcludedWorkTypePaginator",
             "name": "ContractExclusionSetExcludedWorkTypePaginator",
@@ -12325,6 +13090,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionSetExcludedWorkTypes-ContractExclusionSetExcludedWorkTypeQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSetExcludedWorkTypes\\ContractExclusionSetExcludedWorkTypeQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContractExclusionSetExcludedWorkTypes-ContractExclusionSetExcludedWorkTypeQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSetExcludedWorkTypes\\ContractExclusionSetExcludedWorkTypeQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -12411,6 +13181,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContractExclusionSetExcludedWorkType\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionSetExcludedWorkTypes-ContractExclusionSetExcludedWorkTypeService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSetExcludedWorkTypes\\ContractExclusionSetExcludedWorkTypeService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContractExclusionSetExcludedWorkTypes-ContractExclusionSetExcludedWorkTypeService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSetExcludedWorkTypes\\ContractExclusionSetExcludedWorkTypeService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContractExclusionSetExcludedWorkTypes-ContractExclusionSetExcludedWorkTypeService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSetExcludedWorkTypes\\ContractExclusionSetExcludedWorkTypeService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -12430,6 +13210,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionSets-ContractExclusionSetCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSets\\ContractExclusionSetCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContractExclusionSets-ContractExclusionSetCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSets\\ContractExclusionSetCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -12470,11 +13255,6 @@ Search.appendIndex(
             "name": "name",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionSets-ContractExclusionSetEntity.html#property_name"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSets\\ContractExclusionSetEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContractExclusionSets-ContractExclusionSetEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSets\\ContractExclusionSetPaginator",
             "name": "ContractExclusionSetPaginator",
@@ -12530,6 +13310,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionSets-ContractExclusionSetQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSets\\ContractExclusionSetQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContractExclusionSets-ContractExclusionSetQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSets\\ContractExclusionSetQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -12616,6 +13401,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContractExclusionSet\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContractExclusionSets-ContractExclusionSetService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSets\\ContractExclusionSetService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContractExclusionSets-ContractExclusionSetService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSets\\ContractExclusionSetService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContractExclusionSets-ContractExclusionSetService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractExclusionSets\\ContractExclusionSetService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -12640,6 +13435,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContractMilestones-ContractMilestoneCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractMilestones\\ContractMilestoneCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContractMilestones-ContractMilestoneCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractMilestones\\ContractMilestoneCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -12726,11 +13526,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContractMilestones-ContractMilestoneEntity.html#property_title"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContractMilestones\\ContractMilestoneEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContractMilestones-ContractMilestoneEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractMilestones\\ContractMilestonePaginator",
             "name": "ContractMilestonePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -12785,6 +13580,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContractMilestones-ContractMilestoneQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractMilestones\\ContractMilestoneQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContractMilestones-ContractMilestoneQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractMilestones\\ContractMilestoneQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -12866,6 +13666,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContractMilestone\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContractMilestones-ContractMilestoneService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractMilestones\\ContractMilestoneService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContractMilestones-ContractMilestoneService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractMilestones\\ContractMilestoneService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContractMilestones-ContractMilestoneService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractMilestones\\ContractMilestoneService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -12890,6 +13700,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContractNotes-ContractNoteCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractNotes\\ContractNoteCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContractNotes-ContractNoteCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractNotes\\ContractNoteCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -12956,11 +13771,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContractNotes-ContractNoteEntity.html#property_title"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContractNotes\\ContractNoteEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContractNotes-ContractNoteEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractNotes\\ContractNotePaginator",
             "name": "ContractNotePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -13015,6 +13825,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContractNotes-ContractNoteQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractNotes\\ContractNoteQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContractNotes-ContractNoteQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractNotes\\ContractNoteQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -13096,6 +13911,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContractNote\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContractNotes-ContractNoteService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractNotes\\ContractNoteService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContractNotes-ContractNoteService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractNotes\\ContractNoteService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContractNotes-ContractNoteService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractNotes\\ContractNoteService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -13120,6 +13945,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContractRates-ContractRateCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractRates\\ContractRateCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContractRates-ContractRateCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractRates\\ContractRateCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -13165,11 +13995,6 @@ Search.appendIndex(
             "name": "roleID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContractRates-ContractRateEntity.html#property_roleID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContractRates\\ContractRateEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContractRates-ContractRateEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractRates\\ContractRatePaginator",
             "name": "ContractRatePaginator",
@@ -13225,6 +14050,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContractRates-ContractRateQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractRates\\ContractRateQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContractRates-ContractRateQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractRates\\ContractRateQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -13306,6 +14136,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContractRate\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContractRates-ContractRateService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractRates\\ContractRateService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContractRates-ContractRateService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractRates\\ContractRateService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContractRates-ContractRateService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractRates\\ContractRateService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -13330,6 +14170,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContractRetainers-ContractRetainerCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractRetainers\\ContractRetainerCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContractRetainers-ContractRetainerCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractRetainers\\ContractRetainerCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -13421,11 +14266,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContractRetainers-ContractRetainerEntity.html#property_status"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContractRetainers\\ContractRetainerEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContractRetainers-ContractRetainerEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractRetainers\\ContractRetainerPaginator",
             "name": "ContractRetainerPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -13480,6 +14320,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContractRetainers-ContractRetainerQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractRetainers\\ContractRetainerQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContractRetainers-ContractRetainerQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractRetainers\\ContractRetainerQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -13561,6 +14406,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContractRetainer\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContractRetainers-ContractRetainerService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractRetainers\\ContractRetainerService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContractRetainers-ContractRetainerService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractRetainers\\ContractRetainerService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContractRetainers-ContractRetainerService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractRetainers\\ContractRetainerService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -13585,6 +14440,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContractRoleCosts-ContractRoleCostCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractRoleCosts\\ContractRoleCostCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContractRoleCosts-ContractRoleCostCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractRoleCosts\\ContractRoleCostCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -13630,11 +14490,6 @@ Search.appendIndex(
             "name": "roleID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContractRoleCosts-ContractRoleCostEntity.html#property_roleID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContractRoleCosts\\ContractRoleCostEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContractRoleCosts-ContractRoleCostEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractRoleCosts\\ContractRoleCostPaginator",
             "name": "ContractRoleCostPaginator",
@@ -13690,6 +14545,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContractRoleCosts-ContractRoleCostQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractRoleCosts\\ContractRoleCostQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContractRoleCosts-ContractRoleCostQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractRoleCosts\\ContractRoleCostQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -13771,6 +14631,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContractRoleCost\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContractRoleCosts-ContractRoleCostService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractRoleCosts\\ContractRoleCostService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContractRoleCosts-ContractRoleCostService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractRoleCosts\\ContractRoleCostService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContractRoleCosts-ContractRoleCostService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractRoleCosts\\ContractRoleCostService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -13795,6 +14665,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-Contracts-ContractCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Contracts\\ContractCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-Contracts-ContractCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Contracts\\ContractCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -13986,11 +14861,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-Contracts-ContractEntity.html#property_timeReportingRequiresStartAndStopTimes"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\Contracts\\ContractEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-Contracts-ContractEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Contracts\\ContractPaginator",
             "name": "ContractPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -14045,6 +14915,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-Contracts-ContractQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Contracts\\ContractQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-Contracts-ContractQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Contracts\\ContractQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -14126,6 +15001,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020Contract\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-Contracts-ContractService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Contracts\\ContractService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Contracts-ContractService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Contracts\\ContractService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-Contracts-ContractService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Contracts\\ContractService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -14150,6 +15035,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContractServiceAdjustments-ContractServiceAdjustmentCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceAdjustments\\ContractServiceAdjustmentCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContractServiceAdjustments-ContractServiceAdjustmentCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceAdjustments\\ContractServiceAdjustmentCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -14221,11 +15111,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContractServiceAdjustments-ContractServiceAdjustmentEntity.html#property_unitChange"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceAdjustments\\ContractServiceAdjustmentEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContractServiceAdjustments-ContractServiceAdjustmentEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceAdjustments\\ContractServiceAdjustmentService",
             "name": "ContractServiceAdjustmentService",
             "summary": "Handles\u0020all\u0020interaction\u0020with\u0020Autotask\u0020ContractServiceAdjustments.",
@@ -14241,6 +15126,16 @@ Search.appendIndex(
             "summary": "Creates\u0020a\u0020new\u0020contractserviceadjustment.",
             "url": "../classes/Anteris-Autotask-API-ContractServiceAdjustments-ContractServiceAdjustmentService.html#method_create"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceAdjustments\\ContractServiceAdjustmentService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContractServiceAdjustments-ContractServiceAdjustmentService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceAdjustments\\ContractServiceAdjustmentService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContractServiceAdjustments-ContractServiceAdjustmentService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceAdjustments\\ContractServiceAdjustmentService\u003A\u003A\u0024client",
             "name": "client",
             "summary": "",
@@ -14255,6 +15150,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContractServiceBundleAdjustments-ContractServiceBundleAdjustmentCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundleAdjustments\\ContractServiceBundleAdjustmentCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContractServiceBundleAdjustments-ContractServiceBundleAdjustmentCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundleAdjustments\\ContractServiceBundleAdjustmentCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -14321,11 +15221,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContractServiceBundleAdjustments-ContractServiceBundleAdjustmentEntity.html#property_unitChange"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundleAdjustments\\ContractServiceBundleAdjustmentEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContractServiceBundleAdjustments-ContractServiceBundleAdjustmentEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundleAdjustments\\ContractServiceBundleAdjustmentService",
             "name": "ContractServiceBundleAdjustmentService",
             "summary": "Handles\u0020all\u0020interaction\u0020with\u0020Autotask\u0020ContractServiceBundleAdjustments.",
@@ -14341,6 +15236,16 @@ Search.appendIndex(
             "summary": "Creates\u0020a\u0020new\u0020contractservicebundleadjustment.",
             "url": "../classes/Anteris-Autotask-API-ContractServiceBundleAdjustments-ContractServiceBundleAdjustmentService.html#method_create"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundleAdjustments\\ContractServiceBundleAdjustmentService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContractServiceBundleAdjustments-ContractServiceBundleAdjustmentService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundleAdjustments\\ContractServiceBundleAdjustmentService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContractServiceBundleAdjustments-ContractServiceBundleAdjustmentService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundleAdjustments\\ContractServiceBundleAdjustmentService\u003A\u003A\u0024client",
             "name": "client",
             "summary": "",
@@ -14355,6 +15260,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContractServiceBundles-ContractServiceBundleCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundles\\ContractServiceBundleCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContractServiceBundles-ContractServiceBundleCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundles\\ContractServiceBundleCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -14426,11 +15336,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContractServiceBundles-ContractServiceBundleEntity.html#property_unitPrice"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundles\\ContractServiceBundleEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContractServiceBundles-ContractServiceBundleEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundles\\ContractServiceBundlePaginator",
             "name": "ContractServiceBundlePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -14485,6 +15390,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContractServiceBundles-ContractServiceBundleQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundles\\ContractServiceBundleQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContractServiceBundles-ContractServiceBundleQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundles\\ContractServiceBundleQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -14566,6 +15476,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContractServiceBundle\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContractServiceBundles-ContractServiceBundleService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundles\\ContractServiceBundleService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContractServiceBundles-ContractServiceBundleService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundles\\ContractServiceBundleService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContractServiceBundles-ContractServiceBundleService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundles\\ContractServiceBundleService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -14590,6 +15510,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContractServiceBundleUnits-ContractServiceBundleUnitCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundleUnits\\ContractServiceBundleUnitCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContractServiceBundleUnits-ContractServiceBundleUnitCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundleUnits\\ContractServiceBundleUnitCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -14671,11 +15596,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContractServiceBundleUnits-ContractServiceBundleUnitEntity.html#property_units"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundleUnits\\ContractServiceBundleUnitEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContractServiceBundleUnits-ContractServiceBundleUnitEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundleUnits\\ContractServiceBundleUnitPaginator",
             "name": "ContractServiceBundleUnitPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -14730,6 +15650,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContractServiceBundleUnits-ContractServiceBundleUnitQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundleUnits\\ContractServiceBundleUnitQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContractServiceBundleUnits-ContractServiceBundleUnitQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundleUnits\\ContractServiceBundleUnitQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -14806,6 +15731,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContractServiceBundleUnit\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContractServiceBundleUnits-ContractServiceBundleUnitService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundleUnits\\ContractServiceBundleUnitService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContractServiceBundleUnits-ContractServiceBundleUnitService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundleUnits\\ContractServiceBundleUnitService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContractServiceBundleUnits-ContractServiceBundleUnitService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceBundleUnits\\ContractServiceBundleUnitService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -14825,6 +15760,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContractServices-ContractServiceCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractServices\\ContractServiceCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContractServices-ContractServiceCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServices\\ContractServiceCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -14896,11 +15836,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContractServices-ContractServiceEntity.html#property_unitPrice"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContractServices\\ContractServiceEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContractServices-ContractServiceEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServices\\ContractServicePaginator",
             "name": "ContractServicePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -14955,6 +15890,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContractServices-ContractServiceQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractServices\\ContractServiceQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContractServices-ContractServiceQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServices\\ContractServiceQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -15036,6 +15976,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContractService\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContractServices-ContractServiceService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractServices\\ContractServiceService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContractServices-ContractServiceService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractServices\\ContractServiceService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContractServices-ContractServiceService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServices\\ContractServiceService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -15060,6 +16010,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContractServiceUnits-ContractServiceUnitCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceUnits\\ContractServiceUnitCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContractServiceUnits-ContractServiceUnitCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceUnits\\ContractServiceUnitCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -15146,11 +16101,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContractServiceUnits-ContractServiceUnitEntity.html#property_vendorCompanyID"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceUnits\\ContractServiceUnitEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContractServiceUnits-ContractServiceUnitEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceUnits\\ContractServiceUnitPaginator",
             "name": "ContractServiceUnitPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -15205,6 +16155,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContractServiceUnits-ContractServiceUnitQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceUnits\\ContractServiceUnitQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContractServiceUnits-ContractServiceUnitQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceUnits\\ContractServiceUnitQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -15281,6 +16236,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContractServiceUnit\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContractServiceUnits-ContractServiceUnitService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceUnits\\ContractServiceUnitService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContractServiceUnits-ContractServiceUnitService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceUnits\\ContractServiceUnitService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContractServiceUnits-ContractServiceUnitService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractServiceUnits\\ContractServiceUnitService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -15300,6 +16265,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ContractTicketPurchases-ContractTicketPurchaseCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractTicketPurchases\\ContractTicketPurchaseCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ContractTicketPurchases-ContractTicketPurchaseCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractTicketPurchases\\ContractTicketPurchaseCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -15386,11 +16356,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ContractTicketPurchases-ContractTicketPurchaseEntity.html#property_ticketsUsed"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ContractTicketPurchases\\ContractTicketPurchaseEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ContractTicketPurchases-ContractTicketPurchaseEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractTicketPurchases\\ContractTicketPurchasePaginator",
             "name": "ContractTicketPurchasePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -15445,6 +16410,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ContractTicketPurchases-ContractTicketPurchaseQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractTicketPurchases\\ContractTicketPurchaseQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ContractTicketPurchases-ContractTicketPurchaseQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractTicketPurchases\\ContractTicketPurchaseQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -15526,6 +16496,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ContractTicketPurchase\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ContractTicketPurchases-ContractTicketPurchaseService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractTicketPurchases\\ContractTicketPurchaseService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ContractTicketPurchases-ContractTicketPurchaseService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ContractTicketPurchases\\ContractTicketPurchaseService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ContractTicketPurchases-ContractTicketPurchaseService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ContractTicketPurchases\\ContractTicketPurchaseService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -15550,6 +16530,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-Countries-CountryCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Countries\\CountryCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-Countries-CountryCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Countries\\CountryCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -15616,11 +16601,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-Countries-CountryEntity.html#property_quoteTemplateID"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\Countries\\CountryEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-Countries-CountryEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Countries\\CountryPaginator",
             "name": "CountryPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -15675,6 +16655,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-Countries-CountryQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Countries\\CountryQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-Countries-CountryQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Countries\\CountryQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -15751,6 +16736,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020Country\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-Countries-CountryService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Countries\\CountryService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Countries-CountryService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Countries\\CountryService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-Countries-CountryService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Countries\\CountryService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -15775,6 +16770,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-Currencies-CurrencyCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Currencies\\CurrencyCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-Currencies-CurrencyCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Currencies\\CurrencyCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -15851,11 +16851,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-Currencies-CurrencyEntity.html#property_updateResourceId"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\Currencies\\CurrencyEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-Currencies-CurrencyEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Currencies\\CurrencyPaginator",
             "name": "CurrencyPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -15910,6 +16905,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-Currencies-CurrencyQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Currencies\\CurrencyQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-Currencies-CurrencyQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Currencies\\CurrencyQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -15986,6 +16986,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020Currency\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-Currencies-CurrencyService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Currencies\\CurrencyService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Currencies-CurrencyService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Currencies\\CurrencyService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-Currencies-CurrencyService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Currencies\\CurrencyService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -16010,6 +17020,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-Departments-DepartmentCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Departments\\DepartmentCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-Departments-DepartmentCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Departments\\DepartmentCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -16055,11 +17070,6 @@ Search.appendIndex(
             "name": "primaryLocationID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-Departments-DepartmentEntity.html#property_primaryLocationID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\Departments\\DepartmentEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-Departments-DepartmentEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Departments\\DepartmentPaginator",
             "name": "DepartmentPaginator",
@@ -16115,6 +17125,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-Departments-DepartmentQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Departments\\DepartmentQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-Departments-DepartmentQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Departments\\DepartmentQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -16196,6 +17211,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020Department\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-Departments-DepartmentService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Departments\\DepartmentService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Departments-DepartmentService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Departments\\DepartmentService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-Departments-DepartmentService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Departments\\DepartmentService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -16220,6 +17245,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ExpenseItems-ExpenseItemCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ExpenseItems\\ExpenseItemCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ExpenseItems-ExpenseItemCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ExpenseItems\\ExpenseItemCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -16381,11 +17411,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ExpenseItems-ExpenseItemEntity.html#property_workType"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ExpenseItems\\ExpenseItemEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ExpenseItems-ExpenseItemEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ExpenseItems\\ExpenseItemPaginator",
             "name": "ExpenseItemPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -16440,6 +17465,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ExpenseItems-ExpenseItemQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ExpenseItems\\ExpenseItemQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ExpenseItems-ExpenseItemQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ExpenseItems\\ExpenseItemQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -16521,6 +17551,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ExpenseItem\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ExpenseItems-ExpenseItemService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ExpenseItems\\ExpenseItemService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ExpenseItems-ExpenseItemService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ExpenseItems\\ExpenseItemService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ExpenseItems-ExpenseItemService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ExpenseItems\\ExpenseItemService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -16545,6 +17585,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ExpenseReports-ExpenseReportCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ExpenseReports\\ExpenseReportCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ExpenseReports-ExpenseReportCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ExpenseReports\\ExpenseReportCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -16661,11 +17706,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ExpenseReports-ExpenseReportEntity.html#property_weekEnding"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ExpenseReports\\ExpenseReportEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ExpenseReports-ExpenseReportEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ExpenseReports\\ExpenseReportPaginator",
             "name": "ExpenseReportPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -16720,6 +17760,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ExpenseReports-ExpenseReportQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ExpenseReports\\ExpenseReportQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ExpenseReports-ExpenseReportQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ExpenseReports\\ExpenseReportQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -16801,6 +17846,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ExpenseReport\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ExpenseReports-ExpenseReportService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ExpenseReports\\ExpenseReportService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ExpenseReports-ExpenseReportService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ExpenseReports\\ExpenseReportService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ExpenseReports-ExpenseReportService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ExpenseReports\\ExpenseReportService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -16825,6 +17880,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-Holidays-HolidayCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Holidays\\HolidayCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-Holidays-HolidayCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Holidays\\HolidayCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -16865,11 +17925,6 @@ Search.appendIndex(
             "name": "id",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-Holidays-HolidayEntity.html#property_id"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\Holidays\\HolidayEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-Holidays-HolidayEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Holidays\\HolidayPaginator",
             "name": "HolidayPaginator",
@@ -16925,6 +17980,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-Holidays-HolidayQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Holidays\\HolidayQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-Holidays-HolidayQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Holidays\\HolidayQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -17011,6 +18071,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020Holiday\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-Holidays-HolidayService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Holidays\\HolidayService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Holidays-HolidayService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Holidays\\HolidayService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-Holidays-HolidayService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Holidays\\HolidayService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -17035,6 +18105,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-HolidaySets-HolidaySetCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\HolidaySets\\HolidaySetCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-HolidaySets-HolidaySetCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\HolidaySets\\HolidaySetCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -17070,11 +18145,6 @@ Search.appendIndex(
             "name": "id",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-HolidaySets-HolidaySetEntity.html#property_id"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\HolidaySets\\HolidaySetEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-HolidaySets-HolidaySetEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\HolidaySets\\HolidaySetPaginator",
             "name": "HolidaySetPaginator",
@@ -17130,6 +18200,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-HolidaySets-HolidaySetQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\HolidaySets\\HolidaySetQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-HolidaySets-HolidaySetQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\HolidaySets\\HolidaySetQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -17216,6 +18291,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020HolidaySet\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-HolidaySets-HolidaySetService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\HolidaySets\\HolidaySetService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-HolidaySets-HolidaySetService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\HolidaySets\\HolidaySetService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-HolidaySets-HolidaySetService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\HolidaySets\\HolidaySetService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -17240,6 +18325,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-InternalLocations-InternalLocationCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InternalLocations\\InternalLocationCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-InternalLocations-InternalLocationCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InternalLocations\\InternalLocationCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -17321,11 +18411,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-InternalLocations-InternalLocationEntity.html#property_timeZone"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\InternalLocations\\InternalLocationEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-InternalLocations-InternalLocationEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InternalLocations\\InternalLocationPaginator",
             "name": "InternalLocationPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -17380,6 +18465,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-InternalLocations-InternalLocationQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InternalLocations\\InternalLocationQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-InternalLocations-InternalLocationQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InternalLocations\\InternalLocationQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -17456,6 +18546,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020InternalLocation\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-InternalLocations-InternalLocationService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InternalLocations\\InternalLocationService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-InternalLocations-InternalLocationService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InternalLocations\\InternalLocationService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-InternalLocations-InternalLocationService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InternalLocations\\InternalLocationService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -17475,6 +18575,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-InternalLocationWithBusinessHours-InternalLocationWithBusinessHourCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InternalLocationWithBusinessHours\\InternalLocationWithBusinessHourCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-InternalLocationWithBusinessHours-InternalLocationWithBusinessHourCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InternalLocationWithBusinessHours\\InternalLocationWithBusinessHourCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -17746,11 +18851,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-InternalLocationWithBusinessHours-InternalLocationWithBusinessHourEntity.html#property_wednesdayExtendedHoursStartTime"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\InternalLocationWithBusinessHours\\InternalLocationWithBusinessHourEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-InternalLocationWithBusinessHours-InternalLocationWithBusinessHourEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InternalLocationWithBusinessHours\\InternalLocationWithBusinessHourPaginator",
             "name": "InternalLocationWithBusinessHourPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -17805,6 +18905,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-InternalLocationWithBusinessHours-InternalLocationWithBusinessHourQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InternalLocationWithBusinessHours\\InternalLocationWithBusinessHourQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-InternalLocationWithBusinessHours-InternalLocationWithBusinessHourQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InternalLocationWithBusinessHours\\InternalLocationWithBusinessHourQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -17886,6 +18991,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020InternalLocationWithBusinessHour\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-InternalLocationWithBusinessHours-InternalLocationWithBusinessHourService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InternalLocationWithBusinessHours\\InternalLocationWithBusinessHourService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-InternalLocationWithBusinessHours-InternalLocationWithBusinessHourService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InternalLocationWithBusinessHours\\InternalLocationWithBusinessHourService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-InternalLocationWithBusinessHours-InternalLocationWithBusinessHourService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InternalLocationWithBusinessHours\\InternalLocationWithBusinessHourService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -17910,6 +19025,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-InventoryItems-InventoryItemCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InventoryItems\\InventoryItemCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-InventoryItems-InventoryItemCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryItems\\InventoryItemCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -17996,11 +19116,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-InventoryItems-InventoryItemEntity.html#property_referenceNumber"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\InventoryItems\\InventoryItemEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-InventoryItems-InventoryItemEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryItems\\InventoryItemPaginator",
             "name": "InventoryItemPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -18055,6 +19170,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-InventoryItems-InventoryItemQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InventoryItems\\InventoryItemQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-InventoryItems-InventoryItemQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryItems\\InventoryItemQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -18136,6 +19256,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020InventoryItem\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-InventoryItems-InventoryItemService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InventoryItems\\InventoryItemService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-InventoryItems-InventoryItemService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InventoryItems\\InventoryItemService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-InventoryItems-InventoryItemService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryItems\\InventoryItemService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -18160,6 +19290,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-InventoryItemSerialNumbers-InventoryItemSerialNumberCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InventoryItemSerialNumbers\\InventoryItemSerialNumberCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-InventoryItemSerialNumbers-InventoryItemSerialNumberCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryItemSerialNumbers\\InventoryItemSerialNumberCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -18195,11 +19330,6 @@ Search.appendIndex(
             "name": "serialNumber",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-InventoryItemSerialNumbers-InventoryItemSerialNumberEntity.html#property_serialNumber"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\InventoryItemSerialNumbers\\InventoryItemSerialNumberEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-InventoryItemSerialNumbers-InventoryItemSerialNumberEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryItemSerialNumbers\\InventoryItemSerialNumberPaginator",
             "name": "InventoryItemSerialNumberPaginator",
@@ -18255,6 +19385,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-InventoryItemSerialNumbers-InventoryItemSerialNumberQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InventoryItemSerialNumbers\\InventoryItemSerialNumberQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-InventoryItemSerialNumbers-InventoryItemSerialNumberQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryItemSerialNumbers\\InventoryItemSerialNumberQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -18336,6 +19471,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020InventoryItemSerialNumber\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-InventoryItemSerialNumbers-InventoryItemSerialNumberService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InventoryItemSerialNumbers\\InventoryItemSerialNumberService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-InventoryItemSerialNumbers-InventoryItemSerialNumberService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InventoryItemSerialNumbers\\InventoryItemSerialNumberService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-InventoryItemSerialNumbers-InventoryItemSerialNumberService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryItemSerialNumbers\\InventoryItemSerialNumberService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -18360,6 +19505,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-InventoryLocations-InventoryLocationCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InventoryLocations\\InventoryLocationCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-InventoryLocations-InventoryLocationCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryLocations\\InventoryLocationCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -18410,11 +19560,6 @@ Search.appendIndex(
             "name": "resourceID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-InventoryLocations-InventoryLocationEntity.html#property_resourceID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\InventoryLocations\\InventoryLocationEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-InventoryLocations-InventoryLocationEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryLocations\\InventoryLocationPaginator",
             "name": "InventoryLocationPaginator",
@@ -18470,6 +19615,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-InventoryLocations-InventoryLocationQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InventoryLocations\\InventoryLocationQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-InventoryLocations-InventoryLocationQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryLocations\\InventoryLocationQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -18551,6 +19701,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020InventoryLocation\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-InventoryLocations-InventoryLocationService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InventoryLocations\\InventoryLocationService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-InventoryLocations-InventoryLocationService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InventoryLocations\\InventoryLocationService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-InventoryLocations-InventoryLocationService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryLocations\\InventoryLocationService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -18575,6 +19735,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-InventoryTransfers-InventoryTransferCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InventoryTransfers\\InventoryTransferCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-InventoryTransfers-InventoryTransferCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryTransfers\\InventoryTransferCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -18646,11 +19811,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-InventoryTransfers-InventoryTransferEntity.html#property_updateNote"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\InventoryTransfers\\InventoryTransferEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-InventoryTransfers-InventoryTransferEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryTransfers\\InventoryTransferPaginator",
             "name": "InventoryTransferPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -18705,6 +19865,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-InventoryTransfers-InventoryTransferQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InventoryTransfers\\InventoryTransferQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-InventoryTransfers-InventoryTransferQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryTransfers\\InventoryTransferQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -18786,6 +19951,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020InventoryTransfer\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-InventoryTransfers-InventoryTransferService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InventoryTransfers\\InventoryTransferService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-InventoryTransfers-InventoryTransferService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InventoryTransfers\\InventoryTransferService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-InventoryTransfers-InventoryTransferService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InventoryTransfers\\InventoryTransferService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -18805,6 +19980,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-Invoices-InvoiceCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Invoices\\InvoiceCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-Invoices-InvoiceCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Invoices\\InvoiceCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -18941,11 +20121,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-Invoices-InvoiceEntity.html#property_webServiceDate"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\Invoices\\InvoiceEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-Invoices-InvoiceEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Invoices\\InvoicePaginator",
             "name": "InvoicePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -19000,6 +20175,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-Invoices-InvoiceQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Invoices\\InvoiceQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-Invoices-InvoiceQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Invoices\\InvoiceQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -19076,6 +20256,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020Invoice\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-Invoices-InvoiceService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Invoices\\InvoiceService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Invoices-InvoiceService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Invoices\\InvoiceService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-Invoices-InvoiceService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Invoices\\InvoiceService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -19100,6 +20290,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-InvoiceTemplates-InvoiceTemplateCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InvoiceTemplates\\InvoiceTemplateCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-InvoiceTemplates-InvoiceTemplateCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InvoiceTemplates\\InvoiceTemplateCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -19251,11 +20446,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-InvoiceTemplates-InvoiceTemplateEntity.html#property_timeFormat"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\InvoiceTemplates\\InvoiceTemplateEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-InvoiceTemplates-InvoiceTemplateEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InvoiceTemplates\\InvoiceTemplatePaginator",
             "name": "InvoiceTemplatePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -19310,6 +20500,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-InvoiceTemplates-InvoiceTemplateQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InvoiceTemplates\\InvoiceTemplateQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-InvoiceTemplates-InvoiceTemplateQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InvoiceTemplates\\InvoiceTemplateQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -19386,6 +20581,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020InvoiceTemplate\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-InvoiceTemplates-InvoiceTemplateService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InvoiceTemplates\\InvoiceTemplateService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-InvoiceTemplates-InvoiceTemplateService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\InvoiceTemplates\\InvoiceTemplateService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-InvoiceTemplates-InvoiceTemplateService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\InvoiceTemplates\\InvoiceTemplateService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -19405,6 +20610,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-NotificationHistory-NotificationHistoryCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\NotificationHistory\\NotificationHistoryCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-NotificationHistory-NotificationHistoryCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\NotificationHistory\\NotificationHistoryCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -19526,11 +20736,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-NotificationHistory-NotificationHistoryEntity.html#property_timeEntryID"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\NotificationHistory\\NotificationHistoryEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-NotificationHistory-NotificationHistoryEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\NotificationHistory\\NotificationHistoryPaginator",
             "name": "NotificationHistoryPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -19585,6 +20790,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-NotificationHistory-NotificationHistoryQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\NotificationHistory\\NotificationHistoryQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-NotificationHistory-NotificationHistoryQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\NotificationHistory\\NotificationHistoryQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -19661,6 +20871,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020NotificationHistory\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-NotificationHistory-NotificationHistoryService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\NotificationHistory\\NotificationHistoryService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-NotificationHistory-NotificationHistoryService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\NotificationHistory\\NotificationHistoryService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-NotificationHistory-NotificationHistoryService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\NotificationHistory\\NotificationHistoryService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -19680,6 +20900,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-Opportunities-OpportunityCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Opportunities\\OpportunityCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-Opportunities-OpportunityCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Opportunities\\OpportunityCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -20001,11 +21226,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-Opportunities-OpportunityEntity.html#property_yearlyRevenue"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\Opportunities\\OpportunityEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-Opportunities-OpportunityEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Opportunities\\OpportunityPaginator",
             "name": "OpportunityPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -20060,6 +21280,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-Opportunities-OpportunityQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Opportunities\\OpportunityQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-Opportunities-OpportunityQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Opportunities\\OpportunityQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -20141,6 +21366,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020Opportunity\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-Opportunities-OpportunityService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Opportunities\\OpportunityService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Opportunities-OpportunityService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Opportunities\\OpportunityService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-Opportunities-OpportunityService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Opportunities\\OpportunityService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -20165,6 +21400,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-OpportunityAttachments-OpportunityAttachmentCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\OpportunityAttachments\\OpportunityAttachmentCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-OpportunityAttachments-OpportunityAttachmentCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OpportunityAttachments\\OpportunityAttachmentCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -20246,11 +21486,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-OpportunityAttachments-OpportunityAttachmentEntity.html#property_title"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\OpportunityAttachments\\OpportunityAttachmentEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-OpportunityAttachments-OpportunityAttachmentEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OpportunityAttachments\\OpportunityAttachmentPaginator",
             "name": "OpportunityAttachmentPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -20305,6 +21540,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-OpportunityAttachments-OpportunityAttachmentQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\OpportunityAttachments\\OpportunityAttachmentQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-OpportunityAttachments-OpportunityAttachmentQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OpportunityAttachments\\OpportunityAttachmentQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -20391,6 +21631,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020OpportunityAttachment\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-OpportunityAttachments-OpportunityAttachmentService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\OpportunityAttachments\\OpportunityAttachmentService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-OpportunityAttachments-OpportunityAttachmentService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\OpportunityAttachments\\OpportunityAttachmentService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-OpportunityAttachments-OpportunityAttachmentService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OpportunityAttachments\\OpportunityAttachmentService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -20410,6 +21660,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-OrganizationalLevel1s-OrganizationalLevel1Collection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevel1s\\OrganizationalLevel1Collection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-OrganizationalLevel1s-OrganizationalLevel1Collection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevel1s\\OrganizationalLevel1Collection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -20450,11 +21705,6 @@ Search.appendIndex(
             "name": "name",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-OrganizationalLevel1s-OrganizationalLevel1Entity.html#property_name"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevel1s\\OrganizationalLevel1Entity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-OrganizationalLevel1s-OrganizationalLevel1Entity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevel1s\\OrganizationalLevel1Paginator",
             "name": "OrganizationalLevel1Paginator",
@@ -20510,6 +21760,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-OrganizationalLevel1s-OrganizationalLevel1QueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevel1s\\OrganizationalLevel1QueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-OrganizationalLevel1s-OrganizationalLevel1QueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevel1s\\OrganizationalLevel1QueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -20591,6 +21846,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020OrganizationalLevel1\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-OrganizationalLevel1s-OrganizationalLevel1Service.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevel1s\\OrganizationalLevel1Service\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-OrganizationalLevel1s-OrganizationalLevel1Service.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevel1s\\OrganizationalLevel1Service\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-OrganizationalLevel1s-OrganizationalLevel1Service.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevel1s\\OrganizationalLevel1Service\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -20615,6 +21880,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-OrganizationalLevel2s-OrganizationalLevel2Collection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevel2s\\OrganizationalLevel2Collection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-OrganizationalLevel2s-OrganizationalLevel2Collection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevel2s\\OrganizationalLevel2Collection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -20655,11 +21925,6 @@ Search.appendIndex(
             "name": "name",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-OrganizationalLevel2s-OrganizationalLevel2Entity.html#property_name"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevel2s\\OrganizationalLevel2Entity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-OrganizationalLevel2s-OrganizationalLevel2Entity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevel2s\\OrganizationalLevel2Paginator",
             "name": "OrganizationalLevel2Paginator",
@@ -20715,6 +21980,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-OrganizationalLevel2s-OrganizationalLevel2QueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevel2s\\OrganizationalLevel2QueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-OrganizationalLevel2s-OrganizationalLevel2QueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevel2s\\OrganizationalLevel2QueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -20796,6 +22066,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020OrganizationalLevel2\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-OrganizationalLevel2s-OrganizationalLevel2Service.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevel2s\\OrganizationalLevel2Service\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-OrganizationalLevel2s-OrganizationalLevel2Service.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevel2s\\OrganizationalLevel2Service\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-OrganizationalLevel2s-OrganizationalLevel2Service.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevel2s\\OrganizationalLevel2Service\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -20820,6 +22100,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-OrganizationalLevelAssociations-OrganizationalLevelAssociationCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevelAssociations\\OrganizationalLevelAssociationCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-OrganizationalLevelAssociations-OrganizationalLevelAssociationCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevelAssociations\\OrganizationalLevelAssociationCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -20860,11 +22145,6 @@ Search.appendIndex(
             "name": "organizationalLevel2ID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-OrganizationalLevelAssociations-OrganizationalLevelAssociationEntity.html#property_organizationalLevel2ID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevelAssociations\\OrganizationalLevelAssociationEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-OrganizationalLevelAssociations-OrganizationalLevelAssociationEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevelAssociations\\OrganizationalLevelAssociationPaginator",
             "name": "OrganizationalLevelAssociationPaginator",
@@ -20920,6 +22200,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-OrganizationalLevelAssociations-OrganizationalLevelAssociationQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevelAssociations\\OrganizationalLevelAssociationQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-OrganizationalLevelAssociations-OrganizationalLevelAssociationQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevelAssociations\\OrganizationalLevelAssociationQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -21001,6 +22286,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020OrganizationalLevelAssociation\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-OrganizationalLevelAssociations-OrganizationalLevelAssociationService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevelAssociations\\OrganizationalLevelAssociationService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-OrganizationalLevelAssociations-OrganizationalLevelAssociationService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevelAssociations\\OrganizationalLevelAssociationService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-OrganizationalLevelAssociations-OrganizationalLevelAssociationService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalLevelAssociations\\OrganizationalLevelAssociationService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -21025,6 +22320,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-OrganizationalResources-OrganizationalResourceCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalResources\\OrganizationalResourceCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-OrganizationalResources-OrganizationalResourceCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalResources\\OrganizationalResourceCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -21060,11 +22360,6 @@ Search.appendIndex(
             "name": "resourceID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-OrganizationalResources-OrganizationalResourceEntity.html#property_resourceID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalResources\\OrganizationalResourceEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-OrganizationalResources-OrganizationalResourceEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalResources\\OrganizationalResourcePaginator",
             "name": "OrganizationalResourcePaginator",
@@ -21120,6 +22415,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-OrganizationalResources-OrganizationalResourceQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalResources\\OrganizationalResourceQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-OrganizationalResources-OrganizationalResourceQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalResources\\OrganizationalResourceQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -21196,6 +22496,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020OrganizationalResource\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-OrganizationalResources-OrganizationalResourceService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalResources\\OrganizationalResourceService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-OrganizationalResources-OrganizationalResourceService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalResources\\OrganizationalResourceService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-OrganizationalResources-OrganizationalResourceService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\OrganizationalResources\\OrganizationalResourceService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -21215,6 +22525,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-PaymentTerms-PaymentTermCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PaymentTerms\\PaymentTermCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-PaymentTerms-PaymentTermCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PaymentTerms\\PaymentTermCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -21260,11 +22575,6 @@ Search.appendIndex(
             "name": "paymentDueInDays",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-PaymentTerms-PaymentTermEntity.html#property_paymentDueInDays"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\PaymentTerms\\PaymentTermEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-PaymentTerms-PaymentTermEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PaymentTerms\\PaymentTermPaginator",
             "name": "PaymentTermPaginator",
@@ -21320,6 +22630,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-PaymentTerms-PaymentTermQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PaymentTerms\\PaymentTermQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-PaymentTerms-PaymentTermQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PaymentTerms\\PaymentTermQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -21401,6 +22716,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020PaymentTerm\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-PaymentTerms-PaymentTermService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PaymentTerms\\PaymentTermService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-PaymentTerms-PaymentTermService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PaymentTerms\\PaymentTermService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-PaymentTerms-PaymentTermService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PaymentTerms\\PaymentTermService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -21425,6 +22750,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-Phases-PhaseCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Phases\\PhaseCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-Phases-PhaseCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Phases\\PhaseCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -21516,11 +22846,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-Phases-PhaseEntity.html#property_title"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\Phases\\PhaseEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-Phases-PhaseEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Phases\\PhasePaginator",
             "name": "PhasePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -21575,6 +22900,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-Phases-PhaseQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Phases\\PhaseQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-Phases-PhaseQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Phases\\PhaseQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -21656,6 +22986,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020Phase\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-Phases-PhaseService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Phases\\PhaseService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Phases-PhaseService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Phases\\PhaseService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-Phases-PhaseService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Phases\\PhaseService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -21680,6 +23020,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-PriceListMaterialCodes-PriceListMaterialCodeCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListMaterialCodes\\PriceListMaterialCodeCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-PriceListMaterialCodes-PriceListMaterialCodeCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListMaterialCodes\\PriceListMaterialCodeCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -21725,11 +23070,6 @@ Search.appendIndex(
             "name": "usesInternalCurrencyPrice",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-PriceListMaterialCodes-PriceListMaterialCodeEntity.html#property_usesInternalCurrencyPrice"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\PriceListMaterialCodes\\PriceListMaterialCodeEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-PriceListMaterialCodes-PriceListMaterialCodeEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListMaterialCodes\\PriceListMaterialCodePaginator",
             "name": "PriceListMaterialCodePaginator",
@@ -21785,6 +23125,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-PriceListMaterialCodes-PriceListMaterialCodeQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListMaterialCodes\\PriceListMaterialCodeQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-PriceListMaterialCodes-PriceListMaterialCodeQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListMaterialCodes\\PriceListMaterialCodeQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -21861,6 +23206,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020PriceListMaterialCode\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-PriceListMaterialCodes-PriceListMaterialCodeService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListMaterialCodes\\PriceListMaterialCodeService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-PriceListMaterialCodes-PriceListMaterialCodeService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListMaterialCodes\\PriceListMaterialCodeService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-PriceListMaterialCodes-PriceListMaterialCodeService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListMaterialCodes\\PriceListMaterialCodeService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -21885,6 +23240,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-PriceListProducts-PriceListProductCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListProducts\\PriceListProductCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-PriceListProducts-PriceListProductCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListProducts\\PriceListProductCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -21930,11 +23290,6 @@ Search.appendIndex(
             "name": "usesInternalCurrencyPrice",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-PriceListProducts-PriceListProductEntity.html#property_usesInternalCurrencyPrice"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\PriceListProducts\\PriceListProductEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-PriceListProducts-PriceListProductEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListProducts\\PriceListProductPaginator",
             "name": "PriceListProductPaginator",
@@ -21990,6 +23345,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-PriceListProducts-PriceListProductQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListProducts\\PriceListProductQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-PriceListProducts-PriceListProductQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListProducts\\PriceListProductQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -22066,6 +23426,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020PriceListProduct\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-PriceListProducts-PriceListProductService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListProducts\\PriceListProductService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-PriceListProducts-PriceListProductService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListProducts\\PriceListProductService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-PriceListProducts-PriceListProductService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListProducts\\PriceListProductService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -22090,6 +23460,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-PriceListProductTiers-PriceListProductTierCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListProductTiers\\PriceListProductTierCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-PriceListProductTiers-PriceListProductTierCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListProductTiers\\PriceListProductTierCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -22135,11 +23510,6 @@ Search.appendIndex(
             "name": "usesInternalCurrencyPrice",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-PriceListProductTiers-PriceListProductTierEntity.html#property_usesInternalCurrencyPrice"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\PriceListProductTiers\\PriceListProductTierEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-PriceListProductTiers-PriceListProductTierEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListProductTiers\\PriceListProductTierPaginator",
             "name": "PriceListProductTierPaginator",
@@ -22195,6 +23565,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-PriceListProductTiers-PriceListProductTierQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListProductTiers\\PriceListProductTierQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-PriceListProductTiers-PriceListProductTierQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListProductTiers\\PriceListProductTierQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -22271,6 +23646,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020PriceListProductTier\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-PriceListProductTiers-PriceListProductTierService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListProductTiers\\PriceListProductTierService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-PriceListProductTiers-PriceListProductTierService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListProductTiers\\PriceListProductTierService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-PriceListProductTiers-PriceListProductTierService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListProductTiers\\PriceListProductTierService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -22295,6 +23680,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-PriceListRoles-PriceListRoleCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListRoles\\PriceListRoleCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-PriceListRoles-PriceListRoleCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListRoles\\PriceListRoleCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -22340,11 +23730,6 @@ Search.appendIndex(
             "name": "usesInternalCurrencyPrice",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-PriceListRoles-PriceListRoleEntity.html#property_usesInternalCurrencyPrice"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\PriceListRoles\\PriceListRoleEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-PriceListRoles-PriceListRoleEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListRoles\\PriceListRolePaginator",
             "name": "PriceListRolePaginator",
@@ -22400,6 +23785,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-PriceListRoles-PriceListRoleQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListRoles\\PriceListRoleQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-PriceListRoles-PriceListRoleQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListRoles\\PriceListRoleQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -22476,6 +23866,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020PriceListRole\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-PriceListRoles-PriceListRoleService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListRoles\\PriceListRoleService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-PriceListRoles-PriceListRoleService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListRoles\\PriceListRoleService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-PriceListRoles-PriceListRoleService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListRoles\\PriceListRoleService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -22500,6 +23900,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-PriceListServiceBundles-PriceListServiceBundleCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListServiceBundles\\PriceListServiceBundleCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-PriceListServiceBundles-PriceListServiceBundleCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListServiceBundles\\PriceListServiceBundleCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -22545,11 +23950,6 @@ Search.appendIndex(
             "name": "usesInternalCurrencyPrice",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-PriceListServiceBundles-PriceListServiceBundleEntity.html#property_usesInternalCurrencyPrice"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\PriceListServiceBundles\\PriceListServiceBundleEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-PriceListServiceBundles-PriceListServiceBundleEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListServiceBundles\\PriceListServiceBundlePaginator",
             "name": "PriceListServiceBundlePaginator",
@@ -22605,6 +24005,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-PriceListServiceBundles-PriceListServiceBundleQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListServiceBundles\\PriceListServiceBundleQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-PriceListServiceBundles-PriceListServiceBundleQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListServiceBundles\\PriceListServiceBundleQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -22681,6 +24086,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020PriceListServiceBundle\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-PriceListServiceBundles-PriceListServiceBundleService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListServiceBundles\\PriceListServiceBundleService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-PriceListServiceBundles-PriceListServiceBundleService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListServiceBundles\\PriceListServiceBundleService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-PriceListServiceBundles-PriceListServiceBundleService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListServiceBundles\\PriceListServiceBundleService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -22705,6 +24120,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-PriceListServices-PriceListServiceCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListServices\\PriceListServiceCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-PriceListServices-PriceListServiceCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListServices\\PriceListServiceCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -22750,11 +24170,6 @@ Search.appendIndex(
             "name": "usesInternalCurrencyPrice",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-PriceListServices-PriceListServiceEntity.html#property_usesInternalCurrencyPrice"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\PriceListServices\\PriceListServiceEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-PriceListServices-PriceListServiceEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListServices\\PriceListServicePaginator",
             "name": "PriceListServicePaginator",
@@ -22810,6 +24225,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-PriceListServices-PriceListServiceQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListServices\\PriceListServiceQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-PriceListServices-PriceListServiceQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListServices\\PriceListServiceQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -22886,6 +24306,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020PriceListService\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-PriceListServices-PriceListServiceService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListServices\\PriceListServiceService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-PriceListServices-PriceListServiceService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListServices\\PriceListServiceService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-PriceListServices-PriceListServiceService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListServices\\PriceListServiceService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -22910,6 +24340,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-PriceListWorkTypeModifiers-PriceListWorkTypeModifierCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListWorkTypeModifiers\\PriceListWorkTypeModifierCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-PriceListWorkTypeModifiers-PriceListWorkTypeModifierCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListWorkTypeModifiers\\PriceListWorkTypeModifierCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -22960,11 +24395,6 @@ Search.appendIndex(
             "name": "workTypeModifierID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-PriceListWorkTypeModifiers-PriceListWorkTypeModifierEntity.html#property_workTypeModifierID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\PriceListWorkTypeModifiers\\PriceListWorkTypeModifierEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-PriceListWorkTypeModifiers-PriceListWorkTypeModifierEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListWorkTypeModifiers\\PriceListWorkTypeModifierPaginator",
             "name": "PriceListWorkTypeModifierPaginator",
@@ -23020,6 +24450,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-PriceListWorkTypeModifiers-PriceListWorkTypeModifierQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListWorkTypeModifiers\\PriceListWorkTypeModifierQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-PriceListWorkTypeModifiers-PriceListWorkTypeModifierQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListWorkTypeModifiers\\PriceListWorkTypeModifierQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -23096,6 +24531,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020PriceListWorkTypeModifier\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-PriceListWorkTypeModifiers-PriceListWorkTypeModifierService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListWorkTypeModifiers\\PriceListWorkTypeModifierService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-PriceListWorkTypeModifiers-PriceListWorkTypeModifierService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PriceListWorkTypeModifiers\\PriceListWorkTypeModifierService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-PriceListWorkTypeModifiers-PriceListWorkTypeModifierService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PriceListWorkTypeModifiers\\PriceListWorkTypeModifierService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -23120,6 +24565,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ProductNotes-ProductNoteCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProductNotes\\ProductNoteCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ProductNotes-ProductNoteCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProductNotes\\ProductNoteCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -23186,11 +24636,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ProductNotes-ProductNoteEntity.html#property_title"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ProductNotes\\ProductNoteEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ProductNotes-ProductNoteEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProductNotes\\ProductNotePaginator",
             "name": "ProductNotePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -23245,6 +24690,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ProductNotes-ProductNoteQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProductNotes\\ProductNoteQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ProductNotes-ProductNoteQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProductNotes\\ProductNoteQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -23326,6 +24776,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ProductNote\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ProductNotes-ProductNoteService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProductNotes\\ProductNoteService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ProductNotes-ProductNoteService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProductNotes\\ProductNoteService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ProductNotes-ProductNoteService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProductNotes\\ProductNoteService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -23350,6 +24810,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-Products-ProductCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Products\\ProductCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-Products-ProductCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Products\\ProductCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -23501,11 +24966,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-Products-ProductEntity.html#property_vendorProductNumber"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\Products\\ProductEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-Products-ProductEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Products\\ProductPaginator",
             "name": "ProductPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -23560,6 +25020,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-Products-ProductQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Products\\ProductQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-Products-ProductQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Products\\ProductQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -23641,6 +25106,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020Product\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-Products-ProductService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Products\\ProductService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Products-ProductService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Products\\ProductService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-Products-ProductService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Products\\ProductService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -23665,6 +25140,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ProductTiers-ProductTierCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProductTiers\\ProductTierCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ProductTiers-ProductTierCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProductTiers\\ProductTierCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -23710,11 +25190,6 @@ Search.appendIndex(
             "name": "upToUnitCount",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ProductTiers-ProductTierEntity.html#property_upToUnitCount"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ProductTiers\\ProductTierEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ProductTiers-ProductTierEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProductTiers\\ProductTierPaginator",
             "name": "ProductTierPaginator",
@@ -23770,6 +25245,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ProductTiers-ProductTierQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProductTiers\\ProductTierQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ProductTiers-ProductTierQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProductTiers\\ProductTierQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -23856,6 +25336,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ProductTier\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ProductTiers-ProductTierService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProductTiers\\ProductTierService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ProductTiers-ProductTierService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProductTiers\\ProductTierService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ProductTiers-ProductTierService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProductTiers\\ProductTierService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -23880,6 +25370,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ProductVendors-ProductVendorCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProductVendors\\ProductVendorCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ProductVendors-ProductVendorCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProductVendors\\ProductVendorCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -23936,11 +25431,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ProductVendors-ProductVendorEntity.html#property_vendorPartNumber"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ProductVendors\\ProductVendorEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ProductVendors-ProductVendorEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProductVendors\\ProductVendorPaginator",
             "name": "ProductVendorPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -23995,6 +25485,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ProductVendors-ProductVendorQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProductVendors\\ProductVendorQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ProductVendors-ProductVendorQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProductVendors\\ProductVendorQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -24076,6 +25571,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ProductVendor\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ProductVendors-ProductVendorService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProductVendors\\ProductVendorService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ProductVendors-ProductVendorService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProductVendors\\ProductVendorService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ProductVendors-ProductVendorService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProductVendors\\ProductVendorService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -24100,6 +25605,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ProjectAttachments-ProjectAttachmentCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProjectAttachments\\ProjectAttachmentCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ProjectAttachments-ProjectAttachmentCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProjectAttachments\\ProjectAttachmentCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -24181,11 +25691,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ProjectAttachments-ProjectAttachmentEntity.html#property_title"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ProjectAttachments\\ProjectAttachmentEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ProjectAttachments-ProjectAttachmentEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProjectAttachments\\ProjectAttachmentPaginator",
             "name": "ProjectAttachmentPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -24240,6 +25745,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ProjectAttachments-ProjectAttachmentQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProjectAttachments\\ProjectAttachmentQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ProjectAttachments-ProjectAttachmentQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProjectAttachments\\ProjectAttachmentQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -24326,6 +25836,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ProjectAttachment\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ProjectAttachments-ProjectAttachmentService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProjectAttachments\\ProjectAttachmentService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ProjectAttachments-ProjectAttachmentService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProjectAttachments\\ProjectAttachmentService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ProjectAttachments-ProjectAttachmentService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProjectAttachments\\ProjectAttachmentService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -24345,6 +25865,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ProjectCharges-ProjectChargeCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProjectCharges\\ProjectChargeCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ProjectCharges-ProjectChargeCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProjectCharges\\ProjectChargeCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -24511,11 +26036,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ProjectCharges-ProjectChargeEntity.html#property_unitQuantity"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ProjectCharges\\ProjectChargeEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ProjectCharges-ProjectChargeEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProjectCharges\\ProjectChargePaginator",
             "name": "ProjectChargePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -24570,6 +26090,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ProjectCharges-ProjectChargeQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProjectCharges\\ProjectChargeQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ProjectCharges-ProjectChargeQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProjectCharges\\ProjectChargeQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -24656,6 +26181,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ProjectCharge\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ProjectCharges-ProjectChargeService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProjectCharges\\ProjectChargeService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ProjectCharges-ProjectChargeService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProjectCharges\\ProjectChargeService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ProjectCharges-ProjectChargeService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProjectCharges\\ProjectChargeService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -24680,6 +26215,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ProjectNotes-ProjectNoteCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProjectNotes\\ProjectNoteCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ProjectNotes-ProjectNoteCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProjectNotes\\ProjectNoteCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -24761,11 +26301,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ProjectNotes-ProjectNoteEntity.html#property_title"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ProjectNotes\\ProjectNoteEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ProjectNotes-ProjectNoteEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProjectNotes\\ProjectNotePaginator",
             "name": "ProjectNotePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -24820,6 +26355,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ProjectNotes-ProjectNoteQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProjectNotes\\ProjectNoteQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ProjectNotes-ProjectNoteQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProjectNotes\\ProjectNoteQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -24901,6 +26441,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ProjectNote\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ProjectNotes-ProjectNoteService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProjectNotes\\ProjectNoteService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ProjectNotes-ProjectNoteService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ProjectNotes\\ProjectNoteService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ProjectNotes-ProjectNoteService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ProjectNotes\\ProjectNoteService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -24925,6 +26475,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-Projects-ProjectCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Projects\\ProjectCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-Projects-ProjectCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Projects\\ProjectCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -25156,11 +26711,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-Projects-ProjectEntity.html#property_statusDetail"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\Projects\\ProjectEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-Projects-ProjectEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Projects\\ProjectPaginator",
             "name": "ProjectPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -25215,6 +26765,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-Projects-ProjectQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Projects\\ProjectQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-Projects-ProjectQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Projects\\ProjectQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -25296,6 +26851,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020Project\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-Projects-ProjectService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Projects\\ProjectService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Projects-ProjectService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Projects\\ProjectService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-Projects-ProjectService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Projects\\ProjectService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -25320,6 +26885,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-PurchaseApprovals-PurchaseApprovalCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PurchaseApprovals\\PurchaseApprovalCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-PurchaseApprovals-PurchaseApprovalCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseApprovals\\PurchaseApprovalCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -25360,11 +26930,6 @@ Search.appendIndex(
             "name": "rejectNote",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-PurchaseApprovals-PurchaseApprovalEntity.html#property_rejectNote"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\PurchaseApprovals\\PurchaseApprovalEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-PurchaseApprovals-PurchaseApprovalEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseApprovals\\PurchaseApprovalPaginator",
             "name": "PurchaseApprovalPaginator",
@@ -25420,6 +26985,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-PurchaseApprovals-PurchaseApprovalQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PurchaseApprovals\\PurchaseApprovalQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-PurchaseApprovals-PurchaseApprovalQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseApprovals\\PurchaseApprovalQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -25496,6 +27066,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020PurchaseApproval\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-PurchaseApprovals-PurchaseApprovalService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PurchaseApprovals\\PurchaseApprovalService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-PurchaseApprovals-PurchaseApprovalService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PurchaseApprovals\\PurchaseApprovalService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-PurchaseApprovals-PurchaseApprovalService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseApprovals\\PurchaseApprovalService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -25520,6 +27100,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-PurchaseOrderItemReceiving-PurchaseOrderItemReceivingCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrderItemReceiving\\PurchaseOrderItemReceivingCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-PurchaseOrderItemReceiving-PurchaseOrderItemReceivingCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrderItemReceiving\\PurchaseOrderItemReceivingCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -25581,11 +27166,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-PurchaseOrderItemReceiving-PurchaseOrderItemReceivingEntity.html#property_serialNumber"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrderItemReceiving\\PurchaseOrderItemReceivingEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-PurchaseOrderItemReceiving-PurchaseOrderItemReceivingEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrderItemReceiving\\PurchaseOrderItemReceivingPaginator",
             "name": "PurchaseOrderItemReceivingPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -25640,6 +27220,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-PurchaseOrderItemReceiving-PurchaseOrderItemReceivingQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrderItemReceiving\\PurchaseOrderItemReceivingQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-PurchaseOrderItemReceiving-PurchaseOrderItemReceivingQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrderItemReceiving\\PurchaseOrderItemReceivingQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -25721,6 +27306,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020PurchaseOrderItemReceiving\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-PurchaseOrderItemReceiving-PurchaseOrderItemReceivingService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrderItemReceiving\\PurchaseOrderItemReceivingService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-PurchaseOrderItemReceiving-PurchaseOrderItemReceivingService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrderItemReceiving\\PurchaseOrderItemReceivingService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-PurchaseOrderItemReceiving-PurchaseOrderItemReceivingService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrderItemReceiving\\PurchaseOrderItemReceivingService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -25740,6 +27335,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-PurchaseOrderItems-PurchaseOrderItemCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrderItems\\PurchaseOrderItemCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-PurchaseOrderItems-PurchaseOrderItemCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrderItems\\PurchaseOrderItemCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -25831,11 +27431,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-PurchaseOrderItems-PurchaseOrderItemEntity.html#property_unitCost"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrderItems\\PurchaseOrderItemEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-PurchaseOrderItems-PurchaseOrderItemEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrderItems\\PurchaseOrderItemPaginator",
             "name": "PurchaseOrderItemPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -25890,6 +27485,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-PurchaseOrderItems-PurchaseOrderItemQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrderItems\\PurchaseOrderItemQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-PurchaseOrderItems-PurchaseOrderItemQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrderItems\\PurchaseOrderItemQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -25971,6 +27571,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020PurchaseOrderItem\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-PurchaseOrderItems-PurchaseOrderItemService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrderItems\\PurchaseOrderItemService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-PurchaseOrderItems-PurchaseOrderItemService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrderItems\\PurchaseOrderItemService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-PurchaseOrderItems-PurchaseOrderItemService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrderItems\\PurchaseOrderItemService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -25995,6 +27605,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-PurchaseOrders-PurchaseOrderCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrders\\PurchaseOrderCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-PurchaseOrders-PurchaseOrderCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrders\\PurchaseOrderCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -26166,11 +27781,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-PurchaseOrders-PurchaseOrderEntity.html#property_vendorInvoiceNumber"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrders\\PurchaseOrderEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-PurchaseOrders-PurchaseOrderEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrders\\PurchaseOrderPaginator",
             "name": "PurchaseOrderPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -26225,6 +27835,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-PurchaseOrders-PurchaseOrderQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrders\\PurchaseOrderQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-PurchaseOrders-PurchaseOrderQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrders\\PurchaseOrderQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -26306,6 +27921,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020PurchaseOrder\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-PurchaseOrders-PurchaseOrderService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrders\\PurchaseOrderService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-PurchaseOrders-PurchaseOrderService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrders\\PurchaseOrderService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-PurchaseOrders-PurchaseOrderService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\PurchaseOrders\\PurchaseOrderService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -26330,6 +27955,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-QuoteItems-QuoteItemCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\QuoteItems\\QuoteItemCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-QuoteItems-QuoteItemCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\QuoteItems\\QuoteItemCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -26496,11 +28126,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-QuoteItems-QuoteItemEntity.html#property_unitPrice"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\QuoteItems\\QuoteItemEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-QuoteItems-QuoteItemEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\QuoteItems\\QuoteItemPaginator",
             "name": "QuoteItemPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -26555,6 +28180,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-QuoteItems-QuoteItemQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\QuoteItems\\QuoteItemQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-QuoteItems-QuoteItemQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\QuoteItems\\QuoteItemQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -26641,6 +28271,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020QuoteItem\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-QuoteItems-QuoteItemService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\QuoteItems\\QuoteItemService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-QuoteItems-QuoteItemService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\QuoteItems\\QuoteItemService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-QuoteItems-QuoteItemService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\QuoteItems\\QuoteItemService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -26665,6 +28305,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-QuoteLocations-QuoteLocationCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\QuoteLocations\\QuoteLocationCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-QuoteLocations-QuoteLocationCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\QuoteLocations\\QuoteLocationCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -26715,11 +28360,6 @@ Search.appendIndex(
             "name": "state",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-QuoteLocations-QuoteLocationEntity.html#property_state"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\QuoteLocations\\QuoteLocationEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-QuoteLocations-QuoteLocationEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\QuoteLocations\\QuoteLocationPaginator",
             "name": "QuoteLocationPaginator",
@@ -26775,6 +28415,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-QuoteLocations-QuoteLocationQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\QuoteLocations\\QuoteLocationQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-QuoteLocations-QuoteLocationQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\QuoteLocations\\QuoteLocationQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -26856,6 +28501,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020QuoteLocation\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-QuoteLocations-QuoteLocationService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\QuoteLocations\\QuoteLocationService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-QuoteLocations-QuoteLocationService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\QuoteLocations\\QuoteLocationService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-QuoteLocations-QuoteLocationService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\QuoteLocations\\QuoteLocationService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -26880,6 +28535,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-Quotes-QuoteCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Quotes\\QuoteCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-Quotes-QuoteCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Quotes\\QuoteCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -27091,11 +28751,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-Quotes-QuoteEntity.html#property_taxRegionID"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\Quotes\\QuoteEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-Quotes-QuoteEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Quotes\\QuotePaginator",
             "name": "QuotePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -27150,6 +28805,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-Quotes-QuoteQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Quotes\\QuoteQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-Quotes-QuoteQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Quotes\\QuoteQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -27231,6 +28891,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020Quote\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-Quotes-QuoteService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Quotes\\QuoteService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Quotes-QuoteService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Quotes\\QuoteService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-Quotes-QuoteService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Quotes\\QuoteService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -27255,6 +28925,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-QuoteTemplates-QuoteTemplateCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\QuoteTemplates\\QuoteTemplateCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-QuoteTemplates-QuoteTemplateCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\QuoteTemplates\\QuoteTemplateCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -27376,11 +29051,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-QuoteTemplates-QuoteTemplateEntity.html#property_showVerticalGridLines"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\QuoteTemplates\\QuoteTemplateEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-QuoteTemplates-QuoteTemplateEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\QuoteTemplates\\QuoteTemplatePaginator",
             "name": "QuoteTemplatePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -27435,6 +29105,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-QuoteTemplates-QuoteTemplateQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\QuoteTemplates\\QuoteTemplateQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-QuoteTemplates-QuoteTemplateQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\QuoteTemplates\\QuoteTemplateQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -27511,6 +29186,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020QuoteTemplate\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-QuoteTemplates-QuoteTemplateService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\QuoteTemplates\\QuoteTemplateService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-QuoteTemplates-QuoteTemplateService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\QuoteTemplates\\QuoteTemplateService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-QuoteTemplates-QuoteTemplateService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\QuoteTemplates\\QuoteTemplateService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -27530,6 +29215,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ResourceRoleDepartments-ResourceRoleDepartmentCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoleDepartments\\ResourceRoleDepartmentCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ResourceRoleDepartments-ResourceRoleDepartmentCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoleDepartments\\ResourceRoleDepartmentCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -27586,11 +29276,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ResourceRoleDepartments-ResourceRoleDepartmentEntity.html#property_roleID"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoleDepartments\\ResourceRoleDepartmentEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ResourceRoleDepartments-ResourceRoleDepartmentEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoleDepartments\\ResourceRoleDepartmentPaginator",
             "name": "ResourceRoleDepartmentPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -27645,6 +29330,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ResourceRoleDepartments-ResourceRoleDepartmentQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoleDepartments\\ResourceRoleDepartmentQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ResourceRoleDepartments-ResourceRoleDepartmentQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoleDepartments\\ResourceRoleDepartmentQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -27726,6 +29416,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ResourceRoleDepartment\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ResourceRoleDepartments-ResourceRoleDepartmentService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoleDepartments\\ResourceRoleDepartmentService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ResourceRoleDepartments-ResourceRoleDepartmentService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoleDepartments\\ResourceRoleDepartmentService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ResourceRoleDepartments-ResourceRoleDepartmentService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoleDepartments\\ResourceRoleDepartmentService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -27750,6 +29450,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ResourceRoleQueues-ResourceRoleQueueCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoleQueues\\ResourceRoleQueueCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ResourceRoleQueues-ResourceRoleQueueCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoleQueues\\ResourceRoleQueueCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -27785,11 +29490,6 @@ Search.appendIndex(
             "name": "resourceID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ResourceRoleQueues-ResourceRoleQueueEntity.html#property_resourceID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoleQueues\\ResourceRoleQueueEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ResourceRoleQueues-ResourceRoleQueueEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoleQueues\\ResourceRoleQueuePaginator",
             "name": "ResourceRoleQueuePaginator",
@@ -27845,6 +29545,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ResourceRoleQueues-ResourceRoleQueueQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoleQueues\\ResourceRoleQueueQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ResourceRoleQueues-ResourceRoleQueueQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoleQueues\\ResourceRoleQueueQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -27926,6 +29631,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ResourceRoleQueue\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ResourceRoleQueues-ResourceRoleQueueService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoleQueues\\ResourceRoleQueueService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ResourceRoleQueues-ResourceRoleQueueService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoleQueues\\ResourceRoleQueueService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ResourceRoleQueues-ResourceRoleQueueService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoleQueues\\ResourceRoleQueueService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -27950,6 +29665,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ResourceRoles-ResourceRoleCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoles\\ResourceRoleCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ResourceRoles-ResourceRoleCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoles\\ResourceRoleCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -28000,11 +29720,6 @@ Search.appendIndex(
             "name": "roleID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ResourceRoles-ResourceRoleEntity.html#property_roleID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoles\\ResourceRoleEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ResourceRoles-ResourceRoleEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoles\\ResourceRolePaginator",
             "name": "ResourceRolePaginator",
@@ -28060,6 +29775,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ResourceRoles-ResourceRoleQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoles\\ResourceRoleQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ResourceRoles-ResourceRoleQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoles\\ResourceRoleQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -28136,6 +29856,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ResourceRole\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ResourceRoles-ResourceRoleService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoles\\ResourceRoleService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ResourceRoles-ResourceRoleService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoles\\ResourceRoleService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ResourceRoles-ResourceRoleService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceRoles\\ResourceRoleService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -28155,6 +29885,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-Resources-ResourceCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Resources\\ResourceCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-Resources-ResourceCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Resources\\ResourceCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -28351,11 +30086,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-Resources-ResourceEntity.html#property_userType"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\Resources\\ResourceEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-Resources-ResourceEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Resources\\ResourcePaginator",
             "name": "ResourcePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -28410,6 +30140,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-Resources-ResourceQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Resources\\ResourceQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-Resources-ResourceQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Resources\\ResourceQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -28486,6 +30221,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020Resource\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-Resources-ResourceService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Resources\\ResourceService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Resources-ResourceService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Resources\\ResourceService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-Resources-ResourceService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Resources\\ResourceService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -28510,6 +30255,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ResourceServiceDeskRoles-ResourceServiceDeskRoleCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ResourceServiceDeskRoles\\ResourceServiceDeskRoleCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ResourceServiceDeskRoles-ResourceServiceDeskRoleCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceServiceDeskRoles\\ResourceServiceDeskRoleCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -28555,11 +30305,6 @@ Search.appendIndex(
             "name": "roleID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ResourceServiceDeskRoles-ResourceServiceDeskRoleEntity.html#property_roleID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ResourceServiceDeskRoles\\ResourceServiceDeskRoleEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ResourceServiceDeskRoles-ResourceServiceDeskRoleEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceServiceDeskRoles\\ResourceServiceDeskRolePaginator",
             "name": "ResourceServiceDeskRolePaginator",
@@ -28615,6 +30360,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ResourceServiceDeskRoles-ResourceServiceDeskRoleQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ResourceServiceDeskRoles\\ResourceServiceDeskRoleQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ResourceServiceDeskRoles-ResourceServiceDeskRoleQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceServiceDeskRoles\\ResourceServiceDeskRoleQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -28696,6 +30446,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ResourceServiceDeskRole\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ResourceServiceDeskRoles-ResourceServiceDeskRoleService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ResourceServiceDeskRoles\\ResourceServiceDeskRoleService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ResourceServiceDeskRoles-ResourceServiceDeskRoleService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ResourceServiceDeskRoles\\ResourceServiceDeskRoleService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ResourceServiceDeskRoles-ResourceServiceDeskRoleService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceServiceDeskRoles\\ResourceServiceDeskRoleService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -28720,6 +30480,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ResourceSkills-ResourceSkillCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ResourceSkills\\ResourceSkillCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ResourceSkills-ResourceSkillCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceSkills\\ResourceSkillCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -28765,11 +30530,6 @@ Search.appendIndex(
             "name": "skillLevel",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ResourceSkills-ResourceSkillEntity.html#property_skillLevel"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ResourceSkills\\ResourceSkillEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ResourceSkills-ResourceSkillEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceSkills\\ResourceSkillPaginator",
             "name": "ResourceSkillPaginator",
@@ -28825,6 +30585,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ResourceSkills-ResourceSkillQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ResourceSkills\\ResourceSkillQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ResourceSkills-ResourceSkillQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceSkills\\ResourceSkillQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -28901,6 +30666,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ResourceSkill\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ResourceSkills-ResourceSkillService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ResourceSkills\\ResourceSkillService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ResourceSkills-ResourceSkillService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ResourceSkills\\ResourceSkillService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ResourceSkills-ResourceSkillService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ResourceSkills\\ResourceSkillService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -28925,6 +30700,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-Roles-RoleCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Roles\\RoleCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-Roles-RoleCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Roles\\RoleCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -28996,11 +30776,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-Roles-RoleEntity.html#property_roleType"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\Roles\\RoleEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-Roles-RoleEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Roles\\RolePaginator",
             "name": "RolePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -29055,6 +30830,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-Roles-RoleQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Roles\\RoleQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-Roles-RoleQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Roles\\RoleQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -29136,6 +30916,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020Role\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-Roles-RoleService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Roles\\RoleService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Roles-RoleService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Roles\\RoleService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-Roles-RoleService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Roles\\RoleService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -29160,6 +30950,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-SalesOrders-SalesOrderCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\SalesOrders\\SalesOrderCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-SalesOrders-SalesOrderCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\SalesOrders\\SalesOrderCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -29306,11 +31101,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-SalesOrders-SalesOrderEntity.html#property_title"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\SalesOrders\\SalesOrderEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-SalesOrders-SalesOrderEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\SalesOrders\\SalesOrderPaginator",
             "name": "SalesOrderPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -29365,6 +31155,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-SalesOrders-SalesOrderQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\SalesOrders\\SalesOrderQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-SalesOrders-SalesOrderQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\SalesOrders\\SalesOrderQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -29441,6 +31236,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020SalesOrder\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-SalesOrders-SalesOrderService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\SalesOrders\\SalesOrderService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-SalesOrders-SalesOrderService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\SalesOrders\\SalesOrderService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-SalesOrders-SalesOrderService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\SalesOrders\\SalesOrderService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -29465,6 +31270,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ServiceBundles-ServiceBundleCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceBundles\\ServiceBundleCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ServiceBundles-ServiceBundleCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceBundles\\ServiceBundleCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -29566,11 +31376,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ServiceBundles-ServiceBundleEntity.html#property_updateResourceID"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ServiceBundles\\ServiceBundleEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ServiceBundles-ServiceBundleEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceBundles\\ServiceBundlePaginator",
             "name": "ServiceBundlePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -29625,6 +31430,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ServiceBundles-ServiceBundleQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceBundles\\ServiceBundleQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ServiceBundles-ServiceBundleQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceBundles\\ServiceBundleQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -29711,6 +31521,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ServiceBundle\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ServiceBundles-ServiceBundleService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceBundles\\ServiceBundleService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ServiceBundles-ServiceBundleService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceBundles\\ServiceBundleService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ServiceBundles-ServiceBundleService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceBundles\\ServiceBundleService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -29735,6 +31555,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ServiceBundleServices-ServiceBundleServiceCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceBundleServices\\ServiceBundleServiceCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ServiceBundleServices-ServiceBundleServiceCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceBundleServices\\ServiceBundleServiceCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -29770,11 +31595,6 @@ Search.appendIndex(
             "name": "serviceID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ServiceBundleServices-ServiceBundleServiceEntity.html#property_serviceID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ServiceBundleServices\\ServiceBundleServiceEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ServiceBundleServices-ServiceBundleServiceEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceBundleServices\\ServiceBundleServicePaginator",
             "name": "ServiceBundleServicePaginator",
@@ -29830,6 +31650,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ServiceBundleServices-ServiceBundleServiceQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceBundleServices\\ServiceBundleServiceQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ServiceBundleServices-ServiceBundleServiceQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceBundleServices\\ServiceBundleServiceQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -29916,6 +31741,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ServiceBundleService\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ServiceBundleServices-ServiceBundleServiceService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceBundleServices\\ServiceBundleServiceService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ServiceBundleServices-ServiceBundleServiceService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceBundleServices\\ServiceBundleServiceService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ServiceBundleServices-ServiceBundleServiceService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceBundleServices\\ServiceBundleServiceService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -29935,6 +31770,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ServiceCalls-ServiceCallCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCalls\\ServiceCallCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ServiceCalls-ServiceCallCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCalls\\ServiceCallCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -30036,11 +31876,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ServiceCalls-ServiceCallEntity.html#property_status"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCalls\\ServiceCallEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ServiceCalls-ServiceCallEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCalls\\ServiceCallPaginator",
             "name": "ServiceCallPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -30095,6 +31930,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ServiceCalls-ServiceCallQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCalls\\ServiceCallQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ServiceCalls-ServiceCallQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCalls\\ServiceCallQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -30181,6 +32021,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ServiceCall\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ServiceCalls-ServiceCallService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCalls\\ServiceCallService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ServiceCalls-ServiceCallService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCalls\\ServiceCallService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ServiceCalls-ServiceCallService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCalls\\ServiceCallService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -30205,6 +32055,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ServiceCallTaskResources-ServiceCallTaskResourceCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTaskResources\\ServiceCallTaskResourceCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ServiceCallTaskResources-ServiceCallTaskResourceCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTaskResources\\ServiceCallTaskResourceCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -30240,11 +32095,6 @@ Search.appendIndex(
             "name": "serviceCallTaskID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ServiceCallTaskResources-ServiceCallTaskResourceEntity.html#property_serviceCallTaskID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTaskResources\\ServiceCallTaskResourceEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ServiceCallTaskResources-ServiceCallTaskResourceEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTaskResources\\ServiceCallTaskResourcePaginator",
             "name": "ServiceCallTaskResourcePaginator",
@@ -30300,6 +32150,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ServiceCallTaskResources-ServiceCallTaskResourceQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTaskResources\\ServiceCallTaskResourceQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ServiceCallTaskResources-ServiceCallTaskResourceQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTaskResources\\ServiceCallTaskResourceQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -30386,6 +32241,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ServiceCallTaskResource\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ServiceCallTaskResources-ServiceCallTaskResourceService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTaskResources\\ServiceCallTaskResourceService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ServiceCallTaskResources-ServiceCallTaskResourceService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTaskResources\\ServiceCallTaskResourceService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ServiceCallTaskResources-ServiceCallTaskResourceService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTaskResources\\ServiceCallTaskResourceService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -30405,6 +32270,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ServiceCallTasks-ServiceCallTaskCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTasks\\ServiceCallTaskCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ServiceCallTasks-ServiceCallTaskCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTasks\\ServiceCallTaskCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -30440,11 +32310,6 @@ Search.appendIndex(
             "name": "taskID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ServiceCallTasks-ServiceCallTaskEntity.html#property_taskID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTasks\\ServiceCallTaskEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ServiceCallTasks-ServiceCallTaskEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTasks\\ServiceCallTaskPaginator",
             "name": "ServiceCallTaskPaginator",
@@ -30500,6 +32365,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ServiceCallTasks-ServiceCallTaskQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTasks\\ServiceCallTaskQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ServiceCallTasks-ServiceCallTaskQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTasks\\ServiceCallTaskQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -30586,6 +32456,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ServiceCallTask\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ServiceCallTasks-ServiceCallTaskService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTasks\\ServiceCallTaskService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ServiceCallTasks-ServiceCallTaskService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTasks\\ServiceCallTaskService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ServiceCallTasks-ServiceCallTaskService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTasks\\ServiceCallTaskService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -30605,6 +32485,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ServiceCallTicketResources-ServiceCallTicketResourceCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTicketResources\\ServiceCallTicketResourceCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ServiceCallTicketResources-ServiceCallTicketResourceCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTicketResources\\ServiceCallTicketResourceCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -30640,11 +32525,6 @@ Search.appendIndex(
             "name": "serviceCallTicketID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ServiceCallTicketResources-ServiceCallTicketResourceEntity.html#property_serviceCallTicketID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTicketResources\\ServiceCallTicketResourceEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ServiceCallTicketResources-ServiceCallTicketResourceEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTicketResources\\ServiceCallTicketResourcePaginator",
             "name": "ServiceCallTicketResourcePaginator",
@@ -30700,6 +32580,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ServiceCallTicketResources-ServiceCallTicketResourceQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTicketResources\\ServiceCallTicketResourceQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ServiceCallTicketResources-ServiceCallTicketResourceQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTicketResources\\ServiceCallTicketResourceQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -30786,6 +32671,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ServiceCallTicketResource\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ServiceCallTicketResources-ServiceCallTicketResourceService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTicketResources\\ServiceCallTicketResourceService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ServiceCallTicketResources-ServiceCallTicketResourceService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTicketResources\\ServiceCallTicketResourceService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ServiceCallTicketResources-ServiceCallTicketResourceService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTicketResources\\ServiceCallTicketResourceService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -30805,6 +32700,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ServiceCallTickets-ServiceCallTicketCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTickets\\ServiceCallTicketCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ServiceCallTickets-ServiceCallTicketCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTickets\\ServiceCallTicketCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -30840,11 +32740,6 @@ Search.appendIndex(
             "name": "ticketID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ServiceCallTickets-ServiceCallTicketEntity.html#property_ticketID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTickets\\ServiceCallTicketEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ServiceCallTickets-ServiceCallTicketEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTickets\\ServiceCallTicketPaginator",
             "name": "ServiceCallTicketPaginator",
@@ -30900,6 +32795,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ServiceCallTickets-ServiceCallTicketQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTickets\\ServiceCallTicketQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ServiceCallTickets-ServiceCallTicketQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTickets\\ServiceCallTicketQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -30986,6 +32886,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ServiceCallTicket\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ServiceCallTickets-ServiceCallTicketService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTickets\\ServiceCallTicketService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ServiceCallTickets-ServiceCallTicketService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTickets\\ServiceCallTicketService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ServiceCallTickets-ServiceCallTicketService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceCallTickets\\ServiceCallTicketService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -31005,6 +32915,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ServiceLevelAgreementResults-ServiceLevelAgreementResultCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceLevelAgreementResults\\ServiceLevelAgreementResultCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ServiceLevelAgreementResults-ServiceLevelAgreementResultCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceLevelAgreementResults\\ServiceLevelAgreementResultCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -31091,11 +33006,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ServiceLevelAgreementResults-ServiceLevelAgreementResultEntity.html#property_ticketID"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ServiceLevelAgreementResults\\ServiceLevelAgreementResultEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ServiceLevelAgreementResults-ServiceLevelAgreementResultEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceLevelAgreementResults\\ServiceLevelAgreementResultPaginator",
             "name": "ServiceLevelAgreementResultPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -31150,6 +33060,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ServiceLevelAgreementResults-ServiceLevelAgreementResultQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceLevelAgreementResults\\ServiceLevelAgreementResultQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ServiceLevelAgreementResults-ServiceLevelAgreementResultQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceLevelAgreementResults\\ServiceLevelAgreementResultQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -31226,6 +33141,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ServiceLevelAgreementResult\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ServiceLevelAgreementResults-ServiceLevelAgreementResultService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceLevelAgreementResults\\ServiceLevelAgreementResultService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ServiceLevelAgreementResults-ServiceLevelAgreementResultService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ServiceLevelAgreementResults\\ServiceLevelAgreementResultService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ServiceLevelAgreementResults-ServiceLevelAgreementResultService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ServiceLevelAgreementResults\\ServiceLevelAgreementResultService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -31245,6 +33170,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-Services-ServiceCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Services\\ServiceCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-Services-ServiceCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Services\\ServiceCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -31346,11 +33276,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-Services-ServiceEntity.html#property_vendorCompanyID"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\Services\\ServiceEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-Services-ServiceEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Services\\ServicePaginator",
             "name": "ServicePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -31405,6 +33330,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-Services-ServiceQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Services\\ServiceQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-Services-ServiceQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Services\\ServiceQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -31486,6 +33416,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020Service\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-Services-ServiceService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Services\\ServiceService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Services-ServiceService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Services\\ServiceService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-Services-ServiceService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Services\\ServiceService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -31510,6 +33450,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-ShippingTypes-ShippingTypeCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ShippingTypes\\ShippingTypeCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-ShippingTypes-ShippingTypeCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ShippingTypes\\ShippingTypeCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -31555,11 +33500,6 @@ Search.appendIndex(
             "name": "name",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-ShippingTypes-ShippingTypeEntity.html#property_name"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\ShippingTypes\\ShippingTypeEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-ShippingTypes-ShippingTypeEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ShippingTypes\\ShippingTypePaginator",
             "name": "ShippingTypePaginator",
@@ -31615,6 +33555,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-ShippingTypes-ShippingTypeQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ShippingTypes\\ShippingTypeQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-ShippingTypes-ShippingTypeQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ShippingTypes\\ShippingTypeQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -31691,6 +33636,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020ShippingType\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-ShippingTypes-ShippingTypeService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ShippingTypes\\ShippingTypeService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-ShippingTypes-ShippingTypeService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\ShippingTypes\\ShippingTypeService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-ShippingTypes-ShippingTypeService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\ShippingTypes\\ShippingTypeService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -31710,6 +33665,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-Skills-SkillCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Skills\\SkillCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-Skills-SkillCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Skills\\SkillCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -31755,11 +33715,6 @@ Search.appendIndex(
             "name": "name",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-Skills-SkillEntity.html#property_name"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\Skills\\SkillEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-Skills-SkillEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Skills\\SkillPaginator",
             "name": "SkillPaginator",
@@ -31815,6 +33770,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-Skills-SkillQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Skills\\SkillQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-Skills-SkillQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Skills\\SkillQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -31891,6 +33851,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020Skill\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-Skills-SkillService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Skills\\SkillService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Skills-SkillService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Skills\\SkillService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-Skills-SkillService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Skills\\SkillService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -31910,6 +33880,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-SubscriptionPeriods-SubscriptionPeriodCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\SubscriptionPeriods\\SubscriptionPeriodCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-SubscriptionPeriods-SubscriptionPeriodCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\SubscriptionPeriods\\SubscriptionPeriodCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -31966,11 +33941,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-SubscriptionPeriods-SubscriptionPeriodEntity.html#property_subscriptionID"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\SubscriptionPeriods\\SubscriptionPeriodEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-SubscriptionPeriods-SubscriptionPeriodEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\SubscriptionPeriods\\SubscriptionPeriodPaginator",
             "name": "SubscriptionPeriodPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -32025,6 +33995,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-SubscriptionPeriods-SubscriptionPeriodQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\SubscriptionPeriods\\SubscriptionPeriodQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-SubscriptionPeriods-SubscriptionPeriodQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\SubscriptionPeriods\\SubscriptionPeriodQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -32101,6 +34076,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020SubscriptionPeriod\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-SubscriptionPeriods-SubscriptionPeriodService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\SubscriptionPeriods\\SubscriptionPeriodService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-SubscriptionPeriods-SubscriptionPeriodService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\SubscriptionPeriods\\SubscriptionPeriodService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-SubscriptionPeriods-SubscriptionPeriodService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\SubscriptionPeriods\\SubscriptionPeriodService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -32120,6 +34105,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-Subscriptions-SubscriptionCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Subscriptions\\SubscriptionCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-Subscriptions-SubscriptionCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Subscriptions\\SubscriptionCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -32226,11 +34216,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-Subscriptions-SubscriptionEntity.html#property_vendorID"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\Subscriptions\\SubscriptionEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-Subscriptions-SubscriptionEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Subscriptions\\SubscriptionPaginator",
             "name": "SubscriptionPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -32285,6 +34270,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-Subscriptions-SubscriptionQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Subscriptions\\SubscriptionQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-Subscriptions-SubscriptionQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Subscriptions\\SubscriptionQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -32371,6 +34361,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020Subscription\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-Subscriptions-SubscriptionService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Subscriptions\\SubscriptionService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Subscriptions-SubscriptionService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Subscriptions\\SubscriptionService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-Subscriptions-SubscriptionService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Subscriptions\\SubscriptionService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -32395,6 +34395,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-SurveyResults-SurveyResultCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\SurveyResults\\SurveyResultCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-SurveyResults-SurveyResultCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\SurveyResults\\SurveyResultCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -32471,11 +34476,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-SurveyResults-SurveyResultEntity.html#property_ticketID"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\SurveyResults\\SurveyResultEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-SurveyResults-SurveyResultEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\SurveyResults\\SurveyResultPaginator",
             "name": "SurveyResultPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -32530,6 +34530,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-SurveyResults-SurveyResultQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\SurveyResults\\SurveyResultQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-SurveyResults-SurveyResultQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\SurveyResults\\SurveyResultQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -32606,6 +34611,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020SurveyResult\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-SurveyResults-SurveyResultService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\SurveyResults\\SurveyResultService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-SurveyResults-SurveyResultService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\SurveyResults\\SurveyResultService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-SurveyResults-SurveyResultService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\SurveyResults\\SurveyResultService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -32625,6 +34640,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-Surveys-SurveyCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Surveys\\SurveyCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-Surveys-SurveyCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Surveys\\SurveyCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -32665,11 +34685,6 @@ Search.appendIndex(
             "name": "name",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-Surveys-SurveyEntity.html#property_name"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\Surveys\\SurveyEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-Surveys-SurveyEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Surveys\\SurveyPaginator",
             "name": "SurveyPaginator",
@@ -32725,6 +34740,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-Surveys-SurveyQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Surveys\\SurveyQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-Surveys-SurveyQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Surveys\\SurveyQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -32801,6 +34821,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020Survey\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-Surveys-SurveyService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Surveys\\SurveyService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Surveys-SurveyService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Surveys\\SurveyService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-Surveys-SurveyService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Surveys\\SurveyService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -32820,6 +34850,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-TaskAttachments-TaskAttachmentCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaskAttachments\\TaskAttachmentCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-TaskAttachments-TaskAttachmentCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskAttachments\\TaskAttachmentCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -32901,11 +34936,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-TaskAttachments-TaskAttachmentEntity.html#property_title"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\TaskAttachments\\TaskAttachmentEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-TaskAttachments-TaskAttachmentEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskAttachments\\TaskAttachmentPaginator",
             "name": "TaskAttachmentPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -32960,6 +34990,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-TaskAttachments-TaskAttachmentQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaskAttachments\\TaskAttachmentQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-TaskAttachments-TaskAttachmentQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskAttachments\\TaskAttachmentQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -33046,6 +35081,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020TaskAttachment\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-TaskAttachments-TaskAttachmentService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaskAttachments\\TaskAttachmentService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-TaskAttachments-TaskAttachmentService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaskAttachments\\TaskAttachmentService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-TaskAttachments-TaskAttachmentService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskAttachments\\TaskAttachmentService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -33065,6 +35110,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-TaskNotes-TaskNoteCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaskNotes\\TaskNoteCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-TaskNotes-TaskNoteCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskNotes\\TaskNoteCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -33141,11 +35191,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-TaskNotes-TaskNoteEntity.html#property_title"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\TaskNotes\\TaskNoteEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-TaskNotes-TaskNoteEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskNotes\\TaskNotePaginator",
             "name": "TaskNotePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -33200,6 +35245,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-TaskNotes-TaskNoteQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaskNotes\\TaskNoteQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-TaskNotes-TaskNoteQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskNotes\\TaskNoteQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -33281,6 +35331,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020TaskNote\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-TaskNotes-TaskNoteService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaskNotes\\TaskNoteService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-TaskNotes-TaskNoteService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaskNotes\\TaskNoteService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-TaskNotes-TaskNoteService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskNotes\\TaskNoteService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -33305,6 +35365,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-TaskPredecessors-TaskPredecessorCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaskPredecessors\\TaskPredecessorCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-TaskPredecessors-TaskPredecessorCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskPredecessors\\TaskPredecessorCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -33345,11 +35410,6 @@ Search.appendIndex(
             "name": "successorTaskID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-TaskPredecessors-TaskPredecessorEntity.html#property_successorTaskID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\TaskPredecessors\\TaskPredecessorEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-TaskPredecessors-TaskPredecessorEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskPredecessors\\TaskPredecessorPaginator",
             "name": "TaskPredecessorPaginator",
@@ -33405,6 +35465,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-TaskPredecessors-TaskPredecessorQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaskPredecessors\\TaskPredecessorQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-TaskPredecessors-TaskPredecessorQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskPredecessors\\TaskPredecessorQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -33491,6 +35556,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020TaskPredecessor\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-TaskPredecessors-TaskPredecessorService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaskPredecessors\\TaskPredecessorService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-TaskPredecessors-TaskPredecessorService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaskPredecessors\\TaskPredecessorService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-TaskPredecessors-TaskPredecessorService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskPredecessors\\TaskPredecessorService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -33515,6 +35590,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-Tasks-TaskCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Tasks\\TaskCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-Tasks-TaskCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Tasks\\TaskCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -33711,11 +35791,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-Tasks-TaskEntity.html#property_title"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\Tasks\\TaskEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-Tasks-TaskEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Tasks\\TaskPaginator",
             "name": "TaskPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -33770,6 +35845,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-Tasks-TaskQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Tasks\\TaskQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-Tasks-TaskQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Tasks\\TaskQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -33851,6 +35931,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020Task\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-Tasks-TaskService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Tasks\\TaskService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Tasks-TaskService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Tasks\\TaskService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-Tasks-TaskService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Tasks\\TaskService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -33875,6 +35965,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-TaskSecondaryResources-TaskSecondaryResourceCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaskSecondaryResources\\TaskSecondaryResourceCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-TaskSecondaryResources-TaskSecondaryResourceCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskSecondaryResources\\TaskSecondaryResourceCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -33915,11 +36010,6 @@ Search.appendIndex(
             "name": "taskID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-TaskSecondaryResources-TaskSecondaryResourceEntity.html#property_taskID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\TaskSecondaryResources\\TaskSecondaryResourceEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-TaskSecondaryResources-TaskSecondaryResourceEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskSecondaryResources\\TaskSecondaryResourcePaginator",
             "name": "TaskSecondaryResourcePaginator",
@@ -33975,6 +36065,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-TaskSecondaryResources-TaskSecondaryResourceQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaskSecondaryResources\\TaskSecondaryResourceQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-TaskSecondaryResources-TaskSecondaryResourceQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskSecondaryResources\\TaskSecondaryResourceQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -34061,6 +36156,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020TaskSecondaryResource\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-TaskSecondaryResources-TaskSecondaryResourceService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaskSecondaryResources\\TaskSecondaryResourceService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-TaskSecondaryResources-TaskSecondaryResourceService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaskSecondaryResources\\TaskSecondaryResourceService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-TaskSecondaryResources-TaskSecondaryResourceService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaskSecondaryResources\\TaskSecondaryResourceService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -34080,6 +36185,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-TaxCategories-TaxCategoryCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaxCategories\\TaxCategoryCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-TaxCategories-TaxCategoryCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaxCategories\\TaxCategoryCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -34120,11 +36230,6 @@ Search.appendIndex(
             "name": "name",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-TaxCategories-TaxCategoryEntity.html#property_name"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\TaxCategories\\TaxCategoryEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-TaxCategories-TaxCategoryEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaxCategories\\TaxCategoryPaginator",
             "name": "TaxCategoryPaginator",
@@ -34180,6 +36285,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-TaxCategories-TaxCategoryQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaxCategories\\TaxCategoryQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-TaxCategories-TaxCategoryQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaxCategories\\TaxCategoryQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -34261,6 +36371,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020TaxCategory\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-TaxCategories-TaxCategoryService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaxCategories\\TaxCategoryService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-TaxCategories-TaxCategoryService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaxCategories\\TaxCategoryService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-TaxCategories-TaxCategoryService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaxCategories\\TaxCategoryService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -34285,6 +36405,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-Taxes-TaxCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Taxes\\TaxCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-Taxes-TaxCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Taxes\\TaxCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -34335,11 +36460,6 @@ Search.appendIndex(
             "name": "taxRegionID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-Taxes-TaxEntity.html#property_taxRegionID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\Taxes\\TaxEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-Taxes-TaxEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Taxes\\TaxPaginator",
             "name": "TaxPaginator",
@@ -34395,6 +36515,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-Taxes-TaxQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Taxes\\TaxQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-Taxes-TaxQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Taxes\\TaxQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -34476,6 +36601,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020Tax\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-Taxes-TaxService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Taxes\\TaxService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Taxes-TaxService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Taxes\\TaxService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-Taxes-TaxService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Taxes\\TaxService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -34500,6 +36635,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-TaxRegions-TaxRegionCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaxRegions\\TaxRegionCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-TaxRegions-TaxRegionCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaxRegions\\TaxRegionCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -34535,11 +36675,6 @@ Search.appendIndex(
             "name": "name",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-TaxRegions-TaxRegionEntity.html#property_name"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\TaxRegions\\TaxRegionEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-TaxRegions-TaxRegionEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaxRegions\\TaxRegionPaginator",
             "name": "TaxRegionPaginator",
@@ -34595,6 +36730,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-TaxRegions-TaxRegionQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaxRegions\\TaxRegionQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-TaxRegions-TaxRegionQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaxRegions\\TaxRegionQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -34676,6 +36816,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020TaxRegion\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-TaxRegions-TaxRegionService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaxRegions\\TaxRegionService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-TaxRegions-TaxRegionService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TaxRegions\\TaxRegionService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-TaxRegions-TaxRegionService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TaxRegions\\TaxRegionService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -34700,6 +36850,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-TicketAdditionalConfigurationItems-TicketAdditionalConfigurationItemCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketAdditionalConfigurationItems\\TicketAdditionalConfigurationItemCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-TicketAdditionalConfigurationItems-TicketAdditionalConfigurationItemCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketAdditionalConfigurationItems\\TicketAdditionalConfigurationItemCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -34735,11 +36890,6 @@ Search.appendIndex(
             "name": "ticketID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-TicketAdditionalConfigurationItems-TicketAdditionalConfigurationItemEntity.html#property_ticketID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\TicketAdditionalConfigurationItems\\TicketAdditionalConfigurationItemEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-TicketAdditionalConfigurationItems-TicketAdditionalConfigurationItemEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketAdditionalConfigurationItems\\TicketAdditionalConfigurationItemPaginator",
             "name": "TicketAdditionalConfigurationItemPaginator",
@@ -34795,6 +36945,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-TicketAdditionalConfigurationItems-TicketAdditionalConfigurationItemQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketAdditionalConfigurationItems\\TicketAdditionalConfigurationItemQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-TicketAdditionalConfigurationItems-TicketAdditionalConfigurationItemQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketAdditionalConfigurationItems\\TicketAdditionalConfigurationItemQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -34881,6 +37036,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020TicketAdditionalConfigurationItem\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-TicketAdditionalConfigurationItems-TicketAdditionalConfigurationItemService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketAdditionalConfigurationItems\\TicketAdditionalConfigurationItemService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-TicketAdditionalConfigurationItems-TicketAdditionalConfigurationItemService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketAdditionalConfigurationItems\\TicketAdditionalConfigurationItemService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-TicketAdditionalConfigurationItems-TicketAdditionalConfigurationItemService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketAdditionalConfigurationItems\\TicketAdditionalConfigurationItemService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -34900,6 +37065,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-TicketAdditionalContacts-TicketAdditionalContactCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketAdditionalContacts\\TicketAdditionalContactCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-TicketAdditionalContacts-TicketAdditionalContactCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketAdditionalContacts\\TicketAdditionalContactCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -34935,11 +37105,6 @@ Search.appendIndex(
             "name": "ticketID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-TicketAdditionalContacts-TicketAdditionalContactEntity.html#property_ticketID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\TicketAdditionalContacts\\TicketAdditionalContactEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-TicketAdditionalContacts-TicketAdditionalContactEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketAdditionalContacts\\TicketAdditionalContactPaginator",
             "name": "TicketAdditionalContactPaginator",
@@ -34995,6 +37160,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-TicketAdditionalContacts-TicketAdditionalContactQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketAdditionalContacts\\TicketAdditionalContactQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-TicketAdditionalContacts-TicketAdditionalContactQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketAdditionalContacts\\TicketAdditionalContactQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -35081,6 +37251,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020TicketAdditionalContact\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-TicketAdditionalContacts-TicketAdditionalContactService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketAdditionalContacts\\TicketAdditionalContactService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-TicketAdditionalContacts-TicketAdditionalContactService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketAdditionalContacts\\TicketAdditionalContactService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-TicketAdditionalContacts-TicketAdditionalContactService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketAdditionalContacts\\TicketAdditionalContactService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -35100,6 +37280,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-TicketAttachments-TicketAttachmentCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketAttachments\\TicketAttachmentCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-TicketAttachments-TicketAttachmentCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketAttachments\\TicketAttachmentCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -35181,11 +37366,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-TicketAttachments-TicketAttachmentEntity.html#property_title"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\TicketAttachments\\TicketAttachmentEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-TicketAttachments-TicketAttachmentEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketAttachments\\TicketAttachmentPaginator",
             "name": "TicketAttachmentPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -35240,6 +37420,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-TicketAttachments-TicketAttachmentQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketAttachments\\TicketAttachmentQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-TicketAttachments-TicketAttachmentQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketAttachments\\TicketAttachmentQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -35326,6 +37511,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020TicketAttachment\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-TicketAttachments-TicketAttachmentService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketAttachments\\TicketAttachmentService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-TicketAttachments-TicketAttachmentService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketAttachments\\TicketAttachmentService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-TicketAttachments-TicketAttachmentService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketAttachments\\TicketAttachmentService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -35345,6 +37540,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-TicketCategories-TicketCategoryCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketCategories\\TicketCategoryCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-TicketCategories-TicketCategoryCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketCategories\\TicketCategoryCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -35401,11 +37601,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-TicketCategories-TicketCategoryEntity.html#property_nickname"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\TicketCategories\\TicketCategoryEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-TicketCategories-TicketCategoryEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketCategories\\TicketCategoryPaginator",
             "name": "TicketCategoryPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -35460,6 +37655,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-TicketCategories-TicketCategoryQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketCategories\\TicketCategoryQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-TicketCategories-TicketCategoryQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketCategories\\TicketCategoryQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -35536,6 +37736,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020TicketCategory\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-TicketCategories-TicketCategoryService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketCategories\\TicketCategoryService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-TicketCategories-TicketCategoryService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketCategories\\TicketCategoryService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-TicketCategories-TicketCategoryService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketCategories\\TicketCategoryService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -35560,6 +37770,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-TicketCategoryFieldDefaults-TicketCategoryFieldDefaultCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketCategoryFieldDefaults\\TicketCategoryFieldDefaultCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-TicketCategoryFieldDefaults-TicketCategoryFieldDefaultCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketCategoryFieldDefaults\\TicketCategoryFieldDefaultCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -35666,11 +37881,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-TicketCategoryFieldDefaults-TicketCategoryFieldDefaultEntity.html#property_workTypeID"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\TicketCategoryFieldDefaults\\TicketCategoryFieldDefaultEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-TicketCategoryFieldDefaults-TicketCategoryFieldDefaultEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketCategoryFieldDefaults\\TicketCategoryFieldDefaultPaginator",
             "name": "TicketCategoryFieldDefaultPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -35725,6 +37935,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-TicketCategoryFieldDefaults-TicketCategoryFieldDefaultQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketCategoryFieldDefaults\\TicketCategoryFieldDefaultQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-TicketCategoryFieldDefaults-TicketCategoryFieldDefaultQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketCategoryFieldDefaults\\TicketCategoryFieldDefaultQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -35801,6 +38016,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020TicketCategoryFieldDefault\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-TicketCategoryFieldDefaults-TicketCategoryFieldDefaultService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketCategoryFieldDefaults\\TicketCategoryFieldDefaultService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-TicketCategoryFieldDefaults-TicketCategoryFieldDefaultService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketCategoryFieldDefaults\\TicketCategoryFieldDefaultService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-TicketCategoryFieldDefaults-TicketCategoryFieldDefaultService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketCategoryFieldDefaults\\TicketCategoryFieldDefaultService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -35820,6 +38045,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-TicketChangeRequestApprovals-TicketChangeRequestApprovalCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketChangeRequestApprovals\\TicketChangeRequestApprovalCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-TicketChangeRequestApprovals-TicketChangeRequestApprovalCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketChangeRequestApprovals\\TicketChangeRequestApprovalCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -35876,11 +38106,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-TicketChangeRequestApprovals-TicketChangeRequestApprovalEntity.html#property_ticketID"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\TicketChangeRequestApprovals\\TicketChangeRequestApprovalEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-TicketChangeRequestApprovals-TicketChangeRequestApprovalEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketChangeRequestApprovals\\TicketChangeRequestApprovalPaginator",
             "name": "TicketChangeRequestApprovalPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -35935,6 +38160,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-TicketChangeRequestApprovals-TicketChangeRequestApprovalQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketChangeRequestApprovals\\TicketChangeRequestApprovalQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-TicketChangeRequestApprovals-TicketChangeRequestApprovalQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketChangeRequestApprovals\\TicketChangeRequestApprovalQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -36021,6 +38251,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020TicketChangeRequestApproval\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-TicketChangeRequestApprovals-TicketChangeRequestApprovalService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketChangeRequestApprovals\\TicketChangeRequestApprovalService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-TicketChangeRequestApprovals-TicketChangeRequestApprovalService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketChangeRequestApprovals\\TicketChangeRequestApprovalService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-TicketChangeRequestApprovals-TicketChangeRequestApprovalService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketChangeRequestApprovals\\TicketChangeRequestApprovalService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -36040,6 +38280,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-TicketCharges-TicketChargeCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketCharges\\TicketChargeCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-TicketCharges-TicketChargeCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketCharges\\TicketChargeCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -36201,11 +38446,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_unitQuantity"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\TicketCharges\\TicketChargeEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-TicketCharges-TicketChargeEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketCharges\\TicketChargePaginator",
             "name": "TicketChargePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -36260,6 +38500,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-TicketCharges-TicketChargeQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketCharges\\TicketChargeQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-TicketCharges-TicketChargeQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketCharges\\TicketChargeQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -36346,6 +38591,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020TicketCharge\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-TicketCharges-TicketChargeService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketCharges\\TicketChargeService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-TicketCharges-TicketChargeService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketCharges\\TicketChargeService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-TicketCharges-TicketChargeService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketCharges\\TicketChargeService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -36370,6 +38625,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-TicketChecklistItems-TicketChecklistItemCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketChecklistItems\\TicketChecklistItemCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-TicketChecklistItems-TicketChecklistItemCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketChecklistItems\\TicketChecklistItemCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -36436,11 +38696,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-TicketChecklistItems-TicketChecklistItemEntity.html#property_ticketID"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\TicketChecklistItems\\TicketChecklistItemEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-TicketChecklistItems-TicketChecklistItemEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketChecklistItems\\TicketChecklistItemPaginator",
             "name": "TicketChecklistItemPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -36495,6 +38750,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-TicketChecklistItems-TicketChecklistItemQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketChecklistItems\\TicketChecklistItemQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-TicketChecklistItems-TicketChecklistItemQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketChecklistItems\\TicketChecklistItemQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -36581,6 +38841,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020TicketChecklistItem\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-TicketChecklistItems-TicketChecklistItemService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketChecklistItems\\TicketChecklistItemService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-TicketChecklistItems-TicketChecklistItemService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketChecklistItems\\TicketChecklistItemService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-TicketChecklistItems-TicketChecklistItemService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketChecklistItems\\TicketChecklistItemService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -36605,6 +38875,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-TicketChecklistLibraries-TicketChecklistLibraryCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketChecklistLibraries\\TicketChecklistLibraryCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-TicketChecklistLibraries-TicketChecklistLibraryCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketChecklistLibraries\\TicketChecklistLibraryCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -36641,11 +38916,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-TicketChecklistLibraries-TicketChecklistLibraryEntity.html#property_ticketID"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\TicketChecklistLibraries\\TicketChecklistLibraryEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-TicketChecklistLibraries-TicketChecklistLibraryEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketChecklistLibraries\\TicketChecklistLibraryService",
             "name": "TicketChecklistLibraryService",
             "summary": "Handles\u0020all\u0020interaction\u0020with\u0020Autotask\u0020TicketChecklistLibraries.",
@@ -36661,6 +38931,16 @@ Search.appendIndex(
             "summary": "Creates\u0020a\u0020new\u0020ticketchecklistlibrary.",
             "url": "../classes/Anteris-Autotask-API-TicketChecklistLibraries-TicketChecklistLibraryService.html#method_create"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketChecklistLibraries\\TicketChecklistLibraryService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-TicketChecklistLibraries-TicketChecklistLibraryService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketChecklistLibraries\\TicketChecklistLibraryService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-TicketChecklistLibraries-TicketChecklistLibraryService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketChecklistLibraries\\TicketChecklistLibraryService\u003A\u003A\u0024client",
             "name": "client",
             "summary": "",
@@ -36675,6 +38955,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-TicketHistory-TicketHistoryCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketHistory\\TicketHistoryCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-TicketHistory-TicketHistoryCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketHistory\\TicketHistoryCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -36725,11 +39010,6 @@ Search.appendIndex(
             "name": "ticketID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-TicketHistory-TicketHistoryEntity.html#property_ticketID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\TicketHistory\\TicketHistoryEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-TicketHistory-TicketHistoryEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketHistory\\TicketHistoryPaginator",
             "name": "TicketHistoryPaginator",
@@ -36785,6 +39065,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-TicketHistory-TicketHistoryQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketHistory\\TicketHistoryQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-TicketHistory-TicketHistoryQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketHistory\\TicketHistoryQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -36861,6 +39146,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020TicketHistory\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-TicketHistory-TicketHistoryService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketHistory\\TicketHistoryService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-TicketHistory-TicketHistoryService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketHistory\\TicketHistoryService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-TicketHistory-TicketHistoryService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketHistory\\TicketHistoryService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -36880,6 +39175,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-TicketNotes-TicketNoteCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketNotes\\TicketNoteCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-TicketNotes-TicketNoteCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketNotes\\TicketNoteCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -36956,11 +39256,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-TicketNotes-TicketNoteEntity.html#property_title"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\TicketNotes\\TicketNoteEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-TicketNotes-TicketNoteEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketNotes\\TicketNotePaginator",
             "name": "TicketNotePaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -37015,6 +39310,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-TicketNotes-TicketNoteQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketNotes\\TicketNoteQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-TicketNotes-TicketNoteQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketNotes\\TicketNoteQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -37096,6 +39396,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020TicketNote\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-TicketNotes-TicketNoteService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketNotes\\TicketNoteService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-TicketNotes-TicketNoteService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketNotes\\TicketNoteService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-TicketNotes-TicketNoteService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketNotes\\TicketNoteService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -37120,6 +39430,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-TicketRmaCredits-TicketRmaCreditCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketRmaCredits\\TicketRmaCreditCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-TicketRmaCredits-TicketRmaCreditCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketRmaCredits\\TicketRmaCreditCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -37165,11 +39480,6 @@ Search.appendIndex(
             "name": "ticketID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-TicketRmaCredits-TicketRmaCreditEntity.html#property_ticketID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\TicketRmaCredits\\TicketRmaCreditEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-TicketRmaCredits-TicketRmaCreditEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketRmaCredits\\TicketRmaCreditPaginator",
             "name": "TicketRmaCreditPaginator",
@@ -37225,6 +39535,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-TicketRmaCredits-TicketRmaCreditQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketRmaCredits\\TicketRmaCreditQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-TicketRmaCredits-TicketRmaCreditQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketRmaCredits\\TicketRmaCreditQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -37311,6 +39626,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020TicketRmaCredit\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-TicketRmaCredits-TicketRmaCreditService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketRmaCredits\\TicketRmaCreditService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-TicketRmaCredits-TicketRmaCreditService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketRmaCredits\\TicketRmaCreditService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-TicketRmaCredits-TicketRmaCreditService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketRmaCredits\\TicketRmaCreditService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -37335,6 +39660,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-Tickets-TicketCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Tickets\\TicketCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-Tickets-TicketCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Tickets\\TicketCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -37716,11 +40046,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-Tickets-TicketEntity.html#property_title"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\Tickets\\TicketEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-Tickets-TicketEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Tickets\\TicketPaginator",
             "name": "TicketPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -37775,6 +40100,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-Tickets-TicketQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Tickets\\TicketQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-Tickets-TicketQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Tickets\\TicketQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -37856,6 +40186,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020Ticket\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-Tickets-TicketService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Tickets\\TicketService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-Tickets-TicketService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\Tickets\\TicketService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-Tickets-TicketService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\Tickets\\TicketService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -37880,6 +40220,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-TicketSecondaryResources-TicketSecondaryResourceCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketSecondaryResources\\TicketSecondaryResourceCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-TicketSecondaryResources-TicketSecondaryResourceCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketSecondaryResources\\TicketSecondaryResourceCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -37920,11 +40265,6 @@ Search.appendIndex(
             "name": "ticketID",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-TicketSecondaryResources-TicketSecondaryResourceEntity.html#property_ticketID"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\TicketSecondaryResources\\TicketSecondaryResourceEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-TicketSecondaryResources-TicketSecondaryResourceEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketSecondaryResources\\TicketSecondaryResourcePaginator",
             "name": "TicketSecondaryResourcePaginator",
@@ -37980,6 +40320,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-TicketSecondaryResources-TicketSecondaryResourceQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketSecondaryResources\\TicketSecondaryResourceQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-TicketSecondaryResources-TicketSecondaryResourceQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketSecondaryResources\\TicketSecondaryResourceQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -38066,6 +40411,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020TicketSecondaryResource\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-TicketSecondaryResources-TicketSecondaryResourceService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketSecondaryResources\\TicketSecondaryResourceService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-TicketSecondaryResources-TicketSecondaryResourceService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TicketSecondaryResources\\TicketSecondaryResourceService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-TicketSecondaryResources-TicketSecondaryResourceService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TicketSecondaryResources\\TicketSecondaryResourceService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -38085,6 +40440,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-TimeEntries-TimeEntryCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TimeEntries\\TimeEntryCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-TimeEntries-TimeEntryCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TimeEntries\\TimeEntryCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -38256,11 +40616,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-TimeEntries-TimeEntryEntity.html#property_timeEntryType"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\TimeEntries\\TimeEntryEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-TimeEntries-TimeEntryEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TimeEntries\\TimeEntryPaginator",
             "name": "TimeEntryPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -38315,6 +40670,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-TimeEntries-TimeEntryQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TimeEntries\\TimeEntryQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-TimeEntries-TimeEntryQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TimeEntries\\TimeEntryQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -38401,6 +40761,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020TimeEntry\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-TimeEntries-TimeEntryService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TimeEntries\\TimeEntryService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-TimeEntries-TimeEntryService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\TimeEntries\\TimeEntryService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-TimeEntries-TimeEntryService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\TimeEntries\\TimeEntryService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -38425,6 +40795,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-UserDefinedFieldDefinitions-UserDefinedFieldDefinitionCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\UserDefinedFieldDefinitions\\UserDefinedFieldDefinitionCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-UserDefinedFieldDefinitions-UserDefinedFieldDefinitionCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\UserDefinedFieldDefinitions\\UserDefinedFieldDefinitionCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -38541,11 +40916,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-UserDefinedFieldDefinitions-UserDefinedFieldDefinitionEntity.html#property_udfType"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\UserDefinedFieldDefinitions\\UserDefinedFieldDefinitionEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-UserDefinedFieldDefinitions-UserDefinedFieldDefinitionEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\UserDefinedFieldDefinitions\\UserDefinedFieldDefinitionPaginator",
             "name": "UserDefinedFieldDefinitionPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -38600,6 +40970,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-UserDefinedFieldDefinitions-UserDefinedFieldDefinitionQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\UserDefinedFieldDefinitions\\UserDefinedFieldDefinitionQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-UserDefinedFieldDefinitions-UserDefinedFieldDefinitionQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\UserDefinedFieldDefinitions\\UserDefinedFieldDefinitionQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -38681,6 +41056,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020UserDefinedFieldDefinition\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-UserDefinedFieldDefinitions-UserDefinedFieldDefinitionService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\UserDefinedFieldDefinitions\\UserDefinedFieldDefinitionService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-UserDefinedFieldDefinitions-UserDefinedFieldDefinitionService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\UserDefinedFieldDefinitions\\UserDefinedFieldDefinitionService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-UserDefinedFieldDefinitions-UserDefinedFieldDefinitionService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\UserDefinedFieldDefinitions\\UserDefinedFieldDefinitionService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -38705,6 +41090,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-UserDefinedFieldListItems-UserDefinedFieldListItemCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\UserDefinedFieldListItems\\UserDefinedFieldListItemCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-UserDefinedFieldListItems-UserDefinedFieldListItemCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\UserDefinedFieldListItems\\UserDefinedFieldListItemCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -38750,11 +41140,6 @@ Search.appendIndex(
             "name": "valueForExport",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-UserDefinedFieldListItems-UserDefinedFieldListItemEntity.html#property_valueForExport"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\UserDefinedFieldListItems\\UserDefinedFieldListItemEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-UserDefinedFieldListItems-UserDefinedFieldListItemEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\UserDefinedFieldListItems\\UserDefinedFieldListItemPaginator",
             "name": "UserDefinedFieldListItemPaginator",
@@ -38810,6 +41195,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-UserDefinedFieldListItems-UserDefinedFieldListItemQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\UserDefinedFieldListItems\\UserDefinedFieldListItemQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-UserDefinedFieldListItems-UserDefinedFieldListItemQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\UserDefinedFieldListItems\\UserDefinedFieldListItemQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -38891,6 +41281,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020UserDefinedFieldListItem\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-UserDefinedFieldListItems-UserDefinedFieldListItemService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\UserDefinedFieldListItems\\UserDefinedFieldListItemService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-UserDefinedFieldListItems-UserDefinedFieldListItemService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\UserDefinedFieldListItems\\UserDefinedFieldListItemService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-UserDefinedFieldListItems-UserDefinedFieldListItemService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\UserDefinedFieldListItems\\UserDefinedFieldListItemService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -38915,6 +41315,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-WebhookEventErrorLogs-WebhookEventErrorLogCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\WebhookEventErrorLogs\\WebhookEventErrorLogCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-WebhookEventErrorLogs-WebhookEventErrorLogCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\WebhookEventErrorLogs\\WebhookEventErrorLogCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -38971,11 +41376,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-WebhookEventErrorLogs-WebhookEventErrorLogEntity.html#property_sequenceNumber"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\WebhookEventErrorLogs\\WebhookEventErrorLogEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-WebhookEventErrorLogs-WebhookEventErrorLogEntity.html#property_userDefinedFields"
-        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\WebhookEventErrorLogs\\WebhookEventErrorLogPaginator",
             "name": "WebhookEventErrorLogPaginator",
             "summary": "Returns\u0020a\u0020collection\u0020with\u0020methods\u0020that\u0020help\u0020page\u0020through\u0020results.",
@@ -39030,6 +41430,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-WebhookEventErrorLogs-WebhookEventErrorLogQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\WebhookEventErrorLogs\\WebhookEventErrorLogQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-WebhookEventErrorLogs-WebhookEventErrorLogQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\WebhookEventErrorLogs\\WebhookEventErrorLogQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -39111,6 +41516,16 @@ Search.appendIndex(
             "summary": "Finds\u0020the\u0020WebhookEventErrorLog\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-WebhookEventErrorLogs-WebhookEventErrorLogService.html#method_findById"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\WebhookEventErrorLogs\\WebhookEventErrorLogService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-WebhookEventErrorLogs-WebhookEventErrorLogService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\WebhookEventErrorLogs\\WebhookEventErrorLogService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-WebhookEventErrorLogs-WebhookEventErrorLogService.html#method_getEntityInformation"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\API\\WebhookEventErrorLogs\\WebhookEventErrorLogService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
             "summary": "Returns\u0020an\u0020instance\u0020of\u0020the\u0020query\u0020builder\u0020for\u0020this\u0020entity.",
@@ -39130,6 +41545,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
             "url": "../classes/Anteris-Autotask-API-WorkTypeModifiers-WorkTypeModifierCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\WorkTypeModifiers\\WorkTypeModifierCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-API-WorkTypeModifiers-WorkTypeModifierCollection.html#method_offsetGet"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\WorkTypeModifiers\\WorkTypeModifierCollection\u003A\u003AfromResponse\u0028\u0029",
             "name": "fromResponse",
@@ -39165,11 +41585,6 @@ Search.appendIndex(
             "name": "modifierValue",
             "summary": "",
             "url": "../classes/Anteris-Autotask-API-WorkTypeModifiers-WorkTypeModifierEntity.html#property_modifierValue"
-        },                {
-            "fqsen": "\\Anteris\\Autotask\\API\\WorkTypeModifiers\\WorkTypeModifierEntity\u003A\u003A\u0024userDefinedFields",
-            "name": "userDefinedFields",
-            "summary": "",
-            "url": "../classes/Anteris-Autotask-API-WorkTypeModifiers-WorkTypeModifierEntity.html#property_userDefinedFields"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\WorkTypeModifiers\\WorkTypeModifierPaginator",
             "name": "WorkTypeModifierPaginator",
@@ -39225,6 +41640,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020class\u0020to\u0020perform\u0020a\u0020query.",
             "url": "../classes/Anteris-Autotask-API-WorkTypeModifiers-WorkTypeModifierQueryBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\WorkTypeModifiers\\WorkTypeModifierQueryBuilder\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "Runs\u0020the\u0020query\u0020but\u0020returns\u0020an\u0020integer\u0020specifying\u0020the\u0020number\u0020of\u0020records\nthat\u0020would\u0020be\u0020returned\u0020if\u0020executed.",
+            "url": "../classes/Anteris-Autotask-API-WorkTypeModifiers-WorkTypeModifierQueryBuilder.html#method_count"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\WorkTypeModifiers\\WorkTypeModifierQueryBuilder\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -39300,6 +41720,16 @@ Search.appendIndex(
             "name": "findById",
             "summary": "Finds\u0020the\u0020WorkTypeModifier\u0020based\u0020on\u0020its\u0020ID.",
             "url": "../classes/Anteris-Autotask-API-WorkTypeModifiers-WorkTypeModifierService.html#method_findById"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\WorkTypeModifiers\\WorkTypeModifierService\u003A\u003AgetEntityFields\u0028\u0029",
+            "name": "getEntityFields",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020fields\u0020an\u0020entity\u0020has.",
+            "url": "../classes/Anteris-Autotask-API-WorkTypeModifiers-WorkTypeModifierService.html#method_getEntityFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\API\\WorkTypeModifiers\\WorkTypeModifierService\u003A\u003AgetEntityInformation\u0028\u0029",
+            "name": "getEntityInformation",
+            "summary": "Returns\u0020information\u0020about\u0020what\u0020actions\u0020can\u0020be\u0020made\u0020against\u0020an\u0020entity.",
+            "url": "../classes/Anteris-Autotask-API-WorkTypeModifiers-WorkTypeModifierService.html#method_getEntityInformation"
         },                {
             "fqsen": "\\Anteris\\Autotask\\API\\WorkTypeModifiers\\WorkTypeModifierService\u003A\u003Aquery\u0028\u0029",
             "name": "query",
@@ -40181,6 +42611,256 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Anteris-Autotask-HttpClient.html#property_client"
         },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityFields\\EntityFieldCollection",
+            "name": "EntityFieldCollection",
+            "summary": "Contains\u0020a\u0020collection\u0020of\u0020entity\u0020fields.",
+            "url": "../classes/Anteris-Autotask-Support-EntityFields-EntityFieldCollection.html"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityFields\\EntityFieldCollection\u003A\u003Acurrent\u0028\u0029",
+            "name": "current",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-Support-EntityFields-EntityFieldCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityFields\\EntityFieldCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-Support-EntityFields-EntityFieldCollection.html#method_offsetGet"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityFields\\EntityFieldCollection\u003A\u003AfromResponse\u0028\u0029",
+            "name": "fromResponse",
+            "summary": "Creates\u0020an\u0020instance\u0020of\u0020this\u0020class\u0020from\u0020an\u0020Http\u0020response.",
+            "url": "../classes/Anteris-Autotask-Support-EntityFields-EntityFieldCollection.html#method_fromResponse"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityFields\\EntityFieldEntity",
+            "name": "EntityFieldEntity",
+            "summary": "Represents\u0020an\u0020entity\u0020field\u0020response\u0020from\u0020Autotask.",
+            "url": "../classes/Anteris-Autotask-Support-EntityFields-EntityFieldEntity.html"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityFields\\EntityFieldEntity\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityFields-EntityFieldEntity.html#property_name"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityFields\\EntityFieldEntity\u003A\u003A\u0024dataType",
+            "name": "dataType",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityFields-EntityFieldEntity.html#property_dataType"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityFields\\EntityFieldEntity\u003A\u003A\u0024length",
+            "name": "length",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityFields-EntityFieldEntity.html#property_length"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityFields\\EntityFieldEntity\u003A\u003A\u0024isRequired",
+            "name": "isRequired",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityFields-EntityFieldEntity.html#property_isRequired"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityFields\\EntityFieldEntity\u003A\u003A\u0024isReadOnly",
+            "name": "isReadOnly",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityFields-EntityFieldEntity.html#property_isReadOnly"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityFields\\EntityFieldEntity\u003A\u003A\u0024isQueryable",
+            "name": "isQueryable",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityFields-EntityFieldEntity.html#property_isQueryable"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityFields\\EntityFieldEntity\u003A\u003A\u0024isReference",
+            "name": "isReference",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityFields-EntityFieldEntity.html#property_isReference"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityFields\\EntityFieldEntity\u003A\u003A\u0024referenceEntityType",
+            "name": "referenceEntityType",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityFields-EntityFieldEntity.html#property_referenceEntityType"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityFields\\EntityFieldEntity\u003A\u003A\u0024isPickList",
+            "name": "isPickList",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityFields-EntityFieldEntity.html#property_isPickList"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityFields\\EntityFieldEntity\u003A\u003A\u0024picklistValues",
+            "name": "picklistValues",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityFields-EntityFieldEntity.html#property_picklistValues"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityFields\\EntityFieldEntity\u003A\u003A\u0024picklistParentValueField",
+            "name": "picklistParentValueField",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityFields-EntityFieldEntity.html#property_picklistParentValueField"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityFields\\EntityFieldEntity\u003A\u003A\u0024isSupportedWebhookField",
+            "name": "isSupportedWebhookField",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityFields-EntityFieldEntity.html#property_isSupportedWebhookField"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityInformation\\EntityInformationEntity",
+            "name": "EntityInformationEntity",
+            "summary": "Represents\u0020an\u0020entity\u0020information\u0020response\u0020from\u0020Autotask.",
+            "url": "../classes/Anteris-Autotask-Support-EntityInformation-EntityInformationEntity.html"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityInformation\\EntityInformationEntity\u003A\u003AfromResponse\u0028\u0029",
+            "name": "fromResponse",
+            "summary": "Creates\u0020a\u0020new\u0020EntityInformationEntity\u0020from\u0020an\u0020http\u0020response.",
+            "url": "../classes/Anteris-Autotask-Support-EntityInformation-EntityInformationEntity.html#method_fromResponse"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityInformation\\EntityInformationEntity\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityInformation-EntityInformationEntity.html#property_name"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityInformation\\EntityInformationEntity\u003A\u003A\u0024canCreate",
+            "name": "canCreate",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityInformation-EntityInformationEntity.html#property_canCreate"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityInformation\\EntityInformationEntity\u003A\u003A\u0024canDelete",
+            "name": "canDelete",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityInformation-EntityInformationEntity.html#property_canDelete"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityInformation\\EntityInformationEntity\u003A\u003A\u0024canQuery",
+            "name": "canQuery",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityInformation-EntityInformationEntity.html#property_canQuery"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityInformation\\EntityInformationEntity\u003A\u003A\u0024canUpdate",
+            "name": "canUpdate",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityInformation-EntityInformationEntity.html#property_canUpdate"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityInformation\\EntityInformationEntity\u003A\u003A\u0024userAccessForCreate",
+            "name": "userAccessForCreate",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityInformation-EntityInformationEntity.html#property_userAccessForCreate"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityInformation\\EntityInformationEntity\u003A\u003A\u0024userAccessForDelete",
+            "name": "userAccessForDelete",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityInformation-EntityInformationEntity.html#property_userAccessForDelete"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityInformation\\EntityInformationEntity\u003A\u003A\u0024userAccessForQuery",
+            "name": "userAccessForQuery",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityInformation-EntityInformationEntity.html#property_userAccessForQuery"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityInformation\\EntityInformationEntity\u003A\u003A\u0024userAccessForUpdate",
+            "name": "userAccessForUpdate",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityInformation-EntityInformationEntity.html#property_userAccessForUpdate"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityInformation\\EntityInformationEntity\u003A\u003A\u0024hasUserDefinedFields",
+            "name": "hasUserDefinedFields",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityInformation-EntityInformationEntity.html#property_hasUserDefinedFields"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityInformation\\EntityInformationEntity\u003A\u003A\u0024supportsWebhookCallouts",
+            "name": "supportsWebhookCallouts",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityInformation-EntityInformationEntity.html#property_supportsWebhookCallouts"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityUserDefinedFields\\EntityUserDefinedFieldCollection",
+            "name": "EntityUserDefinedFieldCollection",
+            "summary": "Contains\u0020a\u0020collection\u0020of\u0020entity\u0020user\u0020defined\u0020fields.",
+            "url": "../classes/Anteris-Autotask-Support-EntityUserDefinedFields-EntityUserDefinedFieldCollection.html"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityUserDefinedFields\\EntityUserDefinedFieldCollection\u003A\u003Acurrent\u0028\u0029",
+            "name": "current",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-Support-EntityUserDefinedFields-EntityUserDefinedFieldCollection.html#method_current"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityUserDefinedFields\\EntityUserDefinedFieldCollection\u003A\u003AoffsetGet\u0028\u0029",
+            "name": "offsetGet",
+            "summary": "Sets\u0020the\u0020proper\u0020return\u0020type\u0020for\u0020IDE\u0020completion.",
+            "url": "../classes/Anteris-Autotask-Support-EntityUserDefinedFields-EntityUserDefinedFieldCollection.html#method_offsetGet"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityUserDefinedFields\\EntityUserDefinedFieldCollection\u003A\u003AfromResponse\u0028\u0029",
+            "name": "fromResponse",
+            "summary": "Creates\u0020an\u0020instance\u0020of\u0020this\u0020class\u0020from\u0020an\u0020Http\u0020response.",
+            "url": "../classes/Anteris-Autotask-Support-EntityUserDefinedFields-EntityUserDefinedFieldCollection.html#method_fromResponse"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityUserDefinedFields\\EntityUserDefinedFieldEntity",
+            "name": "EntityUserDefinedFieldEntity",
+            "summary": "Represents\u0020an\u0020entity\u0020user\u0020defined\u0020field\u0020response\u0020from\u0020Autotask.",
+            "url": "../classes/Anteris-Autotask-Support-EntityUserDefinedFields-EntityUserDefinedFieldEntity.html"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityUserDefinedFields\\EntityUserDefinedFieldEntity\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityUserDefinedFields-EntityUserDefinedFieldEntity.html#property_name"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityUserDefinedFields\\EntityUserDefinedFieldEntity\u003A\u003A\u0024label",
+            "name": "label",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityUserDefinedFields-EntityUserDefinedFieldEntity.html#property_label"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityUserDefinedFields\\EntityUserDefinedFieldEntity\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityUserDefinedFields-EntityUserDefinedFieldEntity.html#property_type"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityUserDefinedFields\\EntityUserDefinedFieldEntity\u003A\u003A\u0024length",
+            "name": "length",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityUserDefinedFields-EntityUserDefinedFieldEntity.html#property_length"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityUserDefinedFields\\EntityUserDefinedFieldEntity\u003A\u003A\u0024description",
+            "name": "description",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityUserDefinedFields-EntityUserDefinedFieldEntity.html#property_description"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityUserDefinedFields\\EntityUserDefinedFieldEntity\u003A\u003A\u0024isRequired",
+            "name": "isRequired",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityUserDefinedFields-EntityUserDefinedFieldEntity.html#property_isRequired"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityUserDefinedFields\\EntityUserDefinedFieldEntity\u003A\u003A\u0024isReadOnly",
+            "name": "isReadOnly",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityUserDefinedFields-EntityUserDefinedFieldEntity.html#property_isReadOnly"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityUserDefinedFields\\EntityUserDefinedFieldEntity\u003A\u003A\u0024isQueryable",
+            "name": "isQueryable",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityUserDefinedFields-EntityUserDefinedFieldEntity.html#property_isQueryable"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityUserDefinedFields\\EntityUserDefinedFieldEntity\u003A\u003A\u0024isReference",
+            "name": "isReference",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityUserDefinedFields-EntityUserDefinedFieldEntity.html#property_isReference"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityUserDefinedFields\\EntityUserDefinedFieldEntity\u003A\u003A\u0024referenceEntityType",
+            "name": "referenceEntityType",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityUserDefinedFields-EntityUserDefinedFieldEntity.html#property_referenceEntityType"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityUserDefinedFields\\EntityUserDefinedFieldEntity\u003A\u003A\u0024isPickList",
+            "name": "isPickList",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityUserDefinedFields-EntityUserDefinedFieldEntity.html#property_isPickList"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityUserDefinedFields\\EntityUserDefinedFieldEntity\u003A\u003A\u0024picklistValues",
+            "name": "picklistValues",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityUserDefinedFields-EntityUserDefinedFieldEntity.html#property_picklistValues"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityUserDefinedFields\\EntityUserDefinedFieldEntity\u003A\u003A\u0024picklistParentValueField",
+            "name": "picklistParentValueField",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityUserDefinedFields-EntityUserDefinedFieldEntity.html#property_picklistParentValueField"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityUserDefinedFields\\EntityUserDefinedFieldEntity\u003A\u003A\u0024defaultValue",
+            "name": "defaultValue",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityUserDefinedFields-EntityUserDefinedFieldEntity.html#property_defaultValue"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityUserDefinedFields\\EntityUserDefinedFieldEntity\u003A\u003A\u0024isSupportedWebhookField",
+            "name": "isSupportedWebhookField",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-EntityUserDefinedFields-EntityUserDefinedFieldEntity.html#property_isSupportedWebhookField"
+        },                {
             "fqsen": "\\Anteris\\Autotask\\Support\\Pagination\\PageEntity",
             "name": "PageEntity",
             "summary": "Represents\u0020a\u0020page\u0020when\u0020paginating\u0020results\u0020from\u0020Autotask.",
@@ -40210,6 +42890,21 @@ Search.appendIndex(
             "name": "nextPageUrl",
             "summary": "",
             "url": "../classes/Anteris-Autotask-Support-Pagination-PageEntity.html#property_nextPageUrl"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\UserDefinedFields\\UserDefinedFieldEntity",
+            "name": "UserDefinedFieldEntity",
+            "summary": "Represents\u0020a\u0020user\u0020defined\u0020field\u0020from\u0020Autotask.",
+            "url": "../classes/Anteris-Autotask-Support-UserDefinedFields-UserDefinedFieldEntity.html"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\UserDefinedFields\\UserDefinedFieldEntity\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-UserDefinedFields-UserDefinedFieldEntity.html#property_name"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\UserDefinedFields\\UserDefinedFieldEntity\u003A\u003A\u0024value",
+            "name": "value",
+            "summary": "",
+            "url": "../classes/Anteris-Autotask-Support-UserDefinedFields-UserDefinedFieldEntity.html#property_value"
         },                {
             "fqsen": "\\",
             "name": "\\",
@@ -41031,14 +43726,34 @@ Search.appendIndex(
             "summary": "",
             "url": "../namespaces/anteris.html"
         },                {
-            "fqsen": "\\Anteris\\Autotask\\Support\\Pagination",
-            "name": "Pagination",
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityFields",
+            "name": "EntityFields",
             "summary": "",
-            "url": "../namespaces/anteris-autotask-support-pagination.html"
+            "url": "../namespaces/anteris-autotask-support-entityfields.html"
         },                {
             "fqsen": "\\Anteris\\Autotask\\Support",
             "name": "Support",
             "summary": "",
             "url": "../namespaces/anteris-autotask-support.html"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityInformation",
+            "name": "EntityInformation",
+            "summary": "",
+            "url": "../namespaces/anteris-autotask-support-entityinformation.html"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\EntityUserDefinedFields",
+            "name": "EntityUserDefinedFields",
+            "summary": "",
+            "url": "../namespaces/anteris-autotask-support-entityuserdefinedfields.html"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\Pagination",
+            "name": "Pagination",
+            "summary": "",
+            "url": "../namespaces/anteris-autotask-support-pagination.html"
+        },                {
+            "fqsen": "\\Anteris\\Autotask\\Support\\UserDefinedFields",
+            "name": "UserDefinedFields",
+            "summary": "",
+            "url": "../namespaces/anteris-autotask-support-userdefinedfields.html"
         }            ]
 );

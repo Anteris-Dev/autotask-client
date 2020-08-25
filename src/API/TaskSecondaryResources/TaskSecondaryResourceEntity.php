@@ -14,7 +14,6 @@ class TaskSecondaryResourceEntity extends DataTransferObject
     public int $resourceID;
     public int $roleID;
     public int $taskID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new TaskSecondaryResource entity.

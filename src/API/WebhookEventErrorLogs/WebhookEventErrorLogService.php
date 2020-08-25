@@ -3,7 +3,8 @@
 namespace Anteris\Autotask\API\WebhookEventErrorLogs;
 
 use Anteris\Autotask\HttpClient;
-use GuzzleHttp\Psr7\Response;
+use Anteris\Autotask\Support\EntityFields\EntityFieldCollection;
+use Anteris\Autotask\Support\EntityInformation\EntityInformationEntity;
 
 /**
  * Handles all interaction with Autotask WebhookEventErrorLogs.
@@ -53,6 +54,34 @@ class WebhookEventErrorLogService
     }
 
     /**
+     * Returns information about what fields an entity has.
+     *
+     * @see EntityFieldCollection
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
+    public function getEntityFields(): EntityFieldCollection
+    {
+        return EntityFieldCollection::fromResponse(
+            $this->client->get("WebhookEventErrorLogs/entityInformation/fields")
+        );
+    }
+
+    /**
+     * Returns information about what actions can be made against an entity.
+     *
+     * @see EntityInformationEntity
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
+    public function getEntityInformation(): EntityInformationEntity
+    {
+        return EntityInformationEntity::fromResponse(
+            $this->client->get("WebhookEventErrorLogs/entityInformation")
+        );
+    }
+
+    /**
      * Returns an instance of the query builder for this entity.
      *
      * @see WebhookEventErrorLogQueryBuilder The query builder class.
@@ -63,5 +92,4 @@ class WebhookEventErrorLogService
     {
         return new WebhookEventErrorLogQueryBuilder($this->client);
     }
-
 }

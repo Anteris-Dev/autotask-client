@@ -28,7 +28,6 @@ class SubscriptionEntity extends DataTransferObject
     public ?float $totalCost;
     public ?float $totalPrice;
     public ?int $vendorID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new Subscription entity.

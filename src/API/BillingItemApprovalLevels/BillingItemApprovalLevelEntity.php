@@ -16,7 +16,6 @@ class BillingItemApprovalLevelEntity extends DataTransferObject
     public int $approvalResourceID;
     public int $id;
     public int $timeEntryID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new BillingItemApprovalLevel entity.

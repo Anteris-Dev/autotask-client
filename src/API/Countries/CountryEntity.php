@@ -19,7 +19,6 @@ class CountryEntity extends DataTransferObject
     public ?bool $isDefaultCountry;
     public ?string $name;
     public ?int $quoteTemplateID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new Country entity.

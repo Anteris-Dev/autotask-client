@@ -3,7 +3,8 @@
 namespace Anteris\Autotask\API\TicketCategoryFieldDefaults;
 
 use Anteris\Autotask\HttpClient;
-use GuzzleHttp\Psr7\Response;
+use Anteris\Autotask\Support\EntityFields\EntityFieldCollection;
+use Anteris\Autotask\Support\EntityInformation\EntityInformationEntity;
 
 /**
  * Handles all interaction with Autotask TicketCategoryFieldDefaults.
@@ -41,6 +42,34 @@ class TicketCategoryFieldDefaultService
     }
 
     /**
+     * Returns information about what fields an entity has.
+     *
+     * @see EntityFieldCollection
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
+    public function getEntityFields(): EntityFieldCollection
+    {
+        return EntityFieldCollection::fromResponse(
+            $this->client->get("TicketCategoryFieldDefaults/entityInformation/fields")
+        );
+    }
+
+    /**
+     * Returns information about what actions can be made against an entity.
+     *
+     * @see EntityInformationEntity
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
+    public function getEntityInformation(): EntityInformationEntity
+    {
+        return EntityInformationEntity::fromResponse(
+            $this->client->get("TicketCategoryFieldDefaults/entityInformation")
+        );
+    }
+
+    /**
      * Returns an instance of the query builder for this entity.
      *
      * @see TicketCategoryFieldDefaultQueryBuilder The query builder class.
@@ -51,5 +80,4 @@ class TicketCategoryFieldDefaultService
     {
         return new TicketCategoryFieldDefaultQueryBuilder($this->client);
     }
-
 }

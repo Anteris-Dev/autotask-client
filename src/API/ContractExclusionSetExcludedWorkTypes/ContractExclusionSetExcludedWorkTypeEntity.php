@@ -13,7 +13,6 @@ class ContractExclusionSetExcludedWorkTypeEntity extends DataTransferObject
     public int $contractExclusionSetID;
     public int $excludedWorkTypeID;
     public int $id;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ContractExclusionSetExcludedWorkType entity.

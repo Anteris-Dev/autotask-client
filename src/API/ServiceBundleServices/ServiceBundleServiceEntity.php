@@ -13,7 +13,6 @@ class ServiceBundleServiceEntity extends DataTransferObject
     public int $id;
     public int $serviceBundleID;
     public int $serviceID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ServiceBundleService entity.

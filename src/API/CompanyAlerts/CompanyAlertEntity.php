@@ -14,7 +14,6 @@ class CompanyAlertEntity extends DataTransferObject
     public int $alertTypeID;
     public int $companyID;
     public int $id;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new CompanyAlert entity.

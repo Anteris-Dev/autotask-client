@@ -25,7 +25,6 @@ class AttachmentInfoEntity extends DataTransferObject
     public int $parentType;
     public int $publish;
     public string $title;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new AttachmentInfo entity.

@@ -13,7 +13,6 @@ class ResourceRoleQueueEntity extends DataTransferObject
     public int $id;
     public int $queueID;
     public int $resourceID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ResourceRoleQueue entity.

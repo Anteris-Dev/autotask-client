@@ -24,7 +24,6 @@ class ContractBlockEntity extends DataTransferObject
     public ?int $paymentType;
     public Carbon $startDate;
     public ?int $status;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ContractBlock entity.

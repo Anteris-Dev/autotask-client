@@ -13,7 +13,6 @@ class ChangeRequestLinkEntity extends DataTransferObject
     public int $changeRequestTicketID;
     public int $id;
     public int $problemOrIncidentTicketID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ChangeRequestLink entity.

@@ -30,7 +30,6 @@ class UserDefinedFieldDefinitionEntity extends DataTransferObject
     public ?int $numberOfDecimalPlaces;
     public ?int $sortOrder;
     public int $udfType;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new UserDefinedFieldDefinition entity.

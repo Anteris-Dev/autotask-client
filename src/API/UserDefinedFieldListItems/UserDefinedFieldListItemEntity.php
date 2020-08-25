@@ -16,7 +16,6 @@ class UserDefinedFieldListItemEntity extends DataTransferObject
     public int $udfFieldId;
     public string $valueForDisplay;
     public string $valueForExport;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new UserDefinedFieldListItem entity.

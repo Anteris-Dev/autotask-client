@@ -21,7 +21,6 @@ class ConfigurationItemNoteEntity extends DataTransferObject
     public ?Carbon $lastActivityDate;
     public int $noteType;
     public string $title;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ConfigurationItemNote entity.

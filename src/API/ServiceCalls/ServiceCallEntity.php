@@ -27,7 +27,6 @@ class ServiceCallEntity extends DataTransferObject
     public ?Carbon $lastModifiedDateTime;
     public Carbon $startDateTime;
     public ?int $status;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ServiceCall entity.

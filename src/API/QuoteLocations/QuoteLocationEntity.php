@@ -16,7 +16,6 @@ class QuoteLocationEntity extends DataTransferObject
     public int $id;
     public ?string $postalCode;
     public ?string $state;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new QuoteLocation entity.

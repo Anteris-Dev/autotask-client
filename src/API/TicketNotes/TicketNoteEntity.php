@@ -22,7 +22,6 @@ class TicketNoteEntity extends DataTransferObject
     public int $publish;
     public int $ticketID;
     public string $title;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new TicketNote entity.

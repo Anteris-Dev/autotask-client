@@ -13,7 +13,6 @@ class WorkTypeModifierEntity extends DataTransferObject
     public int $id;
     public int $modifierType;
     public ?float $modifierValue;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new WorkTypeModifier entity.

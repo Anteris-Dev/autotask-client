@@ -14,7 +14,6 @@ class CompanyTeamEntity extends DataTransferObject
     public int $id;
     public ?bool $isAssociatedAsComanaged;
     public int $resourceID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new CompanyTeam entity.

@@ -39,7 +39,6 @@ class ExpenseItemEntity extends DataTransferObject
     public ?int $taskID;
     public ?int $ticketID;
     public ?int $workType;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ExpenseItem entity.

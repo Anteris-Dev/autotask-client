@@ -22,7 +22,6 @@ class SurveyResultEntity extends DataTransferObject
     public int $surveyID;
     public ?float $surveyRating;
     public ?int $ticketID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new SurveyResult entity.

@@ -15,7 +15,6 @@ class ResourceServiceDeskRoleEntity extends DataTransferObject
     public ?bool $isDefault;
     public int $resourceID;
     public int $roleID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ResourceServiceDeskRole entity.

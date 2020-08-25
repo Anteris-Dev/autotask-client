@@ -61,7 +61,6 @@ class InternalLocationWithBusinessHourEntity extends DataTransferObject
     public ?Carbon $wednesdayBusinessHoursStartTime;
     public ?Carbon $wednesdayExtendedHoursEndTime;
     public ?Carbon $wednesdayExtendedHoursStartTime;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new InternalLocationWithBusinessHour entity.

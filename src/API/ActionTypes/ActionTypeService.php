@@ -3,6 +3,8 @@
 namespace Anteris\Autotask\API\ActionTypes;
 
 use Anteris\Autotask\HttpClient;
+use Anteris\Autotask\Support\EntityFields\EntityFieldCollection;
+use Anteris\Autotask\Support\EntityInformation\EntityInformationEntity;
 use GuzzleHttp\Psr7\Response;
 
 /**
@@ -61,6 +63,34 @@ class ActionTypeService
     {
         return ActionTypeEntity::fromResponse(
             $this->client->get("ActionTypes/$id")
+        );
+    }
+
+    /**
+     * Returns information about what fields an entity has.
+     *
+     * @see EntityFieldCollection
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
+    public function getEntityFields(): EntityFieldCollection
+    {
+        return EntityFieldCollection::fromResponse(
+            $this->client->get("ActionTypes/entityInformation/fields")
+        );
+    }
+
+    /**
+     * Returns information about what actions can be made against an entity.
+     *
+     * @see EntityInformationEntity
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
+    public function getEntityInformation(): EntityInformationEntity
+    {
+        return EntityInformationEntity::fromResponse(
+            $this->client->get("ActionTypes/entityInformation")
         );
     }
 

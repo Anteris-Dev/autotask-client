@@ -23,7 +23,6 @@ class ContractServiceBundleUnitEntity extends DataTransferObject
     public int $serviceBundleID;
     public Carbon $startDate;
     public int $units;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ContractServiceBundleUnit entity.

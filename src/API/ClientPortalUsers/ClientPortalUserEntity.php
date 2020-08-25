@@ -19,7 +19,6 @@ class ClientPortalUserEntity extends DataTransferObject
     public int $securityLevel;
     public int $timeFormat;
     public string $userName;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ClientPortalUser entity.

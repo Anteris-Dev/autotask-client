@@ -41,7 +41,6 @@ class PurchaseOrderEntity extends DataTransferObject
     public ?int $useItemDescriptionsFrom;
     public int $vendorID;
     public ?string $vendorInvoiceNumber;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new PurchaseOrder entity.

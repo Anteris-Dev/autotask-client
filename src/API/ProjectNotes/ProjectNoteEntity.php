@@ -23,7 +23,6 @@ class ProjectNoteEntity extends DataTransferObject
     public int $projectID;
     public int $publish;
     public string $title;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ProjectNote entity.

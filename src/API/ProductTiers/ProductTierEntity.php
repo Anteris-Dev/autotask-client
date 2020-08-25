@@ -15,7 +15,6 @@ class ProductTierEntity extends DataTransferObject
     public float $unitCost;
     public float $unitPrice;
     public ?float $upToUnitCount;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ProductTier entity.

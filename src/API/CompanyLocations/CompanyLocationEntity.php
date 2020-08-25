@@ -30,7 +30,6 @@ class CompanyLocationEntity extends DataTransferObject
     public ?float $roundtripDistance;
     public ?string $state;
     public ?int $taxRegionID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new CompanyLocation entity.

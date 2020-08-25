@@ -25,7 +25,6 @@ class PurchaseOrderItemEntity extends DataTransferObject
     public ?int $salesOrderID;
     public ?int $ticketID;
     public float $unitCost;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new PurchaseOrderItem entity.

@@ -13,7 +13,6 @@ class TicketAdditionalContactEntity extends DataTransferObject
     public int $contactID;
     public int $id;
     public int $ticketID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new TicketAdditionalContact entity.

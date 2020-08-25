@@ -17,7 +17,6 @@ class TicketHistoryEntity extends DataTransferObject
     public int $id;
     public int $resourceID;
     public int $ticketID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new TicketHistory entity.

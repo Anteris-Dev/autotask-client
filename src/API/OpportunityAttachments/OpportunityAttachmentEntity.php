@@ -23,7 +23,6 @@ class OpportunityAttachmentEntity extends DataTransferObject
     public ?int $parentID;
     public int $publish;
     public string $title;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new OpportunityAttachment entity.

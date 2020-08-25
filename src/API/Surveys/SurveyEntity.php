@@ -14,7 +14,6 @@ class SurveyEntity extends DataTransferObject
     public ?string $displayName;
     public int $id;
     public string $name;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new Survey entity.

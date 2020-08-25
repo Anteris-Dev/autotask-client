@@ -20,7 +20,6 @@ class TicketChecklistItemEntity extends DataTransferObject
     public ?int $knowledgebaseArticleID;
     public ?int $position;
     public int $ticketID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new TicketChecklistItem entity.

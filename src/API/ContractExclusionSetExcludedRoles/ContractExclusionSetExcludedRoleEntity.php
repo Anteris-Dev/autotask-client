@@ -13,7 +13,6 @@ class ContractExclusionSetExcludedRoleEntity extends DataTransferObject
     public int $contractExclusionSetID;
     public int $excludedRoleID;
     public int $id;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ContractExclusionSetExcludedRole entity.

@@ -17,7 +17,6 @@ class ResourceRoleDepartmentEntity extends DataTransferObject
     public bool $isDepartmentLead;
     public int $resourceID;
     public int $roleID;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ResourceRoleDepartment entity.

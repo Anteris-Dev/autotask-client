@@ -27,7 +27,6 @@ class ContractBillingRuleEntity extends DataTransferObject
     public ?int $minimumUnits;
     public int $productID;
     public Carbon $startDate;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ContractBillingRule entity.

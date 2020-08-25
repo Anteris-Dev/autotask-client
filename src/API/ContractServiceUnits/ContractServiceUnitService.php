@@ -3,7 +3,8 @@
 namespace Anteris\Autotask\API\ContractServiceUnits;
 
 use Anteris\Autotask\HttpClient;
-use GuzzleHttp\Psr7\Response;
+use Anteris\Autotask\Support\EntityFields\EntityFieldCollection;
+use Anteris\Autotask\Support\EntityInformation\EntityInformationEntity;
 
 /**
  * Handles all interaction with Autotask ContractServiceUnits.
@@ -41,6 +42,34 @@ class ContractServiceUnitService
     }
 
     /**
+     * Returns information about what fields an entity has.
+     *
+     * @see EntityFieldCollection
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
+    public function getEntityFields(): EntityFieldCollection
+    {
+        return EntityFieldCollection::fromResponse(
+            $this->client->get("ContractServiceUnits/entityInformation/fields")
+        );
+    }
+
+    /**
+     * Returns information about what actions can be made against an entity.
+     *
+     * @see EntityInformationEntity
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
+    public function getEntityInformation(): EntityInformationEntity
+    {
+        return EntityInformationEntity::fromResponse(
+            $this->client->get("ContractServiceUnits/entityInformation")
+        );
+    }
+
+    /**
      * Returns an instance of the query builder for this entity.
      *
      * @see ContractServiceUnitQueryBuilder The query builder class.
@@ -51,5 +80,4 @@ class ContractServiceUnitService
     {
         return new ContractServiceUnitQueryBuilder($this->client);
     }
-
 }

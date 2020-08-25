@@ -16,7 +16,6 @@ class ClassificationIconEntity extends DataTransferObject
     public bool $isSystem;
     public string $name;
     public string $relativeUrl;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ClassificationIcon entity.

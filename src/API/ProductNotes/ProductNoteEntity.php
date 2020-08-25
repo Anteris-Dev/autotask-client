@@ -20,7 +20,6 @@ class ProductNoteEntity extends DataTransferObject
     public ?Carbon $lastActivityDate;
     public int $productID;
     public string $title;
-    public array $userDefinedFields = [];
 
     /**
      * Creates a new ProductNote entity.
