@@ -26,7 +26,7 @@
         "spatie/data-transfer-object": "2.*"
     },
     "require-dev": {
-        "anteris-dev/autotask-client-generator": "dev-master",
+        "anteris-dev/autotask-client-generator": "^0.2.0",
         "phpunit/phpunit": "^9.3"
     }
 }

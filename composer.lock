@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9418d12391f98900f4731b127d3756cb",
+    "content-hash": "2ac55a7e1c4234ff40c2f85d4e8bb250",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -750,7 +750,7 @@
     "packages-dev": [
         {
             "name": "anteris-dev/autotask-client-generator",
-            "version": "dev-master",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Anteris-Dev/autotask-client-generator.git",
@@ -3440,9 +3440,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "anteris-dev/autotask-client-generator": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
