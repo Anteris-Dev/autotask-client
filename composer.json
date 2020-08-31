@@ -21,12 +21,11 @@
     },
     "license": "MIT",
     "require": {
-        "guzzlehttp/guzzle": "7.*",
-        "nesbot/carbon": "2.*",
-        "spatie/data-transfer-object": "2.*"
+        "guzzlehttp/guzzle": "^6.3",
+        "nesbot/carbon": "^2.0",
+        "spatie/data-transfer-object": "^2.0"
     },
     "require-dev": {
-        "anteris-dev/autotask-client-generator": "^0.2.0",
         "phpunit/phpunit": "^9.3"
     }
 }
