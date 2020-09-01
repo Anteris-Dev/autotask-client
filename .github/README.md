@@ -1,3 +1,5 @@
+![Test](https://github.com/Anteris-Dev/autotask-client/workflows/Test/badge.svg?branch=master)
+
 # About this Package
 
 This package provides a PHP API client for the Autotask REST API. It is strongly typed and it is a wonderful experience to work with these classes in any intelligent IDE with autocompletion.
