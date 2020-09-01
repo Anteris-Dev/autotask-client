@@ -1,4 +1,4 @@
-![Test](https://github.com/Anteris-Dev/autotask-client/workflows/Test/badge.svg?branch=master)
+[![Test](https://github.com/Anteris-Dev/autotask-client/workflows/Test/badge.svg?branch=master)](https://github.com/Anteris-Dev/autotask-client/actions?query=workflow%3ATest)
 
 # About this Package
 
