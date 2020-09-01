@@ -55,7 +55,7 @@ $client->contacts();
 
 ```
 
-To find the base URL for your company, go to https://webservices.autotask.net/atservicesrest/v1.0/zoneInformation?user={{ apiUser }} where `{{ apiUser }}` equals the username of your API user.
+To find the base URL for your company, go to [https://webservices.autotask.net/atservicesrest/v1.0/zoneInformation?user={{ apiUser }}](https://webservices.autotask.net/atservicesrest/v1.0/zoneInformation?user=) where `{{ apiUser }}` equals the username of your API user.
 
 ## Bypassing the Client Wrapper
 If you are only interacting with one or two Autotask endpoints, you may wish to bypass the client wrapper. You can do this as shown below.
