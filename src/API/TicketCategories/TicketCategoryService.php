@@ -73,7 +73,7 @@ class TicketCategoryService
     /**
      * Returns an instance of the query builder for this entity.
      *
-     * @see QueryBuilder The query builder class.
+     * @see TicketCategoryQueryBuilder The query builder class.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */

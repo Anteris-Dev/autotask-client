@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c91a30c862773786907a009e3eef693c",
+    "content-hash": "c610cb10a3f5ecd994630fa94863b2b9",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -992,16 +992,16 @@
     "packages-dev": [
         {
             "name": "anteris-dev/autotask-client-generator",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Anteris-Dev/autotask-client-generator.git",
-                "reference": "35217f7dc682cd0dc5649e0d6d47f36d228b7954"
+                "reference": "977f48ea5b967fc5606bbcb2411dbd30eaa9e5a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Anteris-Dev/autotask-client-generator/zipball/35217f7dc682cd0dc5649e0d6d47f36d228b7954",
-                "reference": "35217f7dc682cd0dc5649e0d6d47f36d228b7954",
+                "url": "https://api.github.com/repos/Anteris-Dev/autotask-client-generator/zipball/977f48ea5b967fc5606bbcb2411dbd30eaa9e5a6",
+                "reference": "977f48ea5b967fc5606bbcb2411dbd30eaa9e5a6",
                 "shasum": ""
             },
             "require": {
@@ -1030,7 +1030,7 @@
                 }
             ],
             "description": "This package is the brains behind the Autotask API client. It generates each service class using the Autotask API as its guide.",
-            "time": "2020-09-01T17:54:27+00:00"
+            "time": "2020-09-01T21:50:33+00:00"
         },
         {
             "name": "doctrine/inflector",
