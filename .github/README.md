@@ -285,7 +285,7 @@ while(true) {
 ### loop()
 Instead of iterating over all the records in Autotask via the `paginate()` method, you can very easily do this with the loop method. This method takes a callback function which will be executed for every record in Autotask that meets the criteria.
 
-- **Note**: The records iterated over here could be greater than 500, which is the Autotask return limit.
+- **Note**: The records iterated over here could be greater than 500, which is the Autotask return limit. Just be mindful of throttling.
 
 Example:
 
@@ -297,7 +297,9 @@ $query = $client->contacts()->query()->where('id', 'exist');
 
 // Get all the contacts from Autotask and echo their name
 $query->loop(function (ContactEntity $contact) {
+
     echo $contact->firstName . PHP_EOL;
+
 });
 
 ```
