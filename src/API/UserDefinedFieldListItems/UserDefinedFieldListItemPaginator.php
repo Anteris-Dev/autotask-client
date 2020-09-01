@@ -30,12 +30,9 @@ class UserDefinedFieldListItemPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = UserDefinedFieldListItemCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = UserDefinedFieldListItemCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

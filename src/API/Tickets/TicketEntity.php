@@ -30,8 +30,8 @@ class TicketEntity extends DataTransferObject
     public ?int $configurationItemID;
     public ?int $contactID;
     public ?int $contractID;
-    public ?int $contractServiceBundleID;
-    public ?int $contractServiceID;
+    public $contractServiceBundleID;
+    public $contractServiceID;
     public ?Carbon $createDate;
     public ?int $creatorResourceID;
     public ?int $creatorType;
@@ -45,7 +45,7 @@ class TicketEntity extends DataTransferObject
     public ?Carbon $firstResponseDueDateTime;
     public ?int $firstResponseInitiatingResourceID;
     public ?float $hoursToBeScheduled;
-    public int $id;
+    public $id;
     public ?int $impersonatorCreatorResourceID;
     public ?int $issueType;
     public ?Carbon $lastActivityDate;
@@ -54,7 +54,7 @@ class TicketEntity extends DataTransferObject
     public ?Carbon $lastCustomerNotificationDateTime;
     public ?Carbon $lastCustomerVisibleActivityDateTime;
     public ?Carbon $lastTrackedModificationDateTime;
-    public ?int $monitorID;
+    public $monitorID;
     public ?int $monitorTypeID;
     public ?int $opportunityID;
     public ?int $organizationalLevelAssociationID;
@@ -83,6 +83,8 @@ class TicketEntity extends DataTransferObject
     public ?string $ticketNumber;
     public ?int $ticketType;
     public string $title;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new Ticket entity.

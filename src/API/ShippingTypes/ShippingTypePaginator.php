@@ -30,12 +30,9 @@ class ShippingTypePaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = ShippingTypeCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = ShippingTypeCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

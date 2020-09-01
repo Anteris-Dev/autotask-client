@@ -14,9 +14,11 @@ class TicketHistoryEntity extends DataTransferObject
     public string $action;
     public Carbon $date;
     public string $detail;
-    public int $id;
+    public $id;
     public int $resourceID;
     public int $ticketID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new TicketHistory entity.

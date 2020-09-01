@@ -12,8 +12,10 @@ class SurveyEntity extends DataTransferObject
 {
     public ?string $description;
     public ?string $displayName;
-    public int $id;
+    public $id;
     public string $name;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new Survey entity.

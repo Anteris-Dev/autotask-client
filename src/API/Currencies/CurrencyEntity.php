@@ -16,12 +16,14 @@ class CurrencyEntity extends DataTransferObject
     public string $description;
     public int $displaySymbol;
     public float $exchangeRate;
-    public int $id;
+    public $id;
     public bool $isActive;
     public bool $isInternalCurrency;
     public ?Carbon $lastModifiedDateTime;
     public string $name;
     public ?int $updateResourceId;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new Currency entity.

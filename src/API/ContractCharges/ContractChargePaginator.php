@@ -30,12 +30,9 @@ class ContractChargePaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = ContractChargeCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = ContractChargeCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

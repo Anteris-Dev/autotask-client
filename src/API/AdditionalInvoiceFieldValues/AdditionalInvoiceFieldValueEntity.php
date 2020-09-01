@@ -10,10 +10,12 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class AdditionalInvoiceFieldValueEntity extends DataTransferObject
 {
-    public int $additionalInvoiceFieldID;
+    public $additionalInvoiceFieldID;
     public string $fieldValue;
-    public int $id;
-    public int $invoiceBatchID;
+    public $id;
+    public $invoiceBatchID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new AdditionalInvoiceFieldValue entity.

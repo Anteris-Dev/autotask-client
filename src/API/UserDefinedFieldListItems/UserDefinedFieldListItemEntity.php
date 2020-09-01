@@ -12,10 +12,12 @@ use Spatie\DataTransferObject\DataTransferObject;
 class UserDefinedFieldListItemEntity extends DataTransferObject
 {
     public ?Carbon $createDate;
-    public int $id;
-    public int $udfFieldId;
+    public $id;
+    public $udfFieldId;
     public string $valueForDisplay;
     public string $valueForExport;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new UserDefinedFieldListItem entity.

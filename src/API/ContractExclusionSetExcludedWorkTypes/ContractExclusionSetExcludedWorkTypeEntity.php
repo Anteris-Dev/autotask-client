@@ -12,7 +12,9 @@ class ContractExclusionSetExcludedWorkTypeEntity extends DataTransferObject
 {
     public int $contractExclusionSetID;
     public int $excludedWorkTypeID;
-    public int $id;
+    public $id;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ContractExclusionSetExcludedWorkType entity.

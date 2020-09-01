@@ -11,10 +11,12 @@ use Spatie\DataTransferObject\DataTransferObject;
 class ContractRoleCostEntity extends DataTransferObject
 {
     public int $contractID;
-    public int $id;
+    public $id;
     public float $rate;
     public int $resourceID;
     public int $roleID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ContractRoleCost entity.

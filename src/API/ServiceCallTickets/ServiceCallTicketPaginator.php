@@ -30,12 +30,9 @@ class ServiceCallTicketPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = ServiceCallTicketCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = ServiceCallTicketCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

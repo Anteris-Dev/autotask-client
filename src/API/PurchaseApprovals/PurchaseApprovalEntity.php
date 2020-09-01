@@ -11,9 +11,11 @@ use Spatie\DataTransferObject\DataTransferObject;
 class PurchaseApprovalEntity extends DataTransferObject
 {
     public ?string $costType;
-    public int $id;
+    public $id;
     public bool $isApproved;
     public ?string $rejectNote;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new PurchaseApproval entity.

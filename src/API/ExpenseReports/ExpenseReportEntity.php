@@ -15,7 +15,7 @@ class ExpenseReportEntity extends DataTransferObject
     public ?Carbon $approvedDate;
     public ?int $approverID;
     public ?string $departmentNumber;
-    public int $id;
+    public $id;
     public ?float $internalCurrencyCashAdvanceAmount;
     public ?float $internalCurrencyExpenseTotal;
     public string $name;
@@ -30,6 +30,8 @@ class ExpenseReportEntity extends DataTransferObject
     public ?Carbon $submitDate;
     public int $submitterID;
     public Carbon $weekEnding;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ExpenseReport entity.

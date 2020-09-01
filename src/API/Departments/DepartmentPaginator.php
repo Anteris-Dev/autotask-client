@@ -30,12 +30,9 @@ class DepartmentPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = DepartmentCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = DepartmentCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

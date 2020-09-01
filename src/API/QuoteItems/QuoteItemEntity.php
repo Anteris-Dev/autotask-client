@@ -15,7 +15,7 @@ class QuoteItemEntity extends DataTransferObject
     public ?string $description;
     public ?int $expenseID;
     public ?float $highestCost;
-    public int $id;
+    public $id;
     public ?float $internalCurrencyLineDiscount;
     public ?float $internalCurrencyUnitDiscount;
     public ?float $internalCurrencyUnitPrice;
@@ -39,6 +39,8 @@ class QuoteItemEntity extends DataTransferObject
     public ?float $unitCost;
     public float $unitDiscount;
     public ?float $unitPrice;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new QuoteItem entity.

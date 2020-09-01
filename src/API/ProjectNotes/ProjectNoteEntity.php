@@ -14,7 +14,7 @@ class ProjectNoteEntity extends DataTransferObject
     public ?Carbon $createDateTime;
     public ?int $creatorResourceID;
     public string $description;
-    public int $id;
+    public $id;
     public ?int $impersonatorCreatorResourceID;
     public ?int $impersonatorUpdaterResourceID;
     public bool $isAnnouncement;
@@ -23,6 +23,8 @@ class ProjectNoteEntity extends DataTransferObject
     public int $projectID;
     public int $publish;
     public string $title;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ProjectNote entity.

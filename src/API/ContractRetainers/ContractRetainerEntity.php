@@ -25,6 +25,8 @@ class ContractRetainerEntity extends DataTransferObject
     public ?string $paymentNumber;
     public Carbon $startDate;
     public int $status;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ContractRetainer entity.

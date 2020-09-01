@@ -13,7 +13,7 @@ class ResourceEntity extends DataTransferObject
 {
     public ?string $accountingReferenceID;
     public ?string $dateFormat;
-    public ?int $defaultServiceDeskRoleID;
+    public $defaultServiceDeskRoleID;
     public string $email;
     public ?string $email2;
     public ?string $email3;
@@ -25,7 +25,7 @@ class ResourceEntity extends DataTransferObject
     public ?int $greeting;
     public Carbon $hireDate;
     public ?string $homePhone;
-    public int $id;
+    public $id;
     public ?string $initials;
     public ?float $internalCost;
     public bool $isActive;
@@ -46,6 +46,8 @@ class ResourceEntity extends DataTransferObject
     public ?string $travelAvailabilityPct;
     public string $userName;
     public int $userType;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new Resource entity.

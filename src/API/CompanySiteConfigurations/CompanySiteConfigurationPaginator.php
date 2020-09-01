@@ -30,12 +30,9 @@ class CompanySiteConfigurationPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = CompanySiteConfigurationCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = CompanySiteConfigurationCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

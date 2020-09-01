@@ -23,7 +23,7 @@ class ConfigurationItemExtEntity extends DataTransferObject
     public ?Carbon $createDate;
     public ?int $createdByPersonID;
     public ?float $dailyCost;
-    public ?int $dattoAvailableKilobytes;
+    public $dattoAvailableKilobytes;
     public ?int $dattoDeviceMemoryMegabytes;
     public ?bool $dattoDrivesErrors;
     public ?string $dattoHostname;
@@ -34,18 +34,18 @@ class ConfigurationItemExtEntity extends DataTransferObject
     public ?int $dattoNumberOfAgents;
     public ?int $dattoNumberOfDrives;
     public ?int $dattoNumberOfVolumes;
-    public ?int $dattoOffsiteUsedBytes;
+    public $dattoOffsiteUsedBytes;
     public ?string $dattoOSVersionID;
     public ?float $dattoPercentageUsed;
-    public ?int $dattoProtectedKilobytes;
+    public $dattoProtectedKilobytes;
     public ?string $dattoRemoteIP;
     public ?string $dattoSerialNumber;
     public ?int $dattoUptimeSeconds;
-    public ?int $dattoUsedKilobytes;
+    public $dattoUsedKilobytes;
     public ?string $dattoZFSVersionID;
     public ?string $deviceNetworkingID;
     public ?float $hourlyCost;
-    public int $id;
+    public $id;
     public ?int $impersonatorCreatorResourceID;
     public ?Carbon $installDate;
     public ?int $installedByContactID;
@@ -76,7 +76,7 @@ class ConfigurationItemExtEntity extends DataTransferObject
     public ?string $rmmDeviceAuditLastUser;
     public ?string $rmmDeviceAuditMacAddress;
     public ?string $rmmDeviceAuditManufacturerID;
-    public ?int $rmmDeviceAuditMemoryBytes;
+    public $rmmDeviceAuditMemoryBytes;
     public ?int $rmmDeviceAuditMissingPatchCount;
     public ?string $rmmDeviceAuditMobileNetworkOperatorID;
     public ?string $rmmDeviceAuditMobileNumber;
@@ -92,8 +92,8 @@ class ConfigurationItemExtEntity extends DataTransferObject
     public ?string $rmmDeviceAuditSNMPLocation;
     public ?string $rmmDeviceAuditSNMPName;
     public ?string $rmmDeviceAuditSoftwareStatusID;
-    public ?int $rmmDeviceAuditStorageBytes;
-    public ?int $rmmDeviceID;
+    public $rmmDeviceAuditStorageBytes;
+    public $rmmDeviceID;
     public ?string $rmmDeviceUID;
     public ?string $serialNumber;
     public ?int $serviceBundleID;
@@ -104,9 +104,8 @@ class ConfigurationItemExtEntity extends DataTransferObject
     public ?int $sourceChargeType;
     public ?int $vendorID;
     public ?Carbon $warrantyExpirationDate;
-
-    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[] */
-    public array $userDefinedFields;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ConfigurationItemExt entity.

@@ -30,12 +30,9 @@ class WebhookEventErrorLogPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = WebhookEventErrorLogCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = WebhookEventErrorLogCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

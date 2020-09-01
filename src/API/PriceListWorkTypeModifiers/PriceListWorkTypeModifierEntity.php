@@ -11,11 +11,13 @@ use Spatie\DataTransferObject\DataTransferObject;
 class PriceListWorkTypeModifierEntity extends DataTransferObject
 {
     public int $currencyID;
-    public int $id;
+    public $id;
     public ?int $modifierType;
     public ?float $modifierValue;
     public bool $usesInternalCurrencyPrice;
     public int $workTypeModifierID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new PriceListWorkTypeModifier entity.

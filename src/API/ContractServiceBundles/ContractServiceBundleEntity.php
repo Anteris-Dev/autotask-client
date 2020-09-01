@@ -12,14 +12,16 @@ class ContractServiceBundleEntity extends DataTransferObject
 {
     public ?float $adjustedPrice;
     public int $contractID;
-    public int $id;
+    public $id;
     public ?float $internalCurrencyAdjustedPrice;
     public ?float $internalCurrencyUnitPrice;
     public ?string $internalDescription;
     public ?string $invoiceDescription;
-    public ?int $quoteItemID;
+    public $quoteItemID;
     public int $serviceBundleID;
     public ?float $unitPrice;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ContractServiceBundle entity.

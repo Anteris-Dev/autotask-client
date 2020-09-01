@@ -30,12 +30,9 @@ class OpportunityPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = OpportunityCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = OpportunityCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

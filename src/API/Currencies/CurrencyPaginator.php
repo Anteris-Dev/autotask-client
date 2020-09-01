@@ -30,12 +30,9 @@ class CurrencyPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = CurrencyCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = CurrencyCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

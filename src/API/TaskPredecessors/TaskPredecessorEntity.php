@@ -10,10 +10,12 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class TaskPredecessorEntity extends DataTransferObject
 {
-    public int $id;
+    public $id;
     public ?int $lagDays;
     public int $predecessorTaskID;
     public int $successorTaskID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new TaskPredecessor entity.

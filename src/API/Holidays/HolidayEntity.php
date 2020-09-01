@@ -14,7 +14,9 @@ class HolidayEntity extends DataTransferObject
     public Carbon $holidayDate;
     public string $holidayName;
     public int $holidaySetID;
-    public int $id;
+    public $id;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new Holiday entity.

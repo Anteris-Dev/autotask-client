@@ -21,12 +21,14 @@ class ServiceCallEntity extends DataTransferObject
     public ?string $description;
     public ?float $duration;
     public Carbon $endDateTime;
-    public int $id;
+    public $id;
     public ?int $impersonatorCreatorResourceID;
-    public ?int $isComplete;
+    public $isComplete;
     public ?Carbon $lastModifiedDateTime;
     public Carbon $startDateTime;
     public ?int $status;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ServiceCall entity.

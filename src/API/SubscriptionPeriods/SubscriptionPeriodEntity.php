@@ -11,13 +11,15 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class SubscriptionPeriodEntity extends DataTransferObject
 {
-    public int $id;
+    public $id;
     public float $periodCost;
     public Carbon $periodDate;
     public float $periodPrice;
     public ?Carbon $postedDate;
     public ?string $purchaseOrderNumber;
     public int $subscriptionID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new SubscriptionPeriod entity.

@@ -16,15 +16,15 @@ class TimeEntryEntity extends DataTransferObject
     public ?int $billingApprovalResourceID;
     public ?int $billingCodeID;
     public ?int $contractID;
-    public ?int $contractServiceBundleID;
-    public ?int $contractServiceID;
+    public $contractServiceBundleID;
+    public $contractServiceID;
     public ?Carbon $createDateTime;
     public ?int $creatorUserID;
     public Carbon $dateWorked;
     public ?Carbon $endDateTime;
     public ?float $hoursToBill;
     public ?float $hoursWorked;
-    public int $id;
+    public $id;
     public ?int $impersonatorCreatorResourceID;
     public ?int $impersonatorUpdaterResourceID;
     public ?int $internalBillingCodeID;
@@ -41,6 +41,8 @@ class TimeEntryEntity extends DataTransferObject
     public ?int $taskID;
     public ?int $ticketID;
     public ?int $timeEntryType;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new TimeEntry entity.

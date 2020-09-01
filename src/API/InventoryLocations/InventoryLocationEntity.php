@@ -10,12 +10,14 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class InventoryLocationEntity extends DataTransferObject
 {
-    public int $id;
+    public $id;
     public ?int $impersonatorCreatorResourceID;
     public bool $isActive;
     public ?bool $isDefault;
     public string $locationName;
     public ?int $resourceID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new InventoryLocation entity.

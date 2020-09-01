@@ -11,16 +11,18 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class InventoryTransferEntity extends DataTransferObject
 {
-    public int $fromLocationID;
-    public int $id;
+    public $fromLocationID;
+    public $id;
     public ?string $notes;
-    public int $productID;
+    public $productID;
     public int $quantityTransferred;
     public ?string $serialNumber;
-    public int $toLocationID;
+    public $toLocationID;
     public ?int $transferByResourceID;
     public ?Carbon $transferDate;
     public ?string $updateNote;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new InventoryTransfer entity.

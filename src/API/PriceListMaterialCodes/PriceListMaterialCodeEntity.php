@@ -12,9 +12,11 @@ class PriceListMaterialCodeEntity extends DataTransferObject
 {
     public int $billingCodeID;
     public int $currencyID;
-    public int $id;
+    public $id;
     public ?float $unitPrice;
     public bool $usesInternalCurrencyPrice;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new PriceListMaterialCode entity.

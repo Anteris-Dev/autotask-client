@@ -30,12 +30,9 @@ class HolidayPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = HolidayCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = HolidayCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

@@ -30,12 +30,9 @@ class ContactGroupPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = ContactGroupCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = ContactGroupCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

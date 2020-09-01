@@ -10,9 +10,11 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class OrganizationalResourceEntity extends DataTransferObject
 {
-    public int $id;
+    public $id;
     public int $organizationalLevelAssociationID;
     public int $resourceID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new OrganizationalResource entity.

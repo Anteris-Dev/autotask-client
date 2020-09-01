@@ -30,12 +30,9 @@ class TicketRmaCreditPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = TicketRmaCreditCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = TicketRmaCreditCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

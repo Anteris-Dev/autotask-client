@@ -16,6 +16,8 @@ class TaxEntity extends DataTransferObject
     public string $taxName;
     public float $taxRate;
     public int $taxRegionID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new Tax entity.

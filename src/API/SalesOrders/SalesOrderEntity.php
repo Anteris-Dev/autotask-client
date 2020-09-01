@@ -36,6 +36,8 @@ class SalesOrderEntity extends DataTransferObject
     public ?string $shipToState;
     public int $status;
     public string $title;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new SalesOrder entity.

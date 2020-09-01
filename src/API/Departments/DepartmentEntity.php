@@ -11,10 +11,12 @@ use Spatie\DataTransferObject\DataTransferObject;
 class DepartmentEntity extends DataTransferObject
 {
     public ?string $description;
-    public int $id;
+    public $id;
     public string $name;
     public ?string $number;
     public int $primaryLocationID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new Department entity.

@@ -10,10 +10,12 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class TaskSecondaryResourceEntity extends DataTransferObject
 {
-    public int $id;
+    public $id;
     public int $resourceID;
     public int $roleID;
     public int $taskID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new TaskSecondaryResource entity.

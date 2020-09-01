@@ -16,7 +16,7 @@ class ContractServiceUnitEntity extends DataTransferObject
     public ?int $contractServiceID;
     public ?float $cost;
     public Carbon $endDate;
-    public int $id;
+    public $id;
     public ?float $internalCurrencyPrice;
     public ?int $organizationalLevelAssociationID;
     public ?float $price;
@@ -24,6 +24,8 @@ class ContractServiceUnitEntity extends DataTransferObject
     public Carbon $startDate;
     public int $units;
     public ?int $vendorCompanyID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ContractServiceUnit entity.

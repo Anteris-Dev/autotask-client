@@ -30,12 +30,9 @@ class CompanyWebhookPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = CompanyWebhookCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = CompanyWebhookCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

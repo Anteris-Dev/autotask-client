@@ -15,9 +15,11 @@ class WebhookEventErrorLogEntity extends DataTransferObject
     public ?int $contactWebhookID;
     public ?Carbon $createDateTime;
     public ?string $errorMessage;
-    public int $id;
+    public $id;
     public ?string $payload;
     public ?int $sequenceNumber;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new WebhookEventErrorLog entity.

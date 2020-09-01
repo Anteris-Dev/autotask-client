@@ -16,10 +16,12 @@ class ContractServiceBundleAdjustmentEntity extends DataTransferObject
     public ?int $contractID;
     public ?int $contractServiceBundleID;
     public Carbon $effectiveDate;
-    public int $id;
+    public $id;
     public ?int $quoteItemID;
     public ?int $serviceBundleID;
     public ?int $unitChange;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ContractServiceBundleAdjustment entity.

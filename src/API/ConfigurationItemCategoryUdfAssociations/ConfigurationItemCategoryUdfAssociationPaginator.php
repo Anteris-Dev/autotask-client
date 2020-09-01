@@ -30,12 +30,9 @@ class ConfigurationItemCategoryUdfAssociationPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = ConfigurationItemCategoryUdfAssociationCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = ConfigurationItemCategoryUdfAssociationCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

@@ -11,14 +11,16 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class PurchaseOrderItemReceivingEntity extends DataTransferObject
 {
-    public int $id;
-    public int $purchaseOrderItemID;
+    public $id;
+    public $purchaseOrderItemID;
     public ?int $quantityBackOrdered;
-    public int $quantityNowReceiving;
+    public ?int $quantityNowReceiving;
     public ?int $quantityPreviouslyReceived;
     public ?Carbon $receiveDate;
     public ?int $receivedByResourceID;
     public ?string $serialNumber;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new PurchaseOrderItemReceiving entity.

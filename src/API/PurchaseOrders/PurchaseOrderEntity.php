@@ -18,7 +18,7 @@ class PurchaseOrderEntity extends DataTransferObject
     public ?string $fax;
     public ?float $freight;
     public ?string $generalMemo;
-    public int $id;
+    public $id;
     public ?int $impersonatorCreatorResourceID;
     public ?float $internalCurrencyFreight;
     public ?Carbon $latestEstimatedArrivalDate;
@@ -41,6 +41,8 @@ class PurchaseOrderEntity extends DataTransferObject
     public ?int $useItemDescriptionsFrom;
     public int $vendorID;
     public ?string $vendorInvoiceNumber;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new PurchaseOrder entity.

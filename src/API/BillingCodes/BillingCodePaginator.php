@@ -30,12 +30,9 @@ class BillingCodePaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = BillingCodeCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = BillingCodeCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

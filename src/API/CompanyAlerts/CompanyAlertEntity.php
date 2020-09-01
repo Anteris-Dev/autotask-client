@@ -13,7 +13,9 @@ class CompanyAlertEntity extends DataTransferObject
     public ?string $alertText;
     public int $alertTypeID;
     public int $companyID;
-    public int $id;
+    public $id;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new CompanyAlert entity.

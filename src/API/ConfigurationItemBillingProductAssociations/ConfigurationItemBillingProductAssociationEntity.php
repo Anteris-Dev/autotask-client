@@ -15,7 +15,9 @@ class ConfigurationItemBillingProductAssociationEntity extends DataTransferObjec
     public int $configurationItemID;
     public Carbon $effectiveDate;
     public ?Carbon $expirationDate;
-    public int $id;
+    public $id;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ConfigurationItemBillingProductAssociation entity.

@@ -11,11 +11,13 @@ use Spatie\DataTransferObject\DataTransferObject;
 class ClassificationIconEntity extends DataTransferObject
 {
     public ?string $description;
-    public int $id;
+    public $id;
     public bool $isActive;
     public bool $isSystem;
     public string $name;
     public string $relativeUrl;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ClassificationIcon entity.

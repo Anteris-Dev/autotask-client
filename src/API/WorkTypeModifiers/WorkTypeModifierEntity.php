@@ -10,9 +10,11 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class WorkTypeModifierEntity extends DataTransferObject
 {
-    public int $id;
+    public $id;
     public int $modifierType;
     public ?float $modifierValue;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new WorkTypeModifier entity.

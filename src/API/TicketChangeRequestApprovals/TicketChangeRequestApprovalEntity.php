@@ -18,6 +18,8 @@ class TicketChangeRequestApprovalEntity extends DataTransferObject
     public ?bool $isApproved;
     public ?int $resourceID;
     public int $ticketID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new TicketChangeRequestApproval entity.

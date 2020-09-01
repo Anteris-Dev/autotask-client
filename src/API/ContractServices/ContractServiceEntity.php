@@ -11,15 +11,17 @@ use Spatie\DataTransferObject\DataTransferObject;
 class ContractServiceEntity extends DataTransferObject
 {
     public int $contractID;
-    public int $id;
+    public $id;
     public ?float $internalCurrencyAdjustedPrice;
     public ?float $internalCurrencyUnitPrice;
     public ?string $internalDescription;
     public ?string $invoiceDescription;
-    public ?int $quoteItemID;
+    public $quoteItemID;
     public int $serviceID;
     public ?float $unitCost;
     public ?float $unitPrice;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ContractService entity.

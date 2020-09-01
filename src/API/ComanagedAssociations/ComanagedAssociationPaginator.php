@@ -30,12 +30,9 @@ class ComanagedAssociationPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = ComanagedAssociationCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = ComanagedAssociationCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

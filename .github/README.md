@@ -7,8 +7,8 @@ This package provides a PHP API client for the Autotask REST API. It is strongly
 Run `composer require anteris-dev/autotask-client`
 
 ### Requirements
-- **PHP >= 7.4** so it can take full advantage of type casting in PHP.
-- **Guzzle >= 6.3** so it can make requests against the Autotask API.
+- **PHP ^7.4** so it can take full advantage of type casting in PHP.
+- **Guzzle ^6.3** so it can make requests against the Autotask API.
 
 # Table of Contents
 
@@ -28,7 +28,8 @@ Run `composer require anteris-dev/autotask-client`
 			* [records( int $records )](#records-int-records-)
 			* [get()](#get)
 			* [paginate()](#paginate)
-			* [update()](#update-resource-)
+            * [loop()](#loop)
+        * [update()](#update-resource-)
 * [Resources](#resources)
 
 # Getting Started
@@ -54,7 +55,7 @@ $client->contacts();
 
 ```
 
-To find the base URL for your company, go to https://webservices.autotask.net/atservicesrest/v1.0/zoneInformation?user={{ apiUser }} where `{{ apiUser }}` equals the username of your API user.
+To find the base URL for your company, go to [https://webservices.autotask.net/atservicesrest/v1.0/zoneInformation?user={{ apiUser }}](https://webservices.autotask.net/atservicesrest/v1.0/zoneInformation?user=) where `{{ apiUser }}` equals the username of your API user.
 
 ## Bypassing the Client Wrapper
 If you are only interacting with one or two Autotask endpoints, you may wish to bypass the client wrapper. You can do this as shown below.
@@ -278,6 +279,28 @@ while(true) {
     // Otherwise retrieve the next page and do it again!
     $page = $page->nextPage();
 }
+
+```
+
+### loop()
+Instead of iterating over all the records in Autotask via the `paginate()` method, you can very easily do this with the loop method. This method takes a callback function which will be executed for every record in Autotask that meets the criteria.
+
+- **Note**: The records iterated over here could be greater than 500, which is the Autotask return limit. Just be mindful of throttling.
+
+Example:
+
+```php
+
+use Anteris\Autotask\API\Contacts\ContactEntity;
+
+$query = $client->contacts()->query()->where('id', 'exist');
+
+// Get all the contacts from Autotask and echo their name
+$query->loop(function (ContactEntity $contact) {
+
+    echo $contact->firstName . PHP_EOL;
+
+});
 
 ```
 

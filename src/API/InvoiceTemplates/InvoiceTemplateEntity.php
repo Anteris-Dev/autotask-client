@@ -22,7 +22,7 @@ class InvoiceTemplateEntity extends DataTransferObject
     public bool $displayTaxCategorySuperscripts;
     public bool $displayZeroAmountRecurringServicesAndBundles;
     public int $groupBy;
-    public int $id;
+    public $id;
     public int $itemizeItemsInEachGroup;
     public bool $itemizeServicesAndBundles;
     public string $name;
@@ -30,12 +30,14 @@ class InvoiceTemplateEntity extends DataTransferObject
     public int $numberFormat;
     public int $pageLayout;
     public int $pageNumberFormat;
-    public int $paymentTerms;
+    public ?int $paymentTerms;
     public ?string $rateCostExpression;
     public bool $showGridHeader;
     public bool $showVerticalGridLines;
     public int $sortBy;
     public int $timeFormat;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new InvoiceTemplate entity.

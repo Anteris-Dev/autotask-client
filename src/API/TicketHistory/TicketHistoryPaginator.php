@@ -30,12 +30,9 @@ class TicketHistoryPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = TicketHistoryCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = TicketHistoryCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

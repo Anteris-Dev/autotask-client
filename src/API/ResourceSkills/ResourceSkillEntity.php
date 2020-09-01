@@ -10,11 +10,13 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class ResourceSkillEntity extends DataTransferObject
 {
-    public int $id;
-    public int $resourceID;
+    public $id;
+    public $resourceID;
     public ?string $skillDescription;
-    public int $skillID;
-    public int $skillLevel;
+    public $skillID;
+    public $skillLevel;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ResourceSkill entity.

@@ -11,9 +11,11 @@ use Spatie\DataTransferObject\DataTransferObject;
 class ContractExclusionSetEntity extends DataTransferObject
 {
     public ?string $description;
-    public int $id;
+    public $id;
     public bool $isActive;
     public string $name;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ContractExclusionSet entity.

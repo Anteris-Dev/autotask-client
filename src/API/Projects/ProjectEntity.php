@@ -30,7 +30,7 @@ class ProjectEntity extends DataTransferObject
     public ?float $estimatedTime;
     public ?string $extProjectNumber;
     public ?int $extProjectType;
-    public int $id;
+    public $id;
     public ?int $impersonatorCreatorResourceID;
     public ?float $laborEstimatedCosts;
     public ?float $laborEstimatedMarginPercentage;
@@ -48,11 +48,13 @@ class ProjectEntity extends DataTransferObject
     public ?string $projectNumber;
     public int $projectType;
     public ?string $purchaseOrderNumber;
-    public ?float $sGDA;
+    public ?float $sgda;
     public Carbon $startDateTime;
     public int $status;
     public ?Carbon $statusDateTime;
     public ?string $statusDetail;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new Project entity.

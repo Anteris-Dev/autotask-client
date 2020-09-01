@@ -18,7 +18,7 @@ class InvoiceEntity extends DataTransferObject
     public ?int $creatorResourceID;
     public ?Carbon $dueDate;
     public ?Carbon $fromDate;
-    public int $id;
+    public $id;
     public Carbon $invoiceDateTime;
     public ?int $invoiceEditorTemplateID;
     public ?string $invoiceNumber;
@@ -34,6 +34,8 @@ class InvoiceEntity extends DataTransferObject
     public ?int $voidedByResourceID;
     public ?Carbon $voidedDate;
     public ?Carbon $webServiceDate;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new Invoice entity.

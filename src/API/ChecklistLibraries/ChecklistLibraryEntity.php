@@ -12,9 +12,11 @@ class ChecklistLibraryEntity extends DataTransferObject
 {
     public ?string $description;
     public int $entityType;
-    public int $id;
+    public $id;
     public bool $isActive;
     public string $name;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ChecklistLibrary entity.

@@ -18,7 +18,7 @@ class ContractBillingRuleEntity extends DataTransferObject
     public int $determineUnits;
     public ?Carbon $endDate;
     public ?int $executionMethod;
-    public int $id;
+    public $id;
     public bool $includeItemsInChargeDescription;
     public ?string $invoiceDescription;
     public bool $isActive;
@@ -27,6 +27,8 @@ class ContractBillingRuleEntity extends DataTransferObject
     public ?int $minimumUnits;
     public int $productID;
     public Carbon $startDate;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ContractBillingRule entity.

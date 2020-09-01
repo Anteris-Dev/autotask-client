@@ -18,7 +18,7 @@ class CompanyNoteEntity extends DataTransferObject
     public ?int $contactID;
     public ?Carbon $createDateTime;
     public Carbon $endDateTime;
-    public int $id;
+    public $id;
     public ?int $impersonatorCreatorResourceID;
     public ?int $impersonatorUpdaterResourceID;
     public ?Carbon $lastModifiedDate;
@@ -26,6 +26,8 @@ class CompanyNoteEntity extends DataTransferObject
     public ?string $note;
     public ?int $opportunityID;
     public Carbon $startDateTime;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new CompanyNote entity.

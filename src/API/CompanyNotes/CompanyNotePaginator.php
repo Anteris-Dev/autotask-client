@@ -30,12 +30,9 @@ class CompanyNotePaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = CompanyNoteCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = CompanyNoteCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

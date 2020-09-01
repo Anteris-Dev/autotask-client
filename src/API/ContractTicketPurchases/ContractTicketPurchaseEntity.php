@@ -14,7 +14,7 @@ class ContractTicketPurchaseEntity extends DataTransferObject
     public int $contractID;
     public Carbon $datePurchased;
     public Carbon $endDate;
-    public int $id;
+    public $id;
     public ?string $invoiceNumber;
     public ?bool $isPaid;
     public ?string $paymentNumber;
@@ -24,6 +24,8 @@ class ContractTicketPurchaseEntity extends DataTransferObject
     public ?int $status;
     public float $ticketsPurchased;
     public ?float $ticketsUsed;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ContractTicketPurchase entity.

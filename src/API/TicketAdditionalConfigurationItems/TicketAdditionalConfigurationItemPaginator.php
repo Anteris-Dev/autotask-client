@@ -30,12 +30,9 @@ class TicketAdditionalConfigurationItemPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = TicketAdditionalConfigurationItemCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = TicketAdditionalConfigurationItemCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

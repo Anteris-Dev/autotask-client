@@ -30,12 +30,9 @@ class WorkTypeModifierPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = WorkTypeModifierCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = WorkTypeModifierCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

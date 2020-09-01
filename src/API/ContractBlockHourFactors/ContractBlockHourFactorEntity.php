@@ -12,8 +12,10 @@ class ContractBlockHourFactorEntity extends DataTransferObject
 {
     public float $blockHourMultiplier;
     public int $contractID;
-    public int $id;
+    public $id;
     public int $roleID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ContractBlockHourFactor entity.

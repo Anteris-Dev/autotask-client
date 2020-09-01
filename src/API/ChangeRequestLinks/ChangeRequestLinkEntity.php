@@ -13,6 +13,8 @@ class ChangeRequestLinkEntity extends DataTransferObject
     public int $changeRequestTicketID;
     public int $id;
     public int $problemOrIncidentTicketID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ChangeRequestLink entity.

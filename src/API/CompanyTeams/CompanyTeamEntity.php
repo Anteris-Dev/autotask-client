@@ -10,10 +10,12 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class CompanyTeamEntity extends DataTransferObject
 {
-    public int $companyID;
-    public int $id;
+    public $companyID;
+    public $id;
     public ?bool $isAssociatedAsComanaged;
-    public int $resourceID;
+    public $resourceID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new CompanyTeam entity.

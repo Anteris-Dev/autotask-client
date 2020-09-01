@@ -30,12 +30,9 @@ class PriceListWorkTypeModifierPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = PriceListWorkTypeModifierCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = PriceListWorkTypeModifierCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

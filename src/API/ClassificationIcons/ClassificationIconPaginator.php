@@ -30,12 +30,9 @@ class ClassificationIconPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = ClassificationIconCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = ClassificationIconCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

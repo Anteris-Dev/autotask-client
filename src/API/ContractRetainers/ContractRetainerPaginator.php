@@ -30,12 +30,9 @@ class ContractRetainerPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = ContractRetainerCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = ContractRetainerCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

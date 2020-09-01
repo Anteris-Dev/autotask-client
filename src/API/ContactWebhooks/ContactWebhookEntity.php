@@ -11,7 +11,7 @@ use Spatie\DataTransferObject\DataTransferObject;
 class ContactWebhookEntity extends DataTransferObject
 {
     public string $deactivationUrl;
-    public int $id;
+    public $id;
     public bool $isActive;
     public ?bool $isReady;
     public ?bool $isSubscribedToCreateEvents;
@@ -24,6 +24,8 @@ class ContactWebhookEntity extends DataTransferObject
     public bool $sendThresholdExceededNotification;
     public ?string $webhookGUID;
     public string $webhookUrl;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ContactWebhook entity.

@@ -28,7 +28,7 @@ class InternalLocationWithBusinessHourEntity extends DataTransferObject
     public ?Carbon $holidayHoursStartTime;
     public ?int $holidayHoursType;
     public ?int $holidaySetID;
-    public int $id;
+    public $id;
     public ?bool $isDefault;
     public ?Carbon $mondayBusinessHoursEndTime;
     public ?Carbon $mondayBusinessHoursStartTime;
@@ -61,6 +61,8 @@ class InternalLocationWithBusinessHourEntity extends DataTransferObject
     public ?Carbon $wednesdayBusinessHoursStartTime;
     public ?Carbon $wednesdayExtendedHoursEndTime;
     public ?Carbon $wednesdayExtendedHoursStartTime;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new InternalLocationWithBusinessHour entity.

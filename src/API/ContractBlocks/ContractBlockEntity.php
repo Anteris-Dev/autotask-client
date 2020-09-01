@@ -17,13 +17,15 @@ class ContractBlockEntity extends DataTransferObject
     public float $hourlyRate;
     public float $hours;
     public ?float $hoursApproved;
-    public int $id;
+    public $id;
     public ?string $invoiceNumber;
     public ?bool $isPaid;
     public ?string $paymentNumber;
     public ?int $paymentType;
     public Carbon $startDate;
     public ?int $status;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ContractBlock entity.

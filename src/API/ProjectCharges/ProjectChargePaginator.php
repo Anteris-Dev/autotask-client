@@ -30,12 +30,9 @@ class ProjectChargePaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = ProjectChargeCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = ProjectChargeCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**
