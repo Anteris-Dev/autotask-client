@@ -23,8 +23,6 @@ abstract class AbstractTest extends TestCase
         if (file_exists( __DIR__ . '/../.env')) {
             $dotenv = Dotenv::createImmutable(__DIR__ . '/../');
             $dotenv->load();
-        } else {
-            throw new Exception('Unable to find environment file!');
         }
 
         // Next check each individual one

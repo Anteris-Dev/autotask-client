@@ -6,8 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [v0.3.1] - 2020-09-01
 
+### Added
+- Test script to composer.json file.
+
 ### Fixed
 - Invalid composer.json file.
+- Requirement of .env file existence caused tests to fail.
 
 ## [v0.3.0] - 2020-09-01
 
