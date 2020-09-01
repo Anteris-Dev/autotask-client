@@ -6,6 +6,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- `__toString()` method on the QueryBuilder classes which allows for the built query to be used as a string. (Just build your query as normal but don't execute it, `echo` it!)
+- `loop()` method to QueryBuilder which allows you to loop through all records and perform an action.
+- Unit tests in the `tests` directory. Coverage is minimal for now.
+
+### Fixed
+- GLCode, MSRP, SGDA, SIC, and SKU are now corrected as lowercase in their camel cased name.
+- `paymentTerms` and `quantityNowReceiving` are now nullable given how Autotask responds to these requests.
+- Types of _long_ and _short_ from Autotask are no longer type cast. There is not a good PHP alternative (int is too short, double does not work).
+- `contractID` is cast to an integer instead of string. (Autotask says its dataType should be string but returns int)
+- Paginator classes were being generated with a funky $contacts variable (even if they were not a contact resource! :neutral_face:)
+
 ### Removed
 - Docs directory. This belongs elsewhere.
 
