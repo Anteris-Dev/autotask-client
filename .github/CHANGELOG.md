@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `__toString()` method on the QueryBuilder classes which allows for the built query to be used as a string. (Just build your query as normal but don't execute it, `echo` it!)
 - `loop()` method to QueryBuilder which allows you to loop through all records and perform an action.
 - Unit tests in the `tests` directory. Coverage is minimal for now.
+- PHP 7.4 as an explicit dependency.
 
 ### Fixed
 - GLCode, MSRP, SGDA, SIC, and SKU are now corrected as lowercase in their camel cased name.
