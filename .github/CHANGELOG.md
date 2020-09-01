@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Invalid composer.json file.
 - Requirement of .env file existence caused tests to fail.
 
-## Removed
+### Removed
 - Tests for modules our sandbox account does not have access to.
 
 ## [v0.3.0] - 2020-09-01
