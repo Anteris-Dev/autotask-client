@@ -21,6 +21,7 @@
     },
     "license": "MIT",
     "require": {
+        "php": "^7.4",
         "guzzlehttp/guzzle": "^6.3",
         "nesbot/carbon": "^2.0",
         "spatie/data-transfer-object": "^2.0"
