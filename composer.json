@@ -30,7 +30,8 @@
     "require-dev": {
         "anteris-dev/autotask-client-generator": "^v1.0.1",
         "brianium/paratest": "^5.0",
-        "phpunit/phpunit": "^9.3"
+        "phpunit/phpunit": "^9.3",
+        "vlucas/phpdotenv": "^4.0"
     },
     "scripts": {
         "test": "vendor/bin/paratest"

@@ -26,28 +26,33 @@ abstract class AbstractTest extends TestCase
         }
 
         // Next check each individual one
-        if (! isset($_ENV['AUTOTASK_API_USERNAME'])) {
+        $username   = getenv('AUTOTASK_API_USERNAME');
+        $secret     = getenv('AUTOTASK_API_SECRET');
+        $ic         = getenv('AUTOTASK_API_INTEGRATION_CODE');
+        $baseUri    = getenv('AUTOTASK_API_BASE_URI');
+
+        if (! $username) {
             throw new Exception('Unable to find find AUTOTASK_API_USERNAME env variable!');
         }
 
-        if (! isset($_ENV['AUTOTASK_API_SECRET'])) {
+        if (! $secret) {
             throw new Exception('Unable to find find AUTOTASK_API_SECRET env variable!');
         }
 
-        if (! isset($_ENV['AUTOTASK_API_INTEGRATION_CODE'])) {
+        if (! $ic) {
             throw new Exception('Unable to find find AUTOTASK_API_INTEGRATION_CODE env variable!');
         }
 
-        if (! isset($_ENV['AUTOTASK_API_BASE_URI'])) {
+        if (! $baseUri) {
             throw new Exception('Unable to find find AUTOTASK_API_BASE_URI env variable!');
         }
 
         // Now try creating the client
         $this->client = new Client(
-            $_ENV['AUTOTASK_API_USERNAME'],
-            $_ENV['AUTOTASK_API_SECRET'],
-            $_ENV['AUTOTASK_API_INTEGRATION_CODE'],
-            $_ENV['AUTOTASK_API_BASE_URI']
+            $username,
+            $secret,
+            $ic,
+            $baseUri
         );
     }
 }
