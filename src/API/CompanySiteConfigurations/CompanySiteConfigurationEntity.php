@@ -11,11 +11,10 @@ use Spatie\DataTransferObject\DataTransferObject;
 class CompanySiteConfigurationEntity extends DataTransferObject
 {
     public int $companyID;
-    public int $id;
+    public $id;
     public ?string $locationName;
-
-    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[] */
-    public array $userDefinedFields;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new CompanySiteConfiguration entity.

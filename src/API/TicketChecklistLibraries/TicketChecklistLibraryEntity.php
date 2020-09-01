@@ -11,8 +11,10 @@ use Spatie\DataTransferObject\DataTransferObject;
 class TicketChecklistLibraryEntity extends DataTransferObject
 {
     public int $checklistLibraryID;
-    public ?int $id;
+    public $id;
     public int $ticketID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new TicketChecklistLibrary entity.

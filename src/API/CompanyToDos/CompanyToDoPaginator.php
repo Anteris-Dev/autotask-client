@@ -30,12 +30,9 @@ class CompanyToDoPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = CompanyToDoCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = CompanyToDoCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

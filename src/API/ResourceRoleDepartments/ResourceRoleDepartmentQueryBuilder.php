@@ -4,6 +4,8 @@ namespace Anteris\Autotask\API\ResourceRoleDepartments;
 
 use Anteris\Autotask\HttpClient;
 use Exception;
+use GuzzleHttp\Psr7\Uri;
+use GuzzleHttp\Psr7\UriResolver;
 
 /**
  * Helps build a query to send to Autotask.
@@ -51,6 +53,30 @@ class ResourceRoleDepartmentQueryBuilder
          }
 
          return $responseArray['queryCount'];
+    }
+
+    /**
+     * Pages through all the records, executing the callback for each record.
+     *
+     * @param  callable  $callback  The callback to be executed for each record.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
+    public function loop(callable $callback)
+    {
+        $currentPage = $this->paginate();
+
+        while(True) {
+            foreach ($currentPage->collection as $collectionItem) {
+                $callback($collectionItem);
+            }
+
+            if (! $currentPage->hasNextPage()) {
+                break;
+            }
+
+            $currentPage = $currentPage->nextPage();
+        }
     }
 
     /**
@@ -257,5 +283,22 @@ class ResourceRoleDepartmentQueryBuilder
         ) {
             throw new Exception("Invalid query operator: $operator");
         }
+    }
+
+    /**
+     * Converts the built query into a string and returns.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
+    public function __toString()
+    {
+        $uri = UriResolver::resolve(
+            $this->client->getClient()->getConfig()['base_uri'],
+            new Uri('ResourceRoleDepartments/query')
+        );
+
+        return (string) Uri::withQueryValues($uri, [
+            'search' => json_encode($this->toArray())
+        ]);
     }
 }

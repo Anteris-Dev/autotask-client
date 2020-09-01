@@ -30,12 +30,9 @@ class TicketChecklistItemPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = TicketChecklistItemCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = TicketChecklistItemCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

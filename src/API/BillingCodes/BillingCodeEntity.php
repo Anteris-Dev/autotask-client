@@ -16,7 +16,7 @@ class BillingCodeEntity extends DataTransferObject
     public ?string $description;
     public ?string $externalNumber;
     public ?int $generalLedgerAccount;
-    public int $id;
+    public $id;
     public bool $isActive;
     public ?bool $isExcludedFromNewContracts;
     public ?float $markupRate;
@@ -25,6 +25,8 @@ class BillingCodeEntity extends DataTransferObject
     public float $unitCost;
     public float $unitPrice;
     public ?int $useType;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new BillingCode entity.

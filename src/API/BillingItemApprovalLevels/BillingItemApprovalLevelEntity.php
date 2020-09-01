@@ -16,6 +16,8 @@ class BillingItemApprovalLevelEntity extends DataTransferObject
     public int $approvalResourceID;
     public int $id;
     public int $timeEntryID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new BillingItemApprovalLevel entity.

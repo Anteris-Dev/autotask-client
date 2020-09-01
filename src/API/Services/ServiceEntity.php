@@ -15,18 +15,20 @@ class ServiceEntity extends DataTransferObject
     public ?Carbon $createDate;
     public ?int $creatorResourceID;
     public ?string $description;
-    public int $id;
+    public $id;
     public ?string $invoiceDescription;
     public ?bool $isActive;
     public ?Carbon $lastModifiedDate;
     public ?float $markupRate;
     public string $name;
     public int $periodType;
-    public ?int $serviceLevelAgreementID;
+    public $serviceLevelAgreementID;
     public ?float $unitCost;
     public float $unitPrice;
     public ?int $updateResourceID;
     public ?int $vendorCompanyID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new Service entity.

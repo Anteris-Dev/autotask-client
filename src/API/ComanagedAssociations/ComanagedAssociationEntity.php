@@ -11,8 +11,10 @@ use Spatie\DataTransferObject\DataTransferObject;
 class ComanagedAssociationEntity extends DataTransferObject
 {
     public int $companyID;
-    public int $id;
+    public $id;
     public int $resourceID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ComanagedAssociation entity.

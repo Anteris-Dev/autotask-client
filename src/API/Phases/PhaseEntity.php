@@ -17,7 +17,7 @@ class PhaseEntity extends DataTransferObject
     public ?Carbon $dueDate;
     public ?float $estimatedHours;
     public ?string $externalID;
-    public int $id;
+    public $id;
     public ?bool $isScheduled;
     public ?Carbon $lastActivityDateTime;
     public ?int $parentPhaseID;
@@ -25,6 +25,8 @@ class PhaseEntity extends DataTransferObject
     public int $projectID;
     public ?Carbon $startDate;
     public string $title;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new Phase entity.

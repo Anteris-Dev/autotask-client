@@ -11,10 +11,12 @@ use Spatie\DataTransferObject\DataTransferObject;
 class ContactWebhookFieldEntity extends DataTransferObject
 {
     public int $fieldID;
-    public int $id;
+    public $id;
     public bool $isDisplayAlwaysField;
     public bool $isSubscribedField;
     public int $webhookID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ContactWebhookField entity.

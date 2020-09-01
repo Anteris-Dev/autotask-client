@@ -10,11 +10,13 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class CompanyWebhookUdfFieldEntity extends DataTransferObject
 {
-    public int $id;
+    public $id;
     public bool $isDisplayAlwaysField;
     public bool $isSubscribedField;
     public int $udfFieldID;
     public int $webhookID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new CompanyWebhookUdfField entity.

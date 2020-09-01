@@ -15,13 +15,13 @@ class BillingItemEntity extends DataTransferObject
     public ?int $billingCodeID;
     public int $billingItemType;
     public ?int $companyID;
-    public ?int $configurationItemID;
-    public ?int $contractChargeID;
+    public $configurationItemID;
+    public $contractChargeID;
     public ?int $contractID;
     public ?string $description;
     public ?int $expenseItemID;
     public ?float $extendedPrice;
-    public int $id;
+    public $id;
     public ?float $internalCurrencyExtendedPrice;
     public ?float $internalCurrencyRate;
     public ?float $internalCurrencyTaxDollars;
@@ -32,30 +32,32 @@ class BillingItemEntity extends DataTransferObject
     public ?string $itemName;
     public ?string $lineItemFullDescription;
     public ?string $lineItemGroupDescription;
-    public ?int $milestoneID;
+    public $milestoneID;
     public int $nonBillable;
     public ?int $organizationalLevelAssociationID;
     public ?float $ourCost;
     public ?Carbon $postedDate;
     public ?Carbon $postedOnTime;
-    public ?int $projectChargeID;
+    public $projectChargeID;
     public ?int $projectID;
     public ?string $purchaseOrderNumber;
     public ?float $quantity;
     public ?float $rate;
     public ?int $roleID;
-    public ?int $serviceBundleID;
-    public ?int $serviceID;
-    public ?int $sortOrderID;
+    public $serviceBundleID;
+    public $serviceID;
+    public $sortOrderID;
     public int $subType;
     public ?int $taskID;
     public ?float $taxDollars;
-    public ?int $ticketChargeID;
+    public $ticketChargeID;
     public ?int $ticketID;
     public ?int $timeEntryID;
     public ?float $totalAmount;
-    public ?int $vendorID;
+    public $vendorID;
     public ?Carbon $webServiceDate;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new BillingItem entity.

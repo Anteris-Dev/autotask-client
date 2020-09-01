@@ -10,9 +10,11 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class ContractExclusionBillingCodeEntity extends DataTransferObject
 {
-    public int $billingCodeID;
+    public $billingCodeID;
     public int $contractID;
-    public int $id;
+    public $id;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ContractExclusionBillingCode entity.

@@ -13,7 +13,7 @@ class ServiceLevelAgreementResultEntity extends DataTransferObject
     public ?float $firstResponseElapsedHours;
     public ?int $firstResponseInitiatingResourceID;
     public ?int $firstResponseResourceID;
-    public int $id;
+    public $id;
     public ?bool $isFirstResponseMet;
     public ?bool $isResolutionMet;
     public ?bool $isResolutionPlanMet;
@@ -23,6 +23,8 @@ class ServiceLevelAgreementResultEntity extends DataTransferObject
     public ?int $resolutionResourceID;
     public ?string $serviceLevelAgreementName;
     public ?int $ticketID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ServiceLevelAgreementResult entity.

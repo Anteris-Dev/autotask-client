@@ -30,12 +30,9 @@ class ContactWebhookFieldPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = ContactWebhookFieldCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = ContactWebhookFieldCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

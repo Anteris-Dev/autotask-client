@@ -12,9 +12,11 @@ class TicketRmaCreditEntity extends DataTransferObject
 {
     public float $creditAmount;
     public ?string $creditDetails;
-    public int $id;
+    public $id;
     public ?float $internalCurrencyCreditAmount;
     public int $ticketID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new TicketRmaCredit entity.

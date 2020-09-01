@@ -30,12 +30,9 @@ class ProductTierPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = ProductTierCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = ProductTierCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

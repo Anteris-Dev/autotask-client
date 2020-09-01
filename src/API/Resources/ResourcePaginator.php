@@ -30,12 +30,9 @@ class ResourcePaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = ResourceCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = ResourceCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

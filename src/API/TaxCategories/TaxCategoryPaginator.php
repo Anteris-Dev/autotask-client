@@ -30,12 +30,9 @@ class TaxCategoryPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = TaxCategoryCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = TaxCategoryCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

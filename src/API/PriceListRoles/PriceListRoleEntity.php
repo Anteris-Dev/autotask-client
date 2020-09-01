@@ -12,9 +12,11 @@ class PriceListRoleEntity extends DataTransferObject
 {
     public int $currencyID;
     public ?float $hourlyRate;
-    public int $id;
+    public $id;
     public int $roleID;
     public bool $usesInternalCurrencyPrice;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new PriceListRole entity.

@@ -13,9 +13,11 @@ class QuoteLocationEntity extends DataTransferObject
     public ?string $address1;
     public ?string $address2;
     public ?string $city;
-    public int $id;
+    public $id;
     public ?string $postalCode;
     public ?string $state;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new QuoteLocation entity.

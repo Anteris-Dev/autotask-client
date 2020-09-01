@@ -13,20 +13,22 @@ class CompanyToDoEntity extends DataTransferObject
 {
     public int $actionType;
     public ?string $activityDescription;
-    public int $assignedToResourceID;
-    public int $companyID;
+    public $assignedToResourceID;
+    public $companyID;
     public ?Carbon $completedDate;
-    public ?int $contactID;
+    public $contactID;
     public ?int $contractID;
     public ?Carbon $createDateTime;
-    public ?int $creatorResourceID;
+    public $creatorResourceID;
     public Carbon $endDateTime;
-    public int $id;
+    public $id;
     public ?int $impersonatorCreatorResourceID;
     public ?Carbon $lastModifiedDate;
-    public ?int $opportunityID;
+    public $opportunityID;
     public Carbon $startDateTime;
-    public ?int $ticketID;
+    public $ticketID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new CompanyToDo entity.

@@ -99,7 +99,7 @@ class CompanyTeamService
     /**
      * Returns an instance of the query builder for this entity.
      *
-     * @see CompanyTeamQueryBuilder The query builder class.
+     * @see QueryBuilder The query builder class.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */

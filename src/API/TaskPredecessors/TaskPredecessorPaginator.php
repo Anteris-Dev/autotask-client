@@ -30,12 +30,9 @@ class TaskPredecessorPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = TaskPredecessorCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = TaskPredecessorCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

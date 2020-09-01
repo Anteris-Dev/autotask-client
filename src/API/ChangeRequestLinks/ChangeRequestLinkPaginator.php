@@ -30,12 +30,9 @@ class ChangeRequestLinkPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = ChangeRequestLinkCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = ChangeRequestLinkCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

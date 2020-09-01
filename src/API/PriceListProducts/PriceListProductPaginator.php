@@ -30,12 +30,9 @@ class PriceListProductPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = PriceListProductCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = PriceListProductCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

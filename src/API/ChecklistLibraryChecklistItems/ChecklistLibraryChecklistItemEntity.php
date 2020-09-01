@@ -11,11 +11,13 @@ use Spatie\DataTransferObject\DataTransferObject;
 class ChecklistLibraryChecklistItemEntity extends DataTransferObject
 {
     public int $checklistLibraryID;
-    public int $id;
+    public $id;
     public ?bool $isImportant;
     public string $itemName;
     public ?int $knowledgebaseArticleID;
     public ?int $position;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ChecklistLibraryChecklistItem entity.

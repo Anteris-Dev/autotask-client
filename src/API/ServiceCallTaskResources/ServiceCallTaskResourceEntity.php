@@ -10,9 +10,11 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class ServiceCallTaskResourceEntity extends DataTransferObject
 {
-    public int $id;
+    public $id;
     public int $resourceID;
     public int $serviceCallTaskID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ServiceCallTaskResource entity.

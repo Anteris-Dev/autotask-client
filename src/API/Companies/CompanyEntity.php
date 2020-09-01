@@ -32,14 +32,14 @@ class CompanyEntity extends DataTransferObject
     public ?int $classification;
     public string $companyName;
     public ?string $companyNumber;
-    public int $companyType;
+    public $companyType;
     public ?int $competitorID;
     public ?int $countryID;
     public ?Carbon $createDate;
     public ?int $createdByResourceID;
     public ?int $currencyID;
     public ?string $fax;
-    public int $id;
+    public $id;
     public ?int $impersonatorCreatorResourceID;
     public ?int $invoiceEmailMessageID;
     public ?int $invoiceMethod;
@@ -68,9 +68,8 @@ class CompanyEntity extends DataTransferObject
     public ?int $taxRegionID;
     public ?int $territoryID;
     public ?string $webAddress;
-
-    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[] */
-    public array $userDefinedFields;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new Company entity.

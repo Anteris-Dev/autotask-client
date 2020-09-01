@@ -10,15 +10,17 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class CountryEntity extends DataTransferObject
 {
-    public int $addressFormatID;
+    public $addressFormatID;
     public ?string $countryCode;
     public string $displayName;
-    public int $id;
+    public $id;
     public ?int $invoiceTemplateID;
     public ?bool $isActive;
     public ?bool $isDefaultCountry;
     public ?string $name;
     public ?int $quoteTemplateID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new Country entity.

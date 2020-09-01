@@ -11,10 +11,12 @@ use Spatie\DataTransferObject\DataTransferObject;
 class PriceListServiceBundleEntity extends DataTransferObject
 {
     public int $currencyID;
-    public int $id;
+    public $id;
     public int $serviceBundleID;
     public ?float $unitPrice;
     public bool $usesInternalCurrencyPrice;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new PriceListServiceBundle entity.

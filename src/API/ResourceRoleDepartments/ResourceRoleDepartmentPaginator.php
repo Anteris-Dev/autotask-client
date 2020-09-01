@@ -30,12 +30,9 @@ class ResourceRoleDepartmentPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = ResourceRoleDepartmentCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = ResourceRoleDepartmentCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

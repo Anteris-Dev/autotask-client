@@ -30,12 +30,9 @@ class ServiceBundlePaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = ServiceBundleCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = ServiceBundleCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

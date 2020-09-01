@@ -22,7 +22,7 @@ class ChangeOrderChargeEntity extends DataTransferObject
     public Carbon $datePurchased;
     public ?string $description;
     public ?float $extendedCost;
-    public int $id;
+    public $id;
     public ?float $internalCurrencyBillableAmount;
     public ?float $internalCurrencyUnitPrice;
     public ?string $internalPurchaseOrderNumber;
@@ -40,6 +40,8 @@ class ChangeOrderChargeEntity extends DataTransferObject
     public ?float $unitCost;
     public ?float $unitPrice;
     public ?float $unitQuantity;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ChangeOrderCharge entity.

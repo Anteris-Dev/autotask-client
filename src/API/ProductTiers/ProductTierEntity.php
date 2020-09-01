@@ -10,11 +10,13 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class ProductTierEntity extends DataTransferObject
 {
-    public int $id;
+    public $id;
     public int $productID;
     public float $unitCost;
     public float $unitPrice;
     public ?float $upToUnitCount;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ProductTier entity.

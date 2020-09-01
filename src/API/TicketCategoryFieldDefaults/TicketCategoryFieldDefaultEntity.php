@@ -12,7 +12,7 @@ class TicketCategoryFieldDefaultEntity extends DataTransferObject
 {
     public ?string $description;
     public ?float $estimatedHours;
-    public int $id;
+    public $id;
     public ?int $issueTypeID;
     public ?int $organizationalLevelAssociationID;
     public ?int $priority;
@@ -27,6 +27,8 @@ class TicketCategoryFieldDefaultEntity extends DataTransferObject
     public ?int $ticketTypeID;
     public ?string $title;
     public ?int $workTypeID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new TicketCategoryFieldDefault entity.

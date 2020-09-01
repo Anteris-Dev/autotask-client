@@ -11,8 +11,10 @@ use Spatie\DataTransferObject\DataTransferObject;
 class TicketAdditionalConfigurationItemEntity extends DataTransferObject
 {
     public int $configurationItemID;
-    public int $id;
+    public $id;
     public int $ticketID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new TicketAdditionalConfigurationItem entity.

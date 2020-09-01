@@ -12,9 +12,11 @@ class ContractRateEntity extends DataTransferObject
 {
     public float $contractHourlyRate;
     public int $contractID;
-    public int $id;
+    public $id;
     public ?float $internalCurrencyContractHourlyRate;
     public int $roleID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ContractRate entity.

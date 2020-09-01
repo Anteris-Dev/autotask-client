@@ -99,7 +99,7 @@ class ProjectChargeService
     /**
      * Returns an instance of the query builder for this entity.
      *
-     * @see ProjectChargeQueryBuilder The query builder class.
+     * @see QueryBuilder The query builder class.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */

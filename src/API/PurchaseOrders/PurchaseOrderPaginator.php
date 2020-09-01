@@ -30,12 +30,9 @@ class PurchaseOrderPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = PurchaseOrderCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = PurchaseOrderCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

@@ -12,17 +12,21 @@ use Spatie\DataTransferObject\DataTransferObject;
 class OpportunityAttachmentEntity extends DataTransferObject
 {
     public ?Carbon $attachDate;
-    public ?int $attachedByContactID;
-    public ?int $attachedByResourceID;
+    public $attachedByContactID;
+    public $attachedByResourceID;
     public string $attachmentType;
     public ?string $contentType;
-    public ?int $fileSize;
+    public $fileSize;
     public string $fullPath;
     public ?int $impersonatorCreatorResourceID;
-    public ?int $opportunityID;
-    public ?int $parentID;
+    public $opportunityID;
+    public $parentID;
     public int $publish;
     public string $title;
+    public $id;
+    public ?string $data;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new OpportunityAttachment entity.

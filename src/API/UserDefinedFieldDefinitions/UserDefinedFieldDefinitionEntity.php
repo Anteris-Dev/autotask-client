@@ -12,12 +12,12 @@ use Spatie\DataTransferObject\DataTransferObject;
 class UserDefinedFieldDefinitionEntity extends DataTransferObject
 {
     public ?Carbon $createDate;
-    public ?int $crmToProjectUdfId;
+    public $crmToProjectUdfId;
     public int $dataType;
     public ?string $defaultValue;
     public ?string $description;
     public ?int $displayFormat;
-    public int $id;
+    public $id;
     public ?bool $isActive;
     public ?bool $isEncrypted;
     public ?bool $isFieldMapping;
@@ -30,6 +30,8 @@ class UserDefinedFieldDefinitionEntity extends DataTransferObject
     public ?int $numberOfDecimalPlaces;
     public ?int $sortOrder;
     public int $udfType;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new UserDefinedFieldDefinition entity.

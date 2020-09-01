@@ -10,11 +10,13 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class ActionTypeEntity extends DataTransferObject
 {
-    public int $id;
+    public $id;
     public bool $isActive;
     public ?bool $isSystemActionType;
     public string $name;
     public int $view;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ActionType entity.

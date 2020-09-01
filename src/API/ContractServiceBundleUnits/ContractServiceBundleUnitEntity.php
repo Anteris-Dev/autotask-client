@@ -23,6 +23,8 @@ class ContractServiceBundleUnitEntity extends DataTransferObject
     public int $serviceBundleID;
     public Carbon $startDate;
     public int $units;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ContractServiceBundleUnit entity.

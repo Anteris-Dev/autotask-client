@@ -30,12 +30,9 @@ class ConfigurationItemTypePaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = ConfigurationItemTypeCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = ConfigurationItemTypeCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

@@ -30,12 +30,9 @@ class ContractServiceUnitPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = ContractServiceUnitCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = ContractServiceUnitCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

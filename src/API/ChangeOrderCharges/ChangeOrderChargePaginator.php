@@ -30,12 +30,9 @@ class ChangeOrderChargePaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = ChangeOrderChargeCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = ChangeOrderChargeCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

@@ -18,12 +18,14 @@ class ContractMilestoneEntity extends DataTransferObject
     public ?int $creatorResourceID;
     public Carbon $dateDue;
     public ?string $description;
-    public int $id;
+    public $id;
     public ?float $internalCurrencyAmount;
     public bool $isInitialPayment;
     public ?int $organizationalLevelAssociationID;
     public int $status;
     public string $title;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ContractMilestone entity.

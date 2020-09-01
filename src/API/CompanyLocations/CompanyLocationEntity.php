@@ -19,7 +19,7 @@ class CompanyLocationEntity extends DataTransferObject
     public ?int $countryID;
     public ?string $description;
     public ?string $fax;
-    public int $id;
+    public $id;
     public ?bool $isActive;
     public ?bool $isPrimary;
     public ?bool $isTaxExempt;
@@ -30,6 +30,8 @@ class CompanyLocationEntity extends DataTransferObject
     public ?float $roundtripDistance;
     public ?string $state;
     public ?int $taxRegionID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new CompanyLocation entity.

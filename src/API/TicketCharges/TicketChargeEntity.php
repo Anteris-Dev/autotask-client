@@ -12,16 +12,16 @@ use Spatie\DataTransferObject\DataTransferObject;
 class TicketChargeEntity extends DataTransferObject
 {
     public ?float $billableAmount;
-    public ?int $billingCodeID;
+    public $billingCodeID;
     public int $chargeType;
-    public ?int $contractServiceBundleID;
-    public ?int $contractServiceID;
+    public $contractServiceBundleID;
+    public $contractServiceID;
     public ?Carbon $createDate;
-    public ?int $creatorResourceID;
+    public $creatorResourceID;
     public Carbon $datePurchased;
     public ?string $description;
     public ?float $extendedCost;
-    public int $id;
+    public $id;
     public ?float $internalCurrencyBillableAmount;
     public ?float $internalCurrencyUnitPrice;
     public ?string $internalPurchaseOrderNumber;
@@ -30,15 +30,17 @@ class TicketChargeEntity extends DataTransferObject
     public string $name;
     public ?string $notes;
     public ?int $organizationalLevelAssociationID;
-    public ?int $productID;
+    public $productID;
     public ?string $purchaseOrderNumber;
-    public ?int $status;
-    public ?int $statusLastModifiedBy;
+    public $status;
+    public $statusLastModifiedBy;
     public ?Carbon $statusLastModifiedDate;
-    public int $ticketID;
+    public $ticketID;
     public ?float $unitCost;
     public ?float $unitPrice;
     public float $unitQuantity;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new TicketCharge entity.

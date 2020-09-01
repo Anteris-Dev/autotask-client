@@ -11,12 +11,14 @@ use Spatie\DataTransferObject\DataTransferObject;
 class TicketCategoryEntity extends DataTransferObject
 {
     public int $displayColorRGB;
-    public int $id;
+    public $id;
     public bool $isActive;
     public ?bool $isApiOnly;
     public ?bool $isGlobalDefault;
     public string $name;
     public ?string $nickname;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new TicketCategory entity.

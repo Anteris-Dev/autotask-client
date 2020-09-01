@@ -27,7 +27,7 @@ class OpportunityEntity extends DataTransferObject
     public ?int $creatorResourceID;
     public ?string $description;
     public ?string $helpNeeded;
-    public int $id;
+    public $id;
     public ?int $impersonatorCreatorResourceID;
     public ?Carbon $lastActivity;
     public ?int $leadSource;
@@ -71,6 +71,8 @@ class OpportunityEntity extends DataTransferObject
     public ?string $winReasonDetail;
     public ?float $yearlyCost;
     public ?float $yearlyRevenue;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new Opportunity entity.

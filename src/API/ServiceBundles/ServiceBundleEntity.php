@@ -15,18 +15,20 @@ class ServiceBundleEntity extends DataTransferObject
     public ?Carbon $createDate;
     public ?int $creatorResourceID;
     public ?string $description;
-    public int $id;
+    public $id;
     public ?string $invoiceDescription;
     public ?bool $isActive;
     public ?Carbon $lastModifiedDate;
     public string $name;
     public ?float $percentageDiscount;
     public int $periodType;
-    public ?int $serviceLevelAgreementID;
+    public $serviceLevelAgreementID;
     public ?float $unitCost;
     public ?float $unitDiscount;
     public ?float $unitPrice;
     public ?int $updateResourceID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ServiceBundle entity.

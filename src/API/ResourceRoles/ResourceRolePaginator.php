@@ -30,12 +30,9 @@ class ResourceRolePaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = ResourceRoleCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = ResourceRoleCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

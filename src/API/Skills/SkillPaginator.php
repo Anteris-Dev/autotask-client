@@ -30,12 +30,9 @@ class SkillPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = SkillCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = SkillCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

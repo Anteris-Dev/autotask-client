@@ -30,7 +30,7 @@ class ContactEntity extends DataTransferObject
     public ?string $facebookUrl;
     public ?string $faxNumber;
     public string $firstName;
-    public int $id;
+    public $id;
     public ?int $impersonatorCreatorResourceID;
     public int $isActive;
     public ?bool $isOptedOutFromBulkEmail;
@@ -54,9 +54,8 @@ class ContactEntity extends DataTransferObject
     public ?string $title;
     public ?string $twitterUrl;
     public ?string $zipCode;
-
-    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[] */
-    public array $userDefinedFields;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new Contact entity.

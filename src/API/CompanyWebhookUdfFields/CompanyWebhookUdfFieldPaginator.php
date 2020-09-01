@@ -30,12 +30,9 @@ class CompanyWebhookUdfFieldPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = CompanyWebhookUdfFieldCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = CompanyWebhookUdfFieldCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

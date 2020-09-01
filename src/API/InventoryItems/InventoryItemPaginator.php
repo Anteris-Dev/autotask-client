@@ -30,12 +30,9 @@ class InventoryItemPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = InventoryItemCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = InventoryItemCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

@@ -30,12 +30,9 @@ class CompanyAttachmentPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = CompanyAttachmentCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = CompanyAttachmentCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

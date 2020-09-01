@@ -30,12 +30,9 @@ class QuoteTemplatePaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = QuoteTemplateCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = QuoteTemplateCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

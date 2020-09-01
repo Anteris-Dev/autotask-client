@@ -30,12 +30,9 @@ class ContractTicketPurchasePaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = ContractTicketPurchaseCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = ContractTicketPurchaseCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

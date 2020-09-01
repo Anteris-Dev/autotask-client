@@ -11,10 +11,12 @@ use Spatie\DataTransferObject\DataTransferObject;
 class PaymentTermEntity extends DataTransferObject
 {
     public ?string $description;
-    public int $id;
+    public $id;
     public ?bool $isActive;
     public string $name;
     public ?int $paymentDueInDays;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new PaymentTerm entity.

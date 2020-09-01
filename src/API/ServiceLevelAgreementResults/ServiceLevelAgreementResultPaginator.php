@@ -30,12 +30,9 @@ class ServiceLevelAgreementResultPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = ServiceLevelAgreementResultCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = ServiceLevelAgreementResultCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

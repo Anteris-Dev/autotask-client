@@ -11,26 +11,28 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class NotificationHistoryEntity extends DataTransferObject
 {
-    public ?int $companyID;
+    public $companyID;
     public ?string $entityNumber;
     public ?string $entityTitle;
-    public int $id;
-    public ?int $initiatingContactID;
-    public ?int $initiatingResourceID;
+    public $id;
+    public $initiatingContactID;
+    public $initiatingResourceID;
     public bool $isActive;
     public bool $isDeleted;
     public bool $isTemplateJob;
     public ?int $notificationHistoryTypeID;
     public ?Carbon $notificationSentTime;
-    public ?int $opportunityID;
-    public ?int $projectID;
-    public ?int $quoteID;
+    public $opportunityID;
+    public $projectID;
+    public $quoteID;
     public ?string $recipientDisplayName;
     public ?string $recipientEmailAddress;
-    public ?int $taskID;
+    public $taskID;
     public ?string $templateName;
-    public ?int $ticketID;
-    public ?int $timeEntryID;
+    public $ticketID;
+    public $timeEntryID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new NotificationHistory entity.

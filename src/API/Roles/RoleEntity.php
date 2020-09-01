@@ -13,13 +13,15 @@ class RoleEntity extends DataTransferObject
     public ?string $description;
     public float $hourlyFactor;
     public float $hourlyRate;
-    public int $id;
+    public $id;
     public bool $isActive;
     public ?bool $isExcludedFromNewContracts;
     public ?bool $isSystemRole;
     public string $name;
     public ?int $quoteItemDefaultTaxCategoryId;
     public ?int $roleType;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new Role entity.

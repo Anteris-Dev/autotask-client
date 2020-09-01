@@ -15,7 +15,9 @@ class ContactBillingProductAssociationEntity extends DataTransferObject
     public int $contactID;
     public Carbon $effectiveDate;
     public ?Carbon $expirationDate;
-    public int $id;
+    public $id;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ContactBillingProductAssociation entity.

@@ -12,7 +12,9 @@ class ContactGroupContactEntity extends DataTransferObject
 {
     public int $contactGroupId;
     public int $contactId;
-    public int $id;
+    public $id;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ContactGroupContact entity.

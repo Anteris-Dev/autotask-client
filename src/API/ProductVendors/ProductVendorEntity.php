@@ -10,13 +10,15 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class ProductVendorEntity extends DataTransferObject
 {
-    public int $id;
+    public $id;
     public bool $isActive;
     public bool $isDefault;
     public int $productID;
     public ?float $vendorCost;
     public int $vendorID;
     public ?string $vendorPartNumber;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ProductVendor entity.

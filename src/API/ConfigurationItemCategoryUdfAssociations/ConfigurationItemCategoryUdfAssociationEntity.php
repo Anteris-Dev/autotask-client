@@ -11,9 +11,11 @@ use Spatie\DataTransferObject\DataTransferObject;
 class ConfigurationItemCategoryUdfAssociationEntity extends DataTransferObject
 {
     public int $configurationItemCategoryID;
-    public int $id;
+    public $id;
     public bool $isRequired;
     public int $userDefinedFieldDefinitionID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ConfigurationItemCategoryUdfAssociation entity.

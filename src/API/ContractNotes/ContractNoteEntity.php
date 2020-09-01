@@ -11,7 +11,7 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class ContractNoteEntity extends DataTransferObject
 {
-    public string $contractID;
+    public int $contractID;
     public ?Carbon $createDateTime;
     public ?int $creatorResourceID;
     public string $description;
@@ -20,6 +20,8 @@ class ContractNoteEntity extends DataTransferObject
     public ?int $impersonatorUpdaterResourceID;
     public ?Carbon $lastActivityDate;
     public string $title;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ContractNote entity.

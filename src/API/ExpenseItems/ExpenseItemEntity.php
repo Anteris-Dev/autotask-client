@@ -20,9 +20,9 @@ class ExpenseItemEntity extends DataTransferObject
     public ?int $expenseCurrencyID;
     public Carbon $expenseDate;
     public int $expenseReportID;
-    public ?string $gLCode;
+    public ?string $glCode;
     public bool $haveReceipt;
-    public int $id;
+    public $id;
     public ?float $internalCurrencyExpenseAmount;
     public ?float $internalCurrencyReimbursementAmount;
     public bool $isBillableToCompany;
@@ -39,6 +39,8 @@ class ExpenseItemEntity extends DataTransferObject
     public ?int $taskID;
     public ?int $ticketID;
     public ?int $workType;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ExpenseItem entity.

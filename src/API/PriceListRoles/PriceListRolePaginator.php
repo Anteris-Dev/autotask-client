@@ -30,12 +30,9 @@ class PriceListRolePaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = PriceListRoleCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = PriceListRoleCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

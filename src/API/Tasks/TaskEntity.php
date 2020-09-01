@@ -28,7 +28,7 @@ class TaskEntity extends DataTransferObject
     public ?float $estimatedHours;
     public ?string $externalID;
     public ?float $hoursToBeScheduled;
-    public int $id;
+    public $id;
     public ?bool $isTaskBillable;
     public ?bool $isVisibleInClientPortal;
     public ?Carbon $lastActivityDateTime;
@@ -46,6 +46,8 @@ class TaskEntity extends DataTransferObject
     public ?string $taskNumber;
     public int $taskType;
     public string $title;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new Task entity.

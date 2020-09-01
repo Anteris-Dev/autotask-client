@@ -15,7 +15,7 @@ class SubscriptionEntity extends DataTransferObject
     public ?string $description;
     public Carbon $effectiveDate;
     public Carbon $expirationDate;
-    public int $id;
+    public $id;
     public ?int $impersonatorCreatorResourceID;
     public int $materialCodeID;
     public ?int $organizationalLevelAssociationID;
@@ -28,6 +28,8 @@ class SubscriptionEntity extends DataTransferObject
     public ?float $totalCost;
     public ?float $totalPrice;
     public ?int $vendorID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new Subscription entity.

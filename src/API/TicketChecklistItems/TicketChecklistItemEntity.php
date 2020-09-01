@@ -13,13 +13,15 @@ class TicketChecklistItemEntity extends DataTransferObject
 {
     public ?int $completedByResourceID;
     public ?Carbon $completedDateTime;
-    public int $id;
+    public $id;
     public ?bool $isCompleted;
     public ?bool $isImportant;
     public string $itemName;
     public ?int $knowledgebaseArticleID;
     public ?int $position;
     public int $ticketID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new TicketChecklistItem entity.

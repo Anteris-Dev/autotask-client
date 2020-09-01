@@ -30,12 +30,9 @@ class ContactBillingProductAssociationPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = ContactBillingProductAssociationCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = ContactBillingProductAssociationCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

@@ -29,7 +29,7 @@ class QuoteEntity extends DataTransferObject
     public ?string $extApprovalResponseSignature;
     public ?string $externalQuoteNumber;
     public ?int $groupByID;
-    public int $id;
+    public $id;
     public ?int $impersonatorCreatorResourceID;
     public ?bool $isActive;
     public ?Carbon $lastActivityDate;
@@ -49,6 +49,8 @@ class QuoteEntity extends DataTransferObject
     public ?bool $showTaxCategory;
     public int $soldToLocationID;
     public ?int $taxRegionID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new Quote entity.

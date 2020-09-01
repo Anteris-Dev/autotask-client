@@ -12,13 +12,15 @@ class ClientPortalUserEntity extends DataTransferObject
 {
     public int $contactID;
     public int $dateFormat;
-    public int $id;
+    public $id;
     public bool $isClientPortalActive;
     public int $numberFormat;
     public ?string $password;
     public int $securityLevel;
     public int $timeFormat;
     public string $userName;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ClientPortalUser entity.

@@ -12,7 +12,7 @@ class InventoryItemEntity extends DataTransferObject
 {
     public ?int $backOrderQuantity;
     public ?string $bin;
-    public int $id;
+    public $id;
     public ?int $impersonatorCreatorResourceID;
     public int $inventoryLocationID;
     public int $productID;
@@ -23,6 +23,8 @@ class InventoryItemEntity extends DataTransferObject
     public ?int $quantityPicked;
     public ?int $quantityReserved;
     public ?string $referenceNumber;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new InventoryItem entity.

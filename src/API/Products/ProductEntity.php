@@ -16,7 +16,7 @@ class ProductEntity extends DataTransferObject
     public ?string $description;
     public ?bool $doesNotRequireProcurement;
     public ?string $externalProductID;
-    public int $id;
+    public $id;
     public ?int $impersonatorCreatorResourceID;
     public ?string $internalProductID;
     public bool $isActive;
@@ -26,16 +26,18 @@ class ProductEntity extends DataTransferObject
     public ?string $manufacturerName;
     public ?string $manufacturerProductName;
     public ?float $markupRate;
-    public ?float $mSRP;
+    public ?float $msrp;
     public string $name;
     public ?int $periodType;
     public ?int $priceCostMethod;
     public int $productBillingCodeID;
     public ?int $productCategory;
-    public ?string $sKU;
+    public ?string $sku;
     public ?float $unitCost;
     public ?float $unitPrice;
     public ?string $vendorProductNumber;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new Product entity.

@@ -28,8 +28,8 @@ class ContractEntity extends DataTransferObject
     public ?float $estimatedCost;
     public ?float $estimatedHours;
     public ?float $estimatedRevenue;
-    public ?int $exclusionContractID;
-    public int $id;
+    public $exclusionContractID;
+    public $id;
     public ?float $internalCurrencyOverageBillingRate;
     public ?float $internalCurrencySetupFee;
     public ?bool $isCompliant;
@@ -38,13 +38,15 @@ class ContractEntity extends DataTransferObject
     public ?int $organizationalLevelAssociationID;
     public ?float $overageBillingRate;
     public ?string $purchaseOrderNumber;
-    public ?int $renewedContractID;
+    public $renewedContractID;
     public ?int $serviceLevelAgreementID;
     public ?float $setupFee;
-    public ?int $setupFeeBillingCodeID;
+    public $setupFeeBillingCodeID;
     public Carbon $startDate;
     public int $status;
     public int $timeReportingRequiresStartAndStopTimes;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new Contract entity.

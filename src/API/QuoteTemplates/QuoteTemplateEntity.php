@@ -19,7 +19,7 @@ class QuoteTemplateEntity extends DataTransferObject
     public ?int $dateFormat;
     public ?string $description;
     public ?bool $displayTaxCategorySuperscripts;
-    public int $id;
+    public $id;
     public ?bool $isActive;
     public ?int $lastActivityBy;
     public ?Carbon $lastActivityDate;
@@ -31,6 +31,8 @@ class QuoteTemplateEntity extends DataTransferObject
     public ?bool $showGridHeader;
     public ?bool $showTaxCategory;
     public ?bool $showVerticalGridLines;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new QuoteTemplate entity.

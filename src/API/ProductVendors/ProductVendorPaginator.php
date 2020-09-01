@@ -30,12 +30,9 @@ class ProductVendorPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = ProductVendorCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = ProductVendorCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

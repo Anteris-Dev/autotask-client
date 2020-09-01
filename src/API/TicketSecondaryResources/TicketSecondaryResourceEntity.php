@@ -10,10 +10,12 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class TicketSecondaryResourceEntity extends DataTransferObject
 {
-    public int $id;
-    public int $resourceID;
-    public int $roleID;
-    public int $ticketID;
+    public $id;
+    public $resourceID;
+    public $roleID;
+    public $ticketID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new TicketSecondaryResource entity.

@@ -10,11 +10,13 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class ResourceServiceDeskRoleEntity extends DataTransferObject
 {
-    public int $id;
+    public $id;
     public ?bool $isActive;
     public ?bool $isDefault;
     public int $resourceID;
     public int $roleID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ResourceServiceDeskRole entity.

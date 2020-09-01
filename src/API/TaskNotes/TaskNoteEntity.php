@@ -14,7 +14,7 @@ class TaskNoteEntity extends DataTransferObject
     public ?Carbon $createDateTime;
     public ?int $creatorResourceID;
     public string $description;
-    public int $id;
+    public $id;
     public ?int $impersonatorCreatorResourceID;
     public ?int $impersonatorUpdaterResourceID;
     public ?Carbon $lastActivityDate;
@@ -22,6 +22,8 @@ class TaskNoteEntity extends DataTransferObject
     public int $publish;
     public int $taskID;
     public string $title;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new TaskNote entity.

@@ -15,11 +15,13 @@ class AppointmentEntity extends DataTransferObject
     public ?int $creatorResourceID;
     public ?string $description;
     public Carbon $endDateTime;
-    public int $id;
+    public $id;
     public int $resourceID;
     public Carbon $startDateTime;
     public string $title;
     public ?Carbon $updateDateTime;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new Appointment entity.

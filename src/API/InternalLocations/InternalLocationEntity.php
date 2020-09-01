@@ -15,13 +15,15 @@ class InternalLocationEntity extends DataTransferObject
     public ?string $address2;
     public ?string $city;
     public ?string $country;
-    public ?int $holidaySetId;
-    public int $id;
+    public $holidaySetId;
+    public $id;
     public ?bool $isDefault;
     public string $name;
     public ?string $postalCode;
     public ?string $state;
     public ?string $timeZone;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new InternalLocation entity.

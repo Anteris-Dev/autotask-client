@@ -30,12 +30,9 @@ class InternalLocationWithBusinessHourPaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = InternalLocationWithBusinessHourCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = InternalLocationWithBusinessHourCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**

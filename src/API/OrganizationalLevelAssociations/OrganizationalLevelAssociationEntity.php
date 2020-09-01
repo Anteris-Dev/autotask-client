@@ -10,10 +10,12 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class OrganizationalLevelAssociationEntity extends DataTransferObject
 {
-    public int $id;
+    public $id;
     public ?bool $isActive;
     public int $organizationalLevel1ID;
     public int $organizationalLevel2ID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new OrganizationalLevelAssociation entity.

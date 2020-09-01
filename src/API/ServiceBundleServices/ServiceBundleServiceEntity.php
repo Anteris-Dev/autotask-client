@@ -10,9 +10,11 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class ServiceBundleServiceEntity extends DataTransferObject
 {
-    public int $id;
-    public int $serviceBundleID;
-    public int $serviceID;
+    public $id;
+    public $serviceBundleID;
+    public $serviceID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new ServiceBundleService entity.

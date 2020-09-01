@@ -16,12 +16,14 @@ class SurveyResultEntity extends DataTransferObject
     public ?Carbon $completeDate;
     public ?int $contactID;
     public ?float $contactRating;
-    public int $id;
+    public $id;
     public ?float $resourceRating;
     public ?Carbon $sendDate;
     public int $surveyID;
     public ?float $surveyRating;
     public ?int $ticketID;
+    /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
+    public ?array $userDefinedFields;
 
     /**
      * Creates a new SurveyResult entity.

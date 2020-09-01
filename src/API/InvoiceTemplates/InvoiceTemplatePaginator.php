@@ -30,12 +30,9 @@ class InvoiceTemplatePaginator
      */
     public function __construct(HttpClient $client, $response)
     {
-        $contacts = InvoiceTemplateCollection::fromResponse($response);
-        $page     = PageEntity::fromResponse($response);
-
         $this->client = $client;
-        $this->collection = $contacts;
-        $this->page = $page;
+        $this->collection = InvoiceTemplateCollection::fromResponse($response);
+        $this->page = PageEntity::fromResponse($response);
     }
 
     /**
