@@ -23,12 +23,12 @@
     "license": "MIT",
     "require": {
         "php": "^7.4",
-        "guzzlehttp/guzzle": "^6.3",
+        "guzzlehttp/guzzle": "^6.3|^7.0",
         "nesbot/carbon": "^2.0",
         "spatie/data-transfer-object": "^2.0"
     },
     "require-dev": {
-        "anteris-dev/autotask-client-generator": "^v1.0.1",
+        "anteris-dev/autotask-client-generator": "^1.0",
         "brianium/paratest": "^5.0",
         "phpunit/phpunit": "^9.3",
         "vlucas/phpdotenv": "^4.0"
