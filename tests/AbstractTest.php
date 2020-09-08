@@ -21,7 +21,14 @@ abstract class AbstractTest extends TestCase
     {
         // Start by trying to load environment variables
         if (file_exists(__DIR__ . '/../.env')) {
-            $dotenv = Dotenv::createImmutable(__DIR__ . '/../');
+            // We have to create an unsafe immutable in v5 given that CI will require
+            // use to use getenv()
+            if (method_exists(Dotenv::class, 'createUnsafeImmutable')) {
+                $dotenv = Dotenv::createUnsafeImmutable(__DIR__ . '/../');
+            } else {
+                $dotenv = Dotenv::createImmutable(__DIR__ . '/../');
+            }
+
             $dotenv->load();
         }
 
