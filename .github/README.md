@@ -11,6 +11,10 @@ Run `composer require anteris-dev/autotask-client`
 - **PHP ^7.4** so it can take full advantage of type casting in PHP.
 - **Guzzle ^6.3** so it can make requests against the Autotask API.
 
+## Discord
+
+Join the [Anteris-Dev Discord](https://discord.gg/JmYNRbg) to keep up with other users of this package!
+
 # Table of Contents
 
 * [Getting Started](#getting-started)
