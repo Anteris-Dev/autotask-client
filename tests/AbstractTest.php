@@ -20,36 +20,46 @@ abstract class AbstractTest extends TestCase
     public function setUp(): void
     {
         // Start by trying to load environment variables
-        if (file_exists( __DIR__ . '/../.env')) {
-            $dotenv = Dotenv::createImmutable(__DIR__ . '/../');
+        if (file_exists(__DIR__ . '/../.env')) {
+            // We have to create an unsafe immutable in v5 given that CI will require
+            // use to use getenv()
+            if (method_exists(Dotenv::class, 'createUnsafeImmutable')) {
+                $dotenv = Dotenv::createUnsafeImmutable(__DIR__ . '/../');
+            } else {
+                $dotenv = Dotenv::createImmutable(__DIR__ . '/../');
+            }
+
             $dotenv->load();
-        } else {
-            throw new Exception('Unable to find environment file!');
         }
 
         // Next check each individual one
-        if (! isset($_ENV['AUTOTASK_API_USERNAME'])) {
+        $username   = getenv('AUTOTASK_API_USERNAME');
+        $secret     = getenv('AUTOTASK_API_SECRET');
+        $ic         = getenv('AUTOTASK_API_INTEGRATION_CODE');
+        $baseUri    = getenv('AUTOTASK_API_BASE_URI');
+
+        if (!$username) {
             throw new Exception('Unable to find find AUTOTASK_API_USERNAME env variable!');
         }
 
-        if (! isset($_ENV['AUTOTASK_API_SECRET'])) {
+        if (!$secret) {
             throw new Exception('Unable to find find AUTOTASK_API_SECRET env variable!');
         }
 
-        if (! isset($_ENV['AUTOTASK_API_INTEGRATION_CODE'])) {
+        if (!$ic) {
             throw new Exception('Unable to find find AUTOTASK_API_INTEGRATION_CODE env variable!');
         }
 
-        if (! isset($_ENV['AUTOTASK_API_BASE_URI'])) {
+        if (!$baseUri) {
             throw new Exception('Unable to find find AUTOTASK_API_BASE_URI env variable!');
         }
 
         // Now try creating the client
         $this->client = new Client(
-            $_ENV['AUTOTASK_API_USERNAME'],
-            $_ENV['AUTOTASK_API_SECRET'],
-            $_ENV['AUTOTASK_API_INTEGRATION_CODE'],
-            $_ENV['AUTOTASK_API_BASE_URI']
+            $username,
+            $secret,
+            $ic,
+            $baseUri
         );
     }
 }
