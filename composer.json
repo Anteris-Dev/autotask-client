@@ -31,7 +31,7 @@
         "anteris-dev/autotask-client-generator": "^1.0",
         "brianium/paratest": "^5.0",
         "phpunit/phpunit": "^9.3",
-        "vlucas/phpdotenv": "^4.0"
+        "vlucas/phpdotenv": "^4.0|^5.0"
     },
     "scripts": {
         "test": "vendor/bin/paratest"

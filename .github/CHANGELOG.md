@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Support for Guzzle 7.0 and Illuminate Support 8.0
 - Support for autotask-client-generator 1.0.2
+- Tests for inventory-related endpoints that were previously unavailable to our Sandbox user
 
 ## [v0.3.1] - 2020-09-01
 
