@@ -12,6 +12,7 @@ class ProductEntity extends DataTransferObject
 {
     public ?int $billingType;
     public ?int $chargeBillingCodeID;
+    public ?int $defaultInstalledProductCategoryID;
     public ?int $defaultVendorID;
     public ?string $description;
     public ?bool $doesNotRequireProcurement;

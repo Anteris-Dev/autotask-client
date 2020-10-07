@@ -38,6 +38,7 @@ class ProjectEntity extends DataTransferObject
     public ?Carbon $lastActivityDateTime;
     public ?int $lastActivityPersonType;
     public ?int $lastActivityResourceID;
+    public ?int $opportunityID;
     public ?int $organizationalLevelAssociationID;
     public ?float $originalEstimatedRevenue;
     public ?float $projectCostEstimatedMarginPercentage;

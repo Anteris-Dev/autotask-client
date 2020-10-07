@@ -16,6 +16,7 @@ class AttachmentInfoEntity extends DataTransferObject
     public $attachedByResourceID;
     public string $attachmentType;
     public ?string $contentType;
+    public ?int $creatorType;
     public $fileSize;
     public string $fullPath;
     public $id;

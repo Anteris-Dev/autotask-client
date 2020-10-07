@@ -34,6 +34,7 @@ class QuoteItemEntity extends DataTransferObject
     public ?int $serviceBundleID;
     public ?int $serviceID;
     public ?int $shippingID;
+    public ?int $sortOrderID;
     public ?int $taxCategoryID;
     public ?float $totalEffectiveTax;
     public ?float $unitCost;

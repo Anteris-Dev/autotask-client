@@ -12,6 +12,7 @@ use Spatie\DataTransferObject\DataTransferObject;
 class ProjectNoteEntity extends DataTransferObject
 {
     public ?Carbon $createDateTime;
+    public ?int $createdByContactID;
     public ?int $creatorResourceID;
     public string $description;
     public $id;

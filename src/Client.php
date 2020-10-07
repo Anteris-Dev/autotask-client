@@ -6,6 +6,7 @@ use Anteris\Autotask\API\ActionTypes\ActionTypeService;
 use Anteris\Autotask\API\AdditionalInvoiceFieldValues\AdditionalInvoiceFieldValueService;
 use Anteris\Autotask\API\Appointments\AppointmentService;
 use Anteris\Autotask\API\AttachmentInfo\AttachmentInfoService;
+use Anteris\Autotask\API\AttachmentNestedAttachments\AttachmentNestedAttachmentService;
 use Anteris\Autotask\API\BillingCodes\BillingCodeService;
 use Anteris\Autotask\API\BillingItemApprovalLevels\BillingItemApprovalLevelService;
 use Anteris\Autotask\API\BillingItems\BillingItemService;
@@ -20,6 +21,7 @@ use Anteris\Autotask\API\Companies\CompanyService;
 use Anteris\Autotask\API\CompanyAlerts\CompanyAlertService;
 use Anteris\Autotask\API\CompanyAttachments\CompanyAttachmentService;
 use Anteris\Autotask\API\CompanyLocations\CompanyLocationService;
+use Anteris\Autotask\API\CompanyNoteAttachments\CompanyNoteAttachmentService;
 use Anteris\Autotask\API\CompanyNotes\CompanyNoteService;
 use Anteris\Autotask\API\CompanySiteConfigurations\CompanySiteConfigurationService;
 use Anteris\Autotask\API\CompanyTeams\CompanyTeamService;
@@ -28,10 +30,12 @@ use Anteris\Autotask\API\CompanyWebhookExcludedResources\CompanyWebhookExcludedR
 use Anteris\Autotask\API\CompanyWebhookFields\CompanyWebhookFieldService;
 use Anteris\Autotask\API\CompanyWebhookUdfFields\CompanyWebhookUdfFieldService;
 use Anteris\Autotask\API\CompanyWebhooks\CompanyWebhookService;
+use Anteris\Autotask\API\ConfigurationItemAttachments\ConfigurationItemAttachmentService;
 use Anteris\Autotask\API\ConfigurationItemBillingProductAssociations\ConfigurationItemBillingProductAssociationService;
 use Anteris\Autotask\API\ConfigurationItemCategories\ConfigurationItemCategoryService;
 use Anteris\Autotask\API\ConfigurationItemCategoryUdfAssociations\ConfigurationItemCategoryUdfAssociationService;
 use Anteris\Autotask\API\ConfigurationItemExts\ConfigurationItemExtService;
+use Anteris\Autotask\API\ConfigurationItemNoteAttachments\ConfigurationItemNoteAttachmentService;
 use Anteris\Autotask\API\ConfigurationItemNotes\ConfigurationItemNoteService;
 use Anteris\Autotask\API\ConfigurationItemTypes\ConfigurationItemTypeService;
 use Anteris\Autotask\API\ConfigurationItems\ConfigurationItemService;
@@ -53,6 +57,7 @@ use Anteris\Autotask\API\ContractExclusionSetExcludedRoles\ContractExclusionSetE
 use Anteris\Autotask\API\ContractExclusionSetExcludedWorkTypes\ContractExclusionSetExcludedWorkTypeService;
 use Anteris\Autotask\API\ContractExclusionSets\ContractExclusionSetService;
 use Anteris\Autotask\API\ContractMilestones\ContractMilestoneService;
+use Anteris\Autotask\API\ContractNoteAttachments\ContractNoteAttachmentService;
 use Anteris\Autotask\API\ContractNotes\ContractNoteService;
 use Anteris\Autotask\API\ContractRates\ContractRateService;
 use Anteris\Autotask\API\ContractRetainers\ContractRetainerService;
@@ -67,8 +72,12 @@ use Anteris\Autotask\API\ContractTicketPurchases\ContractTicketPurchaseService;
 use Anteris\Autotask\API\Contracts\ContractService;
 use Anteris\Autotask\API\Countries\CountryService;
 use Anteris\Autotask\API\Currencies\CurrencyService;
+use Anteris\Autotask\API\DeletedTaskActivityLogs\DeletedTaskActivityLogService;
+use Anteris\Autotask\API\DeletedTicketActivityLogs\DeletedTicketActivityLogService;
+use Anteris\Autotask\API\DeletedTicketLogs\DeletedTicketLogService;
 use Anteris\Autotask\API\Departments\DepartmentService;
 use Anteris\Autotask\API\ExpenseItems\ExpenseItemService;
+use Anteris\Autotask\API\ExpenseReportAttachments\ExpenseReportAttachmentService;
 use Anteris\Autotask\API\ExpenseReports\ExpenseReportService;
 use Anteris\Autotask\API\HolidaySets\HolidaySetService;
 use Anteris\Autotask\API\Holidays\HolidayService;
@@ -102,6 +111,7 @@ use Anteris\Autotask\API\ProductVendors\ProductVendorService;
 use Anteris\Autotask\API\Products\ProductService;
 use Anteris\Autotask\API\ProjectAttachments\ProjectAttachmentService;
 use Anteris\Autotask\API\ProjectCharges\ProjectChargeService;
+use Anteris\Autotask\API\ProjectNoteAttachments\ProjectNoteAttachmentService;
 use Anteris\Autotask\API\ProjectNotes\ProjectNoteService;
 use Anteris\Autotask\API\Projects\ProjectService;
 use Anteris\Autotask\API\PurchaseApprovals\PurchaseApprovalService;
@@ -112,6 +122,7 @@ use Anteris\Autotask\API\QuoteItems\QuoteItemService;
 use Anteris\Autotask\API\QuoteLocations\QuoteLocationService;
 use Anteris\Autotask\API\QuoteTemplates\QuoteTemplateService;
 use Anteris\Autotask\API\Quotes\QuoteService;
+use Anteris\Autotask\API\ResourceAttachments\ResourceAttachmentService;
 use Anteris\Autotask\API\ResourceRoleDepartments\ResourceRoleDepartmentService;
 use Anteris\Autotask\API\ResourceRoleQueues\ResourceRoleQueueService;
 use Anteris\Autotask\API\ResourceRoles\ResourceRoleService;
@@ -119,6 +130,7 @@ use Anteris\Autotask\API\ResourceServiceDeskRoles\ResourceServiceDeskRoleService
 use Anteris\Autotask\API\ResourceSkills\ResourceSkillService;
 use Anteris\Autotask\API\Resources\ResourceService;
 use Anteris\Autotask\API\Roles\RoleService;
+use Anteris\Autotask\API\SalesOrderAttachments\SalesOrderAttachmentService;
 use Anteris\Autotask\API\SalesOrders\SalesOrderService;
 use Anteris\Autotask\API\ServiceBundleServices\ServiceBundleServiceService;
 use Anteris\Autotask\API\ServiceBundles\ServiceBundleService;
@@ -136,6 +148,7 @@ use Anteris\Autotask\API\Subscriptions\SubscriptionService;
 use Anteris\Autotask\API\SurveyResults\SurveyResultService;
 use Anteris\Autotask\API\Surveys\SurveyService;
 use Anteris\Autotask\API\TaskAttachments\TaskAttachmentService;
+use Anteris\Autotask\API\TaskNoteAttachments\TaskNoteAttachmentService;
 use Anteris\Autotask\API\TaskNotes\TaskNoteService;
 use Anteris\Autotask\API\TaskPredecessors\TaskPredecessorService;
 use Anteris\Autotask\API\TaskSecondaryResources\TaskSecondaryResourceService;
@@ -153,11 +166,13 @@ use Anteris\Autotask\API\TicketCharges\TicketChargeService;
 use Anteris\Autotask\API\TicketChecklistItems\TicketChecklistItemService;
 use Anteris\Autotask\API\TicketChecklistLibraries\TicketChecklistLibraryService;
 use Anteris\Autotask\API\TicketHistory\TicketHistoryService;
+use Anteris\Autotask\API\TicketNoteAttachments\TicketNoteAttachmentService;
 use Anteris\Autotask\API\TicketNotes\TicketNoteService;
 use Anteris\Autotask\API\TicketRmaCredits\TicketRmaCreditService;
 use Anteris\Autotask\API\TicketSecondaryResources\TicketSecondaryResourceService;
 use Anteris\Autotask\API\Tickets\TicketService;
 use Anteris\Autotask\API\TimeEntries\TimeEntryService;
+use Anteris\Autotask\API\TimeEntryAttachments\TimeEntryAttachmentService;
 use Anteris\Autotask\API\UserDefinedFieldDefinitions\UserDefinedFieldDefinitionService;
 use Anteris\Autotask\API\UserDefinedFieldListItems\UserDefinedFieldListItemService;
 use Anteris\Autotask\API\WebhookEventErrorLogs\WebhookEventErrorLogService;
@@ -235,6 +250,18 @@ class Client
         }
 
         return $this->classCache['AttachmentInfo'];
+    }
+
+    /**
+     * Handles any interaction with the AttachmentNestedAttachments endpoint.
+     */
+    public function attachmentNestedAttachments(): AttachmentNestedAttachmentService
+    {
+        if (! isset($this->classCache['AttachmentNestedAttachments'])) {
+            $this->classCache['AttachmentNestedAttachments'] = new AttachmentNestedAttachmentService($this->client);
+        }
+
+        return $this->classCache['AttachmentNestedAttachments'];
     }
 
     /**
@@ -406,6 +433,18 @@ class Client
     }
 
     /**
+     * Handles any interaction with the CompanyNoteAttachments endpoint.
+     */
+    public function companyNoteAttachments(): CompanyNoteAttachmentService
+    {
+        if (! isset($this->classCache['CompanyNoteAttachments'])) {
+            $this->classCache['CompanyNoteAttachments'] = new CompanyNoteAttachmentService($this->client);
+        }
+
+        return $this->classCache['CompanyNoteAttachments'];
+    }
+
+    /**
      * Handles any interaction with the CompanyNotes endpoint.
      */
     public function companyNotes(): CompanyNoteService
@@ -502,6 +541,18 @@ class Client
     }
 
     /**
+     * Handles any interaction with the ConfigurationItemAttachments endpoint.
+     */
+    public function configurationItemAttachments(): ConfigurationItemAttachmentService
+    {
+        if (! isset($this->classCache['ConfigurationItemAttachments'])) {
+            $this->classCache['ConfigurationItemAttachments'] = new ConfigurationItemAttachmentService($this->client);
+        }
+
+        return $this->classCache['ConfigurationItemAttachments'];
+    }
+
+    /**
      * Handles any interaction with the ConfigurationItemBillingProductAssociations endpoint.
      */
     public function configurationItemBillingProductAssociations(): ConfigurationItemBillingProductAssociationService
@@ -547,6 +598,18 @@ class Client
         }
 
         return $this->classCache['ConfigurationItemExts'];
+    }
+
+    /**
+     * Handles any interaction with the ConfigurationItemNoteAttachments endpoint.
+     */
+    public function configurationItemNoteAttachments(): ConfigurationItemNoteAttachmentService
+    {
+        if (! isset($this->classCache['ConfigurationItemNoteAttachments'])) {
+            $this->classCache['ConfigurationItemNoteAttachments'] = new ConfigurationItemNoteAttachmentService($this->client);
+        }
+
+        return $this->classCache['ConfigurationItemNoteAttachments'];
     }
 
     /**
@@ -802,6 +865,18 @@ class Client
     }
 
     /**
+     * Handles any interaction with the ContractNoteAttachments endpoint.
+     */
+    public function contractNoteAttachments(): ContractNoteAttachmentService
+    {
+        if (! isset($this->classCache['ContractNoteAttachments'])) {
+            $this->classCache['ContractNoteAttachments'] = new ContractNoteAttachmentService($this->client);
+        }
+
+        return $this->classCache['ContractNoteAttachments'];
+    }
+
+    /**
      * Handles any interaction with the ContractNotes endpoint.
      */
     public function contractNotes(): ContractNoteService
@@ -970,6 +1045,42 @@ class Client
     }
 
     /**
+     * Handles any interaction with the DeletedTaskActivityLogs endpoint.
+     */
+    public function deletedTaskActivityLogs(): DeletedTaskActivityLogService
+    {
+        if (! isset($this->classCache['DeletedTaskActivityLogs'])) {
+            $this->classCache['DeletedTaskActivityLogs'] = new DeletedTaskActivityLogService($this->client);
+        }
+
+        return $this->classCache['DeletedTaskActivityLogs'];
+    }
+
+    /**
+     * Handles any interaction with the DeletedTicketActivityLogs endpoint.
+     */
+    public function deletedTicketActivityLogs(): DeletedTicketActivityLogService
+    {
+        if (! isset($this->classCache['DeletedTicketActivityLogs'])) {
+            $this->classCache['DeletedTicketActivityLogs'] = new DeletedTicketActivityLogService($this->client);
+        }
+
+        return $this->classCache['DeletedTicketActivityLogs'];
+    }
+
+    /**
+     * Handles any interaction with the DeletedTicketLogs endpoint.
+     */
+    public function deletedTicketLogs(): DeletedTicketLogService
+    {
+        if (! isset($this->classCache['DeletedTicketLogs'])) {
+            $this->classCache['DeletedTicketLogs'] = new DeletedTicketLogService($this->client);
+        }
+
+        return $this->classCache['DeletedTicketLogs'];
+    }
+
+    /**
      * Handles any interaction with the Departments endpoint.
      */
     public function departments(): DepartmentService
@@ -991,6 +1102,18 @@ class Client
         }
 
         return $this->classCache['ExpenseItems'];
+    }
+
+    /**
+     * Handles any interaction with the ExpenseReportAttachments endpoint.
+     */
+    public function expenseReportAttachments(): ExpenseReportAttachmentService
+    {
+        if (! isset($this->classCache['ExpenseReportAttachments'])) {
+            $this->classCache['ExpenseReportAttachments'] = new ExpenseReportAttachmentService($this->client);
+        }
+
+        return $this->classCache['ExpenseReportAttachments'];
     }
 
     /**
@@ -1390,6 +1513,18 @@ class Client
     }
 
     /**
+     * Handles any interaction with the ProjectNoteAttachments endpoint.
+     */
+    public function projectNoteAttachments(): ProjectNoteAttachmentService
+    {
+        if (! isset($this->classCache['ProjectNoteAttachments'])) {
+            $this->classCache['ProjectNoteAttachments'] = new ProjectNoteAttachmentService($this->client);
+        }
+
+        return $this->classCache['ProjectNoteAttachments'];
+    }
+
+    /**
      * Handles any interaction with the ProjectNotes endpoint.
      */
     public function projectNotes(): ProjectNoteService
@@ -1510,6 +1645,18 @@ class Client
     }
 
     /**
+     * Handles any interaction with the ResourceAttachments endpoint.
+     */
+    public function resourceAttachments(): ResourceAttachmentService
+    {
+        if (! isset($this->classCache['ResourceAttachments'])) {
+            $this->classCache['ResourceAttachments'] = new ResourceAttachmentService($this->client);
+        }
+
+        return $this->classCache['ResourceAttachments'];
+    }
+
+    /**
      * Handles any interaction with the ResourceRoleDepartments endpoint.
      */
     public function resourceRoleDepartments(): ResourceRoleDepartmentService
@@ -1591,6 +1738,18 @@ class Client
         }
 
         return $this->classCache['Roles'];
+    }
+
+    /**
+     * Handles any interaction with the SalesOrderAttachments endpoint.
+     */
+    public function salesOrderAttachments(): SalesOrderAttachmentService
+    {
+        if (! isset($this->classCache['SalesOrderAttachments'])) {
+            $this->classCache['SalesOrderAttachments'] = new SalesOrderAttachmentService($this->client);
+        }
+
+        return $this->classCache['SalesOrderAttachments'];
     }
 
     /**
@@ -1798,6 +1957,18 @@ class Client
     }
 
     /**
+     * Handles any interaction with the TaskNoteAttachments endpoint.
+     */
+    public function taskNoteAttachments(): TaskNoteAttachmentService
+    {
+        if (! isset($this->classCache['TaskNoteAttachments'])) {
+            $this->classCache['TaskNoteAttachments'] = new TaskNoteAttachmentService($this->client);
+        }
+
+        return $this->classCache['TaskNoteAttachments'];
+    }
+
+    /**
      * Handles any interaction with the TaskNotes endpoint.
      */
     public function taskNotes(): TaskNoteService
@@ -2002,6 +2173,18 @@ class Client
     }
 
     /**
+     * Handles any interaction with the TicketNoteAttachments endpoint.
+     */
+    public function ticketNoteAttachments(): TicketNoteAttachmentService
+    {
+        if (! isset($this->classCache['TicketNoteAttachments'])) {
+            $this->classCache['TicketNoteAttachments'] = new TicketNoteAttachmentService($this->client);
+        }
+
+        return $this->classCache['TicketNoteAttachments'];
+    }
+
+    /**
      * Handles any interaction with the TicketNotes endpoint.
      */
     public function ticketNotes(): TicketNoteService
@@ -2059,6 +2242,18 @@ class Client
         }
 
         return $this->classCache['TimeEntries'];
+    }
+
+    /**
+     * Handles any interaction with the TimeEntryAttachments endpoint.
+     */
+    public function timeEntryAttachments(): TimeEntryAttachmentService
+    {
+        if (! isset($this->classCache['TimeEntryAttachments'])) {
+            $this->classCache['TimeEntryAttachments'] = new TimeEntryAttachmentService($this->client);
+        }
+
+        return $this->classCache['TimeEntryAttachments'];
     }
 
     /**

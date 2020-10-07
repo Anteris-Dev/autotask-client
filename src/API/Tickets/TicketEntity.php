@@ -33,6 +33,7 @@ class TicketEntity extends DataTransferObject
     public $contractServiceBundleID;
     public $contractServiceID;
     public ?Carbon $createDate;
+    public ?int $createdByContactID;
     public ?int $creatorResourceID;
     public ?int $creatorType;
     public ?int $currentServiceThermometerRating;
