@@ -56,7 +56,7 @@ class OpportunityEntity extends DataTransferObject
     public ?int $revenueSpread;
     public ?string $revenueSpreadUnit;
     public ?int $salesOrderID;
-    public ?int $salesProcessPercentComplete;
+    public ?float $salesProcessPercentComplete;
     public ?float $semiannualCost;
     public ?float $semiannualRevenue;
     public int $stage;
