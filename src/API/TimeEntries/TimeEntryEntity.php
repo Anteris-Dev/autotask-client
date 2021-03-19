@@ -20,7 +20,7 @@ class TimeEntryEntity extends DataTransferObject
     public $contractServiceID;
     public ?Carbon $createDateTime;
     public ?int $creatorUserID;
-    public Carbon $dateWorked;
+    public ?Carbon $dateWorked;
     public ?Carbon $endDateTime;
     public ?float $hoursToBill;
     public ?float $hoursWorked;

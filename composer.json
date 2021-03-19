@@ -22,15 +22,16 @@
     },
     "license": "MIT",
     "require": {
-        "php": "^7.4",
+        "php": "^7.4 | ^8.0",
         "guzzlehttp/guzzle": "^6.3|^7.0",
         "nesbot/carbon": "^2.0",
         "spatie/data-transfer-object": "^2.0"
     },
     "require-dev": {
         "anteris-dev/autotask-client-generator": "^1.0",
-        "brianium/paratest": "^5.0",
+        "brianium/paratest": "^6.0",
         "phpunit/phpunit": "^9.3",
+        "spatie/ray": "^1.21",
         "vlucas/phpdotenv": "^4.0|^5.0"
     },
     "scripts": {

@@ -22,7 +22,7 @@ class TicketNoteEntity extends DataTransferObject
     public int $noteType;
     public int $publish;
     public int $ticketID;
-    public string $title;
+    public ?string $title;
     /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
     public ?array $userDefinedFields;
 

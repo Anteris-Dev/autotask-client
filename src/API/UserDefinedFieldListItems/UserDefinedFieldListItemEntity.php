@@ -13,6 +13,7 @@ class UserDefinedFieldListItemEntity extends DataTransferObject
 {
     public ?Carbon $createDate;
     public $id;
+    public ?bool $isActive;
     public $udfFieldId;
     public string $valueForDisplay;
     public string $valueForExport;

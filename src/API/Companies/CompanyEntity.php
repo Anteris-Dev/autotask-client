@@ -57,6 +57,7 @@ class CompanyEntity extends DataTransferObject
     public ?int $parentCompanyID;
     public string $phone;
     public ?string $postalCode;
+    public ?int $purchaseOrderTemplateID;
     public ?int $quoteEmailMessageID;
     public ?int $quoteTemplateID;
     public ?string $sicCode;

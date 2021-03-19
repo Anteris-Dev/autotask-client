@@ -34,10 +34,16 @@ use Anteris\Autotask\API\ConfigurationItemAttachments\ConfigurationItemAttachmen
 use Anteris\Autotask\API\ConfigurationItemBillingProductAssociations\ConfigurationItemBillingProductAssociationService;
 use Anteris\Autotask\API\ConfigurationItemCategories\ConfigurationItemCategoryService;
 use Anteris\Autotask\API\ConfigurationItemCategoryUdfAssociations\ConfigurationItemCategoryUdfAssociationService;
+use Anteris\Autotask\API\ConfigurationItemDnsRecords\ConfigurationItemDnsRecordService;
 use Anteris\Autotask\API\ConfigurationItemExts\ConfigurationItemExtService;
 use Anteris\Autotask\API\ConfigurationItemNoteAttachments\ConfigurationItemNoteAttachmentService;
 use Anteris\Autotask\API\ConfigurationItemNotes\ConfigurationItemNoteService;
+use Anteris\Autotask\API\ConfigurationItemSslSubjectAlternativeNames\ConfigurationItemSslSubjectAlternativeNameService;
 use Anteris\Autotask\API\ConfigurationItemTypes\ConfigurationItemTypeService;
+use Anteris\Autotask\API\ConfigurationItemWebhookExcludedResources\ConfigurationItemWebhookExcludedResourceService;
+use Anteris\Autotask\API\ConfigurationItemWebhookFields\ConfigurationItemWebhookFieldService;
+use Anteris\Autotask\API\ConfigurationItemWebhookUdfFields\ConfigurationItemWebhookUdfFieldService;
+use Anteris\Autotask\API\ConfigurationItemWebhooks\ConfigurationItemWebhookService;
 use Anteris\Autotask\API\ConfigurationItems\ConfigurationItemService;
 use Anteris\Autotask\API\ContactBillingProductAssociations\ContactBillingProductAssociationService;
 use Anteris\Autotask\API\ContactGroupContacts\ContactGroupContactService;
@@ -76,11 +82,25 @@ use Anteris\Autotask\API\DeletedTaskActivityLogs\DeletedTaskActivityLogService;
 use Anteris\Autotask\API\DeletedTicketActivityLogs\DeletedTicketActivityLogService;
 use Anteris\Autotask\API\DeletedTicketLogs\DeletedTicketLogService;
 use Anteris\Autotask\API\Departments\DepartmentService;
+use Anteris\Autotask\API\DocumentAttachments\DocumentAttachmentService;
+use Anteris\Autotask\API\DocumentCategories\DocumentCategoryService;
+use Anteris\Autotask\API\DocumentChecklistItems\DocumentChecklistItemService;
+use Anteris\Autotask\API\DocumentChecklistLibraries\DocumentChecklistLibraryService;
+use Anteris\Autotask\API\DocumentConfigurationItemAssociations\DocumentConfigurationItemAssociationService;
+use Anteris\Autotask\API\DocumentConfigurationItemCategoryAssociations\DocumentConfigurationItemCategoryAssociationService;
+use Anteris\Autotask\API\DocumentNotes\DocumentNoteService;
+use Anteris\Autotask\API\DocumentPlainTextContent\DocumentPlainTextContentService;
+use Anteris\Autotask\API\DocumentTagAssociations\DocumentTagAssociationService;
+use Anteris\Autotask\API\DocumentTicketAssociations\DocumentTicketAssociationService;
+use Anteris\Autotask\API\DocumentToDocumentAssociations\DocumentToDocumentAssociationService;
+use Anteris\Autotask\API\Documents\DocumentService;
+use Anteris\Autotask\API\DomainRegistrars\DomainRegistrarService;
 use Anteris\Autotask\API\ExpenseItems\ExpenseItemService;
 use Anteris\Autotask\API\ExpenseReportAttachments\ExpenseReportAttachmentService;
 use Anteris\Autotask\API\ExpenseReports\ExpenseReportService;
 use Anteris\Autotask\API\HolidaySets\HolidaySetService;
 use Anteris\Autotask\API\Holidays\HolidayService;
+use Anteris\Autotask\API\IntegrationVendorWidgets\IntegrationVendorWidgetService;
 use Anteris\Autotask\API\InternalLocationWithBusinessHours\InternalLocationWithBusinessHourService;
 use Anteris\Autotask\API\InternalLocations\InternalLocationService;
 use Anteris\Autotask\API\InventoryItemSerialNumbers\InventoryItemSerialNumberService;
@@ -147,6 +167,9 @@ use Anteris\Autotask\API\SubscriptionPeriods\SubscriptionPeriodService;
 use Anteris\Autotask\API\Subscriptions\SubscriptionService;
 use Anteris\Autotask\API\SurveyResults\SurveyResultService;
 use Anteris\Autotask\API\Surveys\SurveyService;
+use Anteris\Autotask\API\TagAliases\TagAliasService;
+use Anteris\Autotask\API\TagGroups\TagGroupService;
+use Anteris\Autotask\API\Tags\TagService;
 use Anteris\Autotask\API\TaskAttachments\TaskAttachmentService;
 use Anteris\Autotask\API\TaskNoteAttachments\TaskNoteAttachmentService;
 use Anteris\Autotask\API\TaskNotes\TaskNoteService;
@@ -170,6 +193,7 @@ use Anteris\Autotask\API\TicketNoteAttachments\TicketNoteAttachmentService;
 use Anteris\Autotask\API\TicketNotes\TicketNoteService;
 use Anteris\Autotask\API\TicketRmaCredits\TicketRmaCreditService;
 use Anteris\Autotask\API\TicketSecondaryResources\TicketSecondaryResourceService;
+use Anteris\Autotask\API\TicketTagAssociations\TicketTagAssociationService;
 use Anteris\Autotask\API\Tickets\TicketService;
 use Anteris\Autotask\API\TimeEntries\TimeEntryService;
 use Anteris\Autotask\API\TimeEntryAttachments\TimeEntryAttachmentService;
@@ -589,6 +613,18 @@ class Client
     }
 
     /**
+     * Handles any interaction with the ConfigurationItemDnsRecords endpoint.
+     */
+    public function configurationItemDnsRecords(): ConfigurationItemDnsRecordService
+    {
+        if (! isset($this->classCache['ConfigurationItemDnsRecords'])) {
+            $this->classCache['ConfigurationItemDnsRecords'] = new ConfigurationItemDnsRecordService($this->client);
+        }
+
+        return $this->classCache['ConfigurationItemDnsRecords'];
+    }
+
+    /**
      * Handles any interaction with the ConfigurationItemExts endpoint.
      */
     public function configurationItemExts(): ConfigurationItemExtService
@@ -625,6 +661,18 @@ class Client
     }
 
     /**
+     * Handles any interaction with the ConfigurationItemSslSubjectAlternativeNames endpoint.
+     */
+    public function configurationItemSslSubjectAlternativeNames(): ConfigurationItemSslSubjectAlternativeNameService
+    {
+        if (! isset($this->classCache['ConfigurationItemSslSubjectAlternativeNames'])) {
+            $this->classCache['ConfigurationItemSslSubjectAlternativeNames'] = new ConfigurationItemSslSubjectAlternativeNameService($this->client);
+        }
+
+        return $this->classCache['ConfigurationItemSslSubjectAlternativeNames'];
+    }
+
+    /**
      * Handles any interaction with the ConfigurationItemTypes endpoint.
      */
     public function configurationItemTypes(): ConfigurationItemTypeService
@@ -634,6 +682,54 @@ class Client
         }
 
         return $this->classCache['ConfigurationItemTypes'];
+    }
+
+    /**
+     * Handles any interaction with the ConfigurationItemWebhookExcludedResources endpoint.
+     */
+    public function configurationItemWebhookExcludedResources(): ConfigurationItemWebhookExcludedResourceService
+    {
+        if (! isset($this->classCache['ConfigurationItemWebhookExcludedResources'])) {
+            $this->classCache['ConfigurationItemWebhookExcludedResources'] = new ConfigurationItemWebhookExcludedResourceService($this->client);
+        }
+
+        return $this->classCache['ConfigurationItemWebhookExcludedResources'];
+    }
+
+    /**
+     * Handles any interaction with the ConfigurationItemWebhookFields endpoint.
+     */
+    public function configurationItemWebhookFields(): ConfigurationItemWebhookFieldService
+    {
+        if (! isset($this->classCache['ConfigurationItemWebhookFields'])) {
+            $this->classCache['ConfigurationItemWebhookFields'] = new ConfigurationItemWebhookFieldService($this->client);
+        }
+
+        return $this->classCache['ConfigurationItemWebhookFields'];
+    }
+
+    /**
+     * Handles any interaction with the ConfigurationItemWebhookUdfFields endpoint.
+     */
+    public function configurationItemWebhookUdfFields(): ConfigurationItemWebhookUdfFieldService
+    {
+        if (! isset($this->classCache['ConfigurationItemWebhookUdfFields'])) {
+            $this->classCache['ConfigurationItemWebhookUdfFields'] = new ConfigurationItemWebhookUdfFieldService($this->client);
+        }
+
+        return $this->classCache['ConfigurationItemWebhookUdfFields'];
+    }
+
+    /**
+     * Handles any interaction with the ConfigurationItemWebhooks endpoint.
+     */
+    public function configurationItemWebhooks(): ConfigurationItemWebhookService
+    {
+        if (! isset($this->classCache['ConfigurationItemWebhooks'])) {
+            $this->classCache['ConfigurationItemWebhooks'] = new ConfigurationItemWebhookService($this->client);
+        }
+
+        return $this->classCache['ConfigurationItemWebhooks'];
     }
 
     /**
@@ -1093,6 +1189,162 @@ class Client
     }
 
     /**
+     * Handles any interaction with the DocumentAttachments endpoint.
+     */
+    public function documentAttachments(): DocumentAttachmentService
+    {
+        if (! isset($this->classCache['DocumentAttachments'])) {
+            $this->classCache['DocumentAttachments'] = new DocumentAttachmentService($this->client);
+        }
+
+        return $this->classCache['DocumentAttachments'];
+    }
+
+    /**
+     * Handles any interaction with the DocumentCategories endpoint.
+     */
+    public function documentCategories(): DocumentCategoryService
+    {
+        if (! isset($this->classCache['DocumentCategories'])) {
+            $this->classCache['DocumentCategories'] = new DocumentCategoryService($this->client);
+        }
+
+        return $this->classCache['DocumentCategories'];
+    }
+
+    /**
+     * Handles any interaction with the DocumentChecklistItems endpoint.
+     */
+    public function documentChecklistItems(): DocumentChecklistItemService
+    {
+        if (! isset($this->classCache['DocumentChecklistItems'])) {
+            $this->classCache['DocumentChecklistItems'] = new DocumentChecklistItemService($this->client);
+        }
+
+        return $this->classCache['DocumentChecklistItems'];
+    }
+
+    /**
+     * Handles any interaction with the DocumentChecklistLibraries endpoint.
+     */
+    public function documentChecklistLibraries(): DocumentChecklistLibraryService
+    {
+        if (! isset($this->classCache['DocumentChecklistLibraries'])) {
+            $this->classCache['DocumentChecklistLibraries'] = new DocumentChecklistLibraryService($this->client);
+        }
+
+        return $this->classCache['DocumentChecklistLibraries'];
+    }
+
+    /**
+     * Handles any interaction with the DocumentConfigurationItemAssociations endpoint.
+     */
+    public function documentConfigurationItemAssociations(): DocumentConfigurationItemAssociationService
+    {
+        if (! isset($this->classCache['DocumentConfigurationItemAssociations'])) {
+            $this->classCache['DocumentConfigurationItemAssociations'] = new DocumentConfigurationItemAssociationService($this->client);
+        }
+
+        return $this->classCache['DocumentConfigurationItemAssociations'];
+    }
+
+    /**
+     * Handles any interaction with the DocumentConfigurationItemCategoryAssociations endpoint.
+     */
+    public function documentConfigurationItemCategoryAssociations(): DocumentConfigurationItemCategoryAssociationService
+    {
+        if (! isset($this->classCache['DocumentConfigurationItemCategoryAssociations'])) {
+            $this->classCache['DocumentConfigurationItemCategoryAssociations'] = new DocumentConfigurationItemCategoryAssociationService($this->client);
+        }
+
+        return $this->classCache['DocumentConfigurationItemCategoryAssociations'];
+    }
+
+    /**
+     * Handles any interaction with the DocumentNotes endpoint.
+     */
+    public function documentNotes(): DocumentNoteService
+    {
+        if (! isset($this->classCache['DocumentNotes'])) {
+            $this->classCache['DocumentNotes'] = new DocumentNoteService($this->client);
+        }
+
+        return $this->classCache['DocumentNotes'];
+    }
+
+    /**
+     * Handles any interaction with the DocumentPlainTextContent endpoint.
+     */
+    public function documentPlainTextContent(): DocumentPlainTextContentService
+    {
+        if (! isset($this->classCache['DocumentPlainTextContent'])) {
+            $this->classCache['DocumentPlainTextContent'] = new DocumentPlainTextContentService($this->client);
+        }
+
+        return $this->classCache['DocumentPlainTextContent'];
+    }
+
+    /**
+     * Handles any interaction with the DocumentTagAssociations endpoint.
+     */
+    public function documentTagAssociations(): DocumentTagAssociationService
+    {
+        if (! isset($this->classCache['DocumentTagAssociations'])) {
+            $this->classCache['DocumentTagAssociations'] = new DocumentTagAssociationService($this->client);
+        }
+
+        return $this->classCache['DocumentTagAssociations'];
+    }
+
+    /**
+     * Handles any interaction with the DocumentTicketAssociations endpoint.
+     */
+    public function documentTicketAssociations(): DocumentTicketAssociationService
+    {
+        if (! isset($this->classCache['DocumentTicketAssociations'])) {
+            $this->classCache['DocumentTicketAssociations'] = new DocumentTicketAssociationService($this->client);
+        }
+
+        return $this->classCache['DocumentTicketAssociations'];
+    }
+
+    /**
+     * Handles any interaction with the DocumentToDocumentAssociations endpoint.
+     */
+    public function documentToDocumentAssociations(): DocumentToDocumentAssociationService
+    {
+        if (! isset($this->classCache['DocumentToDocumentAssociations'])) {
+            $this->classCache['DocumentToDocumentAssociations'] = new DocumentToDocumentAssociationService($this->client);
+        }
+
+        return $this->classCache['DocumentToDocumentAssociations'];
+    }
+
+    /**
+     * Handles any interaction with the Documents endpoint.
+     */
+    public function documents(): DocumentService
+    {
+        if (! isset($this->classCache['Documents'])) {
+            $this->classCache['Documents'] = new DocumentService($this->client);
+        }
+
+        return $this->classCache['Documents'];
+    }
+
+    /**
+     * Handles any interaction with the DomainRegistrars endpoint.
+     */
+    public function domainRegistrars(): DomainRegistrarService
+    {
+        if (! isset($this->classCache['DomainRegistrars'])) {
+            $this->classCache['DomainRegistrars'] = new DomainRegistrarService($this->client);
+        }
+
+        return $this->classCache['DomainRegistrars'];
+    }
+
+    /**
      * Handles any interaction with the ExpenseItems endpoint.
      */
     public function expenseItems(): ExpenseItemService
@@ -1150,6 +1402,18 @@ class Client
         }
 
         return $this->classCache['Holidays'];
+    }
+
+    /**
+     * Handles any interaction with the IntegrationVendorWidgets endpoint.
+     */
+    public function integrationVendorWidgets(): IntegrationVendorWidgetService
+    {
+        if (! isset($this->classCache['IntegrationVendorWidgets'])) {
+            $this->classCache['IntegrationVendorWidgets'] = new IntegrationVendorWidgetService($this->client);
+        }
+
+        return $this->classCache['IntegrationVendorWidgets'];
     }
 
     /**
@@ -1945,6 +2209,42 @@ class Client
     }
 
     /**
+     * Handles any interaction with the TagAliases endpoint.
+     */
+    public function tagAliases(): TagAliasService
+    {
+        if (! isset($this->classCache['TagAliases'])) {
+            $this->classCache['TagAliases'] = new TagAliasService($this->client);
+        }
+
+        return $this->classCache['TagAliases'];
+    }
+
+    /**
+     * Handles any interaction with the TagGroups endpoint.
+     */
+    public function tagGroups(): TagGroupService
+    {
+        if (! isset($this->classCache['TagGroups'])) {
+            $this->classCache['TagGroups'] = new TagGroupService($this->client);
+        }
+
+        return $this->classCache['TagGroups'];
+    }
+
+    /**
+     * Handles any interaction with the Tags endpoint.
+     */
+    public function tags(): TagService
+    {
+        if (! isset($this->classCache['Tags'])) {
+            $this->classCache['Tags'] = new TagService($this->client);
+        }
+
+        return $this->classCache['Tags'];
+    }
+
+    /**
      * Handles any interaction with the TaskAttachments endpoint.
      */
     public function taskAttachments(): TaskAttachmentService
@@ -2218,6 +2518,18 @@ class Client
         }
 
         return $this->classCache['TicketSecondaryResources'];
+    }
+
+    /**
+     * Handles any interaction with the TicketTagAssociations endpoint.
+     */
+    public function ticketTagAssociations(): TicketTagAssociationService
+    {
+        if (! isset($this->classCache['TicketTagAssociations'])) {
+            $this->classCache['TicketTagAssociations'] = new TicketTagAssociationService($this->client);
+        }
+
+        return $this->classCache['TicketTagAssociations'];
     }
 
     /**

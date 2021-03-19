@@ -25,6 +25,8 @@ class PurchaseOrderEntity extends DataTransferObject
     public ?int $paymentTerm;
     public ?string $phone;
     public ?int $purchaseForCompanyID;
+    public ?string $purchaseOrderNumber;
+    public ?int $purchaseOrderTemplateID;
     public ?Carbon $shippingDate;
     public ?int $shippingType;
     public string $shipToAddress1;

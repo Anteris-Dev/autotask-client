@@ -20,7 +20,7 @@ class ExpenseItemEntity extends DataTransferObject
     public ?int $expenseCurrencyID;
     public Carbon $expenseDate;
     public int $expenseReportID;
-    public ?string $glCode;
+    public ?string $gLCode;
     public bool $haveReceipt;
     public $id;
     public ?float $internalCurrencyExpenseAmount;

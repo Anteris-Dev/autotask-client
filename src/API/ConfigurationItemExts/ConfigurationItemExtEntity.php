@@ -44,6 +44,11 @@ class ConfigurationItemExtEntity extends DataTransferObject
     public $dattoUsedKilobytes;
     public ?string $dattoZFSVersionID;
     public ?string $deviceNetworkingID;
+    public ?string $domain;
+    public ?Carbon $domainExpirationDateTime;
+    public ?Carbon $domainLastUpdatedDateTime;
+    public ?int $domainRegistrarID;
+    public ?Carbon $domainRegistrationDateTime;
     public ?float $hourlyCost;
     public $id;
     public ?int $impersonatorCreatorResourceID;
@@ -102,6 +107,16 @@ class ConfigurationItemExtEntity extends DataTransferObject
     public ?float $setupFee;
     public ?int $sourceChargeID;
     public ?int $sourceChargeType;
+    public ?string $sslCommonName;
+    public ?string $sslIssuedBy;
+    public ?string $sslLocation;
+    public ?string $sslOrganization;
+    public ?string $sslOrganizationUnit;
+    public ?string $sslSerialNumber;
+    public ?string $sslSignatureAlgorithm;
+    public ?string $sslSource;
+    public ?Carbon $sslValidFromDateTime;
+    public ?Carbon $sslValidUntilDateTime;
     public ?int $vendorID;
     public ?Carbon $warrantyExpirationDate;
     /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
@@ -123,12 +138,32 @@ class ConfigurationItemExtEntity extends DataTransferObject
             $array['dattoLastCheckInDateTime'] = new Carbon($array['dattoLastCheckInDateTime']);
         }
 
+        if (isset($array['domainExpirationDateTime'])) {
+            $array['domainExpirationDateTime'] = new Carbon($array['domainExpirationDateTime']);
+        }
+
+        if (isset($array['domainLastUpdatedDateTime'])) {
+            $array['domainLastUpdatedDateTime'] = new Carbon($array['domainLastUpdatedDateTime']);
+        }
+
+        if (isset($array['domainRegistrationDateTime'])) {
+            $array['domainRegistrationDateTime'] = new Carbon($array['domainRegistrationDateTime']);
+        }
+
         if (isset($array['installDate'])) {
             $array['installDate'] = new Carbon($array['installDate']);
         }
 
         if (isset($array['lastModifiedTime'])) {
             $array['lastModifiedTime'] = new Carbon($array['lastModifiedTime']);
+        }
+
+        if (isset($array['sslValidFromDateTime'])) {
+            $array['sslValidFromDateTime'] = new Carbon($array['sslValidFromDateTime']);
+        }
+
+        if (isset($array['sslValidUntilDateTime'])) {
+            $array['sslValidUntilDateTime'] = new Carbon($array['sslValidUntilDateTime']);
         }
 
         if (isset($array['warrantyExpirationDate'])) {

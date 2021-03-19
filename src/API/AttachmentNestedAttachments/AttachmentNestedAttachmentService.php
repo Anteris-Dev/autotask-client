@@ -37,19 +37,21 @@ class AttachmentNestedAttachmentService
      */
     public function create(AttachmentNestedAttachmentEntity $resource): Response
     {
-        return $this->client->post("AttachmentNestedAttachments", $resource->toArray());
+        $parentID = $resource->parentID;
+        return $this->client->post("Attachments/$parentID/NestedAttachments", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
+     * @param  int  $parentID  ID of the AttachmentNestedAttachment parent resource.
      * @param  int  $id  ID of the AttachmentNestedAttachment to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $id): void
+    public function deleteById(int $parentID,int $id): void
     {
-        $this->client->delete("AttachmentNestedAttachments/$id");
+        $this->client->delete("Attachments/$parentID/NestedAttachments/$id");
     }
 
     /**
