@@ -30,6 +30,7 @@ class CompanyEntity extends DataTransferObject
     public ?string $billToZipCode;
     public ?string $city;
     public ?int $classification;
+    public ?int $companyCategoryID;
     public string $companyName;
     public ?string $companyNumber;
     public $companyType;
