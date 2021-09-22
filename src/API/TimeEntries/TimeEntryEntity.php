@@ -29,6 +29,7 @@ class TimeEntryEntity extends DataTransferObject
     public ?int $impersonatorUpdaterResourceID;
     public ?int $internalBillingCodeID;
     public ?string $internalNotes;
+    public ?bool $isInternalNotesVisibleToComanaged;
     public ?bool $isNonBillable;
     public ?Carbon $lastModifiedDateTime;
     public ?int $lastModifiedUserID;
