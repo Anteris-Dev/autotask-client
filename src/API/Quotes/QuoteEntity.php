@@ -34,6 +34,8 @@ class QuoteEntity extends DataTransferObject
     public ?bool $isActive;
     public ?Carbon $lastActivityDate;
     public ?int $lastModifiedBy;
+    public ?int $lastPublishedByResourceID;
+    public ?Carbon $lastPublishedDateTime;
     public string $name;
     public int $opportunityID;
     public ?int $paymentTerm;
