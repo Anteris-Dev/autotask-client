@@ -48,7 +48,9 @@ class TicketEntity extends DataTransferObject
     public ?float $hoursToBeScheduled;
     public $id;
     public ?int $impersonatorCreatorResourceID;
+    public ?bool $isAssignedToComanaged;
     public ?int $issueType;
+    public ?bool $isVisibleToComanaged;
     public ?Carbon $lastActivityDate;
     public ?int $lastActivityPersonType;
     public ?int $lastActivityResourceID;
