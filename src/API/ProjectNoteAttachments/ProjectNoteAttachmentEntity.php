@@ -17,11 +17,16 @@ class ProjectNoteAttachmentEntity extends DataTransferObject
     public string $attachmentType;
     public ?string $contentType;
     public ?int $creatorType;
+    public ?byte[] $data;
     public $fileSize;
     public string $fullPath;
+    public $id;
     public ?int $impersonatorCreatorResourceID;
     public $opportunityID;
+    public ?int $parentAttachmentID;
     public $parentID;
+    public ?int $projectID;
+    public ?int $projectNoteID;
     public int $publish;
     public string $title;
     public $id;

@@ -37,21 +37,19 @@ class TicketNoteAttachmentService
      */
     public function create(TicketNoteAttachmentEntity $resource): Response
     {
-        $parentID = $resource->parentID;
-        return $this->client->post("TicketNotes/$parentID/Attachments", $resource->toArray());
+        return $this->client->post("TicketNoteAttachments", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
-     * @param  int  $parentID  ID of the TicketNoteAttachment parent resource.
      * @param  int  $id  ID of the TicketNoteAttachment to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $parentID,int $id): void
+    public function deleteById(int $id): void
     {
-        $this->client->delete("TicketNotes/$parentID/Attachments/$id");
+        $this->client->delete("TicketNoteAttachments/$id");
     }
 
     /**

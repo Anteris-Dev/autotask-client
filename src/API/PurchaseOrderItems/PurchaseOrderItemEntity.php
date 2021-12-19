@@ -12,7 +12,7 @@ use Spatie\DataTransferObject\DataTransferObject;
 class PurchaseOrderItemEntity extends DataTransferObject
 {
     public ?int $chargeID;
-    public ?int $contractID;
+    public $contractID;
     public ?Carbon $estimatedArrivalDate;
     public $id;
     public ?float $internalCurrencyUnitCost;

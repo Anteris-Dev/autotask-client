@@ -10,7 +10,7 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class CompanyAlertEntity extends DataTransferObject
 {
-    public ?string $alertText;
+    public string $alertText;
     public int $alertTypeID;
     public int $companyID;
     public $id;

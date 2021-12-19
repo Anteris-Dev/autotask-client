@@ -15,12 +15,17 @@ class ConfigurationItemAttachmentEntity extends DataTransferObject
     public $attachedByContactID;
     public $attachedByResourceID;
     public string $attachmentType;
+    public ?int $configurationItemID;
+    public ?int $configurationItemNoteID;
     public ?string $contentType;
     public ?int $creatorType;
+    public ?byte[] $data;
     public $fileSize;
     public string $fullPath;
+    public $id;
     public ?int $impersonatorCreatorResourceID;
     public $opportunityID;
+    public ?int $parentAttachmentID;
     public $parentID;
     public int $publish;
     public string $title;

@@ -16,9 +16,13 @@ class ContractNoteAttachmentEntity extends DataTransferObject
     public $attachedByResourceID;
     public string $attachmentType;
     public ?string $contentType;
+    public ?int $contractID;
+    public ?int $contractNoteID;
     public ?int $creatorType;
+    public ?byte[] $data;
     public $fileSize;
     public string $fullPath;
+    public $id;
     public ?int $impersonatorCreatorResourceID;
     public $opportunityID;
     public $parentID;

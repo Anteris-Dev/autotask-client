@@ -10,7 +10,7 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class ConfigurationItemCategoryEntity extends DataTransferObject
 {
-    public int $displayColorRGB;
+    public int $displayColorRgb;
     public $id;
     public bool $isActive;
     public ?bool $isClientPortalDefault;

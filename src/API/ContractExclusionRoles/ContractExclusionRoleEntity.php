@@ -10,7 +10,7 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class ContractExclusionRoleEntity extends DataTransferObject
 {
-    public int $contractID;
+    public $contractID;
     public $id;
     public $roleID;
     /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */

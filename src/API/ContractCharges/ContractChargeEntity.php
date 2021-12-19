@@ -14,7 +14,7 @@ class ContractChargeEntity extends DataTransferObject
     public ?float $billableAmount;
     public $billingCodeID;
     public int $chargeType;
-    public int $contractID;
+    public $contractID;
     public $contractServiceBundleID;
     public $contractServiceID;
     public ?Carbon $createDate;
