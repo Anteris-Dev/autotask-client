@@ -30,7 +30,6 @@ class TicketAttachmentEntity extends DataTransferObject
     public ?int $ticketNoteID;
     public ?int $timeEntryID;
     public string $title;
-    public $id;
     public ?string $data;
     /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
     public ?array $userDefinedFields;

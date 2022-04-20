@@ -27,7 +27,6 @@ class ResourceAttachmentEntity extends DataTransferObject
     public int $publish;
     public ?int $resourceID;
     public string $title;
-    public $id;
     public ?string $data;
     /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
     public ?array $userDefinedFields;

@@ -28,7 +28,6 @@ class ProjectAttachmentEntity extends DataTransferObject
     public ?int $projectNoteID;
     public int $publish;
     public string $title;
-    public $id;
     public ?string $data;
     /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
     public ?array $userDefinedFields;

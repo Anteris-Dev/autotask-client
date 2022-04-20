@@ -29,7 +29,6 @@ class ConfigurationItemAttachmentEntity extends DataTransferObject
     public $parentID;
     public int $publish;
     public string $title;
-    public $id;
     public ?string $data;
     /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
     public ?array $userDefinedFields;

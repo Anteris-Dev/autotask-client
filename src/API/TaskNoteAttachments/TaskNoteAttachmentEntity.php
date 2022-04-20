@@ -28,7 +28,6 @@ class TaskNoteAttachmentEntity extends DataTransferObject
     public ?int $taskID;
     public ?int $taskNoteID;
     public string $title;
-    public $id;
     public ?string $data;
     /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
     public ?array $userDefinedFields;
