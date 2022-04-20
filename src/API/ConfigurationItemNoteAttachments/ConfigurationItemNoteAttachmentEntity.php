@@ -19,7 +19,6 @@ class ConfigurationItemNoteAttachmentEntity extends DataTransferObject
     public ?int $configurationItemNoteID;
     public ?string $contentType;
     public ?int $creatorType;
-    public ?byte[] $data;
     public $fileSize;
     public string $fullPath;
     public $id;

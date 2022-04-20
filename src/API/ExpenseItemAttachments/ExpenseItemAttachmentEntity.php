@@ -17,7 +17,6 @@ class ExpenseItemAttachmentEntity extends DataTransferObject
     public string $attachmentType;
     public ?string $contentType;
     public ?int $creatorType;
-    public ?byte[] $data;
     public ?int $expenseItemID;
     public ?int $expenseReportID;
     public $fileSize;

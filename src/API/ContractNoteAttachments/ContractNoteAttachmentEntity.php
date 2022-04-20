@@ -19,7 +19,6 @@ class ContractNoteAttachmentEntity extends DataTransferObject
     public ?int $contractID;
     public ?int $contractNoteID;
     public ?int $creatorType;
-    public ?byte[] $data;
     public $fileSize;
     public string $fullPath;
     public $id;

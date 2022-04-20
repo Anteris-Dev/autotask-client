@@ -17,7 +17,6 @@ class DocumentAttachmentEntity extends DataTransferObject
     public string $attachmentType;
     public ?string $contentType;
     public ?int $creatorType;
-    public ?byte[] $data;
     public ?int $documentID;
     public $fileSize;
     public string $fullPath;

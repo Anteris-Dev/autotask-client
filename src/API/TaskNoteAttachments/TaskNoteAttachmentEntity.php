@@ -17,7 +17,6 @@ class TaskNoteAttachmentEntity extends DataTransferObject
     public string $attachmentType;
     public ?string $contentType;
     public ?int $creatorType;
-    public ?byte[] $data;
     public $fileSize;
     public string $fullPath;
     public $id;
