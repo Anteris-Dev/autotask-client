@@ -61,9 +61,9 @@ class TicketAttachmentService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function findById(int $id): TicketAttachmentEntity
+    public function findById(int $id): TicketAttachmentCollection
     {
-        return TicketAttachmentEntity::fromResponse(
+        return TicketAttachmentCollection::fromResponse(
             $this->client->get("TicketAttachments/$id")
         );
     }
