@@ -1,10 +1,14 @@
 {
-    "name": "anteris-dev/autotask-client",
-    "description": "This package provides a PHP API client for the Autotask REST API. It is strongly typed and it is a wonderful experience to work with these classes in any intelligent IDE with autocompletion.",
+    "name": "msullivanJIT/autotask-client",
+    "description": "This package provides a PHP API client for the Autotask REST API. It is strongly typed and it is a wonderful experience to work with these classes in any intelligent IDE with autocompletion. This is a fork of Anteris-Dev/autotask-client that fixes issues with attachments",
     "authors": [
         {
             "name": "Aidan Casey",
             "email": "aidan.casey@anteris.com"
+        },
+        {
+            "name": "Max Sullivan",
+            "email": "msullivan@jitoutsource.com"
         }
     ],
     "autoload": {
