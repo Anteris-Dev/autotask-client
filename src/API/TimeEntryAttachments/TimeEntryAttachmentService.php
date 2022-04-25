@@ -59,9 +59,9 @@ class TimeEntryAttachmentService
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function findById(int $id): TimeEntryAttachmentEntity
+    public function findById(int $id): TicketAttachmentCollection
     {
-        return TimeEntryAttachmentEntity::fromResponse(
+        return TicketAttachmentCollection::fromResponse(
             $this->client->get("TimeEntryAttachments/$id")
         );
     }
