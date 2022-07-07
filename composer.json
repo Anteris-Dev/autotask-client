@@ -33,7 +33,6 @@
         "anteris-dev/autotask-client-generator": "^v1.0.4",
         "brianium/paratest": "^6.0",
         "phpunit/phpunit": "^9.3",
-        "spatie/ray": "^1.21",
         "vlucas/phpdotenv": "^4.0|^5.0"
     },
     "scripts": {
