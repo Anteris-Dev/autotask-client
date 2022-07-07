@@ -37,7 +37,10 @@
         "vlucas/phpdotenv": "^4.0|^5.0"
     },
     "scripts": {
-        "generate": "vendor/bin/autotask make:defaults -f -o ./ --no-cache",
+        "generate": [
+            "Composer\\Config::disableProcessTimeout",
+            "vendor/bin/autotask make:defaults -f -o ./ --no-cache"
+        ],
         "test": "vendor/bin/paratest"
     }
 }

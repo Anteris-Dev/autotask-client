@@ -19,3 +19,13 @@ jobs:
 
       - name: Generate Client
         run: composer generate
+
+      - name: Push Changes
+        uses: peter-evans/create-pull-request@v4
+        with:
+          title: "Generates Updated Client"
+          body: "This pull request updates the existing client with a re-generated version."
+          branch: "generate-client"
+          delete-branch: true
+          commit-message: "[Automated] Regenerate Client"
+          reviewers: "aidan-casey"
