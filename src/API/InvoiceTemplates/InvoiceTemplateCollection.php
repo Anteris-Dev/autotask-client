@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\InvoiceTemplates;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of InvoiceTemplate entities.
  * @see InvoiceTemplateEntity
  */
-class InvoiceTemplateCollection extends DataTransferObjectCollection
+class InvoiceTemplateCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

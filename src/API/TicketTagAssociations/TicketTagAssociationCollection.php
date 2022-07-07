@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\TicketTagAssociations;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of TicketTagAssociation entities.
  * @see TicketTagAssociationEntity
  */
-class TicketTagAssociationCollection extends DataTransferObjectCollection
+class TicketTagAssociationCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

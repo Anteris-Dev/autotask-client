@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ResourceServiceDeskRoles;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ResourceServiceDeskRole entities.
  * @see ResourceServiceDeskRoleEntity
  */
-class ResourceServiceDeskRoleCollection extends DataTransferObjectCollection
+class ResourceServiceDeskRoleCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

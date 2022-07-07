@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ContractRates;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ContractRate entities.
  * @see ContractRateEntity
  */
-class ContractRateCollection extends DataTransferObjectCollection
+class ContractRateCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

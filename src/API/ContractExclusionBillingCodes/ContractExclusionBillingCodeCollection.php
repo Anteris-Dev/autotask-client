@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ContractExclusionBillingCodes;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ContractExclusionBillingCode entities.
  * @see ContractExclusionBillingCodeEntity
  */
-class ContractExclusionBillingCodeCollection extends DataTransferObjectCollection
+class ContractExclusionBillingCodeCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

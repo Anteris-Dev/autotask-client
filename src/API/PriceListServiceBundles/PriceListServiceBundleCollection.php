@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\PriceListServiceBundles;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of PriceListServiceBundle entities.
  * @see PriceListServiceBundleEntity
  */
-class PriceListServiceBundleCollection extends DataTransferObjectCollection
+class PriceListServiceBundleCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

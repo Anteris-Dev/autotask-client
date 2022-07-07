@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ClassificationIcons;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ClassificationIcon entities.
  * @see ClassificationIconEntity
  */
-class ClassificationIconCollection extends DataTransferObjectCollection
+class ClassificationIconCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

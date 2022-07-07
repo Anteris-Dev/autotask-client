@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ConfigurationItemWebhookUdfFields;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ConfigurationItemWebhookUdfField entities.
  * @see ConfigurationItemWebhookUdfFieldEntity
  */
-class ConfigurationItemWebhookUdfFieldCollection extends DataTransferObjectCollection
+class ConfigurationItemWebhookUdfFieldCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

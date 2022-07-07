@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\PurchaseOrderItemReceiving;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of PurchaseOrderItemReceiving entities.
  * @see PurchaseOrderItemReceivingEntity
  */
-class PurchaseOrderItemReceivingCollection extends DataTransferObjectCollection
+class PurchaseOrderItemReceivingCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

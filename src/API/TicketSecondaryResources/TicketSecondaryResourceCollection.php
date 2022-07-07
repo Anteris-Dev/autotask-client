@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\TicketSecondaryResources;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of TicketSecondaryResource entities.
  * @see TicketSecondaryResourceEntity
  */
-class TicketSecondaryResourceCollection extends DataTransferObjectCollection
+class TicketSecondaryResourceCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

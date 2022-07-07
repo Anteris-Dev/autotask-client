@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\Services;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of Service entities.
  * @see ServiceEntity
  */
-class ServiceCollection extends DataTransferObjectCollection
+class ServiceCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

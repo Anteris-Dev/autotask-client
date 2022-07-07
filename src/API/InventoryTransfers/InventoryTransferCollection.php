@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\InventoryTransfers;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of InventoryTransfer entities.
  * @see InventoryTransferEntity
  */
-class InventoryTransferCollection extends DataTransferObjectCollection
+class InventoryTransferCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

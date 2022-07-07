@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\Countries;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of Country entities.
  * @see CountryEntity
  */
-class CountryCollection extends DataTransferObjectCollection
+class CountryCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

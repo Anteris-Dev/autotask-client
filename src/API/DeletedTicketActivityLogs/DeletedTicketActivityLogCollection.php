@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\DeletedTicketActivityLogs;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of DeletedTicketActivityLog entities.
  * @see DeletedTicketActivityLogEntity
  */
-class DeletedTicketActivityLogCollection extends DataTransferObjectCollection
+class DeletedTicketActivityLogCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

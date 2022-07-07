@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\Roles;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of Role entities.
  * @see RoleEntity
  */
-class RoleCollection extends DataTransferObjectCollection
+class RoleCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

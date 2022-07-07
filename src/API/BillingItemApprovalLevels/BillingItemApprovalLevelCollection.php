@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\BillingItemApprovalLevels;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of BillingItemApprovalLevel entities.
  * @see BillingItemApprovalLevelEntity
  */
-class BillingItemApprovalLevelCollection extends DataTransferObjectCollection
+class BillingItemApprovalLevelCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\InternalLocations;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of InternalLocation entities.
  * @see InternalLocationEntity
  */
-class InternalLocationCollection extends DataTransferObjectCollection
+class InternalLocationCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

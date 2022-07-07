@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\Departments;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of Department entities.
  * @see DepartmentEntity
  */
-class DepartmentCollection extends DataTransferObjectCollection
+class DepartmentCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

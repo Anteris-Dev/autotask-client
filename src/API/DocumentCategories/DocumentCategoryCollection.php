@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\DocumentCategories;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of DocumentCategory entities.
  * @see DocumentCategoryEntity
  */
-class DocumentCategoryCollection extends DataTransferObjectCollection
+class DocumentCategoryCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

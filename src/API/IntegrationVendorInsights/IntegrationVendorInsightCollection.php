@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\IntegrationVendorInsights;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of IntegrationVendorInsight entities.
  * @see IntegrationVendorInsightEntity
  */
-class IntegrationVendorInsightCollection extends DataTransferObjectCollection
+class IntegrationVendorInsightCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

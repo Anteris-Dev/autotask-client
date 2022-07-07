@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\DocumentChecklistItems;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of DocumentChecklistItem entities.
  * @see DocumentChecklistItemEntity
  */
-class DocumentChecklistItemCollection extends DataTransferObjectCollection
+class DocumentChecklistItemCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

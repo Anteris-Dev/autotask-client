@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ConfigurationItemBillingProductAssociations;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ConfigurationItemBillingProductAssociation entities.
  * @see ConfigurationItemBillingProductAssociationEntity
  */
-class ConfigurationItemBillingProductAssociationCollection extends DataTransferObjectCollection
+class ConfigurationItemBillingProductAssociationCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

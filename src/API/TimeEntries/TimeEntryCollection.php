@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\TimeEntries;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of TimeEntry entities.
  * @see TimeEntryEntity
  */
-class TimeEntryCollection extends DataTransferObjectCollection
+class TimeEntryCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ContractExclusionSets;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ContractExclusionSet entities.
  * @see ContractExclusionSetEntity
  */
-class ContractExclusionSetCollection extends DataTransferObjectCollection
+class ContractExclusionSetCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.
