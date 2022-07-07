@@ -11,7 +11,7 @@ use Spatie\DataTransferObject\DataTransferObject;
 class InventoryItemSerialNumberEntity extends DataTransferObject
 {
     public $id;
-    public $inventoryItemID;
+    public int $inventoryItemID;
     public string $serialNumber;
     /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
     public ?array $userDefinedFields;

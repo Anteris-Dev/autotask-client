@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\Phases;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of Phase entities.
  * @see PhaseEntity
  */
-class PhaseCollection extends DataTransferObjectCollection
+class PhaseCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

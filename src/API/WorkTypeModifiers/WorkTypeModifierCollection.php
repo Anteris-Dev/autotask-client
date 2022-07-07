@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\WorkTypeModifiers;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of WorkTypeModifier entities.
  * @see WorkTypeModifierEntity
  */
-class WorkTypeModifierCollection extends DataTransferObjectCollection
+class WorkTypeModifierCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

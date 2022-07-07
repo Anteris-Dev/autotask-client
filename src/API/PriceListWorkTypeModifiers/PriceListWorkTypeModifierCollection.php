@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\PriceListWorkTypeModifiers;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of PriceListWorkTypeModifier entities.
  * @see PriceListWorkTypeModifierEntity
  */
-class PriceListWorkTypeModifierCollection extends DataTransferObjectCollection
+class PriceListWorkTypeModifierCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

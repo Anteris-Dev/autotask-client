@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\KnowledgeBaseArticles;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of KnowledgeBaseArticle entities.
  * @see KnowledgeBaseArticleEntity
  */
-class KnowledgeBaseArticleCollection extends DataTransferObjectCollection
+class KnowledgeBaseArticleCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

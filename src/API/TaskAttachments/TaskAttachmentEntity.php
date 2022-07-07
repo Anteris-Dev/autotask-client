@@ -17,7 +17,7 @@ class TaskAttachmentEntity extends DataTransferObject
     public string $attachmentType;
     public ?string $contentType;
     public ?int $creatorType;
-    public ?byte[] $data;
+    public $data;
     public $fileSize;
     public string $fullPath;
     public $id;
@@ -30,8 +30,6 @@ class TaskAttachmentEntity extends DataTransferObject
     public ?int $taskNoteID;
     public ?int $timeEntryID;
     public string $title;
-    public $id;
-    public ?string $data;
     /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
     public ?array $userDefinedFields;
 

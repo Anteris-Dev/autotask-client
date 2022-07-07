@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ClientPortalUsers;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ClientPortalUser entities.
  * @see ClientPortalUserEntity
  */
-class ClientPortalUserCollection extends DataTransferObjectCollection
+class ClientPortalUserCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\DomainRegistrars;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of DomainRegistrar entities.
  * @see DomainRegistrarEntity
  */
-class DomainRegistrarCollection extends DataTransferObjectCollection
+class DomainRegistrarCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

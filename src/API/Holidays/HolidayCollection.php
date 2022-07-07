@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\Holidays;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of Holiday entities.
  * @see HolidayEntity
  */
-class HolidayCollection extends DataTransferObjectCollection
+class HolidayCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\CompanyNoteAttachments;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of CompanyNoteAttachment entities.
  * @see CompanyNoteAttachmentEntity
  */
-class CompanyNoteAttachmentCollection extends DataTransferObjectCollection
+class CompanyNoteAttachmentCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

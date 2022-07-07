@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\NotificationHistory;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of NotificationHistory entities.
  * @see NotificationHistoryEntity
  */
-class NotificationHistoryCollection extends DataTransferObjectCollection
+class NotificationHistoryCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

@@ -119,6 +119,11 @@ use Anteris\Autotask\API\InternalLocations\InternalLocationService;
 use Anteris\Autotask\API\InventoryItemSerialNumbers\InventoryItemSerialNumberService;
 use Anteris\Autotask\API\InventoryItems\InventoryItemService;
 use Anteris\Autotask\API\InventoryLocations\InventoryLocationService;
+use Anteris\Autotask\API\InventoryProducts\InventoryProductService;
+use Anteris\Autotask\API\InventoryStockedItems\InventoryStockedItemService;
+use Anteris\Autotask\API\InventoryStockedItemsAdd\InventoryStockedItemsAddService;
+use Anteris\Autotask\API\InventoryStockedItemsRemove\InventoryStockedItemsRemoveService;
+use Anteris\Autotask\API\InventoryStockedItemsTransfer\InventoryStockedItemsTransferService;
 use Anteris\Autotask\API\InventoryTransfers\InventoryTransferService;
 use Anteris\Autotask\API\InvoiceTemplates\InvoiceTemplateService;
 use Anteris\Autotask\API\Invoices\InvoiceService;
@@ -178,6 +183,7 @@ use Anteris\Autotask\API\ServiceLevelAgreementResults\ServiceLevelAgreementResul
 use Anteris\Autotask\API\Services\ServiceService;
 use Anteris\Autotask\API\ShippingTypes\ShippingTypeService;
 use Anteris\Autotask\API\Skills\SkillService;
+use Anteris\Autotask\API\Subscribeds\SubscribedService;
 use Anteris\Autotask\API\SubscriptionPeriods\SubscriptionPeriodService;
 use Anteris\Autotask\API\Subscriptions\SubscriptionService;
 use Anteris\Autotask\API\SurveyResults\SurveyResultService;
@@ -205,10 +211,17 @@ use Anteris\Autotask\API\TicketChecklistItems\TicketChecklistItemService;
 use Anteris\Autotask\API\TicketChecklistLibraries\TicketChecklistLibraryService;
 use Anteris\Autotask\API\TicketHistory\TicketHistoryService;
 use Anteris\Autotask\API\TicketNoteAttachments\TicketNoteAttachmentService;
+use Anteris\Autotask\API\TicketNoteWebhookExcludedResources\TicketNoteWebhookExcludedResourceService;
+use Anteris\Autotask\API\TicketNoteWebhookFields\TicketNoteWebhookFieldService;
+use Anteris\Autotask\API\TicketNoteWebhooks\TicketNoteWebhookService;
 use Anteris\Autotask\API\TicketNotes\TicketNoteService;
 use Anteris\Autotask\API\TicketRmaCredits\TicketRmaCreditService;
 use Anteris\Autotask\API\TicketSecondaryResources\TicketSecondaryResourceService;
 use Anteris\Autotask\API\TicketTagAssociations\TicketTagAssociationService;
+use Anteris\Autotask\API\TicketWebhookExcludedResources\TicketWebhookExcludedResourceService;
+use Anteris\Autotask\API\TicketWebhookFields\TicketWebhookFieldService;
+use Anteris\Autotask\API\TicketWebhookUdfFields\TicketWebhookUdfFieldService;
+use Anteris\Autotask\API\TicketWebhooks\TicketWebhookService;
 use Anteris\Autotask\API\Tickets\TicketService;
 use Anteris\Autotask\API\TimeEntries\TimeEntryService;
 use Anteris\Autotask\API\TimeEntryAttachments\TimeEntryAttachmentService;
@@ -1649,6 +1662,66 @@ class Client
     }
 
     /**
+     * Handles any interaction with the InventoryProducts endpoint.
+     */
+    public function inventoryProducts(): InventoryProductService
+    {
+        if (! isset($this->classCache['InventoryProducts'])) {
+            $this->classCache['InventoryProducts'] = new InventoryProductService($this->client);
+        }
+
+        return $this->classCache['InventoryProducts'];
+    }
+
+    /**
+     * Handles any interaction with the InventoryStockedItems endpoint.
+     */
+    public function inventoryStockedItems(): InventoryStockedItemService
+    {
+        if (! isset($this->classCache['InventoryStockedItems'])) {
+            $this->classCache['InventoryStockedItems'] = new InventoryStockedItemService($this->client);
+        }
+
+        return $this->classCache['InventoryStockedItems'];
+    }
+
+    /**
+     * Handles any interaction with the InventoryStockedItemsAdd endpoint.
+     */
+    public function inventoryStockedItemsAdd(): InventoryStockedItemsAddService
+    {
+        if (! isset($this->classCache['InventoryStockedItemsAdd'])) {
+            $this->classCache['InventoryStockedItemsAdd'] = new InventoryStockedItemsAddService($this->client);
+        }
+
+        return $this->classCache['InventoryStockedItemsAdd'];
+    }
+
+    /**
+     * Handles any interaction with the InventoryStockedItemsRemove endpoint.
+     */
+    public function inventoryStockedItemsRemove(): InventoryStockedItemsRemoveService
+    {
+        if (! isset($this->classCache['InventoryStockedItemsRemove'])) {
+            $this->classCache['InventoryStockedItemsRemove'] = new InventoryStockedItemsRemoveService($this->client);
+        }
+
+        return $this->classCache['InventoryStockedItemsRemove'];
+    }
+
+    /**
+     * Handles any interaction with the InventoryStockedItemsTransfer endpoint.
+     */
+    public function inventoryStockedItemsTransfer(): InventoryStockedItemsTransferService
+    {
+        if (! isset($this->classCache['InventoryStockedItemsTransfer'])) {
+            $this->classCache['InventoryStockedItemsTransfer'] = new InventoryStockedItemsTransferService($this->client);
+        }
+
+        return $this->classCache['InventoryStockedItemsTransfer'];
+    }
+
+    /**
      * Handles any interaction with the InventoryTransfers endpoint.
      */
     public function inventoryTransfers(): InventoryTransferService
@@ -2357,6 +2430,18 @@ class Client
     }
 
     /**
+     * Handles any interaction with the Subscribeds endpoint.
+     */
+    public function subscribeds(): SubscribedService
+    {
+        if (! isset($this->classCache['Subscribeds'])) {
+            $this->classCache['Subscribeds'] = new SubscribedService($this->client);
+        }
+
+        return $this->classCache['Subscribeds'];
+    }
+
+    /**
      * Handles any interaction with the SubscriptionPeriods endpoint.
      */
     public function subscriptionPeriods(): SubscriptionPeriodService
@@ -2681,6 +2766,42 @@ class Client
     }
 
     /**
+     * Handles any interaction with the TicketNoteWebhookExcludedResources endpoint.
+     */
+    public function ticketNoteWebhookExcludedResources(): TicketNoteWebhookExcludedResourceService
+    {
+        if (! isset($this->classCache['TicketNoteWebhookExcludedResources'])) {
+            $this->classCache['TicketNoteWebhookExcludedResources'] = new TicketNoteWebhookExcludedResourceService($this->client);
+        }
+
+        return $this->classCache['TicketNoteWebhookExcludedResources'];
+    }
+
+    /**
+     * Handles any interaction with the TicketNoteWebhookFields endpoint.
+     */
+    public function ticketNoteWebhookFields(): TicketNoteWebhookFieldService
+    {
+        if (! isset($this->classCache['TicketNoteWebhookFields'])) {
+            $this->classCache['TicketNoteWebhookFields'] = new TicketNoteWebhookFieldService($this->client);
+        }
+
+        return $this->classCache['TicketNoteWebhookFields'];
+    }
+
+    /**
+     * Handles any interaction with the TicketNoteWebhooks endpoint.
+     */
+    public function ticketNoteWebhooks(): TicketNoteWebhookService
+    {
+        if (! isset($this->classCache['TicketNoteWebhooks'])) {
+            $this->classCache['TicketNoteWebhooks'] = new TicketNoteWebhookService($this->client);
+        }
+
+        return $this->classCache['TicketNoteWebhooks'];
+    }
+
+    /**
      * Handles any interaction with the TicketNotes endpoint.
      */
     public function ticketNotes(): TicketNoteService
@@ -2726,6 +2847,54 @@ class Client
         }
 
         return $this->classCache['TicketTagAssociations'];
+    }
+
+    /**
+     * Handles any interaction with the TicketWebhookExcludedResources endpoint.
+     */
+    public function ticketWebhookExcludedResources(): TicketWebhookExcludedResourceService
+    {
+        if (! isset($this->classCache['TicketWebhookExcludedResources'])) {
+            $this->classCache['TicketWebhookExcludedResources'] = new TicketWebhookExcludedResourceService($this->client);
+        }
+
+        return $this->classCache['TicketWebhookExcludedResources'];
+    }
+
+    /**
+     * Handles any interaction with the TicketWebhookFields endpoint.
+     */
+    public function ticketWebhookFields(): TicketWebhookFieldService
+    {
+        if (! isset($this->classCache['TicketWebhookFields'])) {
+            $this->classCache['TicketWebhookFields'] = new TicketWebhookFieldService($this->client);
+        }
+
+        return $this->classCache['TicketWebhookFields'];
+    }
+
+    /**
+     * Handles any interaction with the TicketWebhookUdfFields endpoint.
+     */
+    public function ticketWebhookUdfFields(): TicketWebhookUdfFieldService
+    {
+        if (! isset($this->classCache['TicketWebhookUdfFields'])) {
+            $this->classCache['TicketWebhookUdfFields'] = new TicketWebhookUdfFieldService($this->client);
+        }
+
+        return $this->classCache['TicketWebhookUdfFields'];
+    }
+
+    /**
+     * Handles any interaction with the TicketWebhooks endpoint.
+     */
+    public function ticketWebhooks(): TicketWebhookService
+    {
+        if (! isset($this->classCache['TicketWebhooks'])) {
+            $this->classCache['TicketWebhooks'] = new TicketWebhookService($this->client);
+        }
+
+        return $this->classCache['TicketWebhooks'];
     }
 
     /**

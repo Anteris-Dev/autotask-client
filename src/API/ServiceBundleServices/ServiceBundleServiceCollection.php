@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ServiceBundleServices;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ServiceBundleService entities.
  * @see ServiceBundleServiceEntity
  */
-class ServiceBundleServiceCollection extends DataTransferObjectCollection
+class ServiceBundleServiceCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

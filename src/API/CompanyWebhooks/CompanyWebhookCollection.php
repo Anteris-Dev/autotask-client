@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\CompanyWebhooks;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of CompanyWebhook entities.
  * @see CompanyWebhookEntity
  */
-class CompanyWebhookCollection extends DataTransferObjectCollection
+class CompanyWebhookCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

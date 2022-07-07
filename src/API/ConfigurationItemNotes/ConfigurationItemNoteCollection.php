@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ConfigurationItemNotes;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ConfigurationItemNote entities.
  * @see ConfigurationItemNoteEntity
  */
-class ConfigurationItemNoteCollection extends DataTransferObjectCollection
+class ConfigurationItemNoteCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

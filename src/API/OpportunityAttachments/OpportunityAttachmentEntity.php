@@ -17,7 +17,7 @@ class OpportunityAttachmentEntity extends DataTransferObject
     public string $attachmentType;
     public ?string $contentType;
     public ?int $creatorType;
-    public ?byte[] $data;
+    public $data;
     public $fileSize;
     public string $fullPath;
     public $id;
@@ -26,8 +26,6 @@ class OpportunityAttachmentEntity extends DataTransferObject
     public $parentID;
     public int $publish;
     public string $title;
-    public $id;
-    public ?string $data;
     /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
     public ?array $userDefinedFields;
 

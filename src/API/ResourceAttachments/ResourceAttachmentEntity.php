@@ -17,7 +17,7 @@ class ResourceAttachmentEntity extends DataTransferObject
     public string $attachmentType;
     public ?string $contentType;
     public ?int $creatorType;
-    public ?byte[] $data;
+    public $data;
     public $fileSize;
     public string $fullPath;
     public $id;
@@ -27,8 +27,6 @@ class ResourceAttachmentEntity extends DataTransferObject
     public int $publish;
     public ?int $resourceID;
     public string $title;
-    public $id;
-    public ?string $data;
     /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
     public ?array $userDefinedFields;
 

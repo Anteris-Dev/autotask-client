@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ProjectCharges;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ProjectCharge entities.
  * @see ProjectChargeEntity
  */
-class ProjectChargeCollection extends DataTransferObjectCollection
+class ProjectChargeCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

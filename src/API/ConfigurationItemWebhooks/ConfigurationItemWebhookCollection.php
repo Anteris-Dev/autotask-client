@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ConfigurationItemWebhooks;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ConfigurationItemWebhook entities.
  * @see ConfigurationItemWebhookEntity
  */
-class ConfigurationItemWebhookCollection extends DataTransferObjectCollection
+class ConfigurationItemWebhookCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

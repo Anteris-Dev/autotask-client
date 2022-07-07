@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\PurchaseOrders;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of PurchaseOrder entities.
  * @see PurchaseOrderEntity
  */
-class PurchaseOrderCollection extends DataTransferObjectCollection
+class PurchaseOrderCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ProjectNotes;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ProjectNote entities.
  * @see ProjectNoteEntity
  */
-class ProjectNoteCollection extends DataTransferObjectCollection
+class ProjectNoteCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

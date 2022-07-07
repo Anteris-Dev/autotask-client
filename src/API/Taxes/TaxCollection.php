@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\Taxes;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of Tax entities.
  * @see TaxEntity
  */
-class TaxCollection extends DataTransferObjectCollection
+class TaxCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

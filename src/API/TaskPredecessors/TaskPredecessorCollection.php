@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\TaskPredecessors;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of TaskPredecessor entities.
  * @see TaskPredecessorEntity
  */
-class TaskPredecessorCollection extends DataTransferObjectCollection
+class TaskPredecessorCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

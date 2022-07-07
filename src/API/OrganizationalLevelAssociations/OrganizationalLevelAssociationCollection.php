@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\OrganizationalLevelAssociations;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of OrganizationalLevelAssociation entities.
  * @see OrganizationalLevelAssociationEntity
  */
-class OrganizationalLevelAssociationCollection extends DataTransferObjectCollection
+class OrganizationalLevelAssociationCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.
