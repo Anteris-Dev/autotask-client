@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\Products;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of Product entities.
  * @see ProductEntity
  */
-class ProductCollection extends DataTransferObjectCollection
+class ProductCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

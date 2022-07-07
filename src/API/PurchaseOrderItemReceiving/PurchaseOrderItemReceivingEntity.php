@@ -19,6 +19,7 @@ class PurchaseOrderItemReceivingEntity extends DataTransferObject
     public ?Carbon $receiveDate;
     public ?int $receivedByResourceID;
     public ?string $serialNumber;
+    public ?string $vendorInvoiceNumber;
     /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
     public ?array $userDefinedFields;
 

@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ContactGroupContacts;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ContactGroupContact entities.
  * @see ContactGroupContactEntity
  */
-class ContactGroupContactCollection extends DataTransferObjectCollection
+class ContactGroupContactCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\InternalLocationWithBusinessHours;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of InternalLocationWithBusinessHour entities.
  * @see InternalLocationWithBusinessHourEntity
  */
-class InternalLocationWithBusinessHourCollection extends DataTransferObjectCollection
+class InternalLocationWithBusinessHourCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

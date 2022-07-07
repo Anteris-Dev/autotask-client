@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\OpportunityAttachments;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of OpportunityAttachment entities.
  * @see OpportunityAttachmentEntity
  */
-class OpportunityAttachmentCollection extends DataTransferObjectCollection
+class OpportunityAttachmentCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

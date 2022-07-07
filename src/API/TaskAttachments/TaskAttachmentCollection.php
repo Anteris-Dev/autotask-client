@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\TaskAttachments;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of TaskAttachment entities.
  * @see TaskAttachmentEntity
  */
-class TaskAttachmentCollection extends DataTransferObjectCollection
+class TaskAttachmentCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

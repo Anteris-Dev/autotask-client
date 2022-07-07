@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\SurveyResults;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of SurveyResult entities.
  * @see SurveyResultEntity
  */
-class SurveyResultCollection extends DataTransferObjectCollection
+class SurveyResultCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\AdditionalInvoiceFieldValues;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of AdditionalInvoiceFieldValue entities.
  * @see AdditionalInvoiceFieldValueEntity
  */
-class AdditionalInvoiceFieldValueCollection extends DataTransferObjectCollection
+class AdditionalInvoiceFieldValueCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\QuoteLocations;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of QuoteLocation entities.
  * @see QuoteLocationEntity
  */
-class QuoteLocationCollection extends DataTransferObjectCollection
+class QuoteLocationCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

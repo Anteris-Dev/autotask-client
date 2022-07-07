@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ComanagedAssociations;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ComanagedAssociation entities.
  * @see ComanagedAssociationEntity
  */
-class ComanagedAssociationCollection extends DataTransferObjectCollection
+class ComanagedAssociationCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

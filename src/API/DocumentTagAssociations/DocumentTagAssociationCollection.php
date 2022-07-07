@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\DocumentTagAssociations;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of DocumentTagAssociation entities.
  * @see DocumentTagAssociationEntity
  */
-class DocumentTagAssociationCollection extends DataTransferObjectCollection
+class DocumentTagAssociationCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

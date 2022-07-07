@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\Appointments;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of Appointment entities.
  * @see AppointmentEntity
  */
-class AppointmentCollection extends DataTransferObjectCollection
+class AppointmentCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

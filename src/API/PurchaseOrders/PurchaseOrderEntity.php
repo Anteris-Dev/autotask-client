@@ -11,6 +11,7 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class PurchaseOrderEntity extends DataTransferObject
 {
+    public ?string $additionalVendorInvoiceNumbers;
     public ?Carbon $cancelDateTime;
     public ?Carbon $createDateTime;
     public ?int $creatorResourceID;

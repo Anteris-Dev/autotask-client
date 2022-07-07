@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\Currencies;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of Currency entities.
  * @see CurrencyEntity
  */
-class CurrencyCollection extends DataTransferObjectCollection
+class CurrencyCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

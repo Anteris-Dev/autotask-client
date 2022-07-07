@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ContractServiceBundleAdjustments;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ContractServiceBundleAdjustment entities.
  * @see ContractServiceBundleAdjustmentEntity
  */
-class ContractServiceBundleAdjustmentCollection extends DataTransferObjectCollection
+class ContractServiceBundleAdjustmentCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ResourceSkills;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ResourceSkill entities.
  * @see ResourceSkillEntity
  */
-class ResourceSkillCollection extends DataTransferObjectCollection
+class ResourceSkillCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

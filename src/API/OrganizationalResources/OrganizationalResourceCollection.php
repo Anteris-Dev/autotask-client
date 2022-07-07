@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\OrganizationalResources;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of OrganizationalResource entities.
  * @see OrganizationalResourceEntity
  */
-class OrganizationalResourceCollection extends DataTransferObjectCollection
+class OrganizationalResourceCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

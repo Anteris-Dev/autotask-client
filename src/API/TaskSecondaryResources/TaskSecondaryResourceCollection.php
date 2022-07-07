@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\TaskSecondaryResources;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of TaskSecondaryResource entities.
  * @see TaskSecondaryResourceEntity
  */
-class TaskSecondaryResourceCollection extends DataTransferObjectCollection
+class TaskSecondaryResourceCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

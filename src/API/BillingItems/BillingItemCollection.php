@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\BillingItems;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of BillingItem entities.
  * @see BillingItemEntity
  */
-class BillingItemCollection extends DataTransferObjectCollection
+class BillingItemCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

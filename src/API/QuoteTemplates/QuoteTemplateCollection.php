@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\QuoteTemplates;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of QuoteTemplate entities.
  * @see QuoteTemplateEntity
  */
-class QuoteTemplateCollection extends DataTransferObjectCollection
+class QuoteTemplateCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

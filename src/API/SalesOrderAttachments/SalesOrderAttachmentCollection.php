@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\SalesOrderAttachments;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of SalesOrderAttachment entities.
  * @see SalesOrderAttachmentEntity
  */
-class SalesOrderAttachmentCollection extends DataTransferObjectCollection
+class SalesOrderAttachmentCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

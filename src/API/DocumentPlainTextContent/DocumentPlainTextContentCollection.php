@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\DocumentPlainTextContent;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of DocumentPlainTextContent entities.
  * @see DocumentPlainTextContentEntity
  */
-class DocumentPlainTextContentCollection extends DataTransferObjectCollection
+class DocumentPlainTextContentCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

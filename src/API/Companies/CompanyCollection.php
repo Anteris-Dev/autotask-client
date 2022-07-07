@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\Companies;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of Company entities.
  * @see CompanyEntity
  */
-class CompanyCollection extends DataTransferObjectCollection
+class CompanyCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

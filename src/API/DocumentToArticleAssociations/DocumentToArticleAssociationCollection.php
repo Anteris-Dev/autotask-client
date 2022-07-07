@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\DocumentToArticleAssociations;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of DocumentToArticleAssociation entities.
  * @see DocumentToArticleAssociationEntity
  */
-class DocumentToArticleAssociationCollection extends DataTransferObjectCollection
+class DocumentToArticleAssociationCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.
