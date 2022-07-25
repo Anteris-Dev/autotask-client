@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\UserDefinedFieldDefinitions;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of UserDefinedFieldDefinition entities.
  * @see UserDefinedFieldDefinitionEntity
  */
-class UserDefinedFieldDefinitionCollection extends DataTransferObjectCollection
+class UserDefinedFieldDefinitionCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

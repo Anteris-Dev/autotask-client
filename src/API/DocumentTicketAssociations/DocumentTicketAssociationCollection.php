@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\DocumentTicketAssociations;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of DocumentTicketAssociation entities.
  * @see DocumentTicketAssociationEntity
  */
-class DocumentTicketAssociationCollection extends DataTransferObjectCollection
+class DocumentTicketAssociationCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

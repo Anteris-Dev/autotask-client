@@ -42,6 +42,19 @@ class CompanyAlertService
     }
 
     /**
+     * Deletes an entity by its ID.
+     *
+     * @param  int  $companyID  ID of the CompanyAlert parent resource.
+     * @param  int  $id  ID of the CompanyAlert to be deleted.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
+    public function deleteById(int $companyID,int $id): void
+    {
+        $this->client->delete("Companies/$companyID/Alerts/$id");
+    }
+
+    /**
      * Finds the CompanyAlert based on its ID.
      *
      * @param  string $id  ID of the entity to be retrieved.

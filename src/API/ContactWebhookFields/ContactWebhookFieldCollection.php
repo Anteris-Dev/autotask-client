@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ContactWebhookFields;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ContactWebhookField entities.
  * @see ContactWebhookFieldEntity
  */
-class ContactWebhookFieldCollection extends DataTransferObjectCollection
+class ContactWebhookFieldCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

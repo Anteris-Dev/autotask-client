@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\TicketChecklistLibraries;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of TicketChecklistLibrary entities.
  * @see TicketChecklistLibraryEntity
  */
-class TicketChecklistLibraryCollection extends DataTransferObjectCollection
+class TicketChecklistLibraryCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

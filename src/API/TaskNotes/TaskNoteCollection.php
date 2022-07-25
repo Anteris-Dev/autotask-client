@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\TaskNotes;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of TaskNote entities.
  * @see TaskNoteEntity
  */
-class TaskNoteCollection extends DataTransferObjectCollection
+class TaskNoteCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

@@ -11,7 +11,7 @@ use Spatie\DataTransferObject\DataTransferObject;
 class ContractExclusionBillingCodeEntity extends DataTransferObject
 {
     public $billingCodeID;
-    public int $contractID;
+    public $contractID;
     public $id;
     /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
     public ?array $userDefinedFields;

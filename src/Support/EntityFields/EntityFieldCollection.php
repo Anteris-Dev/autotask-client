@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\Support\EntityFields;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of entity fields.
  * @see EntityFieldEntity
  */
-class EntityFieldCollection extends DataTransferObjectCollection
+class EntityFieldCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

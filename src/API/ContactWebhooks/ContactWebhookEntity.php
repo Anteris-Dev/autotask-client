@@ -22,7 +22,7 @@ class ContactWebhookEntity extends DataTransferObject
     public ?int $ownerResourceID;
     public string $secretKey;
     public bool $sendThresholdExceededNotification;
-    public ?string $webhookGUID;
+    public ?string $webhookGuid;
     public string $webhookUrl;
     /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
     public ?array $userDefinedFields;

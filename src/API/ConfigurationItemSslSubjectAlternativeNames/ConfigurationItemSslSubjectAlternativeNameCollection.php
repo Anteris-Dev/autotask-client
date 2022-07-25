@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ConfigurationItemSslSubjectAlternativeNames;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ConfigurationItemSslSubjectAlternativeName entities.
  * @see ConfigurationItemSslSubjectAlternativeNameEntity
  */
-class ConfigurationItemSslSubjectAlternativeNameCollection extends DataTransferObjectCollection
+class ConfigurationItemSslSubjectAlternativeNameCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\TicketChangeRequestApprovals;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of TicketChangeRequestApproval entities.
  * @see TicketChangeRequestApprovalEntity
  */
-class TicketChangeRequestApprovalCollection extends DataTransferObjectCollection
+class TicketChangeRequestApprovalCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

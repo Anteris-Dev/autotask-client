@@ -105,4 +105,16 @@ class ComanagedAssociationService
     {
         return new ComanagedAssociationQueryBuilder($this->client);
     }
+
+    /**
+     * Updates the comanagedassociation.
+     *
+     * @param  ComanagedAssociationEntity  $resource  The comanagedassociation entity to be updated.
+     *
+     * @author Aidan Casey <aidan.casey@anteris.com>
+     */
+    public function update(ComanagedAssociationEntity $resource): Response
+    {
+        return $this->client->put("ComanagedAssociations", $resource->toArray());
+    }
 }

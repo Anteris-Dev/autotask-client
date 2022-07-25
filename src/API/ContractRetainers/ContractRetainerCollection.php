@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ContractRetainers;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ContractRetainer entities.
  * @see ContractRetainerEntity
  */
-class ContractRetainerCollection extends DataTransferObjectCollection
+class ContractRetainerCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

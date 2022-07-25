@@ -15,17 +15,20 @@ class ConfigurationItemAttachmentEntity extends DataTransferObject
     public $attachedByContactID;
     public $attachedByResourceID;
     public string $attachmentType;
+    public ?int $configurationItemID;
+    public ?int $configurationItemNoteID;
     public ?string $contentType;
     public ?int $creatorType;
+    public $data;
     public $fileSize;
     public string $fullPath;
+    public $id;
     public ?int $impersonatorCreatorResourceID;
     public $opportunityID;
+    public ?int $parentAttachmentID;
     public $parentID;
     public int $publish;
     public string $title;
-    public $id;
-    public ?string $data;
     /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
     public ?array $userDefinedFields;
 

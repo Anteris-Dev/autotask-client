@@ -17,7 +17,7 @@ class CompanyToDoEntity extends DataTransferObject
     public $companyID;
     public ?Carbon $completedDate;
     public $contactID;
-    public ?int $contractID;
+    public $contractID;
     public ?Carbon $createDateTime;
     public $creatorResourceID;
     public Carbon $endDateTime;

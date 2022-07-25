@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ActionTypes;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ActionType entities.
  * @see ActionTypeEntity
  */
-class ActionTypeCollection extends DataTransferObjectCollection
+class ActionTypeCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

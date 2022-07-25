@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\DocumentAttachments;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of DocumentAttachment entities.
  * @see DocumentAttachmentEntity
  */
-class DocumentAttachmentCollection extends DataTransferObjectCollection
+class DocumentAttachmentCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

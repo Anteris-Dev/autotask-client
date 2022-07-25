@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ExpenseReports;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ExpenseReport entities.
  * @see ExpenseReportEntity
  */
-class ExpenseReportCollection extends DataTransferObjectCollection
+class ExpenseReportCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

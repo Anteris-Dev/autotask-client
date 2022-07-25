@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ContractTicketPurchases;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ContractTicketPurchase entities.
  * @see ContractTicketPurchaseEntity
  */
-class ContractTicketPurchaseCollection extends DataTransferObjectCollection
+class ContractTicketPurchaseCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

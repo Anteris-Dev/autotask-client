@@ -18,6 +18,12 @@ class BillingItemEntity extends DataTransferObject
     public $configurationItemID;
     public $contractChargeID;
     public ?int $contractID;
+    public ?int $contractServiceAdjustmentID;
+    public ?int $contractServiceBundleAdjustmentID;
+    public ?int $contractServiceBundleID;
+    public ?int $contractServiceBundlePeriodID;
+    public ?int $contractServiceID;
+    public ?int $contractServicePeriodID;
     public ?string $description;
     public ?int $expenseItemID;
     public ?float $extendedPrice;
@@ -58,12 +64,6 @@ class BillingItemEntity extends DataTransferObject
     public ?Carbon $webServiceDate;
     /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
     public ?array $userDefinedFields;
-    public ?int $contractServiceID;
-    public ?int $contractServiceBundleID;
-    public ?int $contractServiceAdjustmentID;
-    public ?int $contractServiceBundleAdjustmentID;
-    public ?int $contractServiceBundlePeriodID;
-    public ?int $contractServicePeriodID;
 
     /**
      * Creates a new BillingItem entity.

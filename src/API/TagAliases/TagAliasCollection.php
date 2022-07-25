@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\TagAliases;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of TagAlias entities.
  * @see TagAliasEntity
  */
-class TagAliasCollection extends DataTransferObjectCollection
+class TagAliasCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

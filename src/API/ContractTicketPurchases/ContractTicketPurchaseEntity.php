@@ -11,7 +11,7 @@ use Spatie\DataTransferObject\DataTransferObject;
  */
 class ContractTicketPurchaseEntity extends DataTransferObject
 {
-    public int $contractID;
+    public $contractID;
     public Carbon $datePurchased;
     public Carbon $endDate;
     public $id;

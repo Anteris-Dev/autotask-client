@@ -1,0 +1,31 @@
+name: Build Package
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      AUTOTASK_API_USERNAME: ${{ secrets.AUTOTASK_API_USERNAME }}
+      AUTOTASK_API_SECRET: ${{ secrets.AUTOTASK_API_SECRET }}
+      AUTOTASK_API_INTEGRATION_CODE: ${{ secrets.AUTOTASK_API_INTEGRATION_CODE }}
+      AUTOTASK_API_BASE_URI: ${{ secrets.AUTOTASK_API_BASE_URI }}
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: composer update --prefer-dist --no-progress --no-suggest
+
+      - name: Generate Client
+        run: composer generate
+
+      - name: Push Changes
+        uses: peter-evans/create-pull-request@v4
+        with:
+          title: "Generates Updated Client"
+          body: "This pull request updates the existing client with a re-generated version."
+          branch: "generate-client"
+          delete-branch: true
+          commit-message: "[Automated] Regenerate Client"
+          reviewers: "aidan-casey"

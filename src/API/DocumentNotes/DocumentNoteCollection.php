@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\DocumentNotes;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of DocumentNote entities.
  * @see DocumentNoteEntity
  */
-class DocumentNoteCollection extends DataTransferObjectCollection
+class DocumentNoteCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

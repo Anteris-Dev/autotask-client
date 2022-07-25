@@ -15,17 +15,20 @@ class CompanyNoteAttachmentEntity extends DataTransferObject
     public $attachedByContactID;
     public $attachedByResourceID;
     public string $attachmentType;
+    public ?int $companyID;
+    public ?int $companyNoteID;
     public ?string $contentType;
     public ?int $creatorType;
+    public $data;
     public $fileSize;
     public string $fullPath;
+    public $id;
     public ?int $impersonatorCreatorResourceID;
     public $opportunityID;
     public $parentID;
     public int $publish;
+    public ?int $salesOrderID;
     public string $title;
-    public $id;
-    public ?string $data;
     /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
     public ?array $userDefinedFields;
 

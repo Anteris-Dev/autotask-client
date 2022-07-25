@@ -86,6 +86,10 @@ class QuoteEntity extends DataTransferObject
             $array['lastActivityDate'] = new Carbon($array['lastActivityDate']);
         }
 
+        if (isset($array['lastPublishedDateTime'])) {
+            $array['lastPublishedDateTime'] = new Carbon($array['lastPublishedDateTime']);
+        }
+
         parent::__construct($array);
     }
 

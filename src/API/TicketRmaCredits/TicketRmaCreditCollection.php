@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\TicketRmaCredits;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of TicketRmaCredit entities.
  * @see TicketRmaCreditEntity
  */
-class TicketRmaCreditCollection extends DataTransferObjectCollection
+class TicketRmaCreditCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.

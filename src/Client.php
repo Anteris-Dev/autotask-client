@@ -5,6 +5,14 @@ namespace Anteris\Autotask;
 use Anteris\Autotask\API\ActionTypes\ActionTypeService;
 use Anteris\Autotask\API\AdditionalInvoiceFieldValues\AdditionalInvoiceFieldValueService;
 use Anteris\Autotask\API\Appointments\AppointmentService;
+use Anteris\Autotask\API\ArticleAttachments\ArticleAttachmentService;
+use Anteris\Autotask\API\ArticleConfigurationItemCategoryAssociations\ArticleConfigurationItemCategoryAssociationService;
+use Anteris\Autotask\API\ArticleNotes\ArticleNoteService;
+use Anteris\Autotask\API\ArticlePlainTextContent\ArticlePlainTextContentService;
+use Anteris\Autotask\API\ArticleTagAssociations\ArticleTagAssociationService;
+use Anteris\Autotask\API\ArticleTicketAssociations\ArticleTicketAssociationService;
+use Anteris\Autotask\API\ArticleToArticleAssociations\ArticleToArticleAssociationService;
+use Anteris\Autotask\API\ArticleToDocumentAssociations\ArticleToDocumentAssociationService;
 use Anteris\Autotask\API\AttachmentInfo\AttachmentInfoService;
 use Anteris\Autotask\API\AttachmentNestedAttachments\AttachmentNestedAttachmentService;
 use Anteris\Autotask\API\BillingCodes\BillingCodeService;
@@ -20,6 +28,7 @@ use Anteris\Autotask\API\ComanagedAssociations\ComanagedAssociationService;
 use Anteris\Autotask\API\Companies\CompanyService;
 use Anteris\Autotask\API\CompanyAlerts\CompanyAlertService;
 use Anteris\Autotask\API\CompanyAttachments\CompanyAttachmentService;
+use Anteris\Autotask\API\CompanyCategories\CompanyCategoryService;
 use Anteris\Autotask\API\CompanyLocations\CompanyLocationService;
 use Anteris\Autotask\API\CompanyNoteAttachments\CompanyNoteAttachmentService;
 use Anteris\Autotask\API\CompanyNotes\CompanyNoteService;
@@ -38,6 +47,7 @@ use Anteris\Autotask\API\ConfigurationItemDnsRecords\ConfigurationItemDnsRecordS
 use Anteris\Autotask\API\ConfigurationItemExts\ConfigurationItemExtService;
 use Anteris\Autotask\API\ConfigurationItemNoteAttachments\ConfigurationItemNoteAttachmentService;
 use Anteris\Autotask\API\ConfigurationItemNotes\ConfigurationItemNoteService;
+use Anteris\Autotask\API\ConfigurationItemRelatedItems\ConfigurationItemRelatedItemService;
 use Anteris\Autotask\API\ConfigurationItemSslSubjectAlternativeNames\ConfigurationItemSslSubjectAlternativeNameService;
 use Anteris\Autotask\API\ConfigurationItemTypes\ConfigurationItemTypeService;
 use Anteris\Autotask\API\ConfigurationItemWebhookExcludedResources\ConfigurationItemWebhookExcludedResourceService;
@@ -92,23 +102,33 @@ use Anteris\Autotask\API\DocumentNotes\DocumentNoteService;
 use Anteris\Autotask\API\DocumentPlainTextContent\DocumentPlainTextContentService;
 use Anteris\Autotask\API\DocumentTagAssociations\DocumentTagAssociationService;
 use Anteris\Autotask\API\DocumentTicketAssociations\DocumentTicketAssociationService;
+use Anteris\Autotask\API\DocumentToArticleAssociations\DocumentToArticleAssociationService;
 use Anteris\Autotask\API\DocumentToDocumentAssociations\DocumentToDocumentAssociationService;
 use Anteris\Autotask\API\Documents\DocumentService;
 use Anteris\Autotask\API\DomainRegistrars\DomainRegistrarService;
+use Anteris\Autotask\API\ExpenseItemAttachments\ExpenseItemAttachmentService;
 use Anteris\Autotask\API\ExpenseItems\ExpenseItemService;
 use Anteris\Autotask\API\ExpenseReportAttachments\ExpenseReportAttachmentService;
 use Anteris\Autotask\API\ExpenseReports\ExpenseReportService;
 use Anteris\Autotask\API\HolidaySets\HolidaySetService;
 use Anteris\Autotask\API\Holidays\HolidayService;
+use Anteris\Autotask\API\IntegrationVendorInsights\IntegrationVendorInsightService;
 use Anteris\Autotask\API\IntegrationVendorWidgets\IntegrationVendorWidgetService;
 use Anteris\Autotask\API\InternalLocationWithBusinessHours\InternalLocationWithBusinessHourService;
 use Anteris\Autotask\API\InternalLocations\InternalLocationService;
 use Anteris\Autotask\API\InventoryItemSerialNumbers\InventoryItemSerialNumberService;
 use Anteris\Autotask\API\InventoryItems\InventoryItemService;
 use Anteris\Autotask\API\InventoryLocations\InventoryLocationService;
+use Anteris\Autotask\API\InventoryProducts\InventoryProductService;
+use Anteris\Autotask\API\InventoryStockedItems\InventoryStockedItemService;
+use Anteris\Autotask\API\InventoryStockedItemsAdd\InventoryStockedItemsAddService;
+use Anteris\Autotask\API\InventoryStockedItemsRemove\InventoryStockedItemsRemoveService;
+use Anteris\Autotask\API\InventoryStockedItemsTransfer\InventoryStockedItemsTransferService;
 use Anteris\Autotask\API\InventoryTransfers\InventoryTransferService;
 use Anteris\Autotask\API\InvoiceTemplates\InvoiceTemplateService;
 use Anteris\Autotask\API\Invoices\InvoiceService;
+use Anteris\Autotask\API\KnowledgeBaseArticles\KnowledgeBaseArticleService;
+use Anteris\Autotask\API\KnowledgeBaseCategories\KnowledgeBaseCategoryService;
 use Anteris\Autotask\API\NotificationHistory\NotificationHistoryService;
 use Anteris\Autotask\API\Opportunities\OpportunityService;
 use Anteris\Autotask\API\OpportunityAttachments\OpportunityAttachmentService;
@@ -163,6 +183,7 @@ use Anteris\Autotask\API\ServiceLevelAgreementResults\ServiceLevelAgreementResul
 use Anteris\Autotask\API\Services\ServiceService;
 use Anteris\Autotask\API\ShippingTypes\ShippingTypeService;
 use Anteris\Autotask\API\Skills\SkillService;
+use Anteris\Autotask\API\Subscribeds\SubscribedService;
 use Anteris\Autotask\API\SubscriptionPeriods\SubscriptionPeriodService;
 use Anteris\Autotask\API\Subscriptions\SubscriptionService;
 use Anteris\Autotask\API\SurveyResults\SurveyResultService;
@@ -190,13 +211,21 @@ use Anteris\Autotask\API\TicketChecklistItems\TicketChecklistItemService;
 use Anteris\Autotask\API\TicketChecklistLibraries\TicketChecklistLibraryService;
 use Anteris\Autotask\API\TicketHistory\TicketHistoryService;
 use Anteris\Autotask\API\TicketNoteAttachments\TicketNoteAttachmentService;
+use Anteris\Autotask\API\TicketNoteWebhookExcludedResources\TicketNoteWebhookExcludedResourceService;
+use Anteris\Autotask\API\TicketNoteWebhookFields\TicketNoteWebhookFieldService;
+use Anteris\Autotask\API\TicketNoteWebhooks\TicketNoteWebhookService;
 use Anteris\Autotask\API\TicketNotes\TicketNoteService;
 use Anteris\Autotask\API\TicketRmaCredits\TicketRmaCreditService;
 use Anteris\Autotask\API\TicketSecondaryResources\TicketSecondaryResourceService;
 use Anteris\Autotask\API\TicketTagAssociations\TicketTagAssociationService;
+use Anteris\Autotask\API\TicketWebhookExcludedResources\TicketWebhookExcludedResourceService;
+use Anteris\Autotask\API\TicketWebhookFields\TicketWebhookFieldService;
+use Anteris\Autotask\API\TicketWebhookUdfFields\TicketWebhookUdfFieldService;
+use Anteris\Autotask\API\TicketWebhooks\TicketWebhookService;
 use Anteris\Autotask\API\Tickets\TicketService;
 use Anteris\Autotask\API\TimeEntries\TimeEntryService;
 use Anteris\Autotask\API\TimeEntryAttachments\TimeEntryAttachmentService;
+use Anteris\Autotask\API\TimeOffRequests\TimeOffRequestService;
 use Anteris\Autotask\API\UserDefinedFieldDefinitions\UserDefinedFieldDefinitionService;
 use Anteris\Autotask\API\UserDefinedFieldListItems\UserDefinedFieldListItemService;
 use Anteris\Autotask\API\WebhookEventErrorLogs\WebhookEventErrorLogService;
@@ -262,6 +291,102 @@ class Client
         }
 
         return $this->classCache['Appointments'];
+    }
+
+    /**
+     * Handles any interaction with the ArticleAttachments endpoint.
+     */
+    public function articleAttachments(): ArticleAttachmentService
+    {
+        if (! isset($this->classCache['ArticleAttachments'])) {
+            $this->classCache['ArticleAttachments'] = new ArticleAttachmentService($this->client);
+        }
+
+        return $this->classCache['ArticleAttachments'];
+    }
+
+    /**
+     * Handles any interaction with the ArticleConfigurationItemCategoryAssociations endpoint.
+     */
+    public function articleConfigurationItemCategoryAssociations(): ArticleConfigurationItemCategoryAssociationService
+    {
+        if (! isset($this->classCache['ArticleConfigurationItemCategoryAssociations'])) {
+            $this->classCache['ArticleConfigurationItemCategoryAssociations'] = new ArticleConfigurationItemCategoryAssociationService($this->client);
+        }
+
+        return $this->classCache['ArticleConfigurationItemCategoryAssociations'];
+    }
+
+    /**
+     * Handles any interaction with the ArticleNotes endpoint.
+     */
+    public function articleNotes(): ArticleNoteService
+    {
+        if (! isset($this->classCache['ArticleNotes'])) {
+            $this->classCache['ArticleNotes'] = new ArticleNoteService($this->client);
+        }
+
+        return $this->classCache['ArticleNotes'];
+    }
+
+    /**
+     * Handles any interaction with the ArticlePlainTextContent endpoint.
+     */
+    public function articlePlainTextContent(): ArticlePlainTextContentService
+    {
+        if (! isset($this->classCache['ArticlePlainTextContent'])) {
+            $this->classCache['ArticlePlainTextContent'] = new ArticlePlainTextContentService($this->client);
+        }
+
+        return $this->classCache['ArticlePlainTextContent'];
+    }
+
+    /**
+     * Handles any interaction with the ArticleTagAssociations endpoint.
+     */
+    public function articleTagAssociations(): ArticleTagAssociationService
+    {
+        if (! isset($this->classCache['ArticleTagAssociations'])) {
+            $this->classCache['ArticleTagAssociations'] = new ArticleTagAssociationService($this->client);
+        }
+
+        return $this->classCache['ArticleTagAssociations'];
+    }
+
+    /**
+     * Handles any interaction with the ArticleTicketAssociations endpoint.
+     */
+    public function articleTicketAssociations(): ArticleTicketAssociationService
+    {
+        if (! isset($this->classCache['ArticleTicketAssociations'])) {
+            $this->classCache['ArticleTicketAssociations'] = new ArticleTicketAssociationService($this->client);
+        }
+
+        return $this->classCache['ArticleTicketAssociations'];
+    }
+
+    /**
+     * Handles any interaction with the ArticleToArticleAssociations endpoint.
+     */
+    public function articleToArticleAssociations(): ArticleToArticleAssociationService
+    {
+        if (! isset($this->classCache['ArticleToArticleAssociations'])) {
+            $this->classCache['ArticleToArticleAssociations'] = new ArticleToArticleAssociationService($this->client);
+        }
+
+        return $this->classCache['ArticleToArticleAssociations'];
+    }
+
+    /**
+     * Handles any interaction with the ArticleToDocumentAssociations endpoint.
+     */
+    public function articleToDocumentAssociations(): ArticleToDocumentAssociationService
+    {
+        if (! isset($this->classCache['ArticleToDocumentAssociations'])) {
+            $this->classCache['ArticleToDocumentAssociations'] = new ArticleToDocumentAssociationService($this->client);
+        }
+
+        return $this->classCache['ArticleToDocumentAssociations'];
     }
 
     /**
@@ -442,6 +567,18 @@ class Client
         }
 
         return $this->classCache['CompanyAttachments'];
+    }
+
+    /**
+     * Handles any interaction with the CompanyCategories endpoint.
+     */
+    public function companyCategories(): CompanyCategoryService
+    {
+        if (! isset($this->classCache['CompanyCategories'])) {
+            $this->classCache['CompanyCategories'] = new CompanyCategoryService($this->client);
+        }
+
+        return $this->classCache['CompanyCategories'];
     }
 
     /**
@@ -658,6 +795,18 @@ class Client
         }
 
         return $this->classCache['ConfigurationItemNotes'];
+    }
+
+    /**
+     * Handles any interaction with the ConfigurationItemRelatedItems endpoint.
+     */
+    public function configurationItemRelatedItems(): ConfigurationItemRelatedItemService
+    {
+        if (! isset($this->classCache['ConfigurationItemRelatedItems'])) {
+            $this->classCache['ConfigurationItemRelatedItems'] = new ConfigurationItemRelatedItemService($this->client);
+        }
+
+        return $this->classCache['ConfigurationItemRelatedItems'];
     }
 
     /**
@@ -1309,6 +1458,18 @@ class Client
     }
 
     /**
+     * Handles any interaction with the DocumentToArticleAssociations endpoint.
+     */
+    public function documentToArticleAssociations(): DocumentToArticleAssociationService
+    {
+        if (! isset($this->classCache['DocumentToArticleAssociations'])) {
+            $this->classCache['DocumentToArticleAssociations'] = new DocumentToArticleAssociationService($this->client);
+        }
+
+        return $this->classCache['DocumentToArticleAssociations'];
+    }
+
+    /**
      * Handles any interaction with the DocumentToDocumentAssociations endpoint.
      */
     public function documentToDocumentAssociations(): DocumentToDocumentAssociationService
@@ -1342,6 +1503,18 @@ class Client
         }
 
         return $this->classCache['DomainRegistrars'];
+    }
+
+    /**
+     * Handles any interaction with the ExpenseItemAttachments endpoint.
+     */
+    public function expenseItemAttachments(): ExpenseItemAttachmentService
+    {
+        if (! isset($this->classCache['ExpenseItemAttachments'])) {
+            $this->classCache['ExpenseItemAttachments'] = new ExpenseItemAttachmentService($this->client);
+        }
+
+        return $this->classCache['ExpenseItemAttachments'];
     }
 
     /**
@@ -1402,6 +1575,18 @@ class Client
         }
 
         return $this->classCache['Holidays'];
+    }
+
+    /**
+     * Handles any interaction with the IntegrationVendorInsights endpoint.
+     */
+    public function integrationVendorInsights(): IntegrationVendorInsightService
+    {
+        if (! isset($this->classCache['IntegrationVendorInsights'])) {
+            $this->classCache['IntegrationVendorInsights'] = new IntegrationVendorInsightService($this->client);
+        }
+
+        return $this->classCache['IntegrationVendorInsights'];
     }
 
     /**
@@ -1477,6 +1662,66 @@ class Client
     }
 
     /**
+     * Handles any interaction with the InventoryProducts endpoint.
+     */
+    public function inventoryProducts(): InventoryProductService
+    {
+        if (! isset($this->classCache['InventoryProducts'])) {
+            $this->classCache['InventoryProducts'] = new InventoryProductService($this->client);
+        }
+
+        return $this->classCache['InventoryProducts'];
+    }
+
+    /**
+     * Handles any interaction with the InventoryStockedItems endpoint.
+     */
+    public function inventoryStockedItems(): InventoryStockedItemService
+    {
+        if (! isset($this->classCache['InventoryStockedItems'])) {
+            $this->classCache['InventoryStockedItems'] = new InventoryStockedItemService($this->client);
+        }
+
+        return $this->classCache['InventoryStockedItems'];
+    }
+
+    /**
+     * Handles any interaction with the InventoryStockedItemsAdd endpoint.
+     */
+    public function inventoryStockedItemsAdd(): InventoryStockedItemsAddService
+    {
+        if (! isset($this->classCache['InventoryStockedItemsAdd'])) {
+            $this->classCache['InventoryStockedItemsAdd'] = new InventoryStockedItemsAddService($this->client);
+        }
+
+        return $this->classCache['InventoryStockedItemsAdd'];
+    }
+
+    /**
+     * Handles any interaction with the InventoryStockedItemsRemove endpoint.
+     */
+    public function inventoryStockedItemsRemove(): InventoryStockedItemsRemoveService
+    {
+        if (! isset($this->classCache['InventoryStockedItemsRemove'])) {
+            $this->classCache['InventoryStockedItemsRemove'] = new InventoryStockedItemsRemoveService($this->client);
+        }
+
+        return $this->classCache['InventoryStockedItemsRemove'];
+    }
+
+    /**
+     * Handles any interaction with the InventoryStockedItemsTransfer endpoint.
+     */
+    public function inventoryStockedItemsTransfer(): InventoryStockedItemsTransferService
+    {
+        if (! isset($this->classCache['InventoryStockedItemsTransfer'])) {
+            $this->classCache['InventoryStockedItemsTransfer'] = new InventoryStockedItemsTransferService($this->client);
+        }
+
+        return $this->classCache['InventoryStockedItemsTransfer'];
+    }
+
+    /**
      * Handles any interaction with the InventoryTransfers endpoint.
      */
     public function inventoryTransfers(): InventoryTransferService
@@ -1510,6 +1755,30 @@ class Client
         }
 
         return $this->classCache['Invoices'];
+    }
+
+    /**
+     * Handles any interaction with the KnowledgeBaseArticles endpoint.
+     */
+    public function knowledgeBaseArticles(): KnowledgeBaseArticleService
+    {
+        if (! isset($this->classCache['KnowledgeBaseArticles'])) {
+            $this->classCache['KnowledgeBaseArticles'] = new KnowledgeBaseArticleService($this->client);
+        }
+
+        return $this->classCache['KnowledgeBaseArticles'];
+    }
+
+    /**
+     * Handles any interaction with the KnowledgeBaseCategories endpoint.
+     */
+    public function knowledgeBaseCategories(): KnowledgeBaseCategoryService
+    {
+        if (! isset($this->classCache['KnowledgeBaseCategories'])) {
+            $this->classCache['KnowledgeBaseCategories'] = new KnowledgeBaseCategoryService($this->client);
+        }
+
+        return $this->classCache['KnowledgeBaseCategories'];
     }
 
     /**
@@ -2161,6 +2430,18 @@ class Client
     }
 
     /**
+     * Handles any interaction with the Subscribeds endpoint.
+     */
+    public function subscribeds(): SubscribedService
+    {
+        if (! isset($this->classCache['Subscribeds'])) {
+            $this->classCache['Subscribeds'] = new SubscribedService($this->client);
+        }
+
+        return $this->classCache['Subscribeds'];
+    }
+
+    /**
      * Handles any interaction with the SubscriptionPeriods endpoint.
      */
     public function subscriptionPeriods(): SubscriptionPeriodService
@@ -2485,6 +2766,42 @@ class Client
     }
 
     /**
+     * Handles any interaction with the TicketNoteWebhookExcludedResources endpoint.
+     */
+    public function ticketNoteWebhookExcludedResources(): TicketNoteWebhookExcludedResourceService
+    {
+        if (! isset($this->classCache['TicketNoteWebhookExcludedResources'])) {
+            $this->classCache['TicketNoteWebhookExcludedResources'] = new TicketNoteWebhookExcludedResourceService($this->client);
+        }
+
+        return $this->classCache['TicketNoteWebhookExcludedResources'];
+    }
+
+    /**
+     * Handles any interaction with the TicketNoteWebhookFields endpoint.
+     */
+    public function ticketNoteWebhookFields(): TicketNoteWebhookFieldService
+    {
+        if (! isset($this->classCache['TicketNoteWebhookFields'])) {
+            $this->classCache['TicketNoteWebhookFields'] = new TicketNoteWebhookFieldService($this->client);
+        }
+
+        return $this->classCache['TicketNoteWebhookFields'];
+    }
+
+    /**
+     * Handles any interaction with the TicketNoteWebhooks endpoint.
+     */
+    public function ticketNoteWebhooks(): TicketNoteWebhookService
+    {
+        if (! isset($this->classCache['TicketNoteWebhooks'])) {
+            $this->classCache['TicketNoteWebhooks'] = new TicketNoteWebhookService($this->client);
+        }
+
+        return $this->classCache['TicketNoteWebhooks'];
+    }
+
+    /**
      * Handles any interaction with the TicketNotes endpoint.
      */
     public function ticketNotes(): TicketNoteService
@@ -2533,6 +2850,54 @@ class Client
     }
 
     /**
+     * Handles any interaction with the TicketWebhookExcludedResources endpoint.
+     */
+    public function ticketWebhookExcludedResources(): TicketWebhookExcludedResourceService
+    {
+        if (! isset($this->classCache['TicketWebhookExcludedResources'])) {
+            $this->classCache['TicketWebhookExcludedResources'] = new TicketWebhookExcludedResourceService($this->client);
+        }
+
+        return $this->classCache['TicketWebhookExcludedResources'];
+    }
+
+    /**
+     * Handles any interaction with the TicketWebhookFields endpoint.
+     */
+    public function ticketWebhookFields(): TicketWebhookFieldService
+    {
+        if (! isset($this->classCache['TicketWebhookFields'])) {
+            $this->classCache['TicketWebhookFields'] = new TicketWebhookFieldService($this->client);
+        }
+
+        return $this->classCache['TicketWebhookFields'];
+    }
+
+    /**
+     * Handles any interaction with the TicketWebhookUdfFields endpoint.
+     */
+    public function ticketWebhookUdfFields(): TicketWebhookUdfFieldService
+    {
+        if (! isset($this->classCache['TicketWebhookUdfFields'])) {
+            $this->classCache['TicketWebhookUdfFields'] = new TicketWebhookUdfFieldService($this->client);
+        }
+
+        return $this->classCache['TicketWebhookUdfFields'];
+    }
+
+    /**
+     * Handles any interaction with the TicketWebhooks endpoint.
+     */
+    public function ticketWebhooks(): TicketWebhookService
+    {
+        if (! isset($this->classCache['TicketWebhooks'])) {
+            $this->classCache['TicketWebhooks'] = new TicketWebhookService($this->client);
+        }
+
+        return $this->classCache['TicketWebhooks'];
+    }
+
+    /**
      * Handles any interaction with the Tickets endpoint.
      */
     public function tickets(): TicketService
@@ -2566,6 +2931,18 @@ class Client
         }
 
         return $this->classCache['TimeEntryAttachments'];
+    }
+
+    /**
+     * Handles any interaction with the TimeOffRequests endpoint.
+     */
+    public function timeOffRequests(): TimeOffRequestService
+    {
+        if (! isset($this->classCache['TimeOffRequests'])) {
+            $this->classCache['TimeOffRequests'] = new TimeOffRequestService($this->client);
+        }
+
+        return $this->classCache['TimeOffRequests'];
     }
 
     /**

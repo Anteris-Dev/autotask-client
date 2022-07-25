@@ -12,6 +12,7 @@ class ComanagedAssociationEntity extends DataTransferObject
 {
     public int $companyID;
     public $id;
+    public ?bool $isPrimaryComanagedResource;
     public int $resourceID;
     /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
     public ?array $userDefinedFields;

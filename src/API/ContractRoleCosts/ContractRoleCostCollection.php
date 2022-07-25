@@ -3,13 +3,13 @@
 namespace Anteris\Autotask\API\ContractRoleCosts;
 
 use GuzzleHttp\Psr7\Response;
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
 /**
  * Contains a collection of ContractRoleCost entities.
  * @see ContractRoleCostEntity
  */
-class ContractRoleCostCollection extends DataTransferObjectCollection
+class ContractRoleCostCollection extends Collection
 {
     /**
      * Sets the proper return type for IDE completion.
