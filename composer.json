@@ -1,5 +1,5 @@
 {
-    "name": "anteris-dev/autotask-client",
+    "name": "tux2442/autotask-client",
     "description": "This package provides a PHP API client for the Autotask REST API. It is strongly typed and it is a wonderful experience to work with these classes in any intelligent IDE with autocompletion.",
     "authors": [
         {
