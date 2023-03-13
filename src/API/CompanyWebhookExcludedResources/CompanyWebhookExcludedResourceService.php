@@ -37,21 +37,21 @@ class CompanyWebhookExcludedResourceService
      */
     public function create(CompanyWebhookExcludedResourceEntity $resource): Response
     {
-        $resourceID = $resource->resourceID;
-        return $this->client->post("CompanyWebhooks/$resourceID/ExcludedResources", $resource->toArray());
+        $webhookID = $resource->webhookID;
+        return $this->client->post("CompanyWebhooks/$webhookID/ExcludedResources", $resource->toArray());
     }
 
     /**
      * Deletes an entity by its ID.
      *
-     * @param  int  $resourceID  ID of the CompanyWebhookExcludedResource parent resource.
+     * @param  int  $webhookID  ID of the CompanyWebhookExcludedResource parent resource.
      * @param  int  $id  ID of the CompanyWebhookExcludedResource to be deleted.
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function deleteById(int $resourceID,int $id): void
+    public function deleteById(int $webhookID,int $id): void
     {
-        $this->client->delete("CompanyWebhooks/$resourceID/ExcludedResources/$id");
+        $this->client->delete("CompanyWebhooks/$webhookID/ExcludedResources/$id");
     }
 
     /**
