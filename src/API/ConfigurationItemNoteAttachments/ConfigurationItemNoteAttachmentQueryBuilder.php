@@ -22,6 +22,8 @@ class ConfigurationItemNoteAttachmentQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ConfigurationItemNoteAttachmentQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ConfigurationItemNoteAttachments/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ConfigurationItemNoteAttachments/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ConfigurationItemNoteAttachments/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ConfigurationItemNoteAttachmentQueryBuilder
      */
     public function get(): ConfigurationItemNoteAttachmentCollection
     {
-        $response = $this->client->get("ConfigurationItemNoteAttachments/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ConfigurationItemNoteAttachments/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ConfigurationItemNoteAttachments/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ConfigurationItemNoteAttachmentCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ConfigurationItemNoteAttachmentQueryBuilder
      */
     public function paginate(): ConfigurationItemNoteAttachmentPaginator
     {
-        $response = $this->client->get("ConfigurationItemNoteAttachments/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ConfigurationItemNoteAttachmentPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ConfigurationItemNoteAttachments/query", $this->toArray());
+            return new ConfigurationItemNoteAttachmentPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ConfigurationItemNoteAttachments/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ConfigurationItemNoteAttachmentPaginator($this->client, $response);
+        }
     }
 
     /**

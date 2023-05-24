@@ -22,6 +22,8 @@ class ActionTypeQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ActionTypeQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ActionTypes/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ActionTypes/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ActionTypes/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ActionTypeQueryBuilder
      */
     public function get(): ActionTypeCollection
     {
-        $response = $this->client->get("ActionTypes/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ActionTypes/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ActionTypes/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ActionTypeCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ActionTypeQueryBuilder
      */
     public function paginate(): ActionTypePaginator
     {
-        $response = $this->client->get("ActionTypes/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ActionTypePaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ActionTypes/query", $this->toArray());
+            return new ActionTypePaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ActionTypes/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ActionTypePaginator($this->client, $response);
+        }
     }
 
     /**

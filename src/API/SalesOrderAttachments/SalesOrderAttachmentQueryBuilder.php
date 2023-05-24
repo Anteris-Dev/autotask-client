@@ -22,6 +22,8 @@ class SalesOrderAttachmentQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class SalesOrderAttachmentQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("SalesOrderAttachments/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("SalesOrderAttachments/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("SalesOrderAttachments/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class SalesOrderAttachmentQueryBuilder
      */
     public function get(): SalesOrderAttachmentCollection
     {
-        $response = $this->client->get("SalesOrderAttachments/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("SalesOrderAttachments/query", $this->toArray());
+        }else{
+            $response = $this->client->get("SalesOrderAttachments/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return SalesOrderAttachmentCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class SalesOrderAttachmentQueryBuilder
      */
     public function paginate(): SalesOrderAttachmentPaginator
     {
-        $response = $this->client->get("SalesOrderAttachments/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new SalesOrderAttachmentPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("SalesOrderAttachments/query", $this->toArray());
+            return new SalesOrderAttachmentPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("SalesOrderAttachments/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new SalesOrderAttachmentPaginator($this->client, $response);
+        }
     }
 
     /**

@@ -22,6 +22,8 @@ class ArticleNoteQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ArticleNoteQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ArticleNotes/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ArticleNotes/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ArticleNotes/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ArticleNoteQueryBuilder
      */
     public function get(): ArticleNoteCollection
     {
-        $response = $this->client->get("ArticleNotes/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ArticleNotes/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ArticleNotes/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ArticleNoteCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ArticleNoteQueryBuilder
      */
     public function paginate(): ArticleNotePaginator
     {
-        $response = $this->client->get("ArticleNotes/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ArticleNotePaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ArticleNotes/query", $this->toArray());
+            return new ArticleNotePaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ArticleNotes/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ArticleNotePaginator($this->client, $response);
+        }
     }
 
     /**

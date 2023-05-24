@@ -22,6 +22,8 @@ class InventoryLocationQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class InventoryLocationQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("InventoryLocations/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("InventoryLocations/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("InventoryLocations/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class InventoryLocationQueryBuilder
      */
     public function get(): InventoryLocationCollection
     {
-        $response = $this->client->get("InventoryLocations/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("InventoryLocations/query", $this->toArray());
+        }else{
+            $response = $this->client->get("InventoryLocations/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return InventoryLocationCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class InventoryLocationQueryBuilder
      */
     public function paginate(): InventoryLocationPaginator
     {
-        $response = $this->client->get("InventoryLocations/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new InventoryLocationPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("InventoryLocations/query", $this->toArray());
+            return new InventoryLocationPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("InventoryLocations/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new InventoryLocationPaginator($this->client, $response);
+        }
     }
 
     /**

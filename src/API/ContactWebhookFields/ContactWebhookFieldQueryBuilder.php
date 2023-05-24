@@ -22,6 +22,8 @@ class ContactWebhookFieldQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ContactWebhookFieldQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ContactWebhookFields/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContactWebhookFields/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ContactWebhookFields/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ContactWebhookFieldQueryBuilder
      */
     public function get(): ContactWebhookFieldCollection
     {
-        $response = $this->client->get("ContactWebhookFields/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContactWebhookFields/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ContactWebhookFields/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ContactWebhookFieldCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ContactWebhookFieldQueryBuilder
      */
     public function paginate(): ContactWebhookFieldPaginator
     {
-        $response = $this->client->get("ContactWebhookFields/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ContactWebhookFieldPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContactWebhookFields/query", $this->toArray());
+            return new ContactWebhookFieldPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ContactWebhookFields/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ContactWebhookFieldPaginator($this->client, $response);
+        }
     }
 
     /**

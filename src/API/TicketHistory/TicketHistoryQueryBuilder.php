@@ -22,6 +22,8 @@ class TicketHistoryQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class TicketHistoryQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("TicketHistory/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("TicketHistory/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("TicketHistory/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class TicketHistoryQueryBuilder
      */
     public function get(): TicketHistoryCollection
     {
-        $response = $this->client->get("TicketHistory/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("TicketHistory/query", $this->toArray());
+        }else{
+            $response = $this->client->get("TicketHistory/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return TicketHistoryCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class TicketHistoryQueryBuilder
      */
     public function paginate(): TicketHistoryPaginator
     {
-        $response = $this->client->get("TicketHistory/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new TicketHistoryPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("TicketHistory/query", $this->toArray());
+            return new TicketHistoryPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("TicketHistory/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new TicketHistoryPaginator($this->client, $response);
+        }
     }
 
     /**

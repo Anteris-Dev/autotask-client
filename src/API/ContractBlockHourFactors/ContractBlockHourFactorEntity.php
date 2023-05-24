@@ -11,8 +11,10 @@ use Spatie\DataTransferObject\DataTransferObject;
 class ContractBlockHourFactorEntity extends DataTransferObject
 {
     public float $blockHourMultiplier;
+    public ?float $contractHourlyRate;
     public int $contractID;
     public $id;
+    public ?float $internalCurrencyContractHourlyRate;
     public int $roleID;
     /** @var \Anteris\Autotask\Support\UserDefinedFields\UserDefinedFieldEntity[]|null */
     public ?array $userDefinedFields;

@@ -22,6 +22,8 @@ class ContactBillingProductAssociationQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ContactBillingProductAssociationQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ContactBillingProductAssociations/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContactBillingProductAssociations/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ContactBillingProductAssociations/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ContactBillingProductAssociationQueryBuilder
      */
     public function get(): ContactBillingProductAssociationCollection
     {
-        $response = $this->client->get("ContactBillingProductAssociations/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContactBillingProductAssociations/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ContactBillingProductAssociations/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ContactBillingProductAssociationCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ContactBillingProductAssociationQueryBuilder
      */
     public function paginate(): ContactBillingProductAssociationPaginator
     {
-        $response = $this->client->get("ContactBillingProductAssociations/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ContactBillingProductAssociationPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContactBillingProductAssociations/query", $this->toArray());
+            return new ContactBillingProductAssociationPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ContactBillingProductAssociations/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ContactBillingProductAssociationPaginator($this->client, $response);
+        }
     }
 
     /**

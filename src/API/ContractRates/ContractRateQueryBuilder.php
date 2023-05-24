@@ -22,6 +22,8 @@ class ContractRateQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ContractRateQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ContractRates/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContractRates/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ContractRates/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ContractRateQueryBuilder
      */
     public function get(): ContractRateCollection
     {
-        $response = $this->client->get("ContractRates/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContractRates/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ContractRates/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ContractRateCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ContractRateQueryBuilder
      */
     public function paginate(): ContractRatePaginator
     {
-        $response = $this->client->get("ContractRates/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ContractRatePaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContractRates/query", $this->toArray());
+            return new ContractRatePaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ContractRates/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ContractRatePaginator($this->client, $response);
+        }
     }
 
     /**

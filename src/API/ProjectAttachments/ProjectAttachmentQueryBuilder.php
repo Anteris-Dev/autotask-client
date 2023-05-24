@@ -22,6 +22,8 @@ class ProjectAttachmentQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ProjectAttachmentQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ProjectAttachments/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ProjectAttachments/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ProjectAttachments/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ProjectAttachmentQueryBuilder
      */
     public function get(): ProjectAttachmentCollection
     {
-        $response = $this->client->get("ProjectAttachments/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ProjectAttachments/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ProjectAttachments/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ProjectAttachmentCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ProjectAttachmentQueryBuilder
      */
     public function paginate(): ProjectAttachmentPaginator
     {
-        $response = $this->client->get("ProjectAttachments/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ProjectAttachmentPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ProjectAttachments/query", $this->toArray());
+            return new ProjectAttachmentPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ProjectAttachments/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ProjectAttachmentPaginator($this->client, $response);
+        }
     }
 
     /**

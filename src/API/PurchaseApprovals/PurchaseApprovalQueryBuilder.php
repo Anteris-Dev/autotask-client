@@ -22,6 +22,8 @@ class PurchaseApprovalQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class PurchaseApprovalQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("PurchaseApprovals/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("PurchaseApprovals/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("PurchaseApprovals/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class PurchaseApprovalQueryBuilder
      */
     public function get(): PurchaseApprovalCollection
     {
-        $response = $this->client->get("PurchaseApprovals/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("PurchaseApprovals/query", $this->toArray());
+        }else{
+            $response = $this->client->get("PurchaseApprovals/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return PurchaseApprovalCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class PurchaseApprovalQueryBuilder
      */
     public function paginate(): PurchaseApprovalPaginator
     {
-        $response = $this->client->get("PurchaseApprovals/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new PurchaseApprovalPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("PurchaseApprovals/query", $this->toArray());
+            return new PurchaseApprovalPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("PurchaseApprovals/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new PurchaseApprovalPaginator($this->client, $response);
+        }
     }
 
     /**

@@ -22,6 +22,8 @@ class CompanyTeamQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class CompanyTeamQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("CompanyTeams/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyTeams/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyTeams/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class CompanyTeamQueryBuilder
      */
     public function get(): CompanyTeamCollection
     {
-        $response = $this->client->get("CompanyTeams/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyTeams/query", $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyTeams/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return CompanyTeamCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class CompanyTeamQueryBuilder
      */
     public function paginate(): CompanyTeamPaginator
     {
-        $response = $this->client->get("CompanyTeams/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new CompanyTeamPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyTeams/query", $this->toArray());
+            return new CompanyTeamPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyTeams/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new CompanyTeamPaginator($this->client, $response);
+        }
     }
 
     /**

@@ -22,6 +22,8 @@ class InventoryItemQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class InventoryItemQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("InventoryItems/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("InventoryItems/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("InventoryItems/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class InventoryItemQueryBuilder
      */
     public function get(): InventoryItemCollection
     {
-        $response = $this->client->get("InventoryItems/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("InventoryItems/query", $this->toArray());
+        }else{
+            $response = $this->client->get("InventoryItems/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return InventoryItemCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class InventoryItemQueryBuilder
      */
     public function paginate(): InventoryItemPaginator
     {
-        $response = $this->client->get("InventoryItems/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new InventoryItemPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("InventoryItems/query", $this->toArray());
+            return new InventoryItemPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("InventoryItems/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new InventoryItemPaginator($this->client, $response);
+        }
     }
 
     /**

@@ -22,6 +22,8 @@ class DocumentNoteQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class DocumentNoteQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("DocumentNotes/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("DocumentNotes/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("DocumentNotes/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class DocumentNoteQueryBuilder
      */
     public function get(): DocumentNoteCollection
     {
-        $response = $this->client->get("DocumentNotes/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("DocumentNotes/query", $this->toArray());
+        }else{
+            $response = $this->client->get("DocumentNotes/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return DocumentNoteCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class DocumentNoteQueryBuilder
      */
     public function paginate(): DocumentNotePaginator
     {
-        $response = $this->client->get("DocumentNotes/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new DocumentNotePaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("DocumentNotes/query", $this->toArray());
+            return new DocumentNotePaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("DocumentNotes/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new DocumentNotePaginator($this->client, $response);
+        }
     }
 
     /**

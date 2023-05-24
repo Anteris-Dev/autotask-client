@@ -22,6 +22,8 @@ class InventoryTransferQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class InventoryTransferQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("InventoryTransfers/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("InventoryTransfers/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("InventoryTransfers/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class InventoryTransferQueryBuilder
      */
     public function get(): InventoryTransferCollection
     {
-        $response = $this->client->get("InventoryTransfers/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("InventoryTransfers/query", $this->toArray());
+        }else{
+            $response = $this->client->get("InventoryTransfers/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return InventoryTransferCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class InventoryTransferQueryBuilder
      */
     public function paginate(): InventoryTransferPaginator
     {
-        $response = $this->client->get("InventoryTransfers/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new InventoryTransferPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("InventoryTransfers/query", $this->toArray());
+            return new InventoryTransferPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("InventoryTransfers/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new InventoryTransferPaginator($this->client, $response);
+        }
     }
 
     /**

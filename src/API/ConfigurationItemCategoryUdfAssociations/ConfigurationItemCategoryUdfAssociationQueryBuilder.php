@@ -22,6 +22,8 @@ class ConfigurationItemCategoryUdfAssociationQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ConfigurationItemCategoryUdfAssociationQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ConfigurationItemCategoryUdfAssociations/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ConfigurationItemCategoryUdfAssociations/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ConfigurationItemCategoryUdfAssociations/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ConfigurationItemCategoryUdfAssociationQueryBuilder
      */
     public function get(): ConfigurationItemCategoryUdfAssociationCollection
     {
-        $response = $this->client->get("ConfigurationItemCategoryUdfAssociations/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ConfigurationItemCategoryUdfAssociations/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ConfigurationItemCategoryUdfAssociations/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ConfigurationItemCategoryUdfAssociationCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ConfigurationItemCategoryUdfAssociationQueryBuilder
      */
     public function paginate(): ConfigurationItemCategoryUdfAssociationPaginator
     {
-        $response = $this->client->get("ConfigurationItemCategoryUdfAssociations/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ConfigurationItemCategoryUdfAssociationPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ConfigurationItemCategoryUdfAssociations/query", $this->toArray());
+            return new ConfigurationItemCategoryUdfAssociationPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ConfigurationItemCategoryUdfAssociations/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ConfigurationItemCategoryUdfAssociationPaginator($this->client, $response);
+        }
     }
 
     /**

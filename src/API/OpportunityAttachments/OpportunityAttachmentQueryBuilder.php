@@ -22,6 +22,8 @@ class OpportunityAttachmentQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class OpportunityAttachmentQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("OpportunityAttachments/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("OpportunityAttachments/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("OpportunityAttachments/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class OpportunityAttachmentQueryBuilder
      */
     public function get(): OpportunityAttachmentCollection
     {
-        $response = $this->client->get("OpportunityAttachments/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("OpportunityAttachments/query", $this->toArray());
+        }else{
+            $response = $this->client->get("OpportunityAttachments/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return OpportunityAttachmentCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class OpportunityAttachmentQueryBuilder
      */
     public function paginate(): OpportunityAttachmentPaginator
     {
-        $response = $this->client->get("OpportunityAttachments/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new OpportunityAttachmentPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("OpportunityAttachments/query", $this->toArray());
+            return new OpportunityAttachmentPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("OpportunityAttachments/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new OpportunityAttachmentPaginator($this->client, $response);
+        }
     }
 
     /**

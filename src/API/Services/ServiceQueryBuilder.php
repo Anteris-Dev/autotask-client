@@ -22,6 +22,8 @@ class ServiceQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ServiceQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("Services/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Services/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("Services/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ServiceQueryBuilder
      */
     public function get(): ServiceCollection
     {
-        $response = $this->client->get("Services/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Services/query", $this->toArray());
+        }else{
+            $response = $this->client->get("Services/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ServiceCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ServiceQueryBuilder
      */
     public function paginate(): ServicePaginator
     {
-        $response = $this->client->get("Services/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ServicePaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Services/query", $this->toArray());
+            return new ServicePaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("Services/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ServicePaginator($this->client, $response);
+        }
     }
 
     /**

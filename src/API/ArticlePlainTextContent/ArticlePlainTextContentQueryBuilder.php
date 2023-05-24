@@ -22,6 +22,8 @@ class ArticlePlainTextContentQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ArticlePlainTextContentQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ArticlePlainTextContent/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ArticlePlainTextContent/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ArticlePlainTextContent/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ArticlePlainTextContentQueryBuilder
      */
     public function get(): ArticlePlainTextContentCollection
     {
-        $response = $this->client->get("ArticlePlainTextContent/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ArticlePlainTextContent/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ArticlePlainTextContent/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ArticlePlainTextContentCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ArticlePlainTextContentQueryBuilder
      */
     public function paginate(): ArticlePlainTextContentPaginator
     {
-        $response = $this->client->get("ArticlePlainTextContent/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ArticlePlainTextContentPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ArticlePlainTextContent/query", $this->toArray());
+            return new ArticlePlainTextContentPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ArticlePlainTextContent/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ArticlePlainTextContentPaginator($this->client, $response);
+        }
     }
 
     /**

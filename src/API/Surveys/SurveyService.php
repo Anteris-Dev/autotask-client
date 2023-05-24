@@ -14,7 +14,6 @@ class SurveyService
 {
     /** @var Client An HTTP client for making requests to the Autotask API. */
     protected HttpClient $client;
-
     /**
      * Instantiates the class.
      *

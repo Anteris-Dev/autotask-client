@@ -22,6 +22,8 @@ class InternalLocationQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class InternalLocationQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("InternalLocations/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("InternalLocations/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("InternalLocations/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class InternalLocationQueryBuilder
      */
     public function get(): InternalLocationCollection
     {
-        $response = $this->client->get("InternalLocations/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("InternalLocations/query", $this->toArray());
+        }else{
+            $response = $this->client->get("InternalLocations/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return InternalLocationCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class InternalLocationQueryBuilder
      */
     public function paginate(): InternalLocationPaginator
     {
-        $response = $this->client->get("InternalLocations/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new InternalLocationPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("InternalLocations/query", $this->toArray());
+            return new InternalLocationPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("InternalLocations/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new InternalLocationPaginator($this->client, $response);
+        }
     }
 
     /**

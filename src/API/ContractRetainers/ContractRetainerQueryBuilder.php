@@ -22,6 +22,8 @@ class ContractRetainerQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ContractRetainerQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ContractRetainers/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContractRetainers/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ContractRetainers/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ContractRetainerQueryBuilder
      */
     public function get(): ContractRetainerCollection
     {
-        $response = $this->client->get("ContractRetainers/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContractRetainers/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ContractRetainers/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ContractRetainerCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ContractRetainerQueryBuilder
      */
     public function paginate(): ContractRetainerPaginator
     {
-        $response = $this->client->get("ContractRetainers/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ContractRetainerPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContractRetainers/query", $this->toArray());
+            return new ContractRetainerPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ContractRetainers/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ContractRetainerPaginator($this->client, $response);
+        }
     }
 
     /**

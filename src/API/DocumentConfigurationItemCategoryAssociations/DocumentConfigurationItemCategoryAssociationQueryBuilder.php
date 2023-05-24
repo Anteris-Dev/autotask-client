@@ -22,6 +22,8 @@ class DocumentConfigurationItemCategoryAssociationQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class DocumentConfigurationItemCategoryAssociationQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("DocumentConfigurationItemCategoryAssociations/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("DocumentConfigurationItemCategoryAssociations/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("DocumentConfigurationItemCategoryAssociations/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class DocumentConfigurationItemCategoryAssociationQueryBuilder
      */
     public function get(): DocumentConfigurationItemCategoryAssociationCollection
     {
-        $response = $this->client->get("DocumentConfigurationItemCategoryAssociations/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("DocumentConfigurationItemCategoryAssociations/query", $this->toArray());
+        }else{
+            $response = $this->client->get("DocumentConfigurationItemCategoryAssociations/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return DocumentConfigurationItemCategoryAssociationCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class DocumentConfigurationItemCategoryAssociationQueryBuilder
      */
     public function paginate(): DocumentConfigurationItemCategoryAssociationPaginator
     {
-        $response = $this->client->get("DocumentConfigurationItemCategoryAssociations/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new DocumentConfigurationItemCategoryAssociationPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("DocumentConfigurationItemCategoryAssociations/query", $this->toArray());
+            return new DocumentConfigurationItemCategoryAssociationPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("DocumentConfigurationItemCategoryAssociations/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new DocumentConfigurationItemCategoryAssociationPaginator($this->client, $response);
+        }
     }
 
     /**

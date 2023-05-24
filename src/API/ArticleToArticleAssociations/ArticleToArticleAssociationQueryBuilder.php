@@ -22,6 +22,8 @@ class ArticleToArticleAssociationQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ArticleToArticleAssociationQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ArticleToArticleAssociations/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ArticleToArticleAssociations/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ArticleToArticleAssociations/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ArticleToArticleAssociationQueryBuilder
      */
     public function get(): ArticleToArticleAssociationCollection
     {
-        $response = $this->client->get("ArticleToArticleAssociations/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ArticleToArticleAssociations/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ArticleToArticleAssociations/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ArticleToArticleAssociationCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ArticleToArticleAssociationQueryBuilder
      */
     public function paginate(): ArticleToArticleAssociationPaginator
     {
-        $response = $this->client->get("ArticleToArticleAssociations/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ArticleToArticleAssociationPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ArticleToArticleAssociations/query", $this->toArray());
+            return new ArticleToArticleAssociationPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ArticleToArticleAssociations/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ArticleToArticleAssociationPaginator($this->client, $response);
+        }
     }
 
     /**

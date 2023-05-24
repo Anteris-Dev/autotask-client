@@ -22,6 +22,8 @@ class ArticleConfigurationItemCategoryAssociationQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ArticleConfigurationItemCategoryAssociationQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ArticleConfigurationItemCategoryAssociations/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ArticleConfigurationItemCategoryAssociations/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ArticleConfigurationItemCategoryAssociations/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ArticleConfigurationItemCategoryAssociationQueryBuilder
      */
     public function get(): ArticleConfigurationItemCategoryAssociationCollection
     {
-        $response = $this->client->get("ArticleConfigurationItemCategoryAssociations/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ArticleConfigurationItemCategoryAssociations/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ArticleConfigurationItemCategoryAssociations/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ArticleConfigurationItemCategoryAssociationCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ArticleConfigurationItemCategoryAssociationQueryBuilder
      */
     public function paginate(): ArticleConfigurationItemCategoryAssociationPaginator
     {
-        $response = $this->client->get("ArticleConfigurationItemCategoryAssociations/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ArticleConfigurationItemCategoryAssociationPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ArticleConfigurationItemCategoryAssociations/query", $this->toArray());
+            return new ArticleConfigurationItemCategoryAssociationPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ArticleConfigurationItemCategoryAssociations/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ArticleConfigurationItemCategoryAssociationPaginator($this->client, $response);
+        }
     }
 
     /**

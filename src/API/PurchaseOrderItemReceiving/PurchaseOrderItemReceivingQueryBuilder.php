@@ -22,6 +22,8 @@ class PurchaseOrderItemReceivingQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class PurchaseOrderItemReceivingQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("PurchaseOrderItemReceiving/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("PurchaseOrderItemReceiving/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("PurchaseOrderItemReceiving/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class PurchaseOrderItemReceivingQueryBuilder
      */
     public function get(): PurchaseOrderItemReceivingCollection
     {
-        $response = $this->client->get("PurchaseOrderItemReceiving/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("PurchaseOrderItemReceiving/query", $this->toArray());
+        }else{
+            $response = $this->client->get("PurchaseOrderItemReceiving/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return PurchaseOrderItemReceivingCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class PurchaseOrderItemReceivingQueryBuilder
      */
     public function paginate(): PurchaseOrderItemReceivingPaginator
     {
-        $response = $this->client->get("PurchaseOrderItemReceiving/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new PurchaseOrderItemReceivingPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("PurchaseOrderItemReceiving/query", $this->toArray());
+            return new PurchaseOrderItemReceivingPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("PurchaseOrderItemReceiving/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new PurchaseOrderItemReceivingPaginator($this->client, $response);
+        }
     }
 
     /**

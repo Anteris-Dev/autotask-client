@@ -22,6 +22,8 @@ class CompanyAlertQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class CompanyAlertQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("CompanyAlerts/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyAlerts/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyAlerts/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class CompanyAlertQueryBuilder
      */
     public function get(): CompanyAlertCollection
     {
-        $response = $this->client->get("CompanyAlerts/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyAlerts/query", $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyAlerts/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return CompanyAlertCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class CompanyAlertQueryBuilder
      */
     public function paginate(): CompanyAlertPaginator
     {
-        $response = $this->client->get("CompanyAlerts/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new CompanyAlertPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyAlerts/query", $this->toArray());
+            return new CompanyAlertPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyAlerts/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new CompanyAlertPaginator($this->client, $response);
+        }
     }
 
     /**

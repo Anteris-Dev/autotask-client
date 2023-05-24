@@ -22,6 +22,8 @@ class ContractServiceBundleQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ContractServiceBundleQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ContractServiceBundles/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContractServiceBundles/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ContractServiceBundles/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ContractServiceBundleQueryBuilder
      */
     public function get(): ContractServiceBundleCollection
     {
-        $response = $this->client->get("ContractServiceBundles/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContractServiceBundles/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ContractServiceBundles/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ContractServiceBundleCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ContractServiceBundleQueryBuilder
      */
     public function paginate(): ContractServiceBundlePaginator
     {
-        $response = $this->client->get("ContractServiceBundles/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ContractServiceBundlePaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContractServiceBundles/query", $this->toArray());
+            return new ContractServiceBundlePaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ContractServiceBundles/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ContractServiceBundlePaginator($this->client, $response);
+        }
     }
 
     /**

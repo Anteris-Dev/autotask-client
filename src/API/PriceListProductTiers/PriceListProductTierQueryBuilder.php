@@ -22,6 +22,8 @@ class PriceListProductTierQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class PriceListProductTierQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("PriceListProductTiers/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("PriceListProductTiers/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("PriceListProductTiers/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class PriceListProductTierQueryBuilder
      */
     public function get(): PriceListProductTierCollection
     {
-        $response = $this->client->get("PriceListProductTiers/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("PriceListProductTiers/query", $this->toArray());
+        }else{
+            $response = $this->client->get("PriceListProductTiers/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return PriceListProductTierCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class PriceListProductTierQueryBuilder
      */
     public function paginate(): PriceListProductTierPaginator
     {
-        $response = $this->client->get("PriceListProductTiers/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new PriceListProductTierPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("PriceListProductTiers/query", $this->toArray());
+            return new PriceListProductTierPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("PriceListProductTiers/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new PriceListProductTierPaginator($this->client, $response);
+        }
     }
 
     /**

@@ -22,6 +22,8 @@ class SurveyQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class SurveyQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("Surveys/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Surveys/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("Surveys/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class SurveyQueryBuilder
      */
     public function get(): SurveyCollection
     {
-        $response = $this->client->get("Surveys/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Surveys/query", $this->toArray());
+        }else{
+            $response = $this->client->get("Surveys/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return SurveyCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class SurveyQueryBuilder
      */
     public function paginate(): SurveyPaginator
     {
-        $response = $this->client->get("Surveys/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new SurveyPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Surveys/query", $this->toArray());
+            return new SurveyPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("Surveys/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new SurveyPaginator($this->client, $response);
+        }
     }
 
     /**

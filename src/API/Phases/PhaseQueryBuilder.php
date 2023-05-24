@@ -22,6 +22,8 @@ class PhaseQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class PhaseQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("Phases/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Phases/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("Phases/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class PhaseQueryBuilder
      */
     public function get(): PhaseCollection
     {
-        $response = $this->client->get("Phases/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Phases/query", $this->toArray());
+        }else{
+            $response = $this->client->get("Phases/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return PhaseCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class PhaseQueryBuilder
      */
     public function paginate(): PhasePaginator
     {
-        $response = $this->client->get("Phases/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new PhasePaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Phases/query", $this->toArray());
+            return new PhasePaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("Phases/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new PhasePaginator($this->client, $response);
+        }
     }
 
     /**

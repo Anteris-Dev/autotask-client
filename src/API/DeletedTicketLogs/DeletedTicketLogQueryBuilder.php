@@ -22,6 +22,8 @@ class DeletedTicketLogQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class DeletedTicketLogQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("DeletedTicketLogs/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("DeletedTicketLogs/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("DeletedTicketLogs/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class DeletedTicketLogQueryBuilder
      */
     public function get(): DeletedTicketLogCollection
     {
-        $response = $this->client->get("DeletedTicketLogs/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("DeletedTicketLogs/query", $this->toArray());
+        }else{
+            $response = $this->client->get("DeletedTicketLogs/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return DeletedTicketLogCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class DeletedTicketLogQueryBuilder
      */
     public function paginate(): DeletedTicketLogPaginator
     {
-        $response = $this->client->get("DeletedTicketLogs/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new DeletedTicketLogPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("DeletedTicketLogs/query", $this->toArray());
+            return new DeletedTicketLogPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("DeletedTicketLogs/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new DeletedTicketLogPaginator($this->client, $response);
+        }
     }
 
     /**

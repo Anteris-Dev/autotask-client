@@ -22,6 +22,8 @@ class ContractExclusionSetExcludedRoleQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ContractExclusionSetExcludedRoleQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ContractExclusionSetExcludedRoles/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContractExclusionSetExcludedRoles/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ContractExclusionSetExcludedRoles/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ContractExclusionSetExcludedRoleQueryBuilder
      */
     public function get(): ContractExclusionSetExcludedRoleCollection
     {
-        $response = $this->client->get("ContractExclusionSetExcludedRoles/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContractExclusionSetExcludedRoles/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ContractExclusionSetExcludedRoles/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ContractExclusionSetExcludedRoleCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ContractExclusionSetExcludedRoleQueryBuilder
      */
     public function paginate(): ContractExclusionSetExcludedRolePaginator
     {
-        $response = $this->client->get("ContractExclusionSetExcludedRoles/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ContractExclusionSetExcludedRolePaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContractExclusionSetExcludedRoles/query", $this->toArray());
+            return new ContractExclusionSetExcludedRolePaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ContractExclusionSetExcludedRoles/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ContractExclusionSetExcludedRolePaginator($this->client, $response);
+        }
     }
 
     /**

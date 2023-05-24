@@ -22,6 +22,8 @@ class ContactWebhookUdfFieldQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ContactWebhookUdfFieldQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ContactWebhookUdfFields/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContactWebhookUdfFields/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ContactWebhookUdfFields/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ContactWebhookUdfFieldQueryBuilder
      */
     public function get(): ContactWebhookUdfFieldCollection
     {
-        $response = $this->client->get("ContactWebhookUdfFields/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContactWebhookUdfFields/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ContactWebhookUdfFields/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ContactWebhookUdfFieldCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ContactWebhookUdfFieldQueryBuilder
      */
     public function paginate(): ContactWebhookUdfFieldPaginator
     {
-        $response = $this->client->get("ContactWebhookUdfFields/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ContactWebhookUdfFieldPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContactWebhookUdfFields/query", $this->toArray());
+            return new ContactWebhookUdfFieldPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ContactWebhookUdfFields/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ContactWebhookUdfFieldPaginator($this->client, $response);
+        }
     }
 
     /**

@@ -22,6 +22,8 @@ class TicketSecondaryResourceQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class TicketSecondaryResourceQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("TicketSecondaryResources/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("TicketSecondaryResources/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("TicketSecondaryResources/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class TicketSecondaryResourceQueryBuilder
      */
     public function get(): TicketSecondaryResourceCollection
     {
-        $response = $this->client->get("TicketSecondaryResources/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("TicketSecondaryResources/query", $this->toArray());
+        }else{
+            $response = $this->client->get("TicketSecondaryResources/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return TicketSecondaryResourceCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class TicketSecondaryResourceQueryBuilder
      */
     public function paginate(): TicketSecondaryResourcePaginator
     {
-        $response = $this->client->get("TicketSecondaryResources/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new TicketSecondaryResourcePaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("TicketSecondaryResources/query", $this->toArray());
+            return new TicketSecondaryResourcePaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("TicketSecondaryResources/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new TicketSecondaryResourcePaginator($this->client, $response);
+        }
     }
 
     /**

@@ -22,6 +22,8 @@ class InternalLocationWithBusinessHourQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class InternalLocationWithBusinessHourQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("InternalLocationWithBusinessHours/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("InternalLocationWithBusinessHours/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("InternalLocationWithBusinessHours/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class InternalLocationWithBusinessHourQueryBuilder
      */
     public function get(): InternalLocationWithBusinessHourCollection
     {
-        $response = $this->client->get("InternalLocationWithBusinessHours/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("InternalLocationWithBusinessHours/query", $this->toArray());
+        }else{
+            $response = $this->client->get("InternalLocationWithBusinessHours/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return InternalLocationWithBusinessHourCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class InternalLocationWithBusinessHourQueryBuilder
      */
     public function paginate(): InternalLocationWithBusinessHourPaginator
     {
-        $response = $this->client->get("InternalLocationWithBusinessHours/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new InternalLocationWithBusinessHourPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("InternalLocationWithBusinessHours/query", $this->toArray());
+            return new InternalLocationWithBusinessHourPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("InternalLocationWithBusinessHours/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new InternalLocationWithBusinessHourPaginator($this->client, $response);
+        }
     }
 
     /**

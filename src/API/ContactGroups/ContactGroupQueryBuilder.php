@@ -22,6 +22,8 @@ class ContactGroupQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ContactGroupQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ContactGroups/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContactGroups/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ContactGroups/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ContactGroupQueryBuilder
      */
     public function get(): ContactGroupCollection
     {
-        $response = $this->client->get("ContactGroups/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContactGroups/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ContactGroups/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ContactGroupCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ContactGroupQueryBuilder
      */
     public function paginate(): ContactGroupPaginator
     {
-        $response = $this->client->get("ContactGroups/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ContactGroupPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContactGroups/query", $this->toArray());
+            return new ContactGroupPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ContactGroups/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ContactGroupPaginator($this->client, $response);
+        }
     }
 
     /**

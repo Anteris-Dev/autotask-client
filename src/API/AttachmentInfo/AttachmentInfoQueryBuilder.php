@@ -22,6 +22,8 @@ class AttachmentInfoQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class AttachmentInfoQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("AttachmentInfo/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("AttachmentInfo/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("AttachmentInfo/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class AttachmentInfoQueryBuilder
      */
     public function get(): AttachmentInfoCollection
     {
-        $response = $this->client->get("AttachmentInfo/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("AttachmentInfo/query", $this->toArray());
+        }else{
+            $response = $this->client->get("AttachmentInfo/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return AttachmentInfoCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class AttachmentInfoQueryBuilder
      */
     public function paginate(): AttachmentInfoPaginator
     {
-        $response = $this->client->get("AttachmentInfo/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new AttachmentInfoPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("AttachmentInfo/query", $this->toArray());
+            return new AttachmentInfoPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("AttachmentInfo/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new AttachmentInfoPaginator($this->client, $response);
+        }
     }
 
     /**

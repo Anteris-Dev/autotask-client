@@ -22,6 +22,8 @@ class AppointmentQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class AppointmentQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("Appointments/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Appointments/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("Appointments/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class AppointmentQueryBuilder
      */
     public function get(): AppointmentCollection
     {
-        $response = $this->client->get("Appointments/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Appointments/query", $this->toArray());
+        }else{
+            $response = $this->client->get("Appointments/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return AppointmentCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class AppointmentQueryBuilder
      */
     public function paginate(): AppointmentPaginator
     {
-        $response = $this->client->get("Appointments/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new AppointmentPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Appointments/query", $this->toArray());
+            return new AppointmentPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("Appointments/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new AppointmentPaginator($this->client, $response);
+        }
     }
 
     /**

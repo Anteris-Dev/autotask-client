@@ -22,6 +22,8 @@ class TicketWebhookFieldQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class TicketWebhookFieldQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("TicketWebhookFields/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("TicketWebhookFields/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("TicketWebhookFields/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class TicketWebhookFieldQueryBuilder
      */
     public function get(): TicketWebhookFieldCollection
     {
-        $response = $this->client->get("TicketWebhookFields/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("TicketWebhookFields/query", $this->toArray());
+        }else{
+            $response = $this->client->get("TicketWebhookFields/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return TicketWebhookFieldCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class TicketWebhookFieldQueryBuilder
      */
     public function paginate(): TicketWebhookFieldPaginator
     {
-        $response = $this->client->get("TicketWebhookFields/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new TicketWebhookFieldPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("TicketWebhookFields/query", $this->toArray());
+            return new TicketWebhookFieldPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("TicketWebhookFields/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new TicketWebhookFieldPaginator($this->client, $response);
+        }
     }
 
     /**

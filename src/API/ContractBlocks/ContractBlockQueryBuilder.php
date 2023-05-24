@@ -22,6 +22,8 @@ class ContractBlockQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ContractBlockQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ContractBlocks/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContractBlocks/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ContractBlocks/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ContractBlockQueryBuilder
      */
     public function get(): ContractBlockCollection
     {
-        $response = $this->client->get("ContractBlocks/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContractBlocks/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ContractBlocks/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ContractBlockCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ContractBlockQueryBuilder
      */
     public function paginate(): ContractBlockPaginator
     {
-        $response = $this->client->get("ContractBlocks/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ContractBlockPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContractBlocks/query", $this->toArray());
+            return new ContractBlockPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ContractBlocks/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ContractBlockPaginator($this->client, $response);
+        }
     }
 
     /**

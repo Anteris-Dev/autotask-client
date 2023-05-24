@@ -22,6 +22,8 @@ class KnowledgeBaseArticleQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class KnowledgeBaseArticleQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("KnowledgeBaseArticles/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("KnowledgeBaseArticles/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("KnowledgeBaseArticles/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class KnowledgeBaseArticleQueryBuilder
      */
     public function get(): KnowledgeBaseArticleCollection
     {
-        $response = $this->client->get("KnowledgeBaseArticles/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("KnowledgeBaseArticles/query", $this->toArray());
+        }else{
+            $response = $this->client->get("KnowledgeBaseArticles/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return KnowledgeBaseArticleCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class KnowledgeBaseArticleQueryBuilder
      */
     public function paginate(): KnowledgeBaseArticlePaginator
     {
-        $response = $this->client->get("KnowledgeBaseArticles/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new KnowledgeBaseArticlePaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("KnowledgeBaseArticles/query", $this->toArray());
+            return new KnowledgeBaseArticlePaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("KnowledgeBaseArticles/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new KnowledgeBaseArticlePaginator($this->client, $response);
+        }
     }
 
     /**
