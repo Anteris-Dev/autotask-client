@@ -22,6 +22,8 @@ class PurchaseOrderQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class PurchaseOrderQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("PurchaseOrders/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("PurchaseOrders/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("PurchaseOrders/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class PurchaseOrderQueryBuilder
      */
     public function get(): PurchaseOrderCollection
     {
-        $response = $this->client->get("PurchaseOrders/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("PurchaseOrders/query", $this->toArray());
+        }else{
+            $response = $this->client->get("PurchaseOrders/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return PurchaseOrderCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class PurchaseOrderQueryBuilder
      */
     public function paginate(): PurchaseOrderPaginator
     {
-        $response = $this->client->get("PurchaseOrders/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new PurchaseOrderPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("PurchaseOrders/query", $this->toArray());
+            return new PurchaseOrderPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("PurchaseOrders/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new PurchaseOrderPaginator($this->client, $response);
+        }
     }
 
     /**

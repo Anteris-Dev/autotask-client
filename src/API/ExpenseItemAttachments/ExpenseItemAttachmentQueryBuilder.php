@@ -22,6 +22,8 @@ class ExpenseItemAttachmentQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ExpenseItemAttachmentQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ExpenseItemAttachments/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ExpenseItemAttachments/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ExpenseItemAttachments/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ExpenseItemAttachmentQueryBuilder
      */
     public function get(): ExpenseItemAttachmentCollection
     {
-        $response = $this->client->get("ExpenseItemAttachments/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ExpenseItemAttachments/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ExpenseItemAttachments/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ExpenseItemAttachmentCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ExpenseItemAttachmentQueryBuilder
      */
     public function paginate(): ExpenseItemAttachmentPaginator
     {
-        $response = $this->client->get("ExpenseItemAttachments/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ExpenseItemAttachmentPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ExpenseItemAttachments/query", $this->toArray());
+            return new ExpenseItemAttachmentPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ExpenseItemAttachments/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ExpenseItemAttachmentPaginator($this->client, $response);
+        }
     }
 
     /**

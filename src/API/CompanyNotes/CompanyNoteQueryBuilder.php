@@ -22,6 +22,8 @@ class CompanyNoteQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class CompanyNoteQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("CompanyNotes/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyNotes/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyNotes/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class CompanyNoteQueryBuilder
      */
     public function get(): CompanyNoteCollection
     {
-        $response = $this->client->get("CompanyNotes/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyNotes/query", $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyNotes/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return CompanyNoteCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class CompanyNoteQueryBuilder
      */
     public function paginate(): CompanyNotePaginator
     {
-        $response = $this->client->get("CompanyNotes/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new CompanyNotePaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyNotes/query", $this->toArray());
+            return new CompanyNotePaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyNotes/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new CompanyNotePaginator($this->client, $response);
+        }
     }
 
     /**

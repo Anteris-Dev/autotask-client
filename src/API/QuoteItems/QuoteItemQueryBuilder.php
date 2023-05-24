@@ -22,6 +22,8 @@ class QuoteItemQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class QuoteItemQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("QuoteItems/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("QuoteItems/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("QuoteItems/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class QuoteItemQueryBuilder
      */
     public function get(): QuoteItemCollection
     {
-        $response = $this->client->get("QuoteItems/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("QuoteItems/query", $this->toArray());
+        }else{
+            $response = $this->client->get("QuoteItems/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return QuoteItemCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class QuoteItemQueryBuilder
      */
     public function paginate(): QuoteItemPaginator
     {
-        $response = $this->client->get("QuoteItems/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new QuoteItemPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("QuoteItems/query", $this->toArray());
+            return new QuoteItemPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("QuoteItems/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new QuoteItemPaginator($this->client, $response);
+        }
     }
 
     /**

@@ -22,6 +22,8 @@ class ResourceServiceDeskRoleQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ResourceServiceDeskRoleQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ResourceServiceDeskRoles/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ResourceServiceDeskRoles/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ResourceServiceDeskRoles/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ResourceServiceDeskRoleQueryBuilder
      */
     public function get(): ResourceServiceDeskRoleCollection
     {
-        $response = $this->client->get("ResourceServiceDeskRoles/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ResourceServiceDeskRoles/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ResourceServiceDeskRoles/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ResourceServiceDeskRoleCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ResourceServiceDeskRoleQueryBuilder
      */
     public function paginate(): ResourceServiceDeskRolePaginator
     {
-        $response = $this->client->get("ResourceServiceDeskRoles/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ResourceServiceDeskRolePaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ResourceServiceDeskRoles/query", $this->toArray());
+            return new ResourceServiceDeskRolePaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ResourceServiceDeskRoles/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ResourceServiceDeskRolePaginator($this->client, $response);
+        }
     }
 
     /**

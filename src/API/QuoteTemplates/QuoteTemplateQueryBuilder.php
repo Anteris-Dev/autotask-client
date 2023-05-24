@@ -22,6 +22,8 @@ class QuoteTemplateQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class QuoteTemplateQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("QuoteTemplates/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("QuoteTemplates/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("QuoteTemplates/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class QuoteTemplateQueryBuilder
      */
     public function get(): QuoteTemplateCollection
     {
-        $response = $this->client->get("QuoteTemplates/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("QuoteTemplates/query", $this->toArray());
+        }else{
+            $response = $this->client->get("QuoteTemplates/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return QuoteTemplateCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class QuoteTemplateQueryBuilder
      */
     public function paginate(): QuoteTemplatePaginator
     {
-        $response = $this->client->get("QuoteTemplates/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new QuoteTemplatePaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("QuoteTemplates/query", $this->toArray());
+            return new QuoteTemplatePaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("QuoteTemplates/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new QuoteTemplatePaginator($this->client, $response);
+        }
     }
 
     /**

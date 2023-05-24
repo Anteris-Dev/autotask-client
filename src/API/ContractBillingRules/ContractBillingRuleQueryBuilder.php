@@ -22,6 +22,8 @@ class ContractBillingRuleQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ContractBillingRuleQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ContractBillingRules/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContractBillingRules/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ContractBillingRules/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ContractBillingRuleQueryBuilder
      */
     public function get(): ContractBillingRuleCollection
     {
-        $response = $this->client->get("ContractBillingRules/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContractBillingRules/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ContractBillingRules/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ContractBillingRuleCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ContractBillingRuleQueryBuilder
      */
     public function paginate(): ContractBillingRulePaginator
     {
-        $response = $this->client->get("ContractBillingRules/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ContractBillingRulePaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContractBillingRules/query", $this->toArray());
+            return new ContractBillingRulePaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ContractBillingRules/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ContractBillingRulePaginator($this->client, $response);
+        }
     }
 
     /**

@@ -23,6 +23,7 @@ class OpportunityAttachmentEntity extends DataTransferObject
     public $id;
     public ?int $impersonatorCreatorResourceID;
     public $opportunityID;
+    public ?int $parentAttachmentID;
     public $parentID;
     public int $publish;
     public string $title;

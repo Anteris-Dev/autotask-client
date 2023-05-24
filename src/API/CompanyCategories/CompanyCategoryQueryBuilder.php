@@ -22,6 +22,8 @@ class CompanyCategoryQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class CompanyCategoryQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("CompanyCategories/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyCategories/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyCategories/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class CompanyCategoryQueryBuilder
      */
     public function get(): CompanyCategoryCollection
     {
-        $response = $this->client->get("CompanyCategories/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyCategories/query", $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyCategories/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return CompanyCategoryCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class CompanyCategoryQueryBuilder
      */
     public function paginate(): CompanyCategoryPaginator
     {
-        $response = $this->client->get("CompanyCategories/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new CompanyCategoryPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyCategories/query", $this->toArray());
+            return new CompanyCategoryPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyCategories/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new CompanyCategoryPaginator($this->client, $response);
+        }
     }
 
     /**

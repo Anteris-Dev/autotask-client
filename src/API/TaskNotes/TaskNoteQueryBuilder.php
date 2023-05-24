@@ -22,6 +22,8 @@ class TaskNoteQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class TaskNoteQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("TaskNotes/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("TaskNotes/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("TaskNotes/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class TaskNoteQueryBuilder
      */
     public function get(): TaskNoteCollection
     {
-        $response = $this->client->get("TaskNotes/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("TaskNotes/query", $this->toArray());
+        }else{
+            $response = $this->client->get("TaskNotes/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return TaskNoteCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class TaskNoteQueryBuilder
      */
     public function paginate(): TaskNotePaginator
     {
-        $response = $this->client->get("TaskNotes/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new TaskNotePaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("TaskNotes/query", $this->toArray());
+            return new TaskNotePaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("TaskNotes/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new TaskNotePaginator($this->client, $response);
+        }
     }
 
     /**

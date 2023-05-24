@@ -22,6 +22,8 @@ class UserDefinedFieldListItemQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class UserDefinedFieldListItemQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("UserDefinedFieldListItems/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("UserDefinedFieldListItems/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("UserDefinedFieldListItems/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class UserDefinedFieldListItemQueryBuilder
      */
     public function get(): UserDefinedFieldListItemCollection
     {
-        $response = $this->client->get("UserDefinedFieldListItems/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("UserDefinedFieldListItems/query", $this->toArray());
+        }else{
+            $response = $this->client->get("UserDefinedFieldListItems/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return UserDefinedFieldListItemCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class UserDefinedFieldListItemQueryBuilder
      */
     public function paginate(): UserDefinedFieldListItemPaginator
     {
-        $response = $this->client->get("UserDefinedFieldListItems/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new UserDefinedFieldListItemPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("UserDefinedFieldListItems/query", $this->toArray());
+            return new UserDefinedFieldListItemPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("UserDefinedFieldListItems/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new UserDefinedFieldListItemPaginator($this->client, $response);
+        }
     }
 
     /**

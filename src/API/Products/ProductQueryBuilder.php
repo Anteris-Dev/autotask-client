@@ -22,6 +22,8 @@ class ProductQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ProductQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("Products/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Products/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("Products/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ProductQueryBuilder
      */
     public function get(): ProductCollection
     {
-        $response = $this->client->get("Products/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Products/query", $this->toArray());
+        }else{
+            $response = $this->client->get("Products/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ProductCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ProductQueryBuilder
      */
     public function paginate(): ProductPaginator
     {
-        $response = $this->client->get("Products/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ProductPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Products/query", $this->toArray());
+            return new ProductPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("Products/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ProductPaginator($this->client, $response);
+        }
     }
 
     /**

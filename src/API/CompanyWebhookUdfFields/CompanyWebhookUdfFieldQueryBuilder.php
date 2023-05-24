@@ -22,6 +22,8 @@ class CompanyWebhookUdfFieldQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class CompanyWebhookUdfFieldQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("CompanyWebhookUdfFields/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyWebhookUdfFields/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyWebhookUdfFields/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class CompanyWebhookUdfFieldQueryBuilder
      */
     public function get(): CompanyWebhookUdfFieldCollection
     {
-        $response = $this->client->get("CompanyWebhookUdfFields/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyWebhookUdfFields/query", $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyWebhookUdfFields/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return CompanyWebhookUdfFieldCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class CompanyWebhookUdfFieldQueryBuilder
      */
     public function paginate(): CompanyWebhookUdfFieldPaginator
     {
-        $response = $this->client->get("CompanyWebhookUdfFields/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new CompanyWebhookUdfFieldPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyWebhookUdfFields/query", $this->toArray());
+            return new CompanyWebhookUdfFieldPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyWebhookUdfFields/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new CompanyWebhookUdfFieldPaginator($this->client, $response);
+        }
     }
 
     /**

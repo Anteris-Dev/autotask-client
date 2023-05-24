@@ -22,6 +22,8 @@ class ArticleTicketAssociationQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ArticleTicketAssociationQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ArticleTicketAssociations/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ArticleTicketAssociations/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ArticleTicketAssociations/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ArticleTicketAssociationQueryBuilder
      */
     public function get(): ArticleTicketAssociationCollection
     {
-        $response = $this->client->get("ArticleTicketAssociations/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ArticleTicketAssociations/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ArticleTicketAssociations/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ArticleTicketAssociationCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ArticleTicketAssociationQueryBuilder
      */
     public function paginate(): ArticleTicketAssociationPaginator
     {
-        $response = $this->client->get("ArticleTicketAssociations/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ArticleTicketAssociationPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ArticleTicketAssociations/query", $this->toArray());
+            return new ArticleTicketAssociationPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ArticleTicketAssociations/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ArticleTicketAssociationPaginator($this->client, $response);
+        }
     }
 
     /**

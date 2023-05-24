@@ -22,6 +22,8 @@ class CompanyLocationQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class CompanyLocationQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("CompanyLocations/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyLocations/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyLocations/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class CompanyLocationQueryBuilder
      */
     public function get(): CompanyLocationCollection
     {
-        $response = $this->client->get("CompanyLocations/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyLocations/query", $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyLocations/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return CompanyLocationCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class CompanyLocationQueryBuilder
      */
     public function paginate(): CompanyLocationPaginator
     {
-        $response = $this->client->get("CompanyLocations/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new CompanyLocationPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyLocations/query", $this->toArray());
+            return new CompanyLocationPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyLocations/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new CompanyLocationPaginator($this->client, $response);
+        }
     }
 
     /**

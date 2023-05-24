@@ -22,6 +22,8 @@ class KnowledgeBaseCategoryQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class KnowledgeBaseCategoryQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("KnowledgeBaseCategories/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("KnowledgeBaseCategories/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("KnowledgeBaseCategories/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class KnowledgeBaseCategoryQueryBuilder
      */
     public function get(): KnowledgeBaseCategoryCollection
     {
-        $response = $this->client->get("KnowledgeBaseCategories/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("KnowledgeBaseCategories/query", $this->toArray());
+        }else{
+            $response = $this->client->get("KnowledgeBaseCategories/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return KnowledgeBaseCategoryCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class KnowledgeBaseCategoryQueryBuilder
      */
     public function paginate(): KnowledgeBaseCategoryPaginator
     {
-        $response = $this->client->get("KnowledgeBaseCategories/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new KnowledgeBaseCategoryPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("KnowledgeBaseCategories/query", $this->toArray());
+            return new KnowledgeBaseCategoryPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("KnowledgeBaseCategories/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new KnowledgeBaseCategoryPaginator($this->client, $response);
+        }
     }
 
     /**

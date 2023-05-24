@@ -22,6 +22,8 @@ class ProjectQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ProjectQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("Projects/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Projects/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("Projects/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ProjectQueryBuilder
      */
     public function get(): ProjectCollection
     {
-        $response = $this->client->get("Projects/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Projects/query", $this->toArray());
+        }else{
+            $response = $this->client->get("Projects/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ProjectCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ProjectQueryBuilder
      */
     public function paginate(): ProjectPaginator
     {
-        $response = $this->client->get("Projects/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ProjectPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Projects/query", $this->toArray());
+            return new ProjectPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("Projects/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ProjectPaginator($this->client, $response);
+        }
     }
 
     /**

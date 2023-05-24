@@ -22,6 +22,8 @@ class ClassificationIconQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ClassificationIconQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ClassificationIcons/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ClassificationIcons/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ClassificationIcons/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ClassificationIconQueryBuilder
      */
     public function get(): ClassificationIconCollection
     {
-        $response = $this->client->get("ClassificationIcons/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ClassificationIcons/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ClassificationIcons/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ClassificationIconCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ClassificationIconQueryBuilder
      */
     public function paginate(): ClassificationIconPaginator
     {
-        $response = $this->client->get("ClassificationIcons/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ClassificationIconPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ClassificationIcons/query", $this->toArray());
+            return new ClassificationIconPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ClassificationIcons/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ClassificationIconPaginator($this->client, $response);
+        }
     }
 
     /**

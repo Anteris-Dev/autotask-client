@@ -22,6 +22,8 @@ class ProductVendorQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ProductVendorQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ProductVendors/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ProductVendors/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ProductVendors/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ProductVendorQueryBuilder
      */
     public function get(): ProductVendorCollection
     {
-        $response = $this->client->get("ProductVendors/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ProductVendors/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ProductVendors/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ProductVendorCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ProductVendorQueryBuilder
      */
     public function paginate(): ProductVendorPaginator
     {
-        $response = $this->client->get("ProductVendors/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ProductVendorPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ProductVendors/query", $this->toArray());
+            return new ProductVendorPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ProductVendors/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ProductVendorPaginator($this->client, $response);
+        }
     }
 
     /**

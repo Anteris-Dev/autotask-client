@@ -22,6 +22,8 @@ class ContractRoleCostQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ContractRoleCostQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ContractRoleCosts/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContractRoleCosts/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ContractRoleCosts/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ContractRoleCostQueryBuilder
      */
     public function get(): ContractRoleCostCollection
     {
-        $response = $this->client->get("ContractRoleCosts/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContractRoleCosts/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ContractRoleCosts/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ContractRoleCostCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ContractRoleCostQueryBuilder
      */
     public function paginate(): ContractRoleCostPaginator
     {
-        $response = $this->client->get("ContractRoleCosts/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ContractRoleCostPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ContractRoleCosts/query", $this->toArray());
+            return new ContractRoleCostPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ContractRoleCosts/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ContractRoleCostPaginator($this->client, $response);
+        }
     }
 
     /**

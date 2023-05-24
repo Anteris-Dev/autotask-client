@@ -132,6 +132,7 @@ use Anteris\Autotask\API\KnowledgeBaseCategories\KnowledgeBaseCategoryService;
 use Anteris\Autotask\API\NotificationHistory\NotificationHistoryService;
 use Anteris\Autotask\API\Opportunities\OpportunityService;
 use Anteris\Autotask\API\OpportunityAttachments\OpportunityAttachmentService;
+use Anteris\Autotask\API\OpportunityCategories\OpportunityCategoryService;
 use Anteris\Autotask\API\OrganizationalLevel1s\OrganizationalLevel1Service;
 use Anteris\Autotask\API\OrganizationalLevel2s\OrganizationalLevel2Service;
 use Anteris\Autotask\API\OrganizationalLevelAssociations\OrganizationalLevelAssociationService;
@@ -163,6 +164,7 @@ use Anteris\Autotask\API\QuoteLocations\QuoteLocationService;
 use Anteris\Autotask\API\QuoteTemplates\QuoteTemplateService;
 use Anteris\Autotask\API\Quotes\QuoteService;
 use Anteris\Autotask\API\ResourceAttachments\ResourceAttachmentService;
+use Anteris\Autotask\API\ResourceDailyAvailabilities\ResourceDailyAvailabilityService;
 use Anteris\Autotask\API\ResourceRoleDepartments\ResourceRoleDepartmentService;
 use Anteris\Autotask\API\ResourceRoleQueues\ResourceRoleQueueService;
 use Anteris\Autotask\API\ResourceRoles\ResourceRoleService;
@@ -1818,6 +1820,18 @@ class Client
     }
 
     /**
+     * Handles any interaction with the OpportunityCategories endpoint.
+     */
+    public function opportunityCategories(): OpportunityCategoryService
+    {
+        if (! isset($this->classCache['OpportunityCategories'])) {
+            $this->classCache['OpportunityCategories'] = new OpportunityCategoryService($this->client);
+        }
+
+        return $this->classCache['OpportunityCategories'];
+    }
+
+    /**
      * Handles any interaction with the OrganizationalLevel1s endpoint.
      */
     public function organizationalLevel1s(): OrganizationalLevel1Service
@@ -2187,6 +2201,18 @@ class Client
         }
 
         return $this->classCache['ResourceAttachments'];
+    }
+
+    /**
+     * Handles any interaction with the ResourceDailyAvailabilities endpoint.
+     */
+    public function resourceDailyAvailabilities(): ResourceDailyAvailabilityService
+    {
+        if (! isset($this->classCache['ResourceDailyAvailabilities'])) {
+            $this->classCache['ResourceDailyAvailabilities'] = new ResourceDailyAvailabilityService($this->client);
+        }
+
+        return $this->classCache['ResourceDailyAvailabilities'];
     }
 
     /**

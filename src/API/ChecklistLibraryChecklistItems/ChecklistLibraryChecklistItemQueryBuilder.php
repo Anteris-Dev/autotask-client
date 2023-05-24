@@ -22,6 +22,8 @@ class ChecklistLibraryChecklistItemQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ChecklistLibraryChecklistItemQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ChecklistLibraryChecklistItems/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ChecklistLibraryChecklistItems/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ChecklistLibraryChecklistItems/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ChecklistLibraryChecklistItemQueryBuilder
      */
     public function get(): ChecklistLibraryChecklistItemCollection
     {
-        $response = $this->client->get("ChecklistLibraryChecklistItems/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ChecklistLibraryChecklistItems/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ChecklistLibraryChecklistItems/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ChecklistLibraryChecklistItemCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ChecklistLibraryChecklistItemQueryBuilder
      */
     public function paginate(): ChecklistLibraryChecklistItemPaginator
     {
-        $response = $this->client->get("ChecklistLibraryChecklistItems/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ChecklistLibraryChecklistItemPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ChecklistLibraryChecklistItems/query", $this->toArray());
+            return new ChecklistLibraryChecklistItemPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ChecklistLibraryChecklistItems/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ChecklistLibraryChecklistItemPaginator($this->client, $response);
+        }
     }
 
     /**

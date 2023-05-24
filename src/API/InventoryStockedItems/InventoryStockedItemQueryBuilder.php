@@ -22,6 +22,8 @@ class InventoryStockedItemQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class InventoryStockedItemQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("InventoryStockedItems/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("InventoryStockedItems/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("InventoryStockedItems/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class InventoryStockedItemQueryBuilder
      */
     public function get(): InventoryStockedItemCollection
     {
-        $response = $this->client->get("InventoryStockedItems/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("InventoryStockedItems/query", $this->toArray());
+        }else{
+            $response = $this->client->get("InventoryStockedItems/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return InventoryStockedItemCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class InventoryStockedItemQueryBuilder
      */
     public function paginate(): InventoryStockedItemPaginator
     {
-        $response = $this->client->get("InventoryStockedItems/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new InventoryStockedItemPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("InventoryStockedItems/query", $this->toArray());
+            return new InventoryStockedItemPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("InventoryStockedItems/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new InventoryStockedItemPaginator($this->client, $response);
+        }
     }
 
     /**

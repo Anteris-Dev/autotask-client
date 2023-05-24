@@ -22,6 +22,8 @@ class DocumentChecklistItemQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class DocumentChecklistItemQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("DocumentChecklistItems/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("DocumentChecklistItems/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("DocumentChecklistItems/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class DocumentChecklistItemQueryBuilder
      */
     public function get(): DocumentChecklistItemCollection
     {
-        $response = $this->client->get("DocumentChecklistItems/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("DocumentChecklistItems/query", $this->toArray());
+        }else{
+            $response = $this->client->get("DocumentChecklistItems/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return DocumentChecklistItemCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class DocumentChecklistItemQueryBuilder
      */
     public function paginate(): DocumentChecklistItemPaginator
     {
-        $response = $this->client->get("DocumentChecklistItems/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new DocumentChecklistItemPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("DocumentChecklistItems/query", $this->toArray());
+            return new DocumentChecklistItemPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("DocumentChecklistItems/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new DocumentChecklistItemPaginator($this->client, $response);
+        }
     }
 
     /**

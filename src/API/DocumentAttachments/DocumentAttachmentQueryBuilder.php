@@ -22,6 +22,8 @@ class DocumentAttachmentQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class DocumentAttachmentQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("DocumentAttachments/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("DocumentAttachments/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("DocumentAttachments/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class DocumentAttachmentQueryBuilder
      */
     public function get(): DocumentAttachmentCollection
     {
-        $response = $this->client->get("DocumentAttachments/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("DocumentAttachments/query", $this->toArray());
+        }else{
+            $response = $this->client->get("DocumentAttachments/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return DocumentAttachmentCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class DocumentAttachmentQueryBuilder
      */
     public function paginate(): DocumentAttachmentPaginator
     {
-        $response = $this->client->get("DocumentAttachments/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new DocumentAttachmentPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("DocumentAttachments/query", $this->toArray());
+            return new DocumentAttachmentPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("DocumentAttachments/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new DocumentAttachmentPaginator($this->client, $response);
+        }
     }
 
     /**

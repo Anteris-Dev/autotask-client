@@ -22,6 +22,8 @@ class CompanyWebhookQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class CompanyWebhookQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("CompanyWebhooks/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyWebhooks/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyWebhooks/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class CompanyWebhookQueryBuilder
      */
     public function get(): CompanyWebhookCollection
     {
-        $response = $this->client->get("CompanyWebhooks/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyWebhooks/query", $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyWebhooks/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return CompanyWebhookCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class CompanyWebhookQueryBuilder
      */
     public function paginate(): CompanyWebhookPaginator
     {
-        $response = $this->client->get("CompanyWebhooks/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new CompanyWebhookPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyWebhooks/query", $this->toArray());
+            return new CompanyWebhookPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyWebhooks/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new CompanyWebhookPaginator($this->client, $response);
+        }
     }
 
     /**

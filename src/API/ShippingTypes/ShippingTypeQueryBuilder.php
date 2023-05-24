@@ -22,6 +22,8 @@ class ShippingTypeQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ShippingTypeQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ShippingTypes/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ShippingTypes/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ShippingTypes/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ShippingTypeQueryBuilder
      */
     public function get(): ShippingTypeCollection
     {
-        $response = $this->client->get("ShippingTypes/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ShippingTypes/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ShippingTypes/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ShippingTypeCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ShippingTypeQueryBuilder
      */
     public function paginate(): ShippingTypePaginator
     {
-        $response = $this->client->get("ShippingTypes/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ShippingTypePaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ShippingTypes/query", $this->toArray());
+            return new ShippingTypePaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ShippingTypes/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ShippingTypePaginator($this->client, $response);
+        }
     }
 
     /**

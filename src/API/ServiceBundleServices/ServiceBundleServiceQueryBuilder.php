@@ -22,6 +22,8 @@ class ServiceBundleServiceQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class ServiceBundleServiceQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("ServiceBundleServices/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ServiceBundleServices/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("ServiceBundleServices/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class ServiceBundleServiceQueryBuilder
      */
     public function get(): ServiceBundleServiceCollection
     {
-        $response = $this->client->get("ServiceBundleServices/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ServiceBundleServices/query", $this->toArray());
+        }else{
+            $response = $this->client->get("ServiceBundleServices/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return ServiceBundleServiceCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class ServiceBundleServiceQueryBuilder
      */
     public function paginate(): ServiceBundleServicePaginator
     {
-        $response = $this->client->get("ServiceBundleServices/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new ServiceBundleServicePaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("ServiceBundleServices/query", $this->toArray());
+            return new ServiceBundleServicePaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("ServiceBundleServices/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new ServiceBundleServicePaginator($this->client, $response);
+        }
     }
 
     /**

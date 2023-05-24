@@ -22,6 +22,8 @@ class DepartmentQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class DepartmentQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("Departments/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Departments/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("Departments/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class DepartmentQueryBuilder
      */
     public function get(): DepartmentCollection
     {
-        $response = $this->client->get("Departments/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Departments/query", $this->toArray());
+        }else{
+            $response = $this->client->get("Departments/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return DepartmentCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class DepartmentQueryBuilder
      */
     public function paginate(): DepartmentPaginator
     {
-        $response = $this->client->get("Departments/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new DepartmentPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Departments/query", $this->toArray());
+            return new DepartmentPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("Departments/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new DepartmentPaginator($this->client, $response);
+        }
     }
 
     /**

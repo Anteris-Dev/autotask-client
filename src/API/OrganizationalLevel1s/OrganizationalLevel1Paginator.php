@@ -20,19 +20,24 @@ class OrganizationalLevel1Paginator
     /** @var PageEntity Page data transfer object. */
     protected PageEntity $page;
 
+    /** @var array Search params for POST /query request */
+    protected $postParams;
+
     /**
      * Sets up the paginator.
      *
      * @param  HttpClient  $client    Http client for retrieving pages.
      * @param  Response    $response  Response from Http client.
+     * @param  array       $postParams Search params for POST /query request
      *
      * @author Aidan Casey <aidan.casey@anteris.com>
      */
-    public function __construct(HttpClient $client, $response)
+    public function __construct(HttpClient $client, $response, $postParams = null)
     {
         $this->client = $client;
         $this->collection = OrganizationalLevel1Collection::fromResponse($response);
         $this->page = PageEntity::fromResponse($response);
+        $this->postParams = $postParams;
     }
 
     /**
@@ -70,7 +75,12 @@ class OrganizationalLevel1Paginator
      */
     public function nextPage(): OrganizationalLevel1Paginator
     {
-        $response = $this->client->getClient()->get($this->page->nextPageUrl);
+        if(is_null($this->postParams)){
+            $response = $this->client->getClient()->get($this->page->nextPageUrl);
+        }else{
+            $response = $this->client->getClient()->post($this->page->nextPageUrl, ['json' => $this->postParams]);
+        }
+
         return new static($this->client, $response);
     }
 
@@ -81,7 +91,12 @@ class OrganizationalLevel1Paginator
      */
     public function prevPage (): OrganizationalLevel1Paginator
     {
-        $response = $this->client->getClient()->get($this->page->prevPageUrl);
+        if(is_null($this->postParams)){
+            $response = $this->client->getClient()->get($this->page->prevPageUrl);
+        }else{
+            $response = $this->client->getClient()->post($this->page->prevPageUrl, ['json' => $this->postParams]);
+        }
+
         return new static($this->client, $response);
     }
 }

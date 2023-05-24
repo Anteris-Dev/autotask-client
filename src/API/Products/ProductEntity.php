@@ -2,6 +2,7 @@
 
 namespace Anteris\Autotask\API\Products;
 
+use Carbon\Carbon;
 use GuzzleHttp\Psr7\Response;
 use Spatie\DataTransferObject\DataTransferObject;
 
@@ -12,6 +13,8 @@ class ProductEntity extends DataTransferObject
 {
     public ?int $billingType;
     public ?int $chargeBillingCodeID;
+    public ?int $createdByResourceID;
+    public ?Carbon $createdTime;
     public ?int $defaultInstalledProductCategoryID;
     public ?int $defaultVendorID;
     public ?string $description;
@@ -48,6 +51,10 @@ class ProductEntity extends DataTransferObject
      */
     public function __construct(array $array)
     {
+        if (isset($array['createdTime'])) {
+            $array['createdTime'] = new Carbon($array['createdTime']);
+        }
+
         parent::__construct($array);
     }
 

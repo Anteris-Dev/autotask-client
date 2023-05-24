@@ -22,6 +22,8 @@ class HolidayQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class HolidayQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("Holidays/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Holidays/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("Holidays/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class HolidayQueryBuilder
      */
     public function get(): HolidayCollection
     {
-        $response = $this->client->get("Holidays/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Holidays/query", $this->toArray());
+        }else{
+            $response = $this->client->get("Holidays/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return HolidayCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class HolidayQueryBuilder
      */
     public function paginate(): HolidayPaginator
     {
-        $response = $this->client->get("Holidays/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new HolidayPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Holidays/query", $this->toArray());
+            return new HolidayPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("Holidays/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new HolidayPaginator($this->client, $response);
+        }
     }
 
     /**

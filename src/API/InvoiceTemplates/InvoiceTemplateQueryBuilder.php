@@ -22,6 +22,8 @@ class InvoiceTemplateQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class InvoiceTemplateQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("InvoiceTemplates/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("InvoiceTemplates/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("InvoiceTemplates/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class InvoiceTemplateQueryBuilder
      */
     public function get(): InvoiceTemplateCollection
     {
-        $response = $this->client->get("InvoiceTemplates/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("InvoiceTemplates/query", $this->toArray());
+        }else{
+            $response = $this->client->get("InvoiceTemplates/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return InvoiceTemplateCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class InvoiceTemplateQueryBuilder
      */
     public function paginate(): InvoiceTemplatePaginator
     {
-        $response = $this->client->get("InvoiceTemplates/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new InvoiceTemplatePaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("InvoiceTemplates/query", $this->toArray());
+            return new InvoiceTemplatePaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("InvoiceTemplates/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new InvoiceTemplatePaginator($this->client, $response);
+        }
     }
 
     /**

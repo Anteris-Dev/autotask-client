@@ -22,6 +22,8 @@ class OrganizationalLevel2QueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class OrganizationalLevel2QueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("OrganizationalLevel2s/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("OrganizationalLevel2s/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("OrganizationalLevel2s/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class OrganizationalLevel2QueryBuilder
      */
     public function get(): OrganizationalLevel2Collection
     {
-        $response = $this->client->get("OrganizationalLevel2s/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("OrganizationalLevel2s/query", $this->toArray());
+        }else{
+            $response = $this->client->get("OrganizationalLevel2s/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return OrganizationalLevel2Collection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class OrganizationalLevel2QueryBuilder
      */
     public function paginate(): OrganizationalLevel2Paginator
     {
-        $response = $this->client->get("OrganizationalLevel2s/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new OrganizationalLevel2Paginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("OrganizationalLevel2s/query", $this->toArray());
+            return new OrganizationalLevel2Paginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("OrganizationalLevel2s/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new OrganizationalLevel2Paginator($this->client, $response);
+        }
     }
 
     /**

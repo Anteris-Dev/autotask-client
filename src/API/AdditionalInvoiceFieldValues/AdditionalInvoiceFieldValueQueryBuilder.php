@@ -22,6 +22,8 @@ class AdditionalInvoiceFieldValueQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class AdditionalInvoiceFieldValueQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("AdditionalInvoiceFieldValues/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("AdditionalInvoiceFieldValues/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("AdditionalInvoiceFieldValues/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class AdditionalInvoiceFieldValueQueryBuilder
      */
     public function get(): AdditionalInvoiceFieldValueCollection
     {
-        $response = $this->client->get("AdditionalInvoiceFieldValues/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("AdditionalInvoiceFieldValues/query", $this->toArray());
+        }else{
+            $response = $this->client->get("AdditionalInvoiceFieldValues/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return AdditionalInvoiceFieldValueCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class AdditionalInvoiceFieldValueQueryBuilder
      */
     public function paginate(): AdditionalInvoiceFieldValuePaginator
     {
-        $response = $this->client->get("AdditionalInvoiceFieldValues/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new AdditionalInvoiceFieldValuePaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("AdditionalInvoiceFieldValues/query", $this->toArray());
+            return new AdditionalInvoiceFieldValuePaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("AdditionalInvoiceFieldValues/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new AdditionalInvoiceFieldValuePaginator($this->client, $response);
+        }
     }
 
     /**

@@ -22,6 +22,8 @@ class DeletedTaskActivityLogQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class DeletedTaskActivityLogQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("DeletedTaskActivityLogs/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("DeletedTaskActivityLogs/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("DeletedTaskActivityLogs/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class DeletedTaskActivityLogQueryBuilder
      */
     public function get(): DeletedTaskActivityLogCollection
     {
-        $response = $this->client->get("DeletedTaskActivityLogs/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("DeletedTaskActivityLogs/query", $this->toArray());
+        }else{
+            $response = $this->client->get("DeletedTaskActivityLogs/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return DeletedTaskActivityLogCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class DeletedTaskActivityLogQueryBuilder
      */
     public function paginate(): DeletedTaskActivityLogPaginator
     {
-        $response = $this->client->get("DeletedTaskActivityLogs/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new DeletedTaskActivityLogPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("DeletedTaskActivityLogs/query", $this->toArray());
+            return new DeletedTaskActivityLogPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("DeletedTaskActivityLogs/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new DeletedTaskActivityLogPaginator($this->client, $response);
+        }
     }
 
     /**

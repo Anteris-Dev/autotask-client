@@ -22,6 +22,8 @@ class SkillQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class SkillQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("Skills/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Skills/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("Skills/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class SkillQueryBuilder
      */
     public function get(): SkillCollection
     {
-        $response = $this->client->get("Skills/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Skills/query", $this->toArray());
+        }else{
+            $response = $this->client->get("Skills/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return SkillCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class SkillQueryBuilder
      */
     public function paginate(): SkillPaginator
     {
-        $response = $this->client->get("Skills/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new SkillPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Skills/query", $this->toArray());
+            return new SkillPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("Skills/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new SkillPaginator($this->client, $response);
+        }
     }
 
     /**

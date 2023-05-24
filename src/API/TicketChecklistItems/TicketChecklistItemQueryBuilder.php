@@ -22,6 +22,8 @@ class TicketChecklistItemQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class TicketChecklistItemQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("TicketChecklistItems/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("TicketChecklistItems/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("TicketChecklistItems/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class TicketChecklistItemQueryBuilder
      */
     public function get(): TicketChecklistItemCollection
     {
-        $response = $this->client->get("TicketChecklistItems/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("TicketChecklistItems/query", $this->toArray());
+        }else{
+            $response = $this->client->get("TicketChecklistItems/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return TicketChecklistItemCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class TicketChecklistItemQueryBuilder
      */
     public function paginate(): TicketChecklistItemPaginator
     {
-        $response = $this->client->get("TicketChecklistItems/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new TicketChecklistItemPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("TicketChecklistItems/query", $this->toArray());
+            return new TicketChecklistItemPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("TicketChecklistItems/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new TicketChecklistItemPaginator($this->client, $response);
+        }
     }
 
     /**

@@ -22,6 +22,8 @@ class PriceListServiceQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class PriceListServiceQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("PriceListServices/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("PriceListServices/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("PriceListServices/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class PriceListServiceQueryBuilder
      */
     public function get(): PriceListServiceCollection
     {
-        $response = $this->client->get("PriceListServices/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("PriceListServices/query", $this->toArray());
+        }else{
+            $response = $this->client->get("PriceListServices/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return PriceListServiceCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class PriceListServiceQueryBuilder
      */
     public function paginate(): PriceListServicePaginator
     {
-        $response = $this->client->get("PriceListServices/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new PriceListServicePaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("PriceListServices/query", $this->toArray());
+            return new PriceListServicePaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("PriceListServices/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new PriceListServicePaginator($this->client, $response);
+        }
     }
 
     /**

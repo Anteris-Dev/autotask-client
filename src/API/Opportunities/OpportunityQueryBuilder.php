@@ -22,6 +22,8 @@ class OpportunityQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class OpportunityQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("Opportunities/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Opportunities/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("Opportunities/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class OpportunityQueryBuilder
      */
     public function get(): OpportunityCollection
     {
-        $response = $this->client->get("Opportunities/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Opportunities/query", $this->toArray());
+        }else{
+            $response = $this->client->get("Opportunities/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return OpportunityCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class OpportunityQueryBuilder
      */
     public function paginate(): OpportunityPaginator
     {
-        $response = $this->client->get("Opportunities/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new OpportunityPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("Opportunities/query", $this->toArray());
+            return new OpportunityPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("Opportunities/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new OpportunityPaginator($this->client, $response);
+        }
     }
 
     /**

@@ -22,6 +22,8 @@ class CompanyWebhookFieldQueryBuilder
     /** @var int The maximum number of records to be returned. */
     protected int $records;
 
+    private const GET_LIMIT = 1800;
+
     /**
      * Sets up the class to perform a query.
      * 
@@ -42,9 +44,13 @@ class CompanyWebhookFieldQueryBuilder
      */
      public function count(): int
      {
-         $response = $this->client->get("CompanyWebhookFields/query/count", [
-             'search' => json_encode( $this->toArray() )
-         ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyWebhookFields/query/count", $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyWebhookFields/query/count", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
          $responseArray = json_decode($response->getBody(), true);
 
@@ -84,9 +90,13 @@ class CompanyWebhookFieldQueryBuilder
      */
     public function get(): CompanyWebhookFieldCollection
     {
-        $response = $this->client->get("CompanyWebhookFields/query", [
-            'search' => json_encode( $this->toArray() )
-        ]);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyWebhookFields/query", $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyWebhookFields/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+        }
 
         return CompanyWebhookFieldCollection::fromResponse($response);
     }
@@ -96,11 +106,15 @@ class CompanyWebhookFieldQueryBuilder
      */
     public function paginate(): CompanyWebhookFieldPaginator
     {
-        $response = $this->client->get("CompanyWebhookFields/query", [
-            'search' => json_encode($this->toArray())
-        ]);
-
-        return new CompanyWebhookFieldPaginator($this->client, $response);
+        if (strlen($this->__toString()) >= self::GET_LIMIT) {
+            $response = $this->client->post("CompanyWebhookFields/query", $this->toArray());
+            return new CompanyWebhookFieldPaginator($this->client, $response, $this->toArray());
+        }else{
+            $response = $this->client->get("CompanyWebhookFields/query", [
+                'search' => json_encode( $this->toArray() )
+            ]);
+            return new CompanyWebhookFieldPaginator($this->client, $response);
+        }
     }
 
     /**
