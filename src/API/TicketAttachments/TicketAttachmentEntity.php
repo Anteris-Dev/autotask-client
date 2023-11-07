@@ -59,6 +59,11 @@ class TicketAttachmentEntity extends DataTransferObject
     {
         $responseArray = json_decode($response->getBody(), true);
 
+        //findByID method returns $responseArray["items"], but there should always only be 1 item returned from the API by ID. 
+        if(isset($responseArray["items"]) && is_array($responseArray["items"]) && count($responseArray["items"]) == 1){
+            return new self($responseArray["items"][0]);
+        }
+
         if (isset($responseArray['item']) === false) {
             throw new \Exception('Missing item key in response.');
         }
