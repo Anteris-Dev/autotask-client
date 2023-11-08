@@ -151,7 +151,7 @@ class SkillQueryBuilder
      */
     public function where(
         $field,
-        $operator = null,
+        $operator = '',
         $value = null,
         $udf = false,
         $conjuction = 'AND'
@@ -180,7 +180,7 @@ class SkillQueryBuilder
         // Second scenario, everything is set and legit.
         if (
             isset($field) &&
-            $operator !== null &&
+            $operator !== '' &&
             $value !== null
         ) {
             $this->validateOperator($operator);
